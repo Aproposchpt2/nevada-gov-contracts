@@ -327,7 +327,7 @@ function render(){
       '<td>'+esc(b.agency)+'</td>'+
       '<td class="t-cat">'+esc(b.bid_type)+'</td>'+
       '<td>'+dueChip(b.due_in_days)+(b.close_date?'<div class="t-sol">'+esc(b.close_date)+'</div>':'')+'</td>'+
-      '<td><a class="view-btn" href="'+esc(url)+'" target="_blank" rel="noopener">View on NGEM ↗</a></td>'+
+      '<td><a class="view-btn" href="'+esc(url)+'" target="_blank" rel="noopener">View bid details ↗</a></td>'+
     '</tr>';
   }).join('') : '<tr><td colspan="5" class="empty">'+empty+'</td></tr>';
 }

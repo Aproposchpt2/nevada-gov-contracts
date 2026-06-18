@@ -30,8 +30,10 @@ Organization, Issue Date, Close Date), computes days-to-close, drops closed bids
 and caches for 5 minutes. If the live read ever fails, it falls back to a small sample set
 (`scanMode: "sample"`) so the site stays up.
 
-**Per-bid deep link:** Ionwave opens bid details via a row-click postback (no per-bid GET URL), so
-"View on NGEM" links to the live public current-bids list where the user opens the solicitation directly.
+**Per-bid deep link:** the RadGrid ClientState maps each row index → `BidID`
+(e.g. `"0":{"BidID":"20049"}`). We join that to each row and link straight to the public
+**Bid Opportunity Detail** page: `PublicDetail.aspx?bidID={BidID}&SourceType=1`. Falls back to the
+current-bids list only if a BidID is ever missing.
 
 ### Matching layer (live)
 Visitors can save a **keyword profile** (services/trades/product types). StateGen scores each open bid

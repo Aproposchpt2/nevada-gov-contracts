@@ -7,7 +7,8 @@
 // browser User-Agent returns the full Telerik grid. We scrape and normalize it.
 // If the live read fails for any reason, we fall back to a sample set so the site stays up.
 
-const LIST_URL = 'https://nevada.ionwave.net/SourcingEvents.aspx?SourceType=1'; // public current bids
+const LIST_URL   = 'https://nevada.ionwave.net/SourcingEvents.aspx?SourceType=1'; // public current bids
+const DETAIL_URL = 'https://nevada.ionwave.net/PublicDetail.aspx';                // ?bidID=N&SourceType=1
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 
 const CORS = {
@@ -47,26 +48,36 @@ function slug(s, i) {
 }
 
 function parseBids(html) {
+  // RadGrid ClientState maps each data-row index → BidID, e.g. "0":{"BidID":"20049"}.
+  // That BidID drives the public Bid Opportunity Detail page.
+  const bidIdByRow = {};
+  for (const k of html.matchAll(/"(\d+)":\{"BidID":"(\d+)"\}/g)) bidIdByRow[k[1]] = k[2];
+
   const gi = html.indexOf('rgBidList_ctl00"');
   const seg = gi > 0 ? html.slice(gi) : html;
   const rowRe = /id="ctl00_mainContent_rgBidList_ctl00__(\d+)"([\s\S]*?)(?=id="ctl00_mainContent_rgBidList_ctl00__\d+"|<\/table)/g;
   const bids = [];
   let m;
   while ((m = rowRe.exec(seg)) !== null) {
+    const rowIdx = m[1];
     const cells = [...m[2].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(c => cleanCell(c[1]));
     // columns: [select, Bid Number, Bid Title, Bid Type, Organization, Issue Date, Close Date/Time]
     if (cells.length < 7) continue;
     const solicitation_no = cells[1], title = cells[2];
     if (!title) continue;
     const close_date = cells[6].replace(/:00 ([AP]M)/, ' $1');
+    const bidID = bidIdByRow[rowIdx];
     bids.push({
-      id: slug(solicitation_no || title, m[1]),
+      id: bidID || slug(solicitation_no || title, rowIdx),
+      bid_id: bidID || null,
       solicitation_no, title,
       bid_type: cells[3] || '—',
       agency: cells[4] || '—',
       issue_date: cells[5] || '',
       close_date,
       due_in_days: dueInDays(cells[6]),
+      // Deep link straight to the public Bid Opportunity Detail page.
+      url: bidID ? `${DETAIL_URL}?bidID=${bidID}&SourceType=1` : null,
     });
   }
   return bids;
