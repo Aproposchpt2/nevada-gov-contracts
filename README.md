@@ -33,11 +33,19 @@ and caches for 5 minutes. If the live read ever fails, it falls back to a small 
 **Per-bid deep link:** Ionwave opens bid details via a row-click postback (no per-bid GET URL), so
 "View on NGEM" links to the live public current-bids list where the user opens the solicitation directly.
 
+### Matching layer (live)
+Visitors can save a **keyword profile** (services/trades/product types). StateGen scores each open bid
+by keyword hits across title + type + agency, shows **★ Match / ★ Strong match** badges, and a
+**"My matches"** view that filters + ranks by relevance. Stored client-side in `localStorage`
+(`stategen_keywords`) — no login yet. This is the seed of the subscription value (alerts, tiers).
+
 ### Future enhancements
-- **Pagination** — currently ingests page 1 (soonest-closing). Add Telerik paging for the full set.
-- **NIGP categories + profile matching** — pull NIGP codes from bid detail pages to power
-  category-based matching and per-vendor alerts.
-- **Closed/Awarded** — `SourceType=2` (closed) and `SourceType=3` (awarded) are available too.
+- **Pagination** — ingests page 1 (soonest-closing, ~20). NGEM's Telerik pager is client-side
+  button-driven (not a replayable inline postback), so the full set likely needs a headless browser.
+- **NIGP categories** — pull NIGP codes from bid detail pages for richer category matching + alerts.
+- **Server-side profiles + email alerts** — move the keyword profile server-side; daily "new bids that
+  match you" emails. Then onboarding + tiers (mirror CapGen's model).
+- **Closed/Awarded** — `SourceType=2` (closed) and `SourceType=3` (awarded) feeds are available too.
 
 ## Deploy
 GitHub → Netlify auto-deploy from `main`. Static publish (`.`) + functions in `netlify/functions`.
