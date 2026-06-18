@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StateGen — Set Up Your Bid Alerts</title>
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--ink-2:#163472;--white:#FFFFFF;--silver:#C3D0E8;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--green:#6EE7A8;--red:#F87171;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);display:flex;align-items:center;justify-content:center;padding:24px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+.card{position:relative;z-index:1;width:min(540px,100%);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(28px,5vw,44px)}
+.eyebrow{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:12px}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(1.8rem,4vw,2.6rem);color:var(--white);line-height:1.08;letter-spacing:-.02em;margin-bottom:10px}
+h1 em{font-family:var(--subdisp);font-style:italic;color:rgba(255,255,255,.5)}
+.sub{color:rgba(255,255,255,.55);font-size:.95rem;line-height:1.7;margin-bottom:26px}
+label{display:block;font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 7px}
+input,select,textarea{width:100%;font-family:var(--body);font-size:.95rem;font-weight:300;color:var(--white);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.8rem .9rem;margin-bottom:18px;transition:border-color .2s}
+textarea{min-height:84px;resize:vertical;line-height:1.6}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.3)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,.5)}
+select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239DB0D4' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
+option{background:var(--ink-2)}
+.hint{font-size:.78rem;color:rgba(255,255,255,.4);margin:-12px 0 18px}
+.btn{width:100%;background:var(--white);color:var(--ink);font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;border:none;border-radius:4px;padding:.95rem;cursor:pointer;transition:background .25s}
+.btn:hover{background:var(--gold-bright)}
+.btn:disabled{opacity:.6;cursor:wait}
+.msg{margin-top:16px;font-size:.88rem;text-align:center;min-height:20px}
+.msg.err{color:var(--red)}.msg.ok{color:var(--green)}
+.done{text-align:center}
+.done .check{font-size:2.4rem;color:var(--green);margin-bottom:12px}
+.rule{font-family:var(--subdisp);font-style:italic;font-size:.82rem;color:rgba(255,255,255,.3);text-align:center;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div id="formView">
+    <div class="eyebrow">StateGen · Bid Alerts</div>
+    <h1>Get new matching bids <em>in your inbox.</em></h1>
+    <p class="sub">Tell us your email and a few keywords. Each day we'll email you the <strong style="color:var(--white)">new</strong> solicitations that match your business — so you never miss one.</p>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="you@yourbusiness.com" autocomplete="email"/>
+
+    <label for="state">State</label>
+    <select id="state">
+      <option value="NV">Nevada (NevadaStateGen)</option>
+      <option value="CA">California (CalStateGen)</option>
+    </select>
+
+    <label for="keywords">Your keywords</label>
+    <textarea id="keywords" placeholder="e.g. paving, electrical, IT services, landscaping, security"></textarea>
+    <p class="hint">Comma-separated — services, trades, or product types your business delivers.</p>
+
+    <button class="btn" id="saveBtn">Turn on my bid alerts</button>
+    <div class="msg" id="msg"></div>
+    <p class="rule">Daily alerts · Cancel anytime · Apropos Group LLC</p>
+  </div>
+
+  <div id="doneView" class="done" style="display:none">
+    <div class="check">✓</div>
+    <h1>You're all set.</h1>
+    <p class="sub" id="doneMsg" style="margin-top:10px"></p>
+    <p class="rule">Your first matches arrive on the next daily scan.</p>
+  </div>
+</div>
+
+<script>
+'use strict';
+const q = new URLSearchParams(location.search);
+const stEl = document.getElementById('state');
+const st = (q.get('state') || q.get('s') || '').toUpperCase();
+if (st === 'CA' || st === 'NV') stEl.value = st;
+const em = q.get('email');
+if (em) document.getElementById('email').value = em;
+
+const SAVE_URL = '/.netlify/functions/save-alert-subscriber';
+const btn = document.getElementById('saveBtn');
+const msg = document.getElementById('msg');
+
+btn.addEventListener('click', async () => {
+  msg.className = 'msg'; msg.textContent = '';
+  const email = document.getElementById('email').value.trim();
+  const state = stEl.value;
+  const keywords = document.getElementById('keywords').value;
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className='msg err'; msg.textContent='Please enter a valid email.'; return; }
+  if (!keywords.trim()) { msg.className='msg err'; msg.textContent='Add at least one keyword.'; return; }
+  btn.disabled = true; btn.textContent = 'Saving…';
+  try {
+    const res = await fetch(SAVE_URL, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email, state, keywords }) });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Could not save.');
+    document.getElementById('formView').style.display = 'none';
+    document.getElementById('doneMsg').textContent = `We'll email ${email} when new ${state==='CA'?'California':'Nevada'} bids match your ${data.count} keyword${data.count===1?'':'s'}.`;
+    document.getElementById('doneView').style.display = 'block';
+  } catch (e) {
+    msg.className='msg err'; msg.textContent = e.message;
+    btn.disabled = false; btn.textContent = 'Turn on my bid alerts';
+  }
+});
+</script>
+</body>
+</html>
