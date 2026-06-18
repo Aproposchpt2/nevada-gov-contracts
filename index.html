@@ -116,6 +116,15 @@ a.t-link .ext{color:rgba(255,255,255,.4);font-size:.78em}
 .how h3{font-family:var(--disp);font-weight:400;font-size:1.2rem;color:var(--white);margin-bottom:.5rem}
 .how p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7}
 
+/* cross-site CTA */
+.cross{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:2.4rem;padding:clamp(1.3rem,3vw,1.9rem);border:1px solid var(--line-2);background:rgba(255,255,255,.05)}
+.cross .ct-eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);display:block;margin-bottom:.5rem}
+.cross h3{font-family:var(--disp);font-weight:400;font-size:clamp(1.2rem,2.2vw,1.6rem);color:var(--white);line-height:1.2}
+.cross h3 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+.cross p{font-size:.9rem;color:rgba(255,255,255,.5);margin-top:.45rem;max-width:54ch;line-height:1.6}
+.cross-btn{background:var(--white);color:var(--ink);font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:4px;white-space:nowrap;transition:background .25s,transform .2s;display:inline-flex;align-items:center}
+.cross-btn:hover{background:var(--gold-bright);transform:translateY(-2px)}
+
 /* footer */
 .foot{border-top:1px solid var(--line);margin-top:2.6rem;padding-top:1.6rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   font-family:var(--body);font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3)}
@@ -222,6 +231,15 @@ a.t-link .ext{color:rgba(255,255,255,.4);font-size:.78em}
     <div class="step"><div class="n">01</div><h3>One board, every agency</h3><p>NevadaStateGen pulls every open Nevada solicitation from NGEM into one place — across the participating state, county, city, school, and university buyers. No SAM.gov, no UEI, no federal registration needed.</p></div>
     <div class="step"><div class="n">02</div><h3>Filter to what fits</h3><p>Search by agency, bid type, and closing window to zero in on the work you can actually win.</p></div>
     <div class="step"><div class="n">03</div><h3>Bid with lead time</h3><p>Open any solicitation straight on NGEM and respond before it closes — never miss a local opportunity again.</p></div>
+  </section>
+
+  <section class="cross">
+    <div>
+      <span class="ct-eyebrow">Also bidding elsewhere?</span>
+      <h3>Pursuing contracts in <em>California?</em></h3>
+      <p>CalStateGen surfaces open California state, county, city &amp; education bids the same way — matched to what your business delivers.</p>
+    </div>
+    <a class="cross-btn" href="https://calstategen.aproposgroupllc.com" target="_blank" rel="noopener">Explore CalStateGen →</a>
   </section>
 
   <footer class="foot">
