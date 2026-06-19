@@ -18,21 +18,14 @@ const CORS = {
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
-let LAST_ERR = null; // safe diagnostic (no secret values)
 async function getSession(id) {
   // test sessions (cs_test_…) must be read with the test key; everything else uses live
-  const isTest = id.startsWith('cs_test_');
-  const key = isTest ? (STRIPE_KEY_TEST || STRIPE_KEY) : STRIPE_KEY;
+  const key = id.startsWith('cs_test_') ? (STRIPE_KEY_TEST || STRIPE_KEY) : STRIPE_KEY;
   const r = await fetch(
     'https://api.stripe.com/v1/checkout/sessions/' + encodeURIComponent(id) + '?expand[]=line_items',
     { headers: { Authorization: 'Bearer ' + key } }
   );
-  if (!r.ok) {
-    let code = '';
-    try { const e = await r.json(); code = (e.error && (e.error.code || e.error.type)) || ''; } catch {}
-    LAST_ERR = { http: r.status, code, keyMode: isTest ? 'test' : 'live', testKeyPresent: !!STRIPE_KEY_TEST };
-    return null;
-  }
+  if (!r.ok) return null;
   return r.json();
 }
 
@@ -59,8 +52,7 @@ exports.handler = async (event) => {
   if (!STRIPE_KEY) return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: 'Stripe not configured.' }) };
   const sid = ((event.queryStringParameters || {}).session_id || '').trim();
   if (!sid.startsWith('cs_')) return { statusCode: 400, headers: CORS, body: JSON.stringify({ error: 'Missing session_id.' }) };
-  LAST_ERR = null;
   const v = evalSession(await getSession(sid));
-  if (!v.valid) return { statusCode: 403, headers: CORS, body: JSON.stringify({ error: v.error, debug: LAST_ERR }) };
+  if (!v.valid) return { statusCode: 403, headers: CORS, body: JSON.stringify({ error: v.error }) };
   return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, email: v.email, state: v.state }) };
 };
