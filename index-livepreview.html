@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NevadaStateGen — Win Nevada Government Contracts</title>
+<meta name="description" content="NevadaStateGen brings every open Nevada state, county, city, and education bid into one private dashboard — matched to your business. Stop hunting. Start winning. $49/mo."/>
+<meta name="author" content="Apropos Group LLC"/>
+<meta name="theme-color" content="#0F2A6A"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,500;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--ink-2:#163472;--ink-3:#1C3878;--white:#FFFFFF;--silver:#C3D0E8;--mist:#9DB0D4;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 36px));margin:0 auto;position:relative;z-index:1}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(15,42,106,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:.9rem 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.85rem;background:var(--white);color:var(--ink)}
+.brand .bname{font-family:var(--disp);font-size:1.28rem;font-weight:400;color:var(--white);letter-spacing:-.01em;line-height:1}
+.brand .bsub{font-family:var(--body);font-size:.54rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.btn{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-family:var(--body);text-decoration:none;transition:background .25s,transform .2s,color .25s,border-color .25s}
+.btn.primary{background:var(--white);color:var(--ink);font-weight:600;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding:.8rem 1.6rem;border:none;border-radius:4px}
+.btn.primary:hover{background:var(--gold-bright);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:rgba(255,255,255,.55);font-weight:500;font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;border:none;border-bottom:1px solid rgba(255,255,255,.22);border-radius:0;padding:0 0 3px}
+.btn.ghost:hover{color:#fff;border-color:#fff}
+.nav .btn.primary{padding:.62rem 1.3rem;font-size:.68rem}
+
+section{padding:clamp(3.4rem,7vh,6rem) 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);display:inline-flex;align-items:center;gap:8px;margin-bottom:1.3rem}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);box-shadow:0 0 0 5px rgba(255,255,255,.08)}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.02;letter-spacing:-.02em;color:var(--white);margin-bottom:1.3rem}
+h1 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.08;letter-spacing:-.02em;color:var(--white);margin-bottom:1rem}
+h2 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.45)}
+.lead{color:rgba(255,255,255,.55);font-size:clamp(1.02rem,1.5vw,1.2rem);line-height:1.75;max-width:60ch}
+.lead strong{color:#fff;font-weight:400}
+
+/* HERO */
+.hero{padding:clamp(3.6rem,8vh,6.5rem) 0;border-top:none}
+.hero .actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:2rem}
+.trust-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:1.8rem}
+.trust-pill{padding:7px 14px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.45)}
+
+/* ONELINER */
+.oneliner{text-align:center}
+.oneliner p{font-family:var(--disp);font-weight:400;font-size:clamp(1.4rem,3vw,2.4rem);line-height:1.32;color:rgba(255,255,255,.62);max-width:900px;margin:0 auto}
+.oneliner em{font-style:italic;font-family:var(--subdisp);color:#fff}
+
+.head{max-width:720px;margin-bottom:2.4rem}
+.head.center{margin-left:auto;margin-right:auto;text-align:center}
+.head p{color:rgba(255,255,255,.5);font-size:1rem;line-height:1.75}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:1.7rem 1.8rem;position:relative;overflow:hidden}
+.step::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+.step:hover::before{transform:scaleX(1)}
+.step .n{font-family:var(--subdisp);font-style:italic;font-size:1.5rem;color:rgba(255,255,255,.3);margin-bottom:.7rem}
+.step h3{font-family:var(--disp);font-weight:400;font-size:1.25rem;color:#fff;margin-bottom:.5rem}
+.step p{color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.7}
+
+/* FEATURES */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:1.8rem}
+.card .ic{font-family:var(--body);font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1rem;display:block}
+.card h3{font-family:var(--disp);font-weight:400;font-size:1.3rem;color:#fff;margin-bottom:.5rem}
+.card p{color:rgba(255,255,255,.55);font-size:.92rem;line-height:1.7}
+
+/* WHO */
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:1.6rem}
+.tag{padding:8px 15px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-family:var(--body);font-size:.8rem;color:rgba(255,255,255,.5)}
+
+/* CTA BAND */
+.cta-band{border:1px solid var(--line-2);background:rgba(255,255,255,.05);padding:clamp(2rem,4vw,3.2rem);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-band h2{margin-bottom:.4rem}
+.cta-band p{color:rgba(255,255,255,.5);font-size:.96rem}
+.cta-band .actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+
+footer{border-top:1px solid var(--line);padding:2.2rem 0;background:rgba(15,42,106,.6)}
+.foot-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:var(--body);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+.foot-row a{color:rgba(255,255,255,.4)}.foot-row a:hover{color:#fff}
+.copyright-notice{border-top:1px solid var(--line);margin-top:16px;padding-top:16px;font-family:var(--body);font-size:.7rem;color:rgba(255,255,255,.3);text-align:center;line-height:1.7;font-weight:300;text-transform:none;letter-spacing:0}
+.copyright-notice strong{color:rgba(255,255,255,.5)}
+
+/* HERO DASHBOARD PREVIEW */
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:center}
+.dashprev{position:relative;border:1px solid var(--line-2);border-radius:14px;background:linear-gradient(180deg,rgba(12,34,87,.97),rgba(10,28,73,.97));box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.dp-bar{display:flex;align-items:center;gap:7px;padding:.7rem .9rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+.dp-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.18)}
+.dp-title{font-family:var(--body);font-size:.66rem;letter-spacing:.05em;color:rgba(255,255,255,.55);margin-left:.4rem}
+.dp-live{margin-left:auto;font-family:var(--body);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:#6EE7A8}
+.dp-body{padding:1rem 1.05rem 1.1rem}
+.dp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:.9rem}
+.dp-stats>div{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;padding:.55rem .65rem}
+.dp-stats b{display:block;font-family:var(--disp);font-weight:400;font-size:1.45rem;color:#fff;line-height:1}
+.dp-stats span{font-family:var(--body);font-size:.52rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.dp-rows{display:flex;flex-direction:column;gap:8px}
+.dp-row{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:.55rem .7rem}
+.dp-av{width:30px;height:30px;border-radius:8px;flex-shrink:0;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);font-family:var(--disp);font-size:.72rem;color:#fff}
+.dp-info{flex:1;min-width:0}
+.dp-info b{display:block;font-family:var(--body);font-weight:500;font-size:.79rem;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dp-info span{font-family:var(--body);font-size:.64rem;color:rgba(255,255,255,.45)}
+.dp-g{flex-shrink:0}
+.dp-g text{font-family:var(--body);font-weight:600;font-size:.6rem;fill:#fff}
+.dp-cap{text-align:center;font-family:var(--body);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-top:.85rem}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr}.hero-visual{margin-top:2.4rem}.dashprev{max-width:460px;margin:0 auto}}
+@media(max-width:860px){.steps,.cards{grid-template-columns:1fr}.cta-band{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="/">
+      <span class="mark">NS</span>
+      <span><span class="bname">NevadaStateGen</span><br><span class="bsub">Nevada Procurement · Apropos Group LLC</span></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <a class="btn ghost" href="/login">Member Login</a>
+      <a class="btn primary" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">State · County · City · Education Contracts</span>
+      <h1>NevadaStateGen<br><em>Find your next Nevada government contract.</em></h1>
+      <p class="lead">Every open government contract in Nevada, finally in one place. <strong>NevadaStateGen</strong> surfaces open <strong>State of Nevada, county, city, school district, and university</strong> bids — matched to what your business delivers.</p>
+      <div class="actions">
+        <a class="btn primary" href="/demo">See Live Demo →</a>
+        <a class="btn ghost" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe Now — $49/mo</a>
+      </div>
+      <div class="trust-row">
+        <span class="trust-pill">No SAM.gov required</span>
+        <span class="trust-pill">Matched to your business</span>
+        <span class="trust-pill">Your own live dashboard</span>
+        <span class="trust-pill">Sourced from public records</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="dashprev" role="img" aria-label="Preview of the NevadaStateGen member dashboard showing matched Nevada bids with fit scores">
+        <div class="dp-bar"><span class="dp-dot"></span><span class="dp-dot"></span><span class="dp-dot"></span><span class="dp-title">NevadaStateGen · Bid Board</span><span class="dp-live">● Live</span></div>
+        <div class="dp-body">
+          <div class="dp-stats">
+            <div><b>264</b><span>Open bids</span></div>
+            <div><b>38</b><span>Matched</span></div>
+            <div><b>86%</b><span>Avg fit</span></div>
+          </div>
+          <div class="dp-rows">
+            <div class="dp-row"><span class="dp-av">CC</span><div class="dp-info"><b>Clark County Janitorial Services</b><span>Clark County · 6 days left</span></div>
+              <svg class="dp-g" width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3.5"/><circle cx="18" cy="18" r="16.25" fill="none" stroke="#6EE7A8" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="102.1" stroke-dashoffset="11.2" transform="rotate(-90 18 18)"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="central">89</text></svg></div>
+            <div class="dp-row"><span class="dp-av">CH</span><div class="dp-info"><b>City of Henderson Landscaping</b><span>City of Henderson · 9 days left</span></div>
+              <svg class="dp-g" width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3.5"/><circle cx="18" cy="18" r="16.25" fill="none" stroke="#5bd3ff" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="102.1" stroke-dashoffset="18.4" transform="rotate(-90 18 18)"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="central">82</text></svg></div>
+            <div class="dp-row"><span class="dp-av">UN</span><div class="dp-info"><b>University of Nevada IT Support RFP</b><span>UNLV (NSHE) · 14 days left</span></div>
+              <svg class="dp-g" width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3.5"/><circle cx="18" cy="18" r="16.25" fill="none" stroke="#F5C36B" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="102.1" stroke-dashoffset="24.5" transform="rotate(-90 18 18)"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="central">76</text></svg></div>
+            <div class="dp-row"><span class="dp-av">SN</span><div class="dp-info"><b>State of Nevada Staffing RFQ</b><span>State of Nevada · 17 days left</span></div>
+              <svg class="dp-g" width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="3.5"/><circle cx="18" cy="18" r="16.25" fill="none" stroke="#F5C36B" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="102.1" stroke-dashoffset="29.6" transform="rotate(-90 18 18)"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="central">71</text></svg></div>
+          </div>
+          <div class="dp-cap">Your private dashboard — a live preview</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONELINER -->
+<section class="oneliner">
+  <div class="container">
+    <p>Other tools make you hunt the marketplace. <em>NevadaStateGen brings your bids to you.</em></p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="head"><span class="eyebrow">How it works</span><h2>From scattered postings to <em>your shortlist.</em></h2><p>Nevada's agencies post bids across dozens of separate systems. NevadaStateGen pulls them together and filters to the work you can actually win.</p></div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>One board, every agency</h3><p>We aggregate open Nevada solicitations — state, county, city, school district, and university — into a single live board, refreshed daily.</p></div>
+      <div class="step"><div class="n">02</div><h3>Matched to your work</h3><p>Tell us what your business does. We flag and rank the bids that fit, so your opportunities surface first.</p></div>
+      <div class="step"><div class="n">03</div><h3>Your private dashboard</h3><p>Log in any time to your own live board — your matches up top, every bid sorted by deadline, straight links to each solicitation. You never miss one.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section id="features">
+  <div class="container">
+    <div class="head center"><span class="eyebrow">What you get</span><h2>Your unfair advantage on <em>local contracts.</em></h2></div>
+    <div class="cards">
+      <div class="card"><span class="ic">01 · Board</span><h3>The full Nevada bid board</h3><p>Every open solicitation in one place — searchable and filterable by agency, type, and deadline.</p></div>
+      <div class="card"><span class="ic">02 · Matching</span><h3>Keyword match engine</h3><p>Your services, trades, and product types — scored against every bid, so you see your work first.</p></div>
+      <div class="card"><span class="ic">03 · Dashboard</span><h3>Your private live board</h3><p>A personalized dashboard you log into — your matches first, refreshed daily. The opportunity is waiting when you are.</p></div>
+      <div class="card"><span class="ic">04 · Access</span><h3>Straight to the bid</h3><p>One click to each official solicitation — scope, documents, and how to respond. No digging.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section id="who">
+  <div class="container">
+    <div class="head"><span class="eyebrow">Who it's for</span><h2>Built for Nevada businesses <em>ready to bid.</em></h2><p>Contractors, trades, service providers, and suppliers who know they can do the work — and just need a faster, organized way to find the right local opportunities. No federal registration required.</p>
+    <div class="tags"><span class="tag">Construction &amp; trades</span><span class="tag">Landscaping &amp; grounds</span><span class="tag">IT &amp; professional services</span><span class="tag">Janitorial &amp; facilities</span><span class="tag">Security</span><span class="tag">Staffing</span><span class="tag">Suppliers</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO TEASER -->
+<section>
+  <div class="container cta-band">
+    <div><span class="eyebrow">See it first</span><h2>See the dashboard <em>in action.</em></h2><p>Open a sample NevadaStateGen dashboard and see exactly how matched Nevada bids appear on your private board. No card required.</p></div>
+    <div class="actions"><a class="btn primary" href="/demo">See Live Demo →</a></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="container cta-band">
+    <div><span class="eyebrow">Get started</span><h2>Never miss a Nevada bid <em>again.</em></h2><p>$49/month · billed monthly · cancel anytime.</p></div>
+    <div class="actions"><a class="btn primary" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe Now →</a><a class="btn ghost" href="/demo">See the demo first</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-row">
+      <div>© <span id="yr"></span> NevadaStateGen by Apropos Group LLC</div>
+      <div><a href="/demo">Demo</a> &nbsp; <a href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe</a> &nbsp; <a href="https://calstategen.aproposgroupllc.com">California</a></div>
+    </div>
+    <div class="copyright-notice">
+      <p>© 2026 Apropos Group LLC. All rights reserved. NevadaStateGen is a proprietary government-procurement intelligence service developed and owned by Apropos Group LLC. Unauthorized reproduction, distribution, reverse engineering, or imitation of any content, code, design, methodology, or process is strictly prohibited and may result in civil and criminal liability under applicable United States copyright and intellectual property laws. NevadaStateGen&trade; is a trademark of Apropos Group LLC.</p>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
