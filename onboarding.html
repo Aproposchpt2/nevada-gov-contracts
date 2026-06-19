@@ -26,10 +26,6 @@ label{display:block;font-family:var(--body);font-size:.58rem;font-weight:600;let
 input,textarea{width:100%;font-family:var(--body);font-size:.95rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.8rem .9rem;margin-bottom:16px}
 textarea{min-height:74px;resize:vertical;line-height:1.6}
 input:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,.5)}
-.optin{display:flex;align-items:flex-start;gap:11px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:4px;padding:13px 15px;margin-bottom:6px;cursor:pointer}
-.optin input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--green);flex-shrink:0}
-.optin span{font-size:.88rem;color:rgba(255,255,255,.7)}
-.optin span b{color:#fff;font-weight:600}
 .hint{font-size:.76rem;color:rgba(255,255,255,.4);margin:-10px 0 18px}
 .btn{display:inline-block;width:100%;text-align:center;background:var(--white);color:var(--ink);font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;border:none;border-radius:4px;padding:.95rem;cursor:pointer;text-decoration:none}
 .btn:hover{background:var(--gold-bright)}.btn:disabled{opacity:.6;cursor:wait}
@@ -40,7 +36,7 @@ input:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,.5)}
 </head>
 <body>
 <div class="card">
-  <div id="loadingView" class="center"><div class="eyebrow">NevadaStateGen</div><p class="sub" style="margin:0">Verifying your subscription…</p></div>
+  <div id="loadingView" class="center"><div class="eyebrow">NevadaStateGen</div><p class="sub" style="margin:0">Confirming your subscription…</p></div>
 
   <div id="gateView" style="display:none" class="center">
     <div class="lock">🔒</div>
@@ -51,17 +47,15 @@ input:focus,textarea:focus{outline:none;border-color:rgba(255,255,255,.5)}
   </div>
 
   <div id="formView" style="display:none">
-    <div class="eyebrow ok">✓ Subscription verified</div>
+    <div class="eyebrow ok">✓ Payment confirmed</div>
     <h1>Set up your <em>dashboard.</em></h1>
-    <p class="sub">A couple details and your personalized Nevada bid board is ready.</p>
+    <p class="sub">Two details and your personalized Nevada bid board is ready.</p>
     <div class="verified" id="verifiedLine"></div>
     <label for="biz">Business name</label>
     <input id="biz" type="text" placeholder="Acme Construction LLC" autocomplete="organization">
     <label for="keywords">What does your business do? <span style="color:rgba(255,255,255,.3);font-weight:400;text-transform:none;letter-spacing:0">(keywords)</span></label>
     <textarea id="keywords" placeholder="e.g. paving, electrical, IT services, landscaping, security"></textarea>
-    <p class="hint">Comma-separated. We match these against every open Nevada bid.</p>
-    <label class="optin"><input type="checkbox" id="optin" checked><span><b>Email me daily alerts</b> — new matching bids in my inbox every morning.</span></label>
-    <p class="hint" style="margin-top:8px"></p>
+    <p class="hint">Comma-separated. We match these against every open Nevada bid and surface your work first.</p>
     <button class="btn" id="saveBtn">Open my dashboard →</button>
     <div class="msg" id="msg"></div>
   </div>
@@ -87,9 +81,9 @@ let base={};
   if(sid){
     try{
       const r=await fetch(VERIFY+'?session_id='+encodeURIComponent(sid)); const d=await r.json();
-      if(!r.ok) throw new Error(d.error||'Could not verify your subscription.');
+      if(!r.ok) throw new Error(d.error||'Could not confirm your subscription.');
       base={session_id:sid};
-      document.getElementById('verifiedLine').innerHTML='✓ <span>Subscription confirmed for <b>'+esc(d.email)+'</b> · '+(STATES[d.state]||d.state)+'</span>';
+      document.getElementById('verifiedLine').innerHTML='✓ <span>Subscription active for <b>'+esc(d.email)+'</b> · '+(STATES[d.state]||d.state)+'</span>';
       show('formView');
     }catch(e){ document.getElementById('gateMsg').textContent=e.message+' If you just subscribed, refresh in a moment.'; show('gateView'); }
   } else if(token){
@@ -103,7 +97,7 @@ document.getElementById('saveBtn').addEventListener('click', async ()=>{
   if(!keywords.trim()){ msg.className='msg err'; msg.textContent='Add at least one keyword.'; return; }
   const btn=document.getElementById('saveBtn'); btn.disabled=true; btn.textContent='Setting up…';
   try{
-    const res=await fetch(SAVE,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...base,business_name:document.getElementById('biz').value.trim(),keywords,alerts_opt_in:document.getElementById('optin').checked})});
+    const res=await fetch(SAVE,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...base,business_name:document.getElementById('biz').value.trim(),keywords,alerts_opt_in:false})});
     const d=await res.json();
     if(!res.ok) throw new Error(d.error||'Could not save.');
     if(d.session){ localStorage.setItem('stategen_session', d.session); location.href='/dashboard.html'; return; }

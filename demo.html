@@ -43,8 +43,9 @@ input:focus{outline:none;border-color:rgba(255,255,255,.5)}
 .fmsg.err{color:var(--red)}
 .fine{font-size:.74rem;color:rgba(255,255,255,.35);text-align:center;margin-top:14px}
 
-/* STEP 2 — fictitious dashboard */
-.demo{display:none}
+/* fictitious dashboard */
+.demo{}
+.intro{max-width:660px;margin:clamp(2rem,5vh,3.2rem) 0 1.6rem}
 .lockbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:rgba(255,255,255,.06);border:1px solid var(--line-2);padding:16px 20px;margin:1.4rem 0}
 .lockbar .lt{font-size:.92rem;color:#fff}
 .lockbar .lt b{font-weight:600}
@@ -92,30 +93,15 @@ tbody tr:last-child td{border-bottom:none}
     <span class="nav-pill">Sample dashboard</span>
   </header>
 
-  <!-- STEP 1 — intake -->
-  <section class="intake" id="intakeView">
-    <span class="eyebrow">See it in action</span>
-    <h1>Preview the <em>NevadaStateGen dashboard.</em></h1>
-    <p class="sub">Tell us who you are and we'll open a sample dashboard — a real look at how your matched Nevada bids and daily alerts work.</p>
-    <div class="form-card">
-      <div class="frow">
-        <div><label>First name <span class="req">*</span></label><input id="first_name" type="text" autocomplete="given-name"></div>
-        <div><label>Last name</label><input id="last_name" type="text" autocomplete="family-name"></div>
-      </div>
-      <label>Email <span class="req">*</span></label>
-      <input id="email" type="email" autocomplete="email" placeholder="you@yourbusiness.com">
-      <label>Phone <span class="opt">(optional)</span></label>
-      <input id="phone" type="tel" autocomplete="tel" placeholder="(702) 555-0100">
-      <button class="btn primary fbtn" id="go">See the demo →</button>
-      <div class="fmsg" id="msg"></div>
-      <p class="fine">No card required · We'll never sell your info.</p>
-    </div>
-  </section>
-
-  <!-- STEP 2 — fictitious locked dashboard -->
+  <!-- Fictitious locked sample dashboard -->
   <section class="demo" id="demoView">
+    <div class="intro">
+      <span class="eyebrow">See it in action</span>
+      <h1>This is the <em>NevadaStateGen dashboard.</em></h1>
+      <p class="sub">A real look at how your matched Nevada bids appear. The data below is a fictitious sample — subscribe to get <b>your</b> live board, matched to your business.</p>
+    </div>
     <div class="lockbar">
-      <div><div class="lt">🔒 <b>Sample dashboard</b> — this is fictitious demo data.</div><div class="ls">Subscribe to get <b>your</b> live Nevada board, matched to your business, with daily alerts.</div></div>
+      <div><div class="lt">🔒 <b>Sample dashboard</b> — this is fictitious demo data.</div><div class="ls">Subscribe to get <b>your</b> live Nevada board, matched to your business.</div></div>
       <a class="btn primary" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe Now →</a>
     </div>
 
@@ -139,7 +125,7 @@ tbody tr:last-child td{border-bottom:none}
     </div>
 
     <div class="bottomcta">
-      <div class="ct">This could be <em>your</em> dashboard.<small>Your real matches, your live board, new bids emailed daily — for $49/mo.</small></div>
+      <div class="ct">This could be <em>your</em> dashboard.<small>Your real matches, your live Nevada board, refreshed daily — for $49/mo.</small></div>
       <a class="btn primary" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe Now →</a>
     </div>
 
@@ -151,7 +137,6 @@ tbody tr:last-child td{border-bottom:none}
 <script>
 'use strict';
 document.getElementById('yr')&&(document.getElementById('yr').textContent=new Date().getFullYear());
-const LEAD_URL='/.netlify/functions/submit-state-lead';
 
 // Fictitious matched bids for the sample business.
 const SAMPLE=[
@@ -171,21 +156,7 @@ function renderDemo(){
     '<td><span class="locked-link">🔒 Subscribers only</span></td></tr>').join('');
 }
 
-document.getElementById('go').addEventListener('click', async ()=>{
-  const msg=document.getElementById('msg'); msg.className='fmsg'; msg.textContent='';
-  const first_name=document.getElementById('first_name').value.trim();
-  const email=document.getElementById('email').value.trim();
-  if(!first_name){ msg.className='fmsg err'; msg.textContent='Please enter your first name.'; return; }
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ msg.className='fmsg err'; msg.textContent='Please enter a valid email.'; return; }
-  const btn=document.getElementById('go'); btn.disabled=true; btn.textContent='Opening demo…';
-  try{
-    await fetch(LEAD_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({first_name,last_name:document.getElementById('last_name').value.trim(),email,phone:document.getElementById('phone').value.trim(),state:'NV',source:'demo'})});
-  }catch(e){/* non-blocking */}
-  renderDemo();
-  document.getElementById('intakeView').style.display='none';
-  document.getElementById('demoView').style.display='block';
-  window.scrollTo({top:0,behavior:'smooth'});
-});
+renderDemo();
 </script>
 </body>
 </html>
