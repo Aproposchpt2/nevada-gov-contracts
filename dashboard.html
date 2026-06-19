@@ -100,6 +100,31 @@ option{background:var(--ink-3)}
 .cov .cn{font-family:var(--disp);font-size:1.5rem;color:#fff}
 .cov .cs{font-size:.74rem;color:rgba(255,255,255,.5)}
 
+/* SETTINGS */
+.set-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.2rem}
+.set-card{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;padding:1.3rem 1.4rem}
+.set-card.full{grid-column:1/-1}
+.set-card h3{font-family:var(--disp);font-weight:400;font-size:1.25rem;color:#fff;margin-bottom:1rem}
+.fl{display:block;font-family:var(--body);font-size:.58rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 .5rem}
+.fl .hint{font-weight:400;letter-spacing:0;text-transform:none;color:rgba(255,255,255,.3)}
+#settingsView input[type=text],#settingsView textarea{width:100%;font-family:var(--body);font-size:.92rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;padding:.7rem .85rem;margin-bottom:1rem}
+#settingsView input:focus,#settingsView textarea:focus{outline:none;border-color:var(--line-2)}
+.switch{display:flex;align-items:center;gap:11px;cursor:pointer;margin-bottom:1rem}
+.switch input{width:18px;height:18px;accent-color:var(--green);flex-shrink:0}
+.switch span{font-size:.9rem;color:rgba(255,255,255,.8)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1rem}
+.seg button{font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.6);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:.5rem .9rem;cursor:pointer;transition:.15s}
+.seg button.active{background:#fff;color:var(--ink);border-color:#fff;font-weight:600}
+.days{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:.6rem}
+.days .day{min-width:44px;font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.6);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:.5rem .3rem;text-align:center;cursor:pointer}
+.days .day.on{background:var(--cyan);color:var(--ink);border-color:var(--cyan);font-weight:600}
+.hint{font-size:.74rem;color:rgba(255,255,255,.4);line-height:1.5}
+.binfo{font-size:.88rem;color:rgba(255,255,255,.65);margin-bottom:1rem}.binfo b{color:#fff}
+.primary-btn{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:#fff;border:none;border-radius:9px;padding:.75rem 1.2rem;cursor:pointer;transition:.2s}
+.primary-btn:hover{background:var(--gold-bright)}.primary-btn:disabled{opacity:.6;cursor:wait}
+.set-actions{display:flex;align-items:center;gap:14px}
+.set-msg{font-size:.88rem}.set-msg.ok{color:var(--green)}.set-msg.err{color:#F87171}
+@media(max-width:680px){.set-grid{grid-template-columns:1fr}}
 @media(max-width:1140px){.layout{grid-template-columns:212px 1fr}.analysis{display:none}}
 @media(max-width:820px){.layout{grid-template-columns:1fr}.sidebar{display:none}.stats{grid-template-columns:1fr 1fr}}
 </style>
@@ -119,7 +144,7 @@ option{background:var(--ink-3)}
       <span class="lbl">Account</span>
       <a class="muted"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5h14v16l-7-4-7 4z"/></svg> Saved <span class="soon">Soon</span></a>
       <a class="muted"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M8 14l3-3 2 2 3-4"/></svg> Reports <span class="soon">Soon</span></a>
-      <a href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html?token=" id="settingsLink"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg> Settings</a>
+      <a data-view="settings"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg> Settings</a>
     </nav>
     <div class="side-foot">
       <button class="signout" id="signout">Sign out</button>
@@ -135,6 +160,7 @@ option{background:var(--ink-3)}
       </div>
       <span class="live" id="liveTag">Live · updated daily</span>
     </div>
+    <div id="boardView">
     <div class="kwrow" id="kwrow"></div>
 
     <div class="stats">
@@ -151,10 +177,51 @@ option{background:var(--ink-3)}
     </div>
 
     <div class="bidlist" id="bids"><div class="empty">Loading…</div></div>
+    </div><!-- /boardView -->
+
+    <div id="settingsView" style="display:none">
+      <div class="set-grid">
+        <section class="set-card">
+          <h3>Profile</h3>
+          <label class="fl">Business name</label>
+          <input id="setBiz" type="text" placeholder="Acme Construction LLC" autocomplete="organization">
+          <label class="fl">Keywords <span class="hint">— comma-separated; we match bids against these</span></label>
+          <textarea id="setKw" rows="3" placeholder="paving, electrical, IT services, landscaping…"></textarea>
+        </section>
+        <section class="set-card">
+          <h3>Email alerts</h3>
+          <label class="switch"><input type="checkbox" id="setOptin"><span>Email me my new matched bids</span></label>
+          <div id="cadenceWrap">
+            <label class="fl">How often</label>
+            <div class="seg" id="cadenceSeg">
+              <button type="button" data-cad="off" class="active">Off</button>
+              <button type="button" data-cad="weekly">Weekly</button>
+              <button type="button" data-cad="weekday">Weekdays</button>
+              <button type="button" data-cad="custom">Custom</button>
+            </div>
+            <div id="daysWrap" style="display:none">
+              <label class="fl" id="daysLabel">Pick days</label>
+              <div class="days" id="daysPick"></div>
+            </div>
+            <p class="hint" id="cadenceNote"></p>
+          </div>
+        </section>
+        <section class="set-card full">
+          <h3>Billing &amp; subscription</h3>
+          <p class="binfo">Plan: <b>$49 / month</b> · renews automatically · <span id="acctEmail"></span></p>
+          <button class="primary-btn" id="billingBtn">Manage billing &amp; payment ↗</button>
+          <p class="hint" style="margin-top:.7rem">Update your card, view invoices, or cancel — securely on Stripe. No card details are stored here.</p>
+        </section>
+      </div>
+      <div class="set-actions">
+        <button class="primary-btn" id="saveSettings">Save changes</button>
+        <span class="set-msg" id="setMsg"></span>
+      </div>
+    </div>
   </main>
 
   <!-- ANALYSIS -->
-  <aside class="analysis">
+  <aside class="analysis" id="analysis">
     <div class="an-title">Match Analysis</div>
     <div class="an-card">
       <div id="bigGauge" class="biggauge"></div>
@@ -183,7 +250,7 @@ const TOKEN = localStorage.getItem('stategen_session') || '';
 const API = '/.netlify/functions';
 const $ = id => document.getElementById(id);
 const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-let ALL=[], KEYWORDS=[], view='all';
+let ALL=[], KEYWORDS=[], view='all', PROFILE={};
 
 if(!TOKEN){ location.href='/login.html'; }
 
@@ -244,9 +311,75 @@ function setStats(){
 }
 function hydrate(){ const ag=[...new Set(ALL.map(b=>b.agency))].sort(); $('fAgency').insertAdjacentHTML('beforeend', ag.map(a=>'<option>'+esc(a)+'</option>').join('')); }
 
-document.querySelectorAll('#nav a[data-view]').forEach(a=>a.addEventListener('click',()=>{
-  view=a.dataset.view; document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('active',x===a)); render();
-}));
+function setView(v,a){
+  view=v;
+  document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('active', x===a));
+  const settings=(v==='settings');
+  $('boardView').style.display=settings?'none':'block';
+  $('settingsView').style.display=settings?'block':'none';
+  const an=$('analysis'); if(an) an.style.display=settings?'none':'flex';
+  if(settings) populateSettings(); else render();
+}
+document.querySelectorAll('#nav a[data-view]').forEach(a=>a.addEventListener('click',()=>setView(a.dataset.view,a)));
+
+/* ── Settings ── */
+let setCad='off', setDays=new Set();
+const DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function renderDays(){
+  const show=(setCad==='weekly'||setCad==='custom');
+  $('daysWrap').style.display=show?'block':'none';
+  $('daysLabel').textContent=setCad==='weekly'?'Pick a day':'Pick days';
+  $('daysPick').innerHTML=DOW.map((d,i)=>'<button type="button" class="day'+(setDays.has(i)?' on':'')+'" data-d="'+i+'">'+d+'</button>').join('');
+  $('daysPick').querySelectorAll('.day').forEach(b=>b.addEventListener('click',()=>{
+    const i=Number(b.dataset.d);
+    if(setCad==='weekly') setDays=new Set([i]); else { setDays.has(i)?setDays.delete(i):setDays.add(i); }
+    renderDays();
+  }));
+  $('cadenceNote').textContent={off:'No alert emails will be sent.',weekday:'Sent every weekday morning (Mon–Fri) when there are new matches.',weekly:'Sent once a week on your chosen day.',custom:'Sent on the days you choose.'}[setCad]||'';
+}
+function setCadence(c){
+  setCad=c; $('cadenceSeg').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.cad===c));
+  if(c==='weekly' && setDays.size!==1){ const f=setDays.values().next().value; setDays=new Set([f==null?1:f]); }
+  renderDays();
+}
+$('cadenceSeg').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>setCadence(b.dataset.cad)));
+$('setOptin').addEventListener('change',()=>{ const on=$('setOptin').checked; $('cadenceWrap').style.opacity=on?'1':'.45'; $('cadenceWrap').style.pointerEvents=on?'auto':'none'; });
+function populateSettings(){
+  $('setBiz').value=PROFILE.business_name||'';
+  $('setKw').value=(KEYWORDS||[]).join(', ');
+  $('setOptin').checked=!!PROFILE.alerts_opt_in;
+  setDays=new Set((PROFILE.alert_days||[]).map(Number));
+  setCadence(PROFILE.alert_cadence||'off');
+  $('setOptin').dispatchEvent(new Event('change'));
+  $('acctEmail').textContent=PROFILE.email||'';
+  $('billingBtn').style.display=PROFILE.has_billing?'inline-flex':'none';
+}
+$('saveSettings').addEventListener('click', async ()=>{
+  const msg=$('setMsg'); msg.className='set-msg'; msg.textContent='';
+  const kw=$('setKw').value.split(',').map(s=>s.trim()).filter(Boolean);
+  if(!kw.length){ msg.className='set-msg err'; msg.textContent='Add at least one keyword.'; return; }
+  const optin=$('setOptin').checked;
+  const payload={ session:TOKEN, business_name:$('setBiz').value.trim(), keywords:kw, alerts_opt_in:optin, alert_cadence:optin?setCad:'off', alert_days:[...setDays] };
+  const btn=$('saveSettings'); btn.disabled=true; btn.textContent='Saving…';
+  try{
+    const r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const d=await r.json(); if(!r.ok) throw new Error(d.error||'Could not save.');
+    KEYWORDS=kw.map(k=>k.toLowerCase()); PROFILE.business_name=payload.business_name; PROFILE.alerts_opt_in=optin; PROFILE.alert_cadence=payload.alert_cadence; PROFILE.alert_days=payload.alert_days;
+    $('biz').textContent=PROFILE.business_name||'member';
+    $('kwrow').innerHTML=KEYWORDS.length?'<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join(''):'';
+    setStats();
+    msg.className='set-msg ok'; msg.textContent='Saved ✓';
+  }catch(e){ msg.className='set-msg err'; msg.textContent=e.message; }
+  btn.disabled=false; btn.textContent='Save changes';
+});
+$('billingBtn').addEventListener('click', async ()=>{
+  const btn=$('billingBtn'); btn.disabled=true; btn.textContent='Opening…';
+  try{
+    const r=await fetch(API+'/create-billing-portal',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session:TOKEN,return_url:location.href})});
+    const d=await r.json(); if(!r.ok||!d.url) throw new Error(d.error||'Could not open billing.');
+    location.href=d.url;
+  }catch(e){ btn.disabled=false; btn.textContent='Manage billing & payment ↗'; alert(e.message); }
+});
 ['fSearch','fAgency','fDue'].forEach(id=>$(id).addEventListener(id==='fSearch'?'input':'change',render));
 $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); location.href='/'; });
 
@@ -258,7 +391,7 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
     KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
     $('biz').textContent=prof.business_name||'member';
     $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
-    const st=$('settingsLink'); if(st&&prof.token) st.href='https://ai4-product-purchasing.ai4businesses.org/state-offer.html';
+    PROFILE=prof;
   }catch(e){ localStorage.removeItem('stategen_session'); location.href='/login.html'; return; }
   let data; try{ const r=await fetch(API+'/ngem-pipeline'); data=await r.json(); }catch(e){ data={bids:[]}; }
   ALL=(data.bids||[]).slice();

@@ -23,10 +23,24 @@ exports.handler = async (event) => {
   const keywords      = cleanKeywords(body.keywords);
   const business_name = (body.business_name || '').trim() || null;
   const alerts_opt_in = body.alerts_opt_in !== false; // default true unless explicitly false
+  const VALID_CAD     = ['off','weekly','weekday','custom'];
+  const alert_cadence = VALID_CAD.includes(body.alert_cadence) ? body.alert_cadence : null;
+  const alert_days    = Array.isArray(body.alert_days) ? [...new Set(body.alert_days.map(Number).filter(d => d>=0 && d<=6))] : null;
   if (!keywords.length) return j(400, { error: 'Add at least one keyword.' });
 
-  const sessionId = (body.session_id || '').trim();
-  const token     = (body.token || '').trim();
+  // Shared profile patch for returning subscribers (Path B/C)
+  const buildPatch = () => {
+    const p = { keywords, status: 'active', updated_at: new Date().toISOString() };
+    if (business_name) p.business_name = business_name;
+    if ('alerts_opt_in' in body) p.alerts_opt_in = alerts_opt_in;
+    if (alert_cadence) p.alert_cadence = alert_cadence;
+    if (alert_days) p.alert_days = alert_days;
+    return p;
+  };
+
+  const sessionId = (body.session_id || '').trim(); // Stripe checkout (cs_)
+  const token     = (body.token || '').trim();      // subscriber manage token
+  const session   = (body.session || '').trim();    // dashboard session (ses_)
 
   // ── Path A: new subscriber via verified Stripe session ──────────────
   if (sessionId) {
@@ -49,17 +63,26 @@ exports.handler = async (event) => {
     return j(200, { ok: true, state: v.state, email: v.email, count: keywords.length, session });
   }
 
-  // ── Path B: returning subscriber updating profile via token ───────
+  // ── Path B: returning subscriber updating profile via manage token ─
   if (token) {
-    const patch = { keywords, status: 'active', updated_at: new Date().toISOString() };
-    if (business_name) patch.business_name = business_name;
-    if ('alerts_opt_in' in body) patch.alerts_opt_in = alerts_opt_in;
     const res = await fetch(`${SUPABASE_URL}/rest/v1/state_alert_subscribers?token=eq.${encodeURIComponent(token)}`, {
-      method: 'PATCH', headers: sbH({ Prefer: 'return=representation' }), body: JSON.stringify(patch),
+      method: 'PATCH', headers: sbH({ Prefer: 'return=representation' }), body: JSON.stringify(buildPatch()),
     });
     if (!res.ok) { console.error('[save-alert]', await res.text()); return j(500, { error: 'Could not save. Please try again.' }); }
     const rows = await res.json();
     if (!rows || !rows.length) return j(404, { error: 'We couldn\'t find that profile.' });
+    return j(200, { ok: true, state: rows[0].state, count: keywords.length });
+  }
+
+  // ── Path C: logged-in member updating from the dashboard (session) ─
+  if (session.startsWith('ses_')) {
+    const nowIso = new Date().toISOString();
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/state_alert_subscribers?session_token=eq.${encodeURIComponent(session)}&session_expires_at=gt.${encodeURIComponent(nowIso)}`, {
+      method: 'PATCH', headers: sbH({ Prefer: 'return=representation' }), body: JSON.stringify(buildPatch()),
+    });
+    if (!res.ok) { console.error('[save-alert]', await res.text()); return j(500, { error: 'Could not save. Please try again.' }); }
+    const rows = await res.json();
+    if (!rows || !rows.length) return j(401, { error: 'Your session expired. Please log in again.' });
     return j(200, { ok: true, state: rows[0].state, count: keywords.length });
   }
 
