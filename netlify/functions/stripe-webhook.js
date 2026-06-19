@@ -7,19 +7,24 @@ const crypto = require('crypto');
 
 const SUPABASE_URL   = process.env.SUPABASE_URL;
 const SERVICE_KEY    = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
-const WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
+const WEBHOOK_SECRET      = process.env.STRIPE_WEBHOOK_SECRET;            // live Event destination
+const WEBHOOK_SECRET_TEST = process.env.STRIPE_WEBHOOK_SECRET_TEST || ''; // test/sandbox Event destination
 
-// Verify the Stripe-Signature header (HMAC-SHA256 of `${t}.${rawBody}`).
-function verifySignature(rawBody, sigHeader) {
-  if (!WEBHOOK_SECRET || !sigHeader) return false;
+// Verify the Stripe-Signature header (HMAC-SHA256 of `${t}.${rawBody}`) against one secret.
+function verifyWith(rawBody, sigHeader, secret) {
+  if (!secret || !sigHeader) return false;
   const parts = {};
   sigHeader.split(',').forEach(kv => { const i = kv.indexOf('='); if (i > 0) parts[kv.slice(0, i).trim()] = kv.slice(i + 1).trim(); });
   const t = parts.t, v1 = parts.v1;
   if (!t || !v1) return false;
   if (Math.abs(Math.floor(Date.now() / 1000) - Number(t)) > 300) return false; // 5-min tolerance
-  const expected = crypto.createHmac('sha256', WEBHOOK_SECRET).update(`${t}.${rawBody}`, 'utf8').digest('hex');
+  const expected = crypto.createHmac('sha256', secret).update(`${t}.${rawBody}`, 'utf8').digest('hex');
   const a = Buffer.from(expected), b = Buffer.from(v1);
   return a.length === b.length && crypto.timingSafeEqual(a, b);
+}
+// Accept whichever destination signed it (live OR test).
+function verifySignature(rawBody, sigHeader) {
+  return verifyWith(rawBody, sigHeader, WEBHOOK_SECRET) || verifyWith(rawBody, sigHeader, WEBHOOK_SECRET_TEST);
 }
 
 async function setStatusBySubscription(subId, status) {
