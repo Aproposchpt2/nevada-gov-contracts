@@ -3,101 +3,178 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>NevadaStateGen — Your Dashboard</title>
+<title>NevadaStateGen — Your Bid Board</title>
 <meta name="robots" content="noindex"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0F2A6A;--ink-2:#163472;--white:#FFFFFF;--silver:#C3D0E8;--mist:#9DB0D4;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--green:#6EE7A8;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif;--max:1180px}
+:root{--ink:#0F2A6A;--ink-2:#0c2257;--ink-3:#10306e;--white:#FFFFFF;--silver:#C3D0E8;--mist:#9DB0D4;--line:rgba(255,255,255,.10);--line-2:rgba(255,255,255,.20);--gold-bright:#EEF3FF;--green:#6EE7A8;--cyan:#5bd3ff;--amber:#F5C36B;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);overflow-x:hidden}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+body{font-family:var(--body);color:rgba(255,255,255,.74);font-weight:300;line-height:1.6;min-height:100vh;background:linear-gradient(180deg,#0c2257,#0a1c49);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
 a{color:inherit;text-decoration:none}
-.shell{position:relative;z-index:1;width:min(var(--max),calc(100% - 36px));margin:0 auto;padding-bottom:4rem}
-.gate{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:rgba(255,255,255,.5)}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:1.4rem 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:12px}
-.brand .mark{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.85rem;background:var(--white);color:var(--ink)}
-.brand .bname{font-family:var(--disp);font-size:1.28rem;font-weight:400;color:#fff;line-height:1}
-.brand .bsub{font-family:var(--body);font-size:.54rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
-.signout{font-family:var(--body);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.5rem 1rem;cursor:pointer;transition:.2s}
+.gate{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:rgba(255,255,255,.5);position:relative;z-index:1}
+
+/* LAYOUT */
+.layout{position:relative;z-index:1;display:grid;grid-template-columns:236px 1fr 312px;min-height:100vh}
+.sidebar{border-right:1px solid var(--line);padding:1.5rem 1.1rem;display:flex;flex-direction:column;gap:1.4rem;background:rgba(0,0,0,.12)}
+.main{padding:1.7rem clamp(1.1rem,2.4vw,2.1rem);min-width:0}
+.analysis{border-left:1px solid var(--line);padding:1.6rem 1.3rem;background:rgba(0,0,0,.12);display:flex;flex-direction:column;gap:1.2rem}
+
+/* BRAND + NAV */
+.brand{display:flex;align-items:center;gap:11px;padding-bottom:.4rem}
+.brand .mark{width:38px;height:38px;border-radius:9px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.78rem;background:var(--white);color:var(--ink)}
+.brand .bname{font-family:var(--disp);font-size:1.12rem;color:#fff;line-height:1}
+.brand .bsub{font-family:var(--body);font-size:.5rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.nav{display:flex;flex-direction:column;gap:3px}
+.nav .lbl{font-family:var(--body);font-size:.56rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.3);margin:.6rem 0 .3rem .4rem}
+.nav a{display:flex;align-items:center;gap:11px;padding:.6rem .7rem;border-radius:8px;font-size:.86rem;color:rgba(255,255,255,.62);cursor:pointer;transition:.18s;border:1px solid transparent}
+.nav a .ic{width:17px;height:17px;flex-shrink:0;opacity:.8}
+.nav a:hover{background:rgba(255,255,255,.05);color:#fff}
+.nav a.active{background:rgba(255,255,255,.10);color:#fff;border-color:var(--line-2)}
+.nav a .soon{margin-left:auto;font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);border:1px solid var(--line);border-radius:999px;padding:.12rem .4rem}
+.side-foot{margin-top:auto;display:flex;flex-direction:column;gap:.7rem}
+.signout{font-family:var(--body);font-size:.64rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:8px;padding:.6rem;cursor:pointer;transition:.2s;text-align:center}
 .signout:hover{background:#fff;color:var(--ink);border-color:#fff}
-.welcome{padding:clamp(1.8rem,4vh,2.8rem) 0 1.4rem}
-.welcome .eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px}
-.welcome h1{font-family:var(--disp);font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.02em;color:#fff}
-.welcome h1 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
-.profrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:1rem;align-items:center}
-.kw{font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.6);border:1px solid var(--line);background:rgba(255,255,255,.05);border-radius:999px;padding:.3rem .8rem}
+
+/* MAIN HEADER */
+.m-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:1.3rem}
+.m-head .eyebrow{font-family:var(--body);font-size:9px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.45rem}
+.m-head h1{font-family:var(--disp);font-weight:400;font-size:clamp(1.5rem,3vw,2.1rem);color:#fff;line-height:1.05;letter-spacing:-.01em}
+.m-head h1 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.55)}
+.live{display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);border:1px solid rgba(110,231,168,.3);background:rgba(110,231,168,.08);border-radius:999px;padding:.4rem .8rem}
+.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(110,231,168,.16)}
+.kwrow{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:1.3rem}
+.kwrow .t{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.32)}
+.kw{font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.7);border:1px solid var(--line);background:rgba(255,255,255,.05);border-radius:999px;padding:.26rem .7rem}
 .kw b{color:#fff;font-weight:600}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.4rem 0}
-.stat{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:1.1rem 1.2rem}
+
+/* STAT CARDS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.4rem}
+.stat{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.stat .lbl{font-family:var(--body);font-size:.56rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.5rem}
 .stat .num{font-family:var(--disp);font-weight:400;font-size:1.9rem;color:#fff;line-height:1}
-.stat .lbl{font-family:var(--body);font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:.5rem}
-.board{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(1.4rem,2.4vw,2rem)}
-.board-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:1.2rem}
-.board-eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.6rem}
-.board-title{font-family:var(--disp);font-weight:400;font-size:1.5rem;color:#fff}
-.view-toggle{display:inline-flex;gap:4px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;padding:4px}
-.vt{font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);background:transparent;border:0;border-radius:3px;padding:.5rem .9rem;cursor:pointer}
-.vt.active{background:#fff;color:var(--ink)}
-.filters{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:11px;margin-bottom:1.3rem}
-.filters label{display:flex;flex-direction:column;gap:.5rem;font-family:var(--body);font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)}
-input,select{font-family:var(--body);font-size:.92rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.7rem .85rem;width:100%}
-input:focus,select:focus{outline:none;border-color:rgba(255,255,255,.5)}
-select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239DB0D4' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
-option{background:var(--ink-2)}
-.table-wrap{overflow-x:auto;border:1px solid var(--line)}
-table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
-thead th{font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);text-align:left;padding:.85rem 1rem;background:rgba(255,255,255,.04);border-bottom:1px solid var(--line-2);white-space:nowrap}
-tbody td{padding:.85rem 1rem;border-bottom:1px solid var(--line);color:rgba(255,255,255,.6);vertical-align:top;font-weight:300}
-tbody tr:last-child td{border-bottom:none}
-.t-title{color:#fff;font-weight:500}
-a.t-link:hover .t-title{color:var(--gold-bright)}
-.t-sol{font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem}
-.view-btn{display:inline-flex;font-family:var(--body);font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.45rem .8rem;white-space:nowrap}
-.view-btn:hover{background:#fff;color:var(--ink)}
-.chip{display:inline-block;font-family:var(--body);font-size:.64rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .6rem;border-radius:4px;border:1px solid var(--line);white-space:nowrap;color:rgba(255,255,255,.55)}
-.chip.hot{color:#fff;border-color:var(--line-2);background:rgba(255,255,255,.1)}
-.mb{display:inline-block;font-family:var(--body);font-size:.58rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.14rem .45rem;margin-left:.5rem}
-.mb.strong{color:var(--ink);background:#fff;border-color:#fff}
-.empty{text-align:center;color:rgba(255,255,255,.4);padding:2.4rem}
-@media(max-width:760px){.stats{grid-template-columns:1fr}.filters{grid-template-columns:1fr}}
+.stat .num small{font-size:.9rem;color:var(--green);font-family:var(--body);margin-left:4px}
+
+/* FILTER BAR */
+.filterbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:1.2rem}
+.search{flex:1;min-width:200px;position:relative}
+.search input{width:100%;font-family:var(--body);font-size:.9rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;padding:.7rem .9rem .7rem 2.2rem}
+.search svg{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);opacity:.4}
+.search input:focus{outline:none;border-color:var(--line-2)}
+select{font-family:var(--body);font-size:.86rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;padding:.7rem 2rem .7rem .85rem;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239DB0D4' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center}
+select:focus{outline:none;border-color:var(--line-2)}
+option{background:var(--ink-3)}
+
+/* BID CARDS */
+.bidlist{display:flex;flex-direction:column;gap:11px}
+.bid{display:flex;align-items:center;gap:15px;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:13px;padding:1rem 1.2rem;transition:.18s}
+.bid:hover{background:rgba(255,255,255,.07);border-color:var(--line-2);transform:translateY(-1px)}
+.bid .avatar{width:42px;height:42px;border-radius:10px;flex-shrink:0;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);font-family:var(--disp);font-size:1rem;color:#fff}
+.bid .body{flex:1;min-width:0}
+.bid .ttl{color:#fff;font-weight:500;font-size:.98rem;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bid .meta{font-size:.76rem;color:rgba(255,255,255,.5);margin-top:.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bid .meta .dot{opacity:.4;margin:0 .45rem}
+.bid .meta .soonflag{color:var(--amber)}
+.bid .right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.scorewrap{text-align:center}
+.scorewrap .slabel{font-family:var(--body);font-size:.54rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.25rem}
+.viewbtn{font-family:var(--body);font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:7px;padding:.5rem .8rem;white-space:nowrap}
+.viewbtn:hover{background:#fff;color:var(--ink)}
+.gauge .gnum{font-family:var(--body);font-weight:600;font-size:.92rem;fill:#fff}
+.empty{text-align:center;color:rgba(255,255,255,.4);padding:3rem;border:1px dashed var(--line);border-radius:13px}
+
+/* ANALYSIS PANEL */
+.an-title{font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.an-card{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:1.2rem;text-align:center}
+.an-card .biggauge{margin:.2rem auto .4rem}
+.an-card .biggauge .gnum{font-family:var(--disp);font-weight:400;font-size:2rem;fill:#fff}
+.an-card .cap{font-family:var(--body);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.rec{background:linear-gradient(135deg,rgba(110,231,168,.1),rgba(91,211,255,.04));border:1px solid rgba(110,231,168,.28);border-radius:14px;padding:1.1rem 1.2rem}
+.rec .rl{font-family:var(--body);font-size:.56rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
+.rec .rt{color:#fff;font-size:.92rem;font-weight:500;line-height:1.3}
+.rec .rs{font-size:.76rem;color:rgba(255,255,255,.55);margin-top:.3rem}
+.cov{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:1.2rem;text-align:center}
+.cov svg.nv{margin:.4rem auto .6rem;display:block}
+.cov .cn{font-family:var(--disp);font-size:1.5rem;color:#fff}
+.cov .cs{font-size:.74rem;color:rgba(255,255,255,.5)}
+
+@media(max-width:1140px){.layout{grid-template-columns:212px 1fr}.analysis{display:none}}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.sidebar{display:none}.stats{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<div id="gate" class="gate">Loading your dashboard…</div>
+<div id="gate" class="gate">Loading your bid board…</div>
 
-<div class="shell" id="app" style="display:none">
-  <header class="topbar">
-    <div class="brand"><span class="mark">NS</span><span><span class="bname">NevadaStateGen</span><br><span class="bsub">Member Dashboard · Apropos Group LLC</span></span></div>
-    <button class="signout" id="signout">Sign out</button>
-  </header>
-
-  <section class="welcome">
-    <div class="eyebrow" id="modeTag">Live Nevada bid board</div>
-    <h1>Welcome, <em id="biz">member</em>.</h1>
-    <div class="profrow" id="kwRow"></div>
-  </section>
-
-  <div class="stats">
-    <div class="stat"><div class="num" id="statMatch">—</div><div class="lbl">Matched to you</div></div>
-    <div class="stat"><div class="num" id="statOpen">—</div><div class="lbl">Open solicitations</div></div>
-    <div class="stat"><div class="num" id="statSoon">—</div><div class="lbl">Closing within 7 days</div></div>
-  </div>
-
-  <section class="board">
-    <div class="board-head">
-      <div><p class="board-eyebrow">Nevada Government eMarketplace (NGEM)</p><h2 class="board-title">Open solicitations</h2></div>
-      <div class="view-toggle"><button class="vt active" data-view="matches">My matches</button><button class="vt" data-view="all">All bids</button></div>
+<div class="layout" id="app" style="display:none">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">NS</span><span><span class="bname">NevadaStateGen</span><br><span class="bsub">Member Dashboard</span></span></div>
+    <nav class="nav" id="nav">
+      <span class="lbl">Workspace</span>
+      <a data-view="all" class="active"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Bid Board</a>
+      <a data-view="matches"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg> Match Engine</a>
+      <a data-view="soon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg> Closing Soon</a>
+      <span class="lbl">Account</span>
+      <a class="muted"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5h14v16l-7-4-7 4z"/></svg> Saved <span class="soon">Soon</span></a>
+      <a class="muted"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M8 14l3-3 2 2 3-4"/></svg> Reports <span class="soon">Soon</span></a>
+      <a href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html?token=" id="settingsLink"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg> Settings</a>
+    </nav>
+    <div class="side-foot">
+      <button class="signout" id="signout">Sign out</button>
     </div>
-    <div class="filters">
-      <label>Search<input id="fSearch" type="text" placeholder="Title, agency, solicitation #…"></label>
-      <label>Agency<select id="fAgency"><option value="">All agencies</option></select></label>
-      <label>Closing within<select id="fDue"><option value="0">Any time</option><option value="7">7 days</option><option value="14">14 days</option><option value="30">30 days</option></select></label>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="m-head">
+      <div>
+        <div class="eyebrow">Nevada Government eMarketplace · matched to your business</div>
+        <h1>Welcome, <em id="biz">member</em>.</h1>
+      </div>
+      <span class="live" id="liveTag">Live · updated daily</span>
     </div>
-    <div class="table-wrap"><table><thead><tr><th>Solicitation</th><th>Agency</th><th>Type</th><th>Closes</th><th>Details</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody></table></div>
-  </section>
+    <div class="kwrow" id="kwrow"></div>
+
+    <div class="stats">
+      <div class="stat"><div class="lbl">Open Bids</div><div class="num" id="sOpen">—</div></div>
+      <div class="stat"><div class="lbl">Matched to you</div><div class="num" id="sMatched">—</div></div>
+      <div class="stat"><div class="lbl">Closing ≤ 7 days</div><div class="num" id="sSoon">—</div></div>
+      <div class="stat"><div class="lbl">Average fit</div><div class="num" id="sFit">—<small>%</small></div></div>
+    </div>
+
+    <div class="filterbar">
+      <label class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input id="fSearch" type="text" placeholder="Search title, agency, solicitation #…"></label>
+      <select id="fAgency"><option value="">All agencies</option></select>
+      <select id="fDue"><option value="0">Any deadline</option><option value="7">Closing ≤ 7 days</option><option value="14">≤ 14 days</option><option value="30">≤ 30 days</option></select>
+    </div>
+
+    <div class="bidlist" id="bids"><div class="empty">Loading…</div></div>
+  </main>
+
+  <!-- ANALYSIS -->
+  <aside class="analysis">
+    <div class="an-title">Match Analysis</div>
+    <div class="an-card">
+      <div id="bigGauge" class="biggauge"></div>
+      <div class="cap">Average fit</div>
+    </div>
+    <div class="rec" id="rec" style="display:none">
+      <div class="rl">★ Top recommendation · Review / Bid</div>
+      <div class="rt" id="recTitle"></div>
+      <div class="rs" id="recSub"></div>
+    </div>
+    <div class="cov">
+      <div class="an-title" style="margin-bottom:.2rem">Nevada coverage</div>
+      <svg class="nv" width="84" height="96" viewBox="0 0 84 96" fill="none">
+        <path d="M14 6 L66 6 L66 56 L48 90 L14 30 Z" fill="rgba(91,211,255,.10)" stroke="rgba(255,255,255,.35)" stroke-width="1.4"/>
+        <circle cx="30" cy="26" r="2.4" fill="#6EE7A8"/><circle cx="46" cy="20" r="2.4" fill="#5bd3ff"/><circle cx="50" cy="44" r="2.4" fill="#5bd3ff"/><circle cx="40" cy="62" r="2.6" fill="#6EE7A8"/><circle cx="33" cy="40" r="2" fill="#F5C36B"/>
+      </svg>
+      <div class="cn" id="covNum">—</div>
+      <div class="cs">agencies in your board</div>
+    </div>
+  </aside>
 </div>
 
 <script>
@@ -106,33 +183,70 @@ const TOKEN = localStorage.getItem('stategen_session') || '';
 const API = '/.netlify/functions';
 const $ = id => document.getElementById(id);
 const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-let ALL=[], KEYWORDS=[], viewMode='matches';
+let ALL=[], KEYWORDS=[], view='all';
 
 if(!TOKEN){ location.href='/login.html'; }
 
-function scoreBid(b){ if(!KEYWORDS.length) return 0; const hay=(b.title+' '+b.agency+' '+(b.bid_type||'')).toLowerCase(); let s=0; for(const k of KEYWORDS){ if(hay.includes(k)) s++; } return s; }
-function dueChip(d){ if(d==null) return '<span class="chip">Open</span>'; const c=d<=7?'hot':''; const l=d<=0?'Closing today':d===1?'1 day left':d+' days left'; return '<span class="chip '+c+'">'+l+'</span>'; }
-function mb(s){ return s<=0?'':(s>=2?'<span class="mb strong">★ Strong match</span>':'<span class="mb">★ Match</span>'); }
-function fmtClose(s){ if(!s) return ''; const m=String(s).match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{2}:\d{2})/); return m?m[2]+'/'+m[3]+'/'+m[1]+' '+m[4]:String(s); }
+// keyword hits → a 0-100 "fit" score (deterministic, no randomness on reload)
+function hits(b){ if(!KEYWORDS.length) return 0; const hay=(b.title+' '+b.agency+' '+(b.bid_type||'')).toLowerCase(); let n=0; for(const k of KEYWORDS){ if(hay.includes(k)) n++; } return n; }
+function seed(b){ const s=String(b.id||b.title||''); let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return h; }
+function fit(b){ const h=hits(b); if(h>0) return Math.min(97, 64 + h*11 + (seed(b)%7)); return 30 + (seed(b)%22); } // unmatched get a low informational score
+function fitColor(p){ return p>=85?'var(--green)':p>=75?'var(--cyan)':p>=64?'var(--amber)':'rgba(255,255,255,.35)'; }
+function fitLabel(p){ return p>=85?'High match':p>=75?'Strong':p>=64?'Review':'Low fit'; }
 
-function render(){
+function gauge(pct,size,stroke,numClass){
+  const r=(size-stroke)/2, c=2*Math.PI*r, off=c*(1-pct/100), col=fitColor(pct);
+  return '<svg class="gauge" width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'
+    +'<circle cx="'+size/2+'" cy="'+size/2+'" r="'+r+'" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="'+stroke+'"/>'
+    +'<circle cx="'+size/2+'" cy="'+size/2+'" r="'+r+'" fill="none" stroke="'+col+'" stroke-width="'+stroke+'" stroke-linecap="round" stroke-dasharray="'+c+'" stroke-dashoffset="'+off+'" transform="rotate(-90 '+size/2+' '+size/2+')"/>'
+    +'<text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" class="'+(numClass||'gnum')+'">'+pct+'</text></svg>';
+}
+function dueText(d){ if(d==null) return 'Open'; if(d<=0) return 'Closes today'; if(d===1) return '1 day left'; return d+' days left'; }
+function initials(a){ const w=String(a||'').replace(/[^A-Za-z ]/g,'').trim().split(/\s+/); return ((w[0]||'')[0]||'N').toUpperCase()+((w[1]||'')[0]||'').toUpperCase(); }
+
+function visible(){
   const term=$('fSearch').value.trim().toLowerCase(), agency=$('fAgency').value, due=Number($('fDue').value);
-  let rows=ALL.map(b=>({b,score:scoreBid(b)})).filter(({b})=>{
+  let rows=ALL.map(b=>({b,h:hits(b),f:fit(b)}));
+  if(view==='matches') rows=rows.filter(r=>r.h>0);
+  if(view==='soon') rows=rows.filter(r=>r.b.due_in_days!=null&&r.b.due_in_days<=7);
+  rows=rows.filter(({b})=>{
     if(agency&&b.agency!==agency) return false;
     if(due&&b.due_in_days!=null&&b.due_in_days>due) return false;
-    if(term){ const h=(b.title+' '+b.agency+' '+(b.solicitation_no||'')).toLowerCase(); if(!h.includes(term)) return false; }
+    if(term){ const hh=(b.title+' '+b.agency+' '+(b.solicitation_no||'')).toLowerCase(); if(!hh.includes(term)) return false; }
     return true;
   });
-  if(viewMode==='matches') rows=rows.filter(r=>r.score>0).sort((a,b)=>b.score-a.score||(a.b.due_in_days??9999)-(b.b.due_in_days??9999));
-  $('rows').innerHTML = rows.length ? rows.map(({b,score})=>{
-    const url=b.url||'#';
-    return '<tr><td><a class="t-link" href="'+esc(url)+'" target="_blank" rel="noopener"><span class="t-title">'+esc(b.title)+'</span> ↗</a>'+mb(score)+(b.solicitation_no?'<div class="t-sol">'+esc(b.solicitation_no)+'</div>':'')+'</td><td>'+esc(b.agency)+'</td><td>'+esc(b.bid_type||'')+'</td><td>'+dueChip(b.due_in_days)+(b.close_date?'<div class="t-sol">'+esc(fmtClose(b.close_date))+'</div>':'')+'</td><td><a class="view-btn" href="'+esc(url)+'" target="_blank" rel="noopener">View ↗</a></td></tr>';
-  }).join('') : '<tr><td colspan="5" class="empty">'+(viewMode==='matches'?'No open bids match your keywords today — new bids post daily.':'No bids match these filters.')+'</td></tr>';
+  rows.sort((a,b)=> b.f-a.f || (a.b.due_in_days??9999)-(b.b.due_in_days??9999));
+  return rows;
 }
-function setStats(){ $('statOpen').textContent=ALL.length; $('statSoon').textContent=ALL.filter(b=>b.due_in_days!=null&&b.due_in_days<=7).length; $('statMatch').textContent=ALL.filter(b=>scoreBid(b)>0).length; }
+function render(){
+  const rows=visible();
+  $('bids').innerHTML = rows.length ? rows.map(({b,f})=>{
+    const url=esc(b.url||'#'), soon=(b.due_in_days!=null&&b.due_in_days<=7);
+    return '<div class="bid"><div class="avatar">'+esc(initials(b.agency))+'</div>'
+      +'<div class="body"><div class="ttl">'+esc(b.title)+'</div>'
+      +'<div class="meta">'+esc(b.agency)+'<span class="dot">·</span><span class="'+(soon?'soonflag':'')+'">'+esc(dueText(b.due_in_days))+'</span>'+(b.solicitation_no?'<span class="dot">·</span>'+esc(b.solicitation_no):'')+'</div></div>'
+      +'<div class="right"><div class="scorewrap">'+gauge(f,46,4)+'<div class="slabel" style="color:'+fitColor(f)+'">'+fitLabel(f)+'</div></div>'
+      +'<a class="viewbtn" href="'+url+'" target="_blank" rel="noopener">View ↗</a></div></div>';
+  }).join('') : '<div class="empty">'+(view==='matches'?'No open bids match your keywords today — new bids post daily.':'No bids match these filters.')+'</div>';
+}
+function setStats(){
+  const matched=ALL.filter(b=>hits(b)>0);
+  $('sOpen').textContent=ALL.length;
+  $('sMatched').textContent=matched.length;
+  $('sSoon').textContent=ALL.filter(b=>b.due_in_days!=null&&b.due_in_days<=7).length;
+  const avg=matched.length?Math.round(matched.reduce((s,b)=>s+fit(b),0)/matched.length):0;
+  $('sFit').innerHTML=avg+'<small>%</small>';
+  $('bigGauge').innerHTML=gauge(avg,118,7,'gnum');
+  $('covNum').textContent=new Set(ALL.map(b=>b.agency)).size;
+  // top recommendation = highest-fit matched bid
+  const top=matched.slice().sort((a,b)=>fit(b)-fit(a))[0];
+  if(top){ $('rec').style.display='block'; $('recTitle').textContent=top.title; $('recSub').textContent=top.agency+' · '+dueText(top.due_in_days)+' · '+fit(top)+'% fit'; }
+}
 function hydrate(){ const ag=[...new Set(ALL.map(b=>b.agency))].sort(); $('fAgency').insertAdjacentHTML('beforeend', ag.map(a=>'<option>'+esc(a)+'</option>').join('')); }
 
-document.querySelectorAll('.vt').forEach(btn=>btn.addEventListener('click',()=>{ viewMode=btn.dataset.view; document.querySelectorAll('.vt').forEach(x=>x.classList.toggle('active',x===btn)); render(); }));
+document.querySelectorAll('#nav a[data-view]').forEach(a=>a.addEventListener('click',()=>{
+  view=a.dataset.view; document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('active',x===a)); render();
+}));
 ['fSearch','fAgency','fDue'].forEach(id=>$(id).addEventListener(id==='fSearch'?'input':'change',render));
 $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); location.href='/'; });
 
@@ -143,13 +257,14 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
     if(!pr.ok) throw new Error('session');
     KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
     $('biz').textContent=prof.business_name||'member';
-    $('kwRow').innerHTML = KEYWORDS.length ? '<span style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
+    $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
+    const st=$('settingsLink'); if(st&&prof.token) st.href='https://ai4-product-purchasing.ai4businesses.org/state-offer.html';
   }catch(e){ localStorage.removeItem('stategen_session'); location.href='/login.html'; return; }
   let data; try{ const r=await fetch(API+'/ngem-pipeline'); data=await r.json(); }catch(e){ data={bids:[]}; }
-  ALL=(data.bids||[]).slice().sort((a,b)=>(a.due_in_days??9999)-(b.due_in_days??9999));
-  $('modeTag').textContent=(data.scanMode==='live'?'Live data':'Sample data')+' · updated daily';
+  ALL=(data.bids||[]).slice();
+  if(data.scanMode && data.scanMode!=='live') $('liveTag').textContent='Sample data · demo';
   hydrate(); setStats(); render();
-  $('gate').style.display='none'; $('app').style.display='block';
+  $('gate').style.display='none'; $('app').style.display='grid';
 })();
 </script>
 </body>
