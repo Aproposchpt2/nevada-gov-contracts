@@ -2,11 +2,13 @@
 // Verify a Stripe Checkout Session is a real PAID subscription before we let someone
 // turn on alerts. Returns the email + state (NV/CA) derived from the purchased price.
 
-const STRIPE_KEY = process.env.STRIPE_SECRET_KEY;
+const STRIPE_KEY      = process.env.STRIPE_SECRET_KEY;            // live (sk_live_…)
+const STRIPE_KEY_TEST = process.env.STRIPE_SECRET_KEY_TEST || ''; // sandbox (sk_test_…)
 
 const PRICE_STATE = {
-  'price_1TjlNbBMRgYNYb8DRybCz0gQ': 'NV', // NevadaStateGen Monthly
-  'price_1TjlMlBMRgYNYb8DY0MrAi5E': 'CA', // CalStateGen Monthly
+  'price_1TjlNbBMRgYNYb8DRybCz0gQ': 'NV', // NevadaStateGen Monthly (live)
+  'price_1TjlMlBMRgYNYb8DY0MrAi5E': 'CA', // CalStateGen Monthly (live)
+  'price_1Tk5jLB1NkJ0LaTof15m7ckL': 'NV', // NevadaStateGen Monthly (TEST/sandbox)
 };
 
 const CORS = {
@@ -17,9 +19,11 @@ const CORS = {
 };
 
 async function getSession(id) {
+  // test sessions (cs_test_…) must be read with the test key; everything else uses live
+  const key = id.startsWith('cs_test_') ? (STRIPE_KEY_TEST || STRIPE_KEY) : STRIPE_KEY;
   const r = await fetch(
     'https://api.stripe.com/v1/checkout/sessions/' + encodeURIComponent(id) + '?expand[]=line_items',
-    { headers: { Authorization: 'Bearer ' + STRIPE_KEY } }
+    { headers: { Authorization: 'Bearer ' + key } }
   );
   if (!r.ok) return null;
   return r.json();
