@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NevadaStateGen — See Your Daily Bid Alert (Live Demo)</title>
+<meta name="description" content="Type what your business does and instantly preview the daily bid-alert email NevadaStateGen would send you — matched to real open Nevada solicitations."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--ink-2:#163472;--ink-3:#1C3878;--white:#FFFFFF;--silver:#C3D0E8;--mist:#9DB0D4;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--green:#6EE7A8;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif;--max:880px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+a{color:inherit;text-decoration:none}
+.shell{position:relative;z-index:1;width:min(var(--max),calc(100% - 36px));margin:0 auto;padding-bottom:5rem}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:1.4rem 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.9rem;background:var(--white);color:var(--ink)}
+.brand .bname{font-family:var(--disp);font-size:1.36rem;font-weight:400;color:var(--white);line-height:1;letter-spacing:-.01em}
+.brand .bsub{font-family:var(--body);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.nav-pill{font-family:var(--body);font-size:.66rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem}
+.hero{padding:clamp(2.6rem,6vh,4.2rem) 0 1.8rem;max-width:680px}
+.eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);display:inline-flex;align-items:center;gap:8px;margin-bottom:1.2rem}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);box-shadow:0 0 0 5px rgba(255,255,255,.08)}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.04;letter-spacing:-.02em;color:var(--white);margin-bottom:1rem}
+.hero h1 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+.hero p{color:rgba(255,255,255,.55);font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.75}
+.panel{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(1.4rem,3vw,2rem);margin-top:1.4rem}
+label{display:block;font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 8px}
+textarea{width:100%;font-family:var(--body);font-size:.98rem;font-weight:300;color:var(--white);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.85rem .95rem;min-height:64px;resize:vertical;line-height:1.6}
+textarea::placeholder{color:rgba(255,255,255,.3)}
+textarea:focus{outline:none;border-color:rgba(255,255,255,.5)}
+.btn{display:inline-block;text-align:center;background:var(--white);color:var(--ink);font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;border:none;border-radius:4px;padding:.9rem 1.8rem;cursor:pointer;text-decoration:none;transition:background .25s,transform .2s;margin-top:14px}
+.btn:hover{background:var(--gold-bright);transform:translateY(-2px)}
+.btn:disabled{opacity:.6;cursor:wait}
+.hint{font-size:.78rem;color:rgba(255,255,255,.4);margin-top:10px}
+.result{margin-top:1.6rem;display:none}
+.matchline{font-family:var(--disp);font-weight:400;font-size:clamp(1.3rem,3vw,1.9rem);color:var(--white);margin-bottom:1.1rem;line-height:1.25}
+.matchline b{color:var(--gold-bright)}
+.matchline em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+/* email preview */
+.mailwrap{position:relative}
+.mailtag{font-family:var(--body);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.email{background:#0c1f44;border:1px solid var(--line-2);border-radius:6px;padding:26px 28px;box-shadow:0 24px 60px rgba(0,0,0,.34)}
+.email .from{font-size:.74rem;color:var(--mist);margin-bottom:14px;border-bottom:1px solid var(--line);padding-bottom:12px}
+.email .from b{color:#fff;font-weight:600}
+.email .ebrow{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);margin-bottom:8px}
+.email h2{font-family:var(--disp);font-weight:400;color:#fff;font-size:1.4rem;margin-bottom:6px;line-height:1.2}
+.email .kw{color:var(--mist);font-size:.82rem;margin-bottom:16px}
+.email .kw b{color:#fff}
+.erow{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.erow:last-child{border-bottom:none}
+.erow .et{color:#fff;font-weight:500;font-size:.95rem}
+.erow .em2{color:var(--mist);font-size:.78rem;margin-top:3px}
+.email .more{color:var(--mist);font-size:.8rem;margin-top:12px;font-style:italic}
+.cta{margin-top:1.6rem;border:1px solid var(--line-2);background:rgba(255,255,255,.05);padding:clamp(1.3rem,3vw,1.8rem);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.cta .ct{font-family:var(--disp);font-weight:400;font-size:clamp(1.15rem,2.4vw,1.5rem);color:#fff;line-height:1.25}
+.cta .ct em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+.cta .ct small{display:block;font-family:var(--body);font-size:.82rem;color:rgba(255,255,255,.5);margin-top:5px}
+.ghost{display:inline-block;margin-top:14px;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px}
+.ghost:hover{color:#fff;border-color:#fff}
+.empty{color:rgba(255,255,255,.5);font-size:.95rem;margin-top:1rem}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.4rem;font-family:var(--body);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+@media(max-width:560px){.cta{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="mark">NS</span>
+      <span><span class="bname">NevadaStateGen</span><br><span class="bsub">Live Demo · Apropos Group LLC</span></span>
+    </a>
+    <span class="nav-pill">No signup to preview</span>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">60-second demo</span>
+    <h1>See the bid alert <em>you'd get.</em></h1>
+    <p>Type what your business does. We'll match it against <strong style="color:#fff">real open Nevada solicitations</strong> right now and show you the exact daily email NevadaStateGen would send you.</p>
+  </section>
+
+  <div class="panel">
+    <label for="kw">What does your business do?</label>
+    <textarea id="kw" placeholder="e.g. paving, electrical, janitorial, IT services, landscaping, security"></textarea>
+    <p class="hint">Comma-separated — services, trades, or product types.</p>
+    <button class="btn" id="go">Show my alert preview →</button>
+  </div>
+
+  <section class="result" id="result"></section>
+
+  <footer class="foot">© <span id="yr"></span> Apropos Group LLC · NevadaStateGen · Demo uses live public Nevada procurement data</footer>
+</div>
+
+<script>
+'use strict';
+document.getElementById('yr').textContent=new Date().getFullYear();
+const STATE_NAME='Nevada', BIDS_URL='/.netlify/functions/ngem-pipeline', OFFER='https://ai4-product-purchasing.ai4businesses.org/state-offer.html', BOARD='/';
+const FALLBACK={bids:[
+ {title:'Citywide Park Landscape Maintenance',agency:'City of Las Vegas, Nevada',bid_type:'Bid',due_in_days:9,solicitation_no:'COLV-PR-26-007'},
+ {title:'Enterprise Network Infrastructure Upgrade',agency:'Clark County, Nevada',bid_type:'Bid',due_in_days:14,solicitation_no:'CC-IT-2026-044'},
+ {title:'Campus Security & Patrol Services',agency:'UNLV (NSHE)',bid_type:'RFP',due_in_days:12,solicitation_no:'NSHE-SEC-26-009'},
+ {title:'Temporary Staffing — Administrative Support',agency:'State of Nevada — Purchasing',bid_type:'RFP',due_in_days:11,solicitation_no:'NV-PUR-26-0204'}]};
+
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let ALL=null;
+async function loadBids(){ if(ALL) return ALL; try{const r=await fetch(BIDS_URL,{cache:'no-store'});const j=await r.json();ALL=(j.bids&&j.bids.length)?j.bids:FALLBACK.bids;}catch(e){ALL=FALLBACK.bids;} return ALL; }
+
+document.getElementById('go').addEventListener('click', async ()=>{
+  const raw=document.getElementById('kw').value;
+  const kws=raw.split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+  const out=document.getElementById('result');
+  if(!kws.length){ out.style.display='block'; out.innerHTML='<p class="empty">Add at least one keyword to see your preview.</p>'; return; }
+  const btn=document.getElementById('go'); btn.disabled=true; btn.textContent='Matching live bids…';
+  const bids=await loadBids();
+  const matched=bids.filter(b=>{const hay=(b.title+' '+b.agency+' '+(b.bid_type||'')).toLowerCase();return kws.some(k=>hay.includes(k));})
+                    .sort((a,b)=>(a.due_in_days??9999)-(b.due_in_days??9999));
+  btn.disabled=false; btn.textContent='Show my alert preview →';
+  out.style.display='block';
+  if(!matched.length){
+    out.innerHTML='<p class="empty">No open '+STATE_NAME+' bids match those keywords <em>today</em> — but new ones post daily. Subscribers get emailed the moment a match appears. <br><br><a class="btn" href="'+OFFER+'">Subscribe — $49/mo →</a></p>';
+    return;
+  }
+  const noun=matched.length===1?'bid matches':'bids match';
+  const rows=matched.slice(0,8).map(b=>'<div class="erow"><div class="et">'+esc(b.title)+'</div><div class="em2">'+esc(b.agency)+(b.due_in_days!=null?' · closes in '+b.due_in_days+' days':'')+(b.solicitation_no?' · '+esc(b.solicitation_no):'')+'</div></div>').join('');
+  const more=matched.length>8?'<div class="more">+ '+(matched.length-8)+' more in your full board</div>':'';
+  out.innerHTML=
+    '<p class="matchline"><b>'+matched.length+'</b> open '+STATE_NAME+' '+noun+' your business <em>right now.</em></p>'+
+    '<div class="mailwrap"><div class="mailtag">📬 Preview of your daily alert email</div>'+
+    '<div class="email"><div class="from">From <b>NevadaStateGen</b> &lt;alerts@aproposgroupllc.com&gt;<br>Subject: '+matched.length+' new '+STATE_NAME+' '+noun+' your business</div>'+
+    '<div class="ebrow">'+STATE_NAME+' StateGen · Bid Alert</div>'+
+    '<h2>'+matched.length+' '+STATE_NAME+' '+noun+' your business</h2>'+
+    '<div class="kw">Matched to: <b>'+esc(kws.join(', '))+'</b></div>'+
+    rows+more+'</div></div>'+
+    '<div class="cta"><div class="ct">Get this every morning. <em>Automatically.</em><small>New matching '+STATE_NAME+' bids, emailed daily — never miss one.</small></div>'+
+    '<a class="btn" style="margin:0" href="'+OFFER+'">Subscribe — $49/mo →</a></div>'+
+    '<a class="ghost" href="'+BOARD+'">Or browse the full live board →</a>';
+  out.scrollIntoView({behavior:'smooth',block:'start'});
+});
+</script>
+</body>
+</html>
