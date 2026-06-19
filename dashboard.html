@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NevadaStateGen — Your Dashboard</title>
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--ink-2:#163472;--white:#FFFFFF;--silver:#C3D0E8;--mist:#9DB0D4;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--green:#6EE7A8;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+a{color:inherit;text-decoration:none}
+.shell{position:relative;z-index:1;width:min(var(--max),calc(100% - 36px));margin:0 auto;padding-bottom:4rem}
+.gate{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:rgba(255,255,255,.5)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:1.4rem 0;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.85rem;background:var(--white);color:var(--ink)}
+.brand .bname{font-family:var(--disp);font-size:1.28rem;font-weight:400;color:#fff;line-height:1}
+.brand .bsub{font-family:var(--body);font-size:.54rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.signout{font-family:var(--body);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.5rem 1rem;cursor:pointer;transition:.2s}
+.signout:hover{background:#fff;color:var(--ink);border-color:#fff}
+.welcome{padding:clamp(1.8rem,4vh,2.8rem) 0 1.4rem}
+.welcome .eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px}
+.welcome h1{font-family:var(--disp);font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.02em;color:#fff}
+.welcome h1 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.5)}
+.profrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:1rem;align-items:center}
+.kw{font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.6);border:1px solid var(--line);background:rgba(255,255,255,.05);border-radius:999px;padding:.3rem .8rem}
+.kw b{color:#fff;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1.4rem 0}
+.stat{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:1.1rem 1.2rem}
+.stat .num{font-family:var(--disp);font-weight:400;font-size:1.9rem;color:#fff;line-height:1}
+.stat .lbl{font-family:var(--body);font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:.5rem}
+.board{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(1.4rem,2.4vw,2rem)}
+.board-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:1.2rem}
+.board-eyebrow{font-family:var(--body);font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:.6rem}
+.board-title{font-family:var(--disp);font-weight:400;font-size:1.5rem;color:#fff}
+.view-toggle{display:inline-flex;gap:4px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;padding:4px}
+.vt{font-family:var(--body);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);background:transparent;border:0;border-radius:3px;padding:.5rem .9rem;cursor:pointer}
+.vt.active{background:#fff;color:var(--ink)}
+.filters{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:11px;margin-bottom:1.3rem}
+.filters label{display:flex;flex-direction:column;gap:.5rem;font-family:var(--body);font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+input,select{font-family:var(--body);font-size:.92rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.7rem .85rem;width:100%}
+input:focus,select:focus{outline:none;border-color:rgba(255,255,255,.5)}
+select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239DB0D4' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
+option{background:var(--ink-2)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+thead th{font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);text-align:left;padding:.85rem 1rem;background:rgba(255,255,255,.04);border-bottom:1px solid var(--line-2);white-space:nowrap}
+tbody td{padding:.85rem 1rem;border-bottom:1px solid var(--line);color:rgba(255,255,255,.6);vertical-align:top;font-weight:300}
+tbody tr:last-child td{border-bottom:none}
+.t-title{color:#fff;font-weight:500}
+a.t-link:hover .t-title{color:var(--gold-bright)}
+.t-sol{font-family:var(--body);font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem}
+.view-btn{display:inline-flex;font-family:var(--body);font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.45rem .8rem;white-space:nowrap}
+.view-btn:hover{background:#fff;color:var(--ink)}
+.chip{display:inline-block;font-family:var(--body);font-size:.64rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .6rem;border-radius:4px;border:1px solid var(--line);white-space:nowrap;color:rgba(255,255,255,.55)}
+.chip.hot{color:#fff;border-color:var(--line-2);background:rgba(255,255,255,.1)}
+.mb{display:inline-block;font-family:var(--body);font-size:.58rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);border:1px solid var(--line-2);background:rgba(255,255,255,.05);border-radius:4px;padding:.14rem .45rem;margin-left:.5rem}
+.mb.strong{color:var(--ink);background:#fff;border-color:#fff}
+.empty{text-align:center;color:rgba(255,255,255,.4);padding:2.4rem}
+@media(max-width:760px){.stats{grid-template-columns:1fr}.filters{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="gate" class="gate">Loading your dashboard…</div>
+
+<div class="shell" id="app" style="display:none">
+  <header class="topbar">
+    <div class="brand"><span class="mark">NS</span><span><span class="bname">NevadaStateGen</span><br><span class="bsub">Member Dashboard · Apropos Group LLC</span></span></div>
+    <button class="signout" id="signout">Sign out</button>
+  </header>
+
+  <section class="welcome">
+    <div class="eyebrow" id="modeTag">Live Nevada bid board</div>
+    <h1>Welcome, <em id="biz">member</em>.</h1>
+    <div class="profrow" id="kwRow"></div>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="statMatch">—</div><div class="lbl">Matched to you</div></div>
+    <div class="stat"><div class="num" id="statOpen">—</div><div class="lbl">Open solicitations</div></div>
+    <div class="stat"><div class="num" id="statSoon">—</div><div class="lbl">Closing within 7 days</div></div>
+  </div>
+
+  <section class="board">
+    <div class="board-head">
+      <div><p class="board-eyebrow">Nevada Government eMarketplace (NGEM)</p><h2 class="board-title">Open solicitations</h2></div>
+      <div class="view-toggle"><button class="vt active" data-view="matches">My matches</button><button class="vt" data-view="all">All bids</button></div>
+    </div>
+    <div class="filters">
+      <label>Search<input id="fSearch" type="text" placeholder="Title, agency, solicitation #…"></label>
+      <label>Agency<select id="fAgency"><option value="">All agencies</option></select></label>
+      <label>Closing within<select id="fDue"><option value="0">Any time</option><option value="7">7 days</option><option value="14">14 days</option><option value="30">30 days</option></select></label>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Solicitation</th><th>Agency</th><th>Type</th><th>Closes</th><th>Details</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody></table></div>
+  </section>
+</div>
+
+<script>
+'use strict';
+const TOKEN = localStorage.getItem('stategen_session') || '';
+const API = '/.netlify/functions';
+const $ = id => document.getElementById(id);
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let ALL=[], KEYWORDS=[], viewMode='matches';
+
+if(!TOKEN){ location.href='/login.html'; }
+
+function scoreBid(b){ if(!KEYWORDS.length) return 0; const hay=(b.title+' '+b.agency+' '+(b.bid_type||'')).toLowerCase(); let s=0; for(const k of KEYWORDS){ if(hay.includes(k)) s++; } return s; }
+function dueChip(d){ if(d==null) return '<span class="chip">Open</span>'; const c=d<=7?'hot':''; const l=d<=0?'Closing today':d===1?'1 day left':d+' days left'; return '<span class="chip '+c+'">'+l+'</span>'; }
+function mb(s){ return s<=0?'':(s>=2?'<span class="mb strong">★ Strong match</span>':'<span class="mb">★ Match</span>'); }
+function fmtClose(s){ if(!s) return ''; const m=String(s).match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{2}:\d{2})/); return m?m[2]+'/'+m[3]+'/'+m[1]+' '+m[4]:String(s); }
+
+function render(){
+  const term=$('fSearch').value.trim().toLowerCase(), agency=$('fAgency').value, due=Number($('fDue').value);
+  let rows=ALL.map(b=>({b,score:scoreBid(b)})).filter(({b})=>{
+    if(agency&&b.agency!==agency) return false;
+    if(due&&b.due_in_days!=null&&b.due_in_days>due) return false;
+    if(term){ const h=(b.title+' '+b.agency+' '+(b.solicitation_no||'')).toLowerCase(); if(!h.includes(term)) return false; }
+    return true;
+  });
+  if(viewMode==='matches') rows=rows.filter(r=>r.score>0).sort((a,b)=>b.score-a.score||(a.b.due_in_days??9999)-(b.b.due_in_days??9999));
+  $('rows').innerHTML = rows.length ? rows.map(({b,score})=>{
+    const url=b.url||'#';
+    return '<tr><td><a class="t-link" href="'+esc(url)+'" target="_blank" rel="noopener"><span class="t-title">'+esc(b.title)+'</span> ↗</a>'+mb(score)+(b.solicitation_no?'<div class="t-sol">'+esc(b.solicitation_no)+'</div>':'')+'</td><td>'+esc(b.agency)+'</td><td>'+esc(b.bid_type||'')+'</td><td>'+dueChip(b.due_in_days)+(b.close_date?'<div class="t-sol">'+esc(fmtClose(b.close_date))+'</div>':'')+'</td><td><a class="view-btn" href="'+esc(url)+'" target="_blank" rel="noopener">View ↗</a></td></tr>';
+  }).join('') : '<tr><td colspan="5" class="empty">'+(viewMode==='matches'?'No open bids match your keywords today — new bids post daily.':'No bids match these filters.')+'</td></tr>';
+}
+function setStats(){ $('statOpen').textContent=ALL.length; $('statSoon').textContent=ALL.filter(b=>b.due_in_days!=null&&b.due_in_days<=7).length; $('statMatch').textContent=ALL.filter(b=>scoreBid(b)>0).length; }
+function hydrate(){ const ag=[...new Set(ALL.map(b=>b.agency))].sort(); $('fAgency').insertAdjacentHTML('beforeend', ag.map(a=>'<option>'+esc(a)+'</option>').join('')); }
+
+document.querySelectorAll('.vt').forEach(btn=>btn.addEventListener('click',()=>{ viewMode=btn.dataset.view; document.querySelectorAll('.vt').forEach(x=>x.classList.toggle('active',x===btn)); render(); }));
+['fSearch','fAgency','fDue'].forEach(id=>$(id).addEventListener(id==='fSearch'?'input':'change',render));
+$('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); location.href='/'; });
+
+(async function init(){
+  try{
+    const pr=await fetch(API+'/get-subscriber?token='+encodeURIComponent(TOKEN));
+    const prof=await pr.json();
+    if(!pr.ok) throw new Error('session');
+    KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
+    $('biz').textContent=prof.business_name||'member';
+    $('kwRow').innerHTML = KEYWORDS.length ? '<span style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35)">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
+  }catch(e){ localStorage.removeItem('stategen_session'); location.href='/login.html'; return; }
+  let data; try{ const r=await fetch(API+'/ngem-pipeline'); data=await r.json(); }catch(e){ data={bids:[]}; }
+  ALL=(data.bids||[]).slice().sort((a,b)=>(a.due_in_days??9999)-(b.due_in_days??9999));
+  $('modeTag').textContent=(data.scanMode==='live'?'Live data':'Sample data')+' · updated daily';
+  hydrate(); setStats(); render();
+  $('gate').style.display='none'; $('app').style.display='block';
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NevadaStateGen — Member Login</title>
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--ink-2:#163472;--white:#FFFFFF;--silver:#C3D0E8;--line:rgba(255,255,255,.12);--line-2:rgba(255,255,255,.22);--gold-bright:#EEF3FF;--green:#6EE7A8;--red:#F87171;--disp:'Bodoni Moda',Georgia,serif;--subdisp:'Cormorant',Georgia,serif;--body:'Jost',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:rgba(255,255,255,.72);font-weight:300;line-height:1.7;min-height:100vh;background:var(--ink);display:flex;align-items:center;justify-content:center;padding:24px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+a{color:inherit;text-decoration:none}
+.card{position:relative;z-index:1;width:min(440px,100%);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:clamp(28px,5vw,40px)}
+.brand{display:flex;align-items:center;gap:11px;margin-bottom:22px}
+.brand .mark{width:38px;height:38px;border-radius:9px;display:grid;place-items:center;font-family:var(--body);font-weight:600;font-size:.82rem;background:var(--white);color:var(--ink)}
+.brand .bn{font-family:var(--disp);font-size:1.18rem;color:var(--white)}
+.eyebrow{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px}
+h1{font-family:var(--disp);font-weight:400;font-size:1.8rem;color:var(--white);line-height:1.1;margin-bottom:8px}
+h1 em{font-family:var(--subdisp);font-style:italic;color:rgba(255,255,255,.5)}
+.sub{color:rgba(255,255,255,.55);font-size:.92rem;line-height:1.7;margin-bottom:22px}
+label{display:block;font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 7px}
+input{width:100%;font-family:var(--body);font-size:.98rem;font-weight:300;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:.82rem .9rem;margin-bottom:16px;transition:border-color .2s}
+input:focus{outline:none;border-color:rgba(255,255,255,.5)}
+input#code{letter-spacing:.3em;text-align:center;font-size:1.2rem}
+.btn{width:100%;background:var(--white);color:var(--ink);font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;border:none;border-radius:4px;padding:.92rem;cursor:pointer;transition:background .25s}
+.btn:hover{background:var(--gold-bright)}
+.btn:disabled{opacity:.6;cursor:wait}
+.msg{margin-top:14px;text-align:center;font-size:.86rem;min-height:18px}
+.msg.err{color:var(--red)}.msg.ok{color:var(--green)}
+.alt{margin-top:18px;text-align:center;font-size:.82rem;color:rgba(255,255,255,.45)}
+.alt a{color:#cdeede;border-bottom:1px solid rgba(205,238,222,.4)}
+.back{display:inline-block;margin-top:14px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);cursor:pointer}
+.back:hover{color:#fff}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand"><span class="mark">NS</span><span class="bn">NevadaStateGen</span></div>
+
+  <div id="emailStep">
+    <div class="eyebrow">Member Login</div>
+    <h1>Sign in to <em>your dashboard.</em></h1>
+    <p class="sub">Enter the email on your subscription. We'll send a one-time code — no password needed.</p>
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" placeholder="you@yourbusiness.com">
+    <button class="btn" id="sendBtn">Send my login code →</button>
+    <div class="msg" id="msg1"></div>
+    <p class="alt">Not a member yet? <a href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe — $49/mo</a></p>
+  </div>
+
+  <div id="codeStep" style="display:none">
+    <div class="eyebrow">Check your email</div>
+    <h1>Enter your <em>login code.</em></h1>
+    <p class="sub">We emailed a 6-digit code to <strong style="color:#fff" id="emailEcho"></strong>. It expires in 10 minutes.</p>
+    <label for="code">6-digit code</label>
+    <input id="code" type="text" inputmode="numeric" maxlength="6" placeholder="······">
+    <button class="btn" id="verifyBtn">Sign in →</button>
+    <div class="msg" id="msg2"></div>
+    <span class="back" id="back">← Use a different email</span>
+  </div>
+</div>
+
+<script>
+'use strict';
+const STATE='NV';
+const SEND='/.netlify/functions/send-login-code', VERIFY='/.netlify/functions/verify-login-code';
+const $=id=>document.getElementById(id);
+let theEmail='';
+
+$('sendBtn').addEventListener('click', async ()=>{
+  const m=$('msg1'); m.className='msg'; m.textContent='';
+  const email=$('email').value.trim().toLowerCase();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ m.className='msg err'; m.textContent='Please enter a valid email.'; return; }
+  const b=$('sendBtn'); b.disabled=true; b.textContent='Sending…';
+  try{
+    const res=await fetch(SEND,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,state:STATE})});
+    const d=await res.json();
+    if(!res.ok) throw new Error(d.error||'Could not send code.');
+    if(!d.found){ m.className='msg err'; m.innerHTML='No active subscription for that email. <a style="color:#cdeede" href="https://ai4-product-purchasing.ai4businesses.org/state-offer.html">Subscribe →</a>'; b.disabled=false; b.textContent='Send my login code →'; return; }
+    theEmail=email; $('emailEcho').textContent=email;
+    $('emailStep').style.display='none'; $('codeStep').style.display='block'; $('code').focus();
+  }catch(e){ m.className='msg err'; m.textContent=e.message; b.disabled=false; b.textContent='Send my login code →'; }
+});
+
+$('verifyBtn').addEventListener('click', async ()=>{
+  const m=$('msg2'); m.className='msg'; m.textContent='';
+  const code=$('code').value.trim();
+  if(!/^\d{6}$/.test(code)){ m.className='msg err'; m.textContent='Enter the 6-digit code.'; return; }
+  const b=$('verifyBtn'); b.disabled=true; b.textContent='Signing in…';
+  try{
+    const res=await fetch(VERIFY,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:theEmail,code,state:STATE})});
+    const d=await res.json();
+    if(!res.ok) throw new Error(d.error||'Could not verify.');
+    localStorage.setItem('stategen_session', d.token);
+    m.className='msg ok'; m.textContent='Signed in — opening your dashboard…';
+    location.href='/dashboard.html';
+  }catch(e){ m.className='msg err'; m.textContent=e.message; b.disabled=false; b.textContent='Sign in →'; }
+});
+$('code').addEventListener('keydown',e=>{ if(e.key==='Enter') $('verifyBtn').click(); });
+$('email').addEventListener('keydown',e=>{ if(e.key==='Enter') $('sendBtn').click(); });
+$('back').addEventListener('click',()=>{ $('codeStep').style.display='none'; $('emailStep').style.display='block'; });
+</script>
+</body>
+</html>

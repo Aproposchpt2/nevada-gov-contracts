@@ -1,0 +1,42 @@
+'use strict';
+// Member login step 1 — email a 6-digit OTP code to an ACTIVE subscriber.
+
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SERVICE_KEY  = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+const RESEND_KEY   = process.env.RESEND_API_KEY;
+const FROM         = process.env.RESEND_FROM_EMAIL || 'StateGen <jmitchell@aproposgroupllc.com>';
+
+const CORS = { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+const j = (c, o) => ({ statusCode: c, headers: CORS, body: JSON.stringify(o) });
+const sbH = (extra = {}) => ({ apikey: SERVICE_KEY, Authorization: `Bearer ${SERVICE_KEY}`, 'Content-Type': 'application/json', ...extra });
+
+exports.handler = async (event) => {
+  if (event.httpMethod === 'OPTIONS') return { statusCode: 204, headers: CORS, body: '' };
+  if (event.httpMethod !== 'POST')    return j(405, { error: 'POST only' });
+
+  let b; try { b = JSON.parse(event.body || '{}'); } catch { return j(400, { error: 'Invalid JSON' }); }
+  const email = (b.email || '').trim().toLowerCase();
+  const state = (b.state || '').trim().toUpperCase();
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return j(400, { error: 'A valid email is required.' });
+
+  const stateClause = (state === 'NV' || state === 'CA') ? `&state=eq.${state}` : '';
+  const r = await fetch(`${SUPABASE_URL}/rest/v1/state_alert_subscribers?email=eq.${encodeURIComponent(email)}&status=eq.active${stateClause}&select=email,business_name&limit=1`, { headers: sbH() });
+  const rows = await r.json();
+  if (!Array.isArray(rows) || !rows.length) return j(200, { ok: true, found: false });
+
+  const code = String(Math.floor(100000 + Math.random() * 900000));
+  const expires_at = new Date(Date.now() + 10 * 60000).toISOString();
+  await fetch(`${SUPABASE_URL}/rest/v1/state_login_codes`, { method: 'POST', headers: sbH({ Prefer: 'return=minimal' }), body: JSON.stringify({ email, state: state || null, code, expires_at }) });
+
+  const html = `<div style="background:#0F2A6A;padding:34px 16px;font-family:Arial,sans-serif"><div style="max-width:460px;margin:0 auto;background:#11264f;border:1px solid #1c3878;border-radius:8px;padding:32px;text-align:center">
+    <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#9DB0D4;margin-bottom:14px">StateGen · Member Login</div>
+    <p style="color:#9DB0D4;font-size:14px;margin:0 0 18px">Your login code:</p>
+    <div style="font-size:34px;letter-spacing:.32em;font-weight:700;color:#fff;background:#07111f;border:2px solid #6EE7A8;border-radius:10px;padding:18px;margin-bottom:18px">${code}</div>
+    <p style="color:#9DB0D4;font-size:13px;line-height:1.6">Enter this code to access your dashboard. It expires in 10 minutes. If you didn't request it, you can ignore this email.</p>
+    <p style="color:#3a5470;font-size:11px;margin-top:20px">A service of Apropos Group LLC</p></div></div>`;
+  try {
+    await fetch('https://api.resend.com/emails', { method: 'POST', headers: { Authorization: 'Bearer ' + RESEND_KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ from: FROM, to: [email], subject: `Your StateGen login code: ${code}`, html }) });
+  } catch (e) { console.error('[send-login-code]', e.message); }
+
+  return j(200, { ok: true, found: true });
+};
