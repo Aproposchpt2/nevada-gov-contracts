@@ -178,6 +178,15 @@ option{background:var(--ink-3)}
     </div>
 
     <div class="bidlist" id="bids"><div class="empty">Loading…</div></div>
+
+    <div style="margin-top:22px;background:#fff;border-radius:14px;border-left:4px solid #0F2A6A;box-shadow:0 4px 22px rgba(0,0,0,.12);overflow:hidden">
+      <div style="height:4px;background:linear-gradient(90deg,#C9A84C,#e8c96a)"></div>
+      <div style="padding:20px 22px">
+        <div style="font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:1.18rem;color:#0F2A6A;margin-bottom:8px">Contract Proposal Writing</div>
+        <p style="font-family:'Jost',sans-serif;font-size:.9rem;color:#3A5898;line-height:1.65;margin-bottom:14px">Found the right opportunity? Our AI generates a professional, winning government contract proposal tailored specifically to this opportunity and your business. Available as a Business Center add-on.</p>
+        <a href="https://aibizcenter.aproposgroupllc.com/subscription.html" style="display:inline-block;background:#C9A84C;color:#0F2A6A;font-family:'Jost',sans-serif;font-weight:800;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;padding:11px 22px;border-radius:999px;text-decoration:none">Get Contract Proposal Writing &rarr;</a>
+      </div>
+    </div>
     </div><!-- /boardView -->
 
     <div id="settingsView" style="display:none">
@@ -247,11 +256,15 @@ option{background:var(--ink-3)}
 
 <script>
 'use strict';
-const TOKEN = localStorage.getItem('stategen_session') || '';
 const API = '/.netlify/functions';
 const $ = id => document.getElementById(id);
 const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 let ALL=[], KEYWORDS=[], view='all', PROFILE={};
+
+// Check for BC member session first (shared across all CapGen family sites)
+const BC_SESSION_RAW = sessionStorage.getItem('capgen_bc_session');
+const BC_MEMBER = BC_SESSION_RAW ? JSON.parse(BC_SESSION_RAW) : null;
+const TOKEN = BC_MEMBER ? 'bc_member' : (localStorage.getItem('stategen_session') || '');
 
 if(!TOKEN){ location.href='/login.html'; }
 
@@ -382,17 +395,35 @@ $('billingBtn').addEventListener('click', async ()=>{
   }catch(e){ btn.disabled=false; btn.textContent='Manage billing & payment ↗'; alert(e.message); }
 });
 ['fSearch','fAgency','fDue'].forEach(id=>$(id).addEventListener(id==='fSearch'?'input':'change',render));
-$('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); location.href='/'; });
+$('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); sessionStorage.removeItem('capgen_bc_session'); location.href='/'; });
 
 (async function init(){
   try{
-    const pr=await fetch(API+'/get-subscriber?token='+encodeURIComponent(TOKEN));
-    const prof=await pr.json();
-    if(!pr.ok) throw new Error('session');
-    KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
-    $('biz').textContent=prof.business_name||'member';
-    $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
-    PROFILE=prof;
+    if (BC_MEMBER) {
+      // BC member: populate profile from sessionStorage, derive keywords from industry
+      const industryKeywords = (BC_MEMBER.industry || '').split(/[,\/]+/).map(s => s.trim().toLowerCase()).filter(Boolean);
+      KEYWORDS = industryKeywords;
+      PROFILE = {
+        email: BC_MEMBER.email,
+        business_name: BC_MEMBER.businessName || BC_MEMBER.business_name || '',
+        keywords: KEYWORDS,
+        alerts_opt_in: false,
+        alert_cadence: 'off',
+        alert_days: [],
+        has_billing: false,
+        memberType: 'bc_member',
+      };
+      $('biz').textContent = PROFILE.business_name || 'member';
+      $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
+    } else {
+      const pr=await fetch(API+'/get-subscriber?token='+encodeURIComponent(TOKEN));
+      const prof=await pr.json();
+      if(!pr.ok) throw new Error('session');
+      KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
+      $('biz').textContent=prof.business_name||'member';
+      $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
+      PROFILE=prof;
+    }
   }catch(e){ localStorage.removeItem('stategen_session'); location.href='/login.html'; return; }
   let data; try{ const r=await fetch(API+'/ngem-pipeline'); data=await r.json(); }catch(e){ data={bids:[]}; }
   ALL=(data.bids||[]).slice();
