@@ -7,7 +7,7 @@
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const RESEND_KEY   = process.env.RESEND_API_KEY;
-const FROM_EMAIL   = process.env.RESEND_FROM_EMAIL || 'welcome@nevadastategen.com';
+const FROM_EMAIL   = process.env.RESEND_FROM_EMAIL || 'no-reply@aproposgroupllc.com';
 
 const headers = {
   'Content-Type': 'application/json',
@@ -102,10 +102,10 @@ exports.handler = async (event) => {
       method: 'POST',
       headers: { Authorization: `Bearer ${RESEND_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: `NevadaStateGen <${FROM_EMAIL}>`,
+        from: `NV Gov Contracts Center <${FROM_EMAIL}>`,
         to: [email],
-        subject: 'Your 30-day NevadaStateGen access is ready',
-        text: `Welcome to NevadaStateGen!\n\nYour ${trialDays}-day free trial is active through ${trialEndFmt}.\n\nAccess your dashboard here:\nhttps://stategen.aproposgroupllc.com/dashboard.html\n\nYour login email: ${email}\n\nNeed help? Reply to this email.\n\n— The NevadaStateGen Team\nApropos Group LLC`
+        subject: 'Your 30-day free access to Nevada State Government Contracts Center is ready',
+        text: `Welcome to Nevada State Government Contracts Center!\n\nYour ${trialDays}-day free trial is active through ${trialEndFmt}.\n\nAccess your dashboard here:\nhttps://nvgovcontracts.aproposgroupllc.com/dashboard.html\n\nYour login email: ${email}\n\nNeed help? Reply to this email.\n\n— Apropos Group LLC`
       })
     }).catch(() => {});
   }
