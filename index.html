@@ -45,6 +45,13 @@ h2 em{font-style:italic;font-family:var(--subdisp);color:rgba(255,255,255,.45)}
 /* HERO */
 .hero{padding:clamp(3.6rem,8vh,6.5rem) 0;border-top:none}
 .hero .actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:2rem}
+/* Force full white visibility in hero section */
+.hero-photo .eyebrow,
+.hero-photo .lead,
+.hero-photo p{color:#fff!important;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.hero-photo h1{color:#fff!important;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.hero-photo h1 em{color:rgba(255,255,255,.88)!important}
+.hero-photo strong{color:#fff!important;font-weight:600}
 .trust-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:1.8rem}
 .trust-pill{padding:7px 14px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.45)}
 
