@@ -13,6 +13,21 @@
   to = "/index.html"
   status = 200
 
+[[redirects]]
+  from = "/promo"
+  to = "/promo.html"
+  status = 200
+
+[[redirects]]
+  from = "/pilot"
+  to = "/promo.html"
+  status = 200
+
+[[redirects]]
+  from = "/trial"
+  to = "/promo.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
