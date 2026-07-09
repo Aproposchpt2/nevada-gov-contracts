@@ -135,9 +135,22 @@ option{background:var(--ink-3)}
 .intake-eyebrow{font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:.6rem}
 .intake-title{font-family:var(--disp);font-weight:400;font-size:clamp(1.3rem,2.5vw,1.7rem);color:#fff;line-height:1.1;margin-bottom:.5rem}
 .intake-sub{font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:1.2rem;max-width:600px}
-.intake-input{width:100%;font-family:var(--body);font-size:.95rem;font-weight:300;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(110,231,168,.3);border-radius:10px;padding:.8rem 1rem;margin-bottom:1rem;transition:.2s;resize:none}
-.intake-input:focus{outline:none;border-color:var(--green);background:rgba(110,231,168,.05)}
-.intake-input::placeholder{color:rgba(255,255,255,.3)}
+.intake-search-wrap{position:relative;margin-bottom:.8rem}
+.intake-search{width:100%;font-family:var(--body);font-size:.95rem;font-weight:300;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(110,231,168,.3);border-radius:10px;padding:.8rem 1rem;transition:.2s}
+.intake-search:focus{outline:none;border-color:var(--green);background:rgba(110,231,168,.05)}
+.intake-search::placeholder{color:rgba(255,255,255,.3)}
+.intake-dropdown{display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:#0c2257;border:1px solid rgba(110,231,168,.28);border-radius:10px;overflow:hidden;z-index:50;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.intake-dropdown.open{display:block}
+.intake-dd-item{padding:.65rem 1rem;cursor:pointer;transition:.15s;border-bottom:1px solid rgba(255,255,255,.06)}
+.intake-dd-item:last-child{border-bottom:none}
+.intake-dd-item:hover{background:rgba(110,231,168,.1)}
+.intake-dd-name{font-size:.88rem;color:#fff;line-height:1.3}
+.intake-dd-name mark{background:rgba(110,231,168,.28);color:var(--green);border-radius:3px;padding:0 2px}
+.intake-dd-parent{font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.04em;margin-top:2px}
+.intake-chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1rem;min-height:0}
+.intake-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(110,231,168,.12);border:1px solid rgba(110,231,168,.3);border-radius:999px;padding:.3rem .75rem;font-size:.78rem;color:var(--green);font-weight:500}
+.intake-chip-rm{background:none;border:none;color:rgba(110,231,168,.5);cursor:pointer;font-size:.85rem;line-height:1;padding:0;transition:.15s}
+.intake-chip-rm:hover{color:#fff}
 .intake-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .intake-save{font-family:var(--body);font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:9px;padding:.75rem 1.4rem;cursor:pointer;transition:.2s}
 .intake-save:hover{background:#8ef5c2;transform:translateY(-1px)}
@@ -190,8 +203,12 @@ option{background:var(--ink-3)}
       <div class="intake-inner">
         <div class="intake-eyebrow">&#9670; Welcome — one quick step</div>
         <h2 class="intake-title">What services does your business provide?</h2>
-        <p class="intake-sub">Tell us what you do and we'll match open Nevada government bids to your business — automatically, every day.</p>
-        <textarea id="intakeKw" class="intake-input" rows="2" placeholder="e.g. IT services, network installation, security systems, consulting…"></textarea>
+        <p class="intake-sub">Select the services your business provides — we match these to open Nevada government bids daily.</p>
+        <div class="intake-search-wrap">
+          <input type="text" id="intakeSearch" class="intake-search" placeholder="Type to search — e.g. roofing, HVAC, IT services, security…" autocomplete="off">
+          <div class="intake-dropdown" id="intakeDropdown"></div>
+        </div>
+        <div class="intake-chips" id="intakeChips"></div>
         <div class="intake-actions">
           <button class="intake-save" id="intakeSaveBtn" onclick="saveIntake()">Start Matching My Bids &rarr;</button>
           <button class="intake-skip" onclick="dismissIntake()">Skip for now</button>
@@ -473,27 +490,238 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
   }
 })();
 
+/* ── Nevada Gov eMarketplace Commodity List ── */
+const COMMODITIES=[
+  {p:'Audio and Visual',n:'Audio and Visual'},
+  {p:'Audio and Visual',n:'Consumer Electronics: Equipment, Supplies, and Services'},
+  {p:'Audio and Visual',n:'Photographic: Equipment, Supplies and Services'},
+  {p:'Audio and Visual',n:'Presentation: Equipment, Supplies and Services'},
+  {p:'Audio and Visual',n:'Sound and Stereo: Equipment, Supplies and Services'},
+  {p:'Audio and Visual',n:'Television, Video, and Production: Equipment, Supplies and Services'},
+  {p:'Building Maintenance',n:'Building Maintenance: Equipment, Supplies and Services'},
+  {p:'Building Maintenance',n:'Cleaning and Janitorial Equipment and Supplies'},
+  {p:'Building Maintenance',n:'Janitorial Services'},
+  {p:'Building Maintenance',n:'Coverings, Awnings, and Window Shades: Equipment, Supplies and Services'},
+  {p:'Building Maintenance',n:'Demolition, Cleanup, and Restoration Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Doors, Glass, and Windows: Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'General Building Maintenance Services'},
+  {p:'Building Maintenance',n:'Electrical Systems, Lighting, Fixtures, Utility, Supplies and Services'},
+  {p:'Building Maintenance',n:'Elevator and Lift: Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Excavating and Landscaping: Equipment, Machinery, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Exterior Finishing Materials and Services (Gutters, Siding, and Fencing)'},
+  {p:'Building Maintenance',n:'Facilities Maintenance Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Flooring (carpet, tile, etc.): Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Grounds/Landscape Maintenance Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'HVAC: Equipment, Machinery, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Interior Finishing Materials (Cabinetry, Countertops, Partitions, Stairs)'},
+  {p:'Building Maintenance',n:'Interior Finishing Services (Painting, Drywall, Trim Carpentry, Framing, Cabinetry, etc.)'},
+  {p:'Building Maintenance',n:'Locks, Keys, and Locksmith Services'},
+  {p:'Building Maintenance',n:'Masonry, Stone, and Block: Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Paving, Concrete, Asphalt (Parking, Road, Highway): Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Pest Control: Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Plumbing: Equipment, Machinery, Fixtures, Pipe, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Rental Equipment and Machinery'},
+  {p:'Building Maintenance',n:'Roofing Equipment, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Structural Materials'},
+  {p:'Building Maintenance',n:'Tools and General Machinery, Supplies, and Services'},
+  {p:'Building Maintenance',n:'Sub Contracting Services'},
+  {p:'Construction and Contracting',n:'Construction and Contracting'},
+  {p:'Construction and Contracting',n:'Horizontal Construction (highways, streets)'},
+  {p:'Construction and Contracting',n:'Vertical Construction (buildings)'},
+  {p:'Construction and Contracting',n:'Engineering Construction (bridges, dams, pipelines, waterworks, electric transmission lines)'},
+  {p:'Construction and Contracting',n:'Asbestos Remediation Contracting'},
+  {p:'Construction and Contracting',n:'Carpentry, Framing, Finishing Contracting'},
+  {p:'Construction and Contracting',n:'Concrete Contracting'},
+  {p:'Construction and Contracting',n:'Drilling and Wells'},
+  {p:'Construction and Contracting',n:'Electrical Contracting'},
+  {p:'Construction and Contracting',n:'Elevator and Conveyance Contracting'},
+  {p:'Construction and Contracting',n:'Fencing Contracting'},
+  {p:'Construction and Contracting',n:'Fire Protection Contracting'},
+  {p:'Construction and Contracting',n:'HVAC Contracting'},
+  {p:'Construction and Contracting',n:'Landscape Contracting'},
+  {p:'Construction and Contracting',n:'Pool Contracting'},
+  {p:'Construction and Contracting',n:'Plumbing and Heating Contracting'},
+  {p:'Construction and Contracting',n:'Masonry Contracting'},
+  {p:'Construction and Contracting',n:'Roofing Contracting'},
+  {p:'Construction and Contracting',n:'Solar Contracting'},
+  {p:'Construction and Contracting',n:'Tank Fabrication'},
+  {p:'Domestic',n:'Apparel, Clothing, Footwear, Uniforms, Athletic, Medical, Specialty, Accessories, and Services'},
+  {p:'Domestic',n:'Personal and Domestic Services (non medical)'},
+  {p:'Domestic',n:'Personal Care Products, Supplies, and Services (non medical)'},
+  {p:'Environmental',n:'Decontamination and Industrial Cleaning: Equipment, Supplies, and Services'},
+  {p:'Environmental',n:'Environmental Preservation and Restoration Equipment, Supplies and Services'},
+  {p:'Environmental',n:'Recycling: Equipment, Supplies, and Services'},
+  {p:'Environmental',n:'Waste Refuse Removal: Equipment, Supplies, and Services'},
+  {p:'Environmental',n:'Water and Wastewater Treatment and Disposal: Equipment, Supplies, and Services'},
+  {p:'Food and Beverage',n:'Food and Beverage Services'},
+  {p:'Food and Beverage',n:'Fresh Meat, Poultry, and Seafood'},
+  {p:'Food and Beverage',n:'Fresh Fruit'},
+  {p:'Food and Beverage',n:'Fresh Vegetables'},
+  {p:'Food and Beverage',n:'Dairy Products'},
+  {p:'Furniture and Furnishings',n:'Classroom, Instructional, Education, and related supplies'},
+  {p:'Furniture and Furnishings',n:'Hospitality, Housing, Office, and related supplies'},
+  {p:'Furniture and Furnishings',n:'Laboratory and Medical, and related supplies'},
+  {p:'Furniture and Furnishings',n:'Office, Commercial, Industrial, and related supplies'},
+  {p:'Furniture and Furnishings',n:'Services and Repair'},
+  {p:'Industrial and Manufacturing',n:'Appliances and Refrigeration: Equipment, Supplies, and Services'},
+  {p:'Industrial and Manufacturing',n:'Chemicals and Reagents'},
+  {p:'Industrial and Manufacturing',n:'Fuels, Fuel Additives, Lubricants, and Anti Corrosive Materials'},
+  {p:'Industrial and Manufacturing',n:'Laboratory; Measuring, Observing, and Testing: Equipment, Supplies and Services'},
+  {p:'Industrial and Manufacturing',n:'Underground; Utility and Waterworks: Equipment, Supplies, and Services'},
+  {p:'Industrial and Manufacturing',n:'Industrial Production and Manufacturing Services'},
+  {p:'Instructional and Education',n:'Classroom: Equipment, Materials, Maps, Supplies, and Services including Testing'},
+  {p:'Instructional and Education',n:'Educational Training'},
+  {p:'Instructional and Education',n:'Library; Books, Periodicals, Subscriptions: Equipment, Supplies, and Services'},
+  {p:'Medical and Health',n:'Dental: Equipment, Supplies, and Services'},
+  {p:'Medical and Health',n:'Drugs and Pharmaceutical Products'},
+  {p:'Medical and Health',n:'Emergency, First Aid, Sterilization, and Surgical: Equipment and Supplies'},
+  {p:'Medical and Health',n:'Medical and Health Care Services'},
+  {p:'Medical and Health',n:'Physical, Occupational Therapy, and Rehabilitation: Equipment, Supplies, and Services'},
+  {p:'Non Professional Services',n:'Clinical Engineering/Biomed'},
+  {p:'Non Professional Services',n:'Hospital Billing and Revenue Cycle Services'},
+  {p:'Office and Business',n:'Material Handling - Warehouse, Containers, Packaging, and Storage: Equipment, Supplies, and Services'},
+  {p:'Office and Business',n:'Office Equipment and Supplies'},
+  {p:'Office and Business',n:'Office Services'},
+  {p:'Office and Business',n:'Printing, Publishing, Signs, Yearbook: Equipment, Supplies, and Services'},
+  {p:'Office and Business',n:'Promotional Items, Flags, and Awards: Equipment, Supplies, and Services'},
+  {p:'Professional and Consulting Services',n:'Architectural'},
+  {p:'Professional and Consulting Services',n:'Communications, Interpretation, Public Relations, and Marketing Services'},
+  {p:'Professional and Consulting Services',n:'Engineering and Research'},
+  {p:'Professional and Consulting Services',n:'Environmental Management: Air Quality, Sustainability, Monitoring, Studies and Protection Services'},
+  {p:'Professional and Consulting Services',n:'Finance - Banking, Investments, Funding, Merchant Card, and Auditing Services'},
+  {p:'Professional and Consulting Services',n:'Government, Civil Affairs, Political, Public Works, and Utilities'},
+  {p:'Professional and Consulting Services',n:'Graphic Design, Printing, Reproduction, and Art'},
+  {p:'Professional and Consulting Services',n:'Information Technology'},
+  {p:'Professional and Consulting Services',n:'Insurance and Warranty'},
+  {p:'Professional and Consulting Services',n:'Human Resource including Temporary Labor'},
+  {p:'Professional and Consulting Services',n:'Legal and Arbitration'},
+  {p:'Professional and Consulting Services',n:'Photographic, Video Production'},
+  {p:'Professional and Consulting Services',n:'Publishing, Editorial, Writing, Translation, and Yearbook'},
+  {p:'Professional and Consulting Services',n:'Real Estate'},
+  {p:'Professional and Consulting Services',n:'Scientific, Research, Testing, and Chemical'},
+  {p:'Professional and Consulting Services',n:'Travel, Hospitality, and Entertainment'},
+  {p:'Power and Energy',n:'Solar: Equipment, Supplies, Technology, and Services'},
+  {p:'Power and Energy',n:'Wind: Equipment, Supplies, Technology, and Services'},
+  {p:'Power and Energy',n:'Mobile, Backup, and Temporary Generation: Equipment, Supplies, and Services'},
+  {p:'Power and Energy',n:'Natural Gas: Equipment, Supplies, Technology, and Services'},
+  {p:'Security, Public Order and Safety',n:'Emergency and Disaster Readiness and Response: Equipment, Supplies, and Services'},
+  {p:'Security, Public Order and Safety',n:'Fire and Rescue Protection: Equipment, Supplies, and Services'},
+  {p:'Security, Public Order and Safety',n:'Law Enforcement, Public Order, and Traffic Control: Equipment, Supplies, and Services'},
+  {p:'Security, Public Order and Safety',n:'Personal Safety: Equipment, Supplies, and Services'},
+  {p:'Security, Public Order and Safety',n:'Security, Surveillance, and Detection Systems, Equipment, Supplies, and Services'},
+  {p:'Sports and Recreation',n:'Recreation and Playground, Equipment, Aqua Park, Supplies and Services'},
+  {p:'Sports and Recreation',n:'Physical Education and Training Equipment, Supplies, Text Books, and Services'},
+  {p:'Technology',n:'Technology'},
+  {p:'Technology',n:'Communications - Cellular, Data, Voice, Wireless: Equipment, Supplies, Technology, and Services'},
+  {p:'Technology',n:'Computer, Networking, and Internet Services'},
+  {p:'Technology',n:'Computer, Networking, and Internet: Equipment and Supplies'},
+  {p:'Technology',n:'Document Imaging and Management: Equipment, Solutions, and Services'},
+  {p:'Technology',n:'Electronic Components and Hardware: Equipment, Supplies, and Services'},
+  {p:'Technology',n:'Robotics, Sensors, and Programmed Electronics: Equipment, Supplies, and Services'},
+  {p:'Technology',n:'Software (Packaged, Services, and Subscriptions)'},
+  {p:'Technology',n:'Software and Web Site Development Services'},
+  {p:'Transportation',n:'Aviation and Airport: Aircraft, Equipment, Supplies, and Services'},
+  {p:'Transportation',n:'Material Handling and Hauling, Postage, Parcel, and Shipping Services'},
+  {p:'Transportation',n:'Towing, Moving, and Storage Services: Ground, Air, and Marine'},
+  {p:'Transportation',n:'Vehicle Parts, Repair related, and Accessories: Equipment, Machinery, Supplies, and Services'},
+  {p:'Transportation',n:'Transportation Vehicles - Buses, Shuttles, and Large Capacity Vans and Vehicles'},
+  {p:'Transportation',n:'Transportation Vehicles - Personal (Cars, Light duty trucks, Motorcycles, SUV, etc.)'},
+  {p:'Transportation',n:'Transportation Vehicles - Public Safety (Ambulance, Fire, Police, Prisoner Transfer, Rescue)'},
+  {p:'Transportation',n:'Transportation Vehicle Rental Services'}
+];
+
+/* ── Extract short keyword from commodity name ── */
+function commodityKw(name){
+  return name
+    .replace(/:\s*(Equipment,?\s*)?(Machinery,?\s*)?(Supplies,?\s*)?(Technology,?\s*)?(and\s*)?Services?/gi,'')
+    .replace(/,?\s*(Equipment,?\s*)?(Supplies,?\s*)?(and\s*)?Services?$/gi,'')
+    .replace(/\(([^)]+)\)/g,'$1')
+    .replace(/\s*[-–]\s*.+$/,'')
+    .replace(/\s{2,}/g,' ')
+    .trim()
+    .toLowerCase()
+    .split(',')[0].trim();
+}
+
+/* ── Chip state ── */
+var intakeSelected=[];
+
+function renderChips(){
+  var c=$('intakeChips');
+  c.innerHTML=intakeSelected.map(function(n,i){
+    return '<span class="intake-chip">'+esc(n)+'<button class="intake-chip-rm" onclick="removeChip('+i+')" title="Remove">&times;</button></span>';
+  }).join('');
+}
+
+function removeChip(i){
+  intakeSelected.splice(i,1);
+  renderChips();
+}
+
+function selectCommodity(name){
+  if(!intakeSelected.includes(name)) intakeSelected.push(name);
+  $('intakeSearch').value='';
+  $('intakeDropdown').className='intake-dropdown';
+  renderChips();
+  $('intakeSearch').focus();
+}
+
+function filterCommodities(q){
+  if(!q||q.length<2) return [];
+  var lq=q.toLowerCase();
+  return COMMODITIES.filter(function(c){
+    return c.n.toLowerCase().includes(lq)||c.p.toLowerCase().includes(lq);
+  }).slice(0,8);
+}
+
+function highlight(text,q){
+  if(!q) return esc(text);
+  var idx=text.toLowerCase().indexOf(q.toLowerCase());
+  if(idx===-1) return esc(text);
+  return esc(text.slice(0,idx))+'<mark>'+esc(text.slice(idx,idx+q.length))+'</mark>'+esc(text.slice(idx+q.length));
+}
+
+function renderDropdown(q){
+  var dd=$('intakeDropdown'), results=filterCommodities(q);
+  if(!results.length){dd.className='intake-dropdown';return;}
+  dd.innerHTML=results.map(function(c){
+    return '<div class="intake-dd-item" onmousedown="selectCommodity('+JSON.stringify(c.n)+')">'
+      +'<div class="intake-dd-name">'+highlight(c.n,q)+'</div>'
+      +'<div class="intake-dd-parent">'+esc(c.p)+'</div>'
+      +'</div>';
+  }).join('');
+  dd.className='intake-dropdown open';
+}
+
+/* Wire search input */
+document.addEventListener('DOMContentLoaded',function(){
+  var inp=$('intakeSearch');
+  if(!inp) return;
+  inp.addEventListener('input',function(){renderDropdown(this.value.trim());});
+  inp.addEventListener('blur',function(){setTimeout(function(){$('intakeDropdown').className='intake-dropdown';},150);});
+  inp.addEventListener('keydown',function(e){if(e.key==='Escape'){$('intakeDropdown').className='intake-dropdown';}});
+});
+
 function dismissIntake(){
   $('intakeBanner').style.display='none';
   sessionStorage.setItem('nsgcc_intake_skipped','1');
 }
 
 async function saveIntake(){
-  const raw=$('intakeKw').value;
-  const kw=raw.split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
-  const msg=$('intakeMsg'), btn=$('intakeSaveBtn');
-  if(!kw.length){ msg.className='intake-msg err'; msg.textContent='Enter at least one service.'; return; }
+  var kw=intakeSelected.map(commodityKw).filter(Boolean);
+  var msg=$('intakeMsg'), btn=$('intakeSaveBtn');
+  if(!kw.length){ msg.className='intake-msg err'; msg.textContent='Select at least one service category.'; return; }
   btn.disabled=true; btn.textContent='Saving…';
   try{
-    const r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:kw,alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
-    const d=await r.json();
+    var r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:kw,alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
+    var d=await r.json();
     if(!r.ok) throw new Error(d.error||'Could not save.');
     KEYWORDS=kw;
     PROFILE.keywords=kw;
-    $('kwrow').innerHTML='<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('');
+    $('kwrow').innerHTML='<span class="t">Matched to</span>'+KEYWORDS.map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('');
     setStats(); render();
     msg.className='intake-msg ok'; msg.textContent='Matched! Loading your bids…';
-    setTimeout(()=>{ $('intakeBanner').style.display='none'; sessionStorage.setItem('nsgcc_intake_skipped','1'); }, 1200);
+    setTimeout(function(){ $('intakeBanner').style.display='none'; sessionStorage.setItem('nsgcc_intake_skipped','1'); },1200);
   }catch(e){
     msg.className='intake-msg err'; msg.textContent=e.message;
     btn.disabled=false; btn.textContent='Start Matching My Bids →';
