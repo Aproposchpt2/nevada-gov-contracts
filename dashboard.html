@@ -127,6 +127,27 @@ option{background:var(--ink-3)}
 @media(max-width:680px){.set-grid{grid-template-columns:1fr}}
 @media(max-width:1140px){.layout{grid-template-columns:212px 1fr}.analysis{display:none}}
 @media(max-width:820px){.layout{grid-template-columns:1fr}.sidebar{display:none}.stats{grid-template-columns:1fr 1fr}}
+
+/* INTAKE BANNER */
+#intakeBanner{display:none;position:relative;margin-bottom:1.4rem;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,rgba(15,42,106,.9),rgba(12,34,87,.95));border:1px solid rgba(110,231,168,.28)}
+#intakeBanner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--green),var(--amber))}
+.intake-inner{padding:1.6rem 1.8rem}
+.intake-eyebrow{font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:.6rem}
+.intake-title{font-family:var(--disp);font-weight:400;font-size:clamp(1.3rem,2.5vw,1.7rem);color:#fff;line-height:1.1;margin-bottom:.5rem}
+.intake-sub{font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:1.2rem;max-width:600px}
+.intake-input{width:100%;font-family:var(--body);font-size:.95rem;font-weight:300;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(110,231,168,.3);border-radius:10px;padding:.8rem 1rem;margin-bottom:1rem;transition:.2s;resize:none}
+.intake-input:focus{outline:none;border-color:var(--green);background:rgba(110,231,168,.05)}
+.intake-input::placeholder{color:rgba(255,255,255,.3)}
+.intake-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.intake-save{font-family:var(--body);font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:9px;padding:.75rem 1.4rem;cursor:pointer;transition:.2s}
+.intake-save:hover{background:#8ef5c2;transform:translateY(-1px)}
+.intake-save:disabled{opacity:.6;cursor:wait;transform:none}
+.intake-skip{font-family:var(--body);font-size:.72rem;font-weight:500;color:rgba(255,255,255,.38);background:none;border:none;cursor:pointer;padding:.5rem;transition:.15s}
+.intake-skip:hover{color:rgba(255,255,255,.65)}
+.intake-msg{font-size:.84rem;margin-left:4px}
+.intake-msg.ok{color:var(--green)}.intake-msg.err{color:#F87171}
+.intake-close{position:absolute;top:12px;right:14px;background:none;border:none;color:rgba(255,255,255,.3);font-size:1.1rem;cursor:pointer;line-height:1;padding:4px 6px;transition:.15s}
+.intake-close:hover{color:#fff}
 </style>
 </head>
 <body>
@@ -162,6 +183,23 @@ option{background:var(--ink-3)}
       <span class="live" id="liveTag">Live · updated daily</span>
     </div>
     <div id="boardView">
+
+    <!-- First-login service intake banner -->
+    <div id="intakeBanner">
+      <button class="intake-close" onclick="dismissIntake()" title="Close">&times;</button>
+      <div class="intake-inner">
+        <div class="intake-eyebrow">&#9670; Welcome — one quick step</div>
+        <h2 class="intake-title">What services does your business provide?</h2>
+        <p class="intake-sub">Tell us what you do and we'll match open Nevada government bids to your business — automatically, every day.</p>
+        <textarea id="intakeKw" class="intake-input" rows="2" placeholder="e.g. IT services, network installation, security systems, consulting…"></textarea>
+        <div class="intake-actions">
+          <button class="intake-save" id="intakeSaveBtn" onclick="saveIntake()">Start Matching My Bids &rarr;</button>
+          <button class="intake-skip" onclick="dismissIntake()">Skip for now</button>
+          <span class="intake-msg" id="intakeMsg"></span>
+        </div>
+      </div>
+    </div>
+
     <div class="kwrow" id="kwrow"></div>
 
     <div class="stats">
@@ -430,7 +468,37 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
   if(data.scanMode && data.scanMode!=='live') $('liveTag').textContent='Sample data · demo';
   hydrate(); setStats(); render();
   $('gate').style.display='none'; $('app').style.display='grid';
+  if(KEYWORDS.length===0 && !sessionStorage.getItem('nsgcc_intake_skipped')) {
+    $('intakeBanner').style.display='block';
+  }
 })();
+
+function dismissIntake(){
+  $('intakeBanner').style.display='none';
+  sessionStorage.setItem('nsgcc_intake_skipped','1');
+}
+
+async function saveIntake(){
+  const raw=$('intakeKw').value;
+  const kw=raw.split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+  const msg=$('intakeMsg'), btn=$('intakeSaveBtn');
+  if(!kw.length){ msg.className='intake-msg err'; msg.textContent='Enter at least one service.'; return; }
+  btn.disabled=true; btn.textContent='Saving…';
+  try{
+    const r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:kw,alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
+    const d=await r.json();
+    if(!r.ok) throw new Error(d.error||'Could not save.');
+    KEYWORDS=kw;
+    PROFILE.keywords=kw;
+    $('kwrow').innerHTML='<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('');
+    setStats(); render();
+    msg.className='intake-msg ok'; msg.textContent='Matched! Loading your bids…';
+    setTimeout(()=>{ $('intakeBanner').style.display='none'; sessionStorage.setItem('nsgcc_intake_skipped','1'); }, 1200);
+  }catch(e){
+    msg.className='intake-msg err'; msg.textContent=e.message;
+    btn.disabled=false; btn.textContent='Start Matching My Bids →';
+  }
+}
 </script>
 </body>
 </html>
