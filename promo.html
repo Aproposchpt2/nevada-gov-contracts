@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Nevada State Government Contracts Center — Redeem Your Free Trial</title>
+<title>Nevada State Government Contracts Center — Start Your Free Trial</title>
 <meta name="robots" content="noindex"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0F2A6A;--white:#fff;--silver:#C3D0E8;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.22);--green:#6EE7A8;--cyan:#5bd3ff;--amber:#F5C36B;--disp:'Bodoni Moda',Georgia,serif;--sub:'Cormorant',Georgia,serif;--body:'Jost',sans-serif}
+:root{--ink:#0F2A6A;--white:#fff;--silver:#C3D0E8;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.22);--green:#6EE7A8;--cyan:#5bd3ff;--amber:#F5C36B;--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--body);background:linear-gradient(160deg,#0c2257,#0a1c49 60%,#061535);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;color:rgba(255,255,255,.75)}
 .card{width:min(480px,100%);background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:20px;padding:40px 36px 36px;position:relative;overflow:hidden}
@@ -19,11 +19,9 @@ body{font-family:var(--body);background:linear-gradient(160deg,#0c2257,#0a1c49 6
 .bname{font-family:var(--disp);font-size:1.05rem;color:#fff}
 h1{font-family:var(--disp);font-size:clamp(1.6rem,4vw,2rem);color:#fff;line-height:1.1;margin-bottom:8px}
 .sub{font-size:.9rem;line-height:1.6;color:rgba(255,255,255,.6);margin-bottom:28px}
-.pilot-badge{display:inline-flex;align-items:center;gap:8px;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green);border:1px solid rgba(110,231,168,.3);background:rgba(110,231,168,.08);border-radius:999px;padding:.4rem .9rem;margin-bottom:18px}
 label{display:block;font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:7px}
 input{width:100%;font-family:var(--body);font-size:.95rem;font-weight:400;color:#fff;background:rgba(255,255,255,.06);border:1px solid var(--line2);border-radius:10px;padding:13px 15px;margin-bottom:14px;transition:.15s}
 input:focus{outline:none;border-color:var(--cyan);background:rgba(91,211,255,.06)}
-input#code{font-size:1.05rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 .btn{width:100%;font-family:var(--body);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0F2A6A;background:linear-gradient(135deg,#fff,#e8f4ff);border:none;border-radius:10px;padding:14px;cursor:pointer;transition:.2s;margin-top:4px}
 .btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .btn:disabled{opacity:.6;cursor:wait;transform:none;box-shadow:none}
@@ -34,40 +32,41 @@ input#code{font-size:1.05rem;font-weight:600;letter-spacing:.1em;text-transform:
 .benefit{display:flex;align-items:flex-start;gap:11px;font-size:.84rem;color:rgba(255,255,255,.6);line-height:1.5}
 .benefit::before{content:'✓';color:var(--green);font-weight:700;flex:none;margin-top:.05em}
 .fine{margin-top:20px;font-size:.72rem;color:rgba(255,255,255,.3);text-align:center;line-height:1.5}
+.login-link{margin-top:16px;text-align:center;font-size:.82rem;color:rgba(255,255,255,.4)}
+.login-link a{color:var(--cyan);font-weight:600}
 </style>
 </head>
 <body>
 <div class="card">
   <div class="brand"><span class="mark">NV</span><span class="bname">Nevada State Government Contracts Center</span></div>
-  <div class="pilot-badge">◆ UNLV SBDC Pilot Program</div>
-  <h1>Your 30-Day Free Trial</h1>
-  <p class="sub">Enter your business email and the promo code provided by your SBDC advisor to activate free access — no credit card required.</p>
+  <h1>Start Your Free Trial</h1>
+  <p class="sub">Get instant access to live Nevada government bids matched to your business — no credit card required.</p>
+
+  <label for="name">Your Name</label>
+  <input id="name" type="text" placeholder="Jeffery Mitchell" autocomplete="name"/>
+
+  <label for="biz">Business Name</label>
+  <input id="biz" type="text" placeholder="Apropos Group LLC" autocomplete="organization"/>
 
   <label for="email">Business Email</label>
   <input id="email" type="email" placeholder="you@yourbusiness.com" autocomplete="email"/>
 
-  <label for="biz">Business Name</label>
-  <input id="biz" type="text" placeholder="Acme Consulting LLC" autocomplete="organization"/>
-
-  <label for="code">Promo Code</label>
-  <input id="code" type="text" placeholder="UNLV-SBDC-2026" autocomplete="off"/>
-
-  <button class="btn" id="redeemBtn">Activate Free Trial →</button>
+  <button class="btn" id="submitBtn">Access My Dashboard →</button>
   <div class="msg" id="msg"></div>
 
   <div class="benefits">
-    <div class="benefit">Live Nevada state &amp; local procurement bids matched to your business</div>
-    <div class="benefit">Select the services you provide — we surface matching opportunities daily</div>
+    <div class="benefit">Live Nevada state &amp; local procurement bids — updated daily</div>
+    <div class="benefit">Matched to your services — not a generic list</div>
     <div class="benefit">AI-powered fit analysis — pursue or pass, with reasoning</div>
-    <div class="benefit">Daily email alerts for new matched bids</div>
-    <div class="benefit">30 days free · No credit card · Cancel anytime after trial</div>
+    <div class="benefit">Email alerts before deadlines close</div>
   </div>
-  <p class="fine">After your 30-day trial, continue for $19.99/month — Apropos Group LLC Welcoming Price.<br>© 2026 Apropos Group LLC · Nevada State Government Contracts Center</p>
+  <p class="fine">© 2026 Apropos Group LLC · Nevada State Government Contracts Center · $19.99/mo after trial</p>
+  <p class="login-link">Already have an account? <a href="/login.html">Sign in →</a></p>
 </div>
 
 <script>
 'use strict';
-var btn = document.getElementById('redeemBtn');
+var btn = document.getElementById('submitBtn');
 var msgEl = document.getElementById('msg');
 
 function showMsg(text, type) {
@@ -76,49 +75,49 @@ function showMsg(text, type) {
 }
 
 btn.addEventListener('click', async function() {
-  var email = document.getElementById('email').value.trim().toLowerCase();
+  var name  = document.getElementById('name').value.trim();
   var biz   = document.getElementById('biz').value.trim();
-  var code  = document.getElementById('code').value.trim().toUpperCase();
+  var email = document.getElementById('email').value.trim().toLowerCase();
   msgEl.className = 'msg'; msgEl.textContent = '';
 
-  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showMsg('Please enter a valid business email address.', 'err'); return; }
-  if (!code) { showMsg('Please enter your promo code.', 'err'); return; }
+  if (!name)  { showMsg('Please enter your name.', 'err'); return; }
+  if (!biz)   { showMsg('Please enter your business name.', 'err'); return; }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    showMsg('Please enter a valid business email address.', 'err'); return;
+  }
 
-  btn.disabled = true; btn.textContent = 'Activating…';
+  btn.disabled = true; btn.textContent = 'Setting up your account…';
 
   try {
     var res = await fetch('/.netlify/functions/redeem-promo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, business_name: biz, code: code, state: 'NV' })
+      body: JSON.stringify({ email: email, business_name: biz, code: 'WELCOME30', state: 'NV' })
     });
     var data = await res.json();
 
     if (!res.ok || !data.ok) {
-      showMsg(data.error || 'Something went wrong. Please try again.', 'err');
       if (data.login) {
-        msgEl.innerHTML = 'This email already has an active subscription. <a href="/login.html" style="color:var(--cyan);font-weight:600">Log in here →</a>';
+        msgEl.className = 'msg ok';
+        msgEl.innerHTML = 'Account found — <a href="/login.html" style="color:var(--cyan);font-weight:600">sign in here →</a>';
+      } else {
+        showMsg(data.error || 'Something went wrong. Please try again.', 'err');
+        btn.disabled = false; btn.textContent = 'Access My Dashboard →';
       }
-      btn.disabled = false; btn.textContent = 'Activate Free Trial →';
       return;
     }
 
-    // Store session and redirect to dashboard
     localStorage.setItem('stategen_session', data.session_token);
     localStorage.setItem('stategen_trial_end', data.trial_end);
-    showMsg('✓ Trial activated! Taking you to your dashboard…', 'ok');
+    showMsg('✓ Account created! Taking you to your dashboard…', 'ok');
     btn.textContent = 'Opening dashboard…';
     setTimeout(function() { location.href = '/dashboard.html'; }, 1200);
 
   } catch(e) {
     showMsg('Connection error. Please try again.', 'err');
-    btn.disabled = false; btn.textContent = 'Activate Free Trial →';
+    btn.disabled = false; btn.textContent = 'Access My Dashboard →';
   }
 });
-
-// Pre-fill code from URL param: /promo?code=UNLV-SBDC-2026
-var urlCode = new URLSearchParams(location.search).get('code');
-if (urlCode) document.getElementById('code').value = urlCode.toUpperCase();
 </script>
 </body>
 </html>
