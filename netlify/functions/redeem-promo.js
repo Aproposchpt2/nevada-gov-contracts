@@ -4,7 +4,8 @@
 // Returns { ok, session_token, trial_end, message }
 'use strict';
 
-const SUPABASE_URL = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
+const _rawUrl = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
+const SUPABASE_URL = _rawUrl.startsWith('http') ? _rawUrl : 'https://' + _rawUrl;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const RESEND_KEY   = process.env.RESEND_API_KEY;
 const FROM_EMAIL   = process.env.RESEND_FROM_EMAIL || 'no-reply@aproposgroupllc.com';
