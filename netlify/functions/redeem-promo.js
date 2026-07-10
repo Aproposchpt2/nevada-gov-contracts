@@ -4,7 +4,7 @@
 // Returns { ok, session_token, trial_end, message }
 'use strict';
 
-const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_URL = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const RESEND_KEY   = process.env.RESEND_API_KEY;
 const FROM_EMAIL   = process.env.RESEND_FROM_EMAIL || 'no-reply@aproposgroupllc.com';
@@ -44,6 +44,7 @@ exports.handler = async (event) => {
   const biz   = (body.business_name || '').trim();
   const state = (body.state || 'NV').toUpperCase();
 
+  if (!SUPABASE_URL || !SUPABASE_KEY) return { statusCode: 500, headers, body: JSON.stringify({ error: 'Server configuration error.' }) };
   if (!email || !code) return { statusCode: 400, headers, body: JSON.stringify({ error: 'Email and promo code required.' }) };
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid email address.' }) };
 
