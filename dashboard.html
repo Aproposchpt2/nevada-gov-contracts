@@ -230,7 +230,6 @@ option{background:var(--ink-3)}
 <div id="intakePage">
   <header class="intake-page-header">
     <div class="intake-page-brand"><span class="mark">NV</span><span>Nevada State Government Contracts Center</span></div>
-<button class="intake-skip-link" onclick="skipIntakeFull()" style="font-size:.68rem;color:rgba(255,255,255,.25)">Skip for now</button>
   </header>
   <div class="intake-page-body">
     <div class="intake-hero">
@@ -302,23 +301,6 @@ option{background:var(--ink-3)}
     <div id="boardView">
 
     <!-- Commodity Code Intake Banner -->
-    <div id="intakeBanner">
-      <button class="intake-close" onclick="dismissIntake()" title="Close">&times;</button>
-      <div class="intake-inner">
-        <div class="intake-eyebrow">&#9670; One quick step to match your bids</div>
-        <h2 class="intake-title">What services does your business provide?</h2>
-        <p class="intake-sub">Select your service categories — we use Nevada's official procurement codes to surface bids matched exactly to what you do.</p>
-        <div class="intake-chips" id="intakeChips"></div>
-        <input type="text" class="ctree-search" id="ctreeSearch" placeholder="Search categories — roofing, IT, HVAC, security…" autocomplete="off">
-        <div class="ctree-list" id="ctreeList"></div>
-        <div class="intake-actions">
-          <button class="intake-save" id="intakeSaveBtn" onclick="saveIntake()">Build My Dashboard &rarr;</button>
-          <button class="intake-skip" onclick="dismissIntake()">Skip for now</button>
-          <span class="intake-msg" id="intakeMsg"></span>
-        </div>
-      </div>
-    </div>
-
     <div class="kwrow" id="kwrow"></div>
 
     <div class="stats">
