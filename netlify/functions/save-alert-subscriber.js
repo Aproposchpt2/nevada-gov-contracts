@@ -20,8 +20,9 @@ exports.handler = async (event) => {
   if (event.httpMethod !== 'POST')    return j(405, { error: 'POST only' });
 
   let body; try { body = JSON.parse(event.body || '{}'); } catch { return j(400, { error: 'Invalid JSON' }); }
-  const keywords      = cleanKeywords(body.keywords);
-  const business_name = (body.business_name || '').trim() || null;
+  const keywords       = cleanKeywords(body.keywords);
+  const commodity_codes = Array.isArray(body.commodity_codes) ? body.commodity_codes.filter(c => /^[CP]\d+$/.test(c)).slice(0, 50) : null;
+  const business_name  = (body.business_name || '').trim() || null;
   const alerts_opt_in = body.alerts_opt_in !== false; // default true unless explicitly false
   const VALID_CAD     = ['off','weekly','weekday','custom'];
   const alert_cadence = VALID_CAD.includes(body.alert_cadence) ? body.alert_cadence : null;
@@ -32,6 +33,7 @@ exports.handler = async (event) => {
   const buildPatch = () => {
     const p = { keywords, status: 'active', updated_at: new Date().toISOString() };
     if (business_name) p.business_name = business_name;
+    if (commodity_codes) p.commodity_codes = commodity_codes;
     if ('alerts_opt_in' in body) p.alerts_opt_in = alerts_opt_in;
     if (alert_cadence) p.alert_cadence = alert_cadence;
     if (alert_days) p.alert_days = alert_days;
