@@ -103,12 +103,12 @@ btn.addEventListener('click', async function() {
       return;
     }
 
-    // Store session and redirect to onboarding to set up profile
+    // Store session and redirect to dashboard
     localStorage.setItem('stategen_session', data.session_token);
     localStorage.setItem('stategen_trial_end', data.trial_end);
     showMsg('✓ Trial activated! Taking you to your dashboard…', 'ok');
     btn.textContent = 'Opening dashboard…';
-    setTimeout(function() { location.href = '/onboarding.html?promo=1'; }, 1200);
+    setTimeout(function() { location.href = '/dashboard.html'; }, 1200);
 
   } catch(e) {
     showMsg('Connection error. Please try again.', 'err');
