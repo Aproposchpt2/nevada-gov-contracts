@@ -2,6 +2,9 @@
   publish = "."
   functions = "netlify/functions"
 
+[context.production]
+  environment = { NETLIFY_SITE_ID = "d304baf9-cb53-47c3-934f-38a238085f71" }
+
   [build.environment]
     NODE_VERSION = "18"
 
