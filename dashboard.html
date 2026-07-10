@@ -262,7 +262,7 @@ option{background:var(--ink-3)}
   </div>
   <div class="drawer-body" id="drawerBody"></div>
   <div class="drawer-foot">
-    <button class="drawer-done" onclick="closeDrawer()">&#10003; Selection Complete</button>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><button class="drawer-done" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;box-shadow:none" onclick="closeDrawer()">&#8592; Make Another Selection</button><button class="drawer-done" onclick="closeDrawerFinish()">&#10003; Completed My Selection</button></div>
   </div>
 </div>
 
@@ -830,6 +830,7 @@ function openDrawer(parentCode){
   document.body.style.overflow='hidden';
 }
 
+function closeDrawerFinish(){closeDrawer();saveIntakeFull();}
 function closeDrawer(){
   $('catDrawer').classList.remove('open');
   $('catDrawerOv').classList.remove('open');
