@@ -105,7 +105,7 @@ exports.handler = async (event) => {
         from: `NV Gov Contracts Center <${FROM_EMAIL}>`,
         to: [email],
         subject: 'Your 30-day free access to Nevada State Government Contracts Center is ready',
-        text: `Welcome to Nevada State Government Contracts Center!\n\nYour ${trialDays}-day free trial is active through ${trialEndFmt}.\n\nAccess your dashboard here:\nhttps://nvgovcontracts.aproposgroupllc.com/dashboard.html\n\nYour login email: ${email}\n\nNeed help? Reply to this email.\n\n— Apropos Group LLC`
+        text: `Welcome to Nevada State Government Contracts Center!\n\nYour ${trialDays}-day free trial is active through ${trialEndFmt}.\n\nAccess your dashboard here:\nhttps://nvgovcc.aproposgroupllc.com/dashboard.html\n\nYour login email: ${email}\n\nNeed help? Reply to this email.\n\n— Apropos Group LLC`
       })
     }).catch(() => {});
   }

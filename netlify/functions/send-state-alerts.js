@@ -11,7 +11,7 @@ const RESEND_KEY   = process.env.RESEND_API_KEY;
 const FROM         = process.env.RESEND_FROM_EMAIL || 'StateGen <jmitchell@aproposgroupllc.com>';
 
 const SOURCES = {
-  NV: { name: 'Nevada',     site: 'https://nevadastategen.aproposgroupllc.com', bids: 'https://nevadastategen.aproposgroupllc.com/.netlify/functions/ngem-pipeline' },
+  NV: { name: 'Nevada',     site: 'https://nvgovcc.aproposgroupllc.com', bids: 'https://nvgovcc.aproposgroupllc.com/.netlify/functions/ngem-pipeline' },
   CA: { name: 'California', site: 'https://calstategen.aproposgroupllc.com',    bids: 'https://calstategen.aproposgroupllc.com/bids.json' },
 };
 

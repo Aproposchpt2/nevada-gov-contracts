@@ -16,7 +16,7 @@ exports.handler = async (event) => {
 
   let body; try { body = JSON.parse(event.body || '{}'); } catch { return j(400, { error: 'Invalid JSON' }); }
   const session    = (body.session || '').trim();
-  const return_url = (body.return_url || '').trim() || 'https://nevadastategen.aproposgroupllc.com/dashboard.html';
+  const return_url = (body.return_url || '').trim() || 'https://nvgovcc.aproposgroupllc.com/dashboard.html';
   if (!session.startsWith('ses_')) return j(400, { error: 'Missing session.' });
   if (!STRIPE_KEY) return j(500, { error: 'Billing is not configured.' });
 
