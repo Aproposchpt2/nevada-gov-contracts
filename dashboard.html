@@ -806,8 +806,9 @@ function openDrawer(parentCode){
   $('drawerSelectAll').checked=allSel;
   $('drawerBody').innerHTML=_drawerCat.kids.map(function(k){
     var sel=!!intakeSelected[k.c];
-    return '<label class="drawer-item'+(sel?' selected':'')+'" id="di-'+k.c+'">'
-      +'<input type="checkbox" '+(sel?'checked':'')+' onchange="drawerToggleItem(\''+k.c+'\','+JSON.stringify(k.n)+',this.checked)">'
+    var safeName=k.n.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    return '<label class="drawer-item'+(sel?' selected':'')+'" id="di-'+k.c+'" data-code="'+k.c+'" data-name="'+safeName+'">'
+      +'<input type="checkbox" '+(sel?'checked':'')+' onchange="drawerToggleItem(this)">'
       +'<span class="drawer-item-name">'+esc(k.n)+'</span>'
       +'</label>';
   }).join('');
@@ -826,15 +827,17 @@ function closeDrawer(){
   _drawerCat=null;
 }
 
-function drawerToggleItem(code, name, checked){
+function drawerToggleItem(el){
+  var lbl=el.closest('label')||el.parentElement;
+  var code=lbl.dataset.code;
+  var name=lbl.dataset.name;
+  var checked=el.checked;
+  lbl.className='drawer-item'+(checked?' selected':'');
   if(checked) intakeSelected[code]={c:code,n:name,parent:_drawerCat?_drawerCat.n:''};
   else delete intakeSelected[code];
-  var item=document.getElementById('di-'+code);
-  if(item) item.className='drawer-item'+(checked?' selected':'');
   if(_drawerCat){var allSel=_drawerCat.kids.every(function(k){return intakeSelected[k.c];});$('drawerSelectAll').checked=allSel;}
   updateIntakeSelCount();
 }
-
 function drawerToggleAll(checked){
   if(!_drawerCat) return;
   _drawerCat.kids.forEach(function(k){
