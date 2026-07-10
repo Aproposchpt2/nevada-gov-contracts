@@ -177,9 +177,9 @@ option{background:var(--ink-3)}
 .drawer-item input[type=checkbox]{accent-color:var(--green);width:15px;height:15px;flex-shrink:0;margin-top:2px}
 .drawer-item-name{font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.4}
 .drawer-item.selected .drawer-item-name{color:var(--green)}
-.drawer-foot{padding:1rem 1.4rem;border-top:1px solid rgba(191,214,255,.1);flex-shrink:0}
-.drawer-done{width:100%;font-family:var(--body);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:10px;padding:.85rem;cursor:pointer;transition:.2s}
-.drawer-done:hover{background:#8ef5c2}
+.drawer-foot{padding:1rem 1.4rem;border-top:2px solid rgba(110,231,168,.25);flex-shrink:0;background:linear-gradient(180deg,rgba(12,32,80,.95),rgba(7,20,50,1));box-shadow:0 -8px 24px rgba(0,0,0,.4)}
+.drawer-done{width:100%;font-family:var(--body);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:10px;padding:1rem;cursor:pointer;transition:.2s;box-shadow:0 4px 20px rgba(110,231,168,.3)}
+.drawer-done:hover{background:#8ef5c2;transform:translateY(-1px);box-shadow:0 6px 28px rgba(110,231,168,.45)}
 .intake-save-msg{font-size:.82rem;text-align:center;min-height:18px;margin-top:.5rem}
 .intake-save-msg.ok{color:var(--green)}.intake-save-msg.err{color:#F87171}
 @media(max-width:600px){.intake-grid{grid-template-columns:1fr 1fr}}
@@ -255,14 +255,14 @@ option{background:var(--ink-3)}
       <div class="drawer-cat-eyebrow" id="drawerEyebrow">Service Category</div>
       <div class="drawer-cat-name" id="drawerTitle">—</div>
     </div>
-    <button class="drawer-close" onclick="closeDrawer()">Selection Complete ✓</button>
+    <button class="drawer-close" onclick="closeDrawer()">&#x2715; Close</button>
   </div>
   <div class="drawer-select-all">
     <label><input type="checkbox" id="drawerSelectAll" onchange="drawerToggleAll(this.checked)"> Select all in this category</label>
   </div>
   <div class="drawer-body" id="drawerBody"></div>
   <div class="drawer-foot">
-    <button class="drawer-done" onclick="closeDrawer()">Selection Complete — Return to Categories</button>
+    <button class="drawer-done" onclick="closeDrawer()">&#10003; Selection Complete</button>
   </div>
 </div>
 
