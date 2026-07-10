@@ -296,7 +296,10 @@ option{background:var(--ink-3)}
         <div class="eyebrow">Nevada Government eMarketplace · matched to your business</div>
         <h1>Welcome, <em id="biz">member</em>.</h1>
       </div>
-      <span class="live" id="liveTag">Live · updated daily</span>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="live" id="liveTag">Live · updated daily</span>
+        <button onclick="sessionStorage.removeItem('nsgcc_intake_skipped');showIntakePage();" style="font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:8px;padding:.5rem 1rem;cursor:pointer;white-space:nowrap">&#9998; Update My Services</button>
+      </div>
     </div>
     <div id="boardView">
 
