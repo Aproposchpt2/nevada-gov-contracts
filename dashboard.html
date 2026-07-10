@@ -230,11 +230,7 @@ option{background:var(--ink-3)}
 <div id="intakePage">
   <header class="intake-page-header">
     <div class="intake-page-brand"><span class="mark">NV</span><span>Nevada State Government Contracts Center</span></div>
-    <div class="intake-sel-bar">
-      <span class="intake-sel-count" id="intakeSelCount"><b>0</b> categories selected</span>
-      <button class="intake-start-btn" id="intakeStartBtn" onclick="saveIntakeFull()">Build My Dashboard &rarr;</button>
-      <button class="intake-skip-link" onclick="skipIntakeFull()">Skip for now</button>
-    </div>
+<button class="intake-skip-link" onclick="skipIntakeFull()" style="font-size:.68rem;color:rgba(255,255,255,.25)">Skip for now</button>
   </header>
   <div class="intake-page-body">
     <div class="intake-hero">
@@ -246,6 +242,14 @@ option{background:var(--ink-3)}
   </div>
   <div class="intake-save-msg" id="intakeSaveMsg"></div>
 </div>
+
+<!-- Loading spinner overlay -->
+<div id="dashboardLoader" style="display:none;position:fixed;inset:0;z-index:300;background:linear-gradient(160deg,#0a1a3e,#060d22);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem">
+  <svg width="52" height="52" viewBox="0 0 52 52" style="animation:spin 1s linear infinite"><circle cx="26" cy="26" r="22" fill="none" stroke="rgba(110,231,168,.2)" stroke-width="4"/><circle cx="26" cy="26" r="22" fill="none" stroke="#6EE7A8" stroke-width="4" stroke-linecap="round" stroke-dasharray="138" stroke-dashoffset="100" transform="rotate(-90 26 26)"/></svg>
+  <div style="font-family:'Bodoni Moda',serif;font-size:1.4rem;color:#fff;text-align:center">Your dashboard is being built</div>
+  <div style="font-size:.82rem;color:rgba(255,255,255,.45);text-align:center" id="loaderMsg">Matching bids to your service categories…</div>
+</div>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
 
 <!-- Drawer overlay + panel -->
 <div id="catDrawerOv" onclick="closeDrawer()"></div>
@@ -807,7 +811,7 @@ function updateIntakeSelCount(){
   var total=Object.keys(intakeSelected).length;
   var cats=CTREE.filter(function(c){return c.kids.some(function(k){return intakeSelected[k.c];});}).length;
   var el=$('intakeSelCount'); if(el) el.innerHTML='<b>'+cats+'</b> categor'+(cats===1?'y':'ies')+' · <b>'+total+'</b> service'+(total===1?'':'s')+' selected';
-  var btn=$('intakeStartBtn'); if(btn){btn.classList.toggle('ready', total>0);}
+
 }
 
 /* ── Drawer ── */
@@ -900,25 +904,26 @@ async function saveIntakeFull(){
     KEYWORDS=names; VENDOR_CODES=codes; PROFILE.keywords=names; PROFILE.commodity_codes=codes;
     // Clear bid code cache so fit() recalculates with new codes
     ALL.forEach(function(b){delete b._codes;});
-    if(msg){msg.className='intake-save-msg ok';msg.textContent='✓ Dashboard ready — taking you there now…';}
+    // Show spinner
+    $('intakePage').style.display='none';
+    var loader=$('dashboardLoader');
+    if(loader){loader.style.display='flex';}
+    // Update state and render
+    ALL.forEach(function(b){delete b._codes;});
+    var cats=[...new Set(Object.values(intakeSelected).map(function(s){return s.parent;}))];
+    $('kwrow').innerHTML='<span class="t">Matched to</span>'+cats.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(cats.length>5?'<span class="kw">+'+(cats.length-5)+' more</span>':'');
+    setStats();render();
+    // Brief moment to let render complete then reveal dashboard
+    var msgs=['Matching bids to your service categories…','Scoring opportunities against your profile…','Ranking your best matches…'];
+    var mi=0;
+    var ticker=setInterval(function(){mi++;if($('loaderMsg')&&msgs[mi])$('loaderMsg').textContent=msgs[mi];},700);
     setTimeout(function(){
-      // Fade intake page out
-      $('intakePage').style.transition='opacity .4s ease';
-      $('intakePage').style.opacity='0';
-      setTimeout(function(){
-        $('intakePage').style.display='none';
-        $('intakePage').style.opacity='';
-        $('intakePage').style.transition='';
-        document.body.style.overflow='';
-        sessionStorage.setItem('nsgcc_intake_skipped','1');
-        // Update kwrow
-        var cats=[...new Set(Object.values(intakeSelected).map(function(s){return s.parent;}))];
-        $('kwrow').innerHTML='<span class="t">Matched to</span>'+cats.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(cats.length>5?'<span class="kw">+'+(cats.length-5)+' more</span>':'');
-        setStats();render();
-        // Scroll dashboard to top
-        window.scrollTo({top:0,behavior:'smooth'});
-      },400);
-    },600);
+      clearInterval(ticker);
+      if(loader)loader.style.display='none';
+      document.body.style.overflow='';
+      sessionStorage.setItem('nsgcc_intake_skipped','1');
+      window.scrollTo({top:0,behavior:'smooth'});
+    },2100);
   }catch(e){
     if(msg){msg.className='intake-save-msg err';msg.textContent=e.message;}
     if(btn){btn.disabled=false;btn.textContent='Build My Dashboard →';btn.classList.add('ready');}
