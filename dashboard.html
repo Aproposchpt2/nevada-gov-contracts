@@ -232,7 +232,7 @@ option{background:var(--ink-3)}
     <div class="intake-page-brand"><span class="mark">NV</span><span>Nevada State Government Contracts Center</span></div>
     <div class="intake-sel-bar">
       <span class="intake-sel-count" id="intakeSelCount"><b>0</b> categories selected</span>
-      <button class="intake-start-btn" id="intakeStartBtn" onclick="saveIntakeFull()">Start Matching My Bids &rarr;</button>
+      <button class="intake-start-btn" id="intakeStartBtn" onclick="saveIntakeFull()">Build My Dashboard &rarr;</button>
       <button class="intake-skip-link" onclick="skipIntakeFull()">Skip for now</button>
     </div>
   </header>
@@ -308,7 +308,7 @@ option{background:var(--ink-3)}
         <input type="text" class="ctree-search" id="ctreeSearch" placeholder="Search categories — roofing, IT, HVAC, security…" autocomplete="off">
         <div class="ctree-list" id="ctreeList"></div>
         <div class="intake-actions">
-          <button class="intake-save" id="intakeSaveBtn" onclick="saveIntake()">Start Matching My Bids &rarr;</button>
+          <button class="intake-save" id="intakeSaveBtn" onclick="saveIntake()">Build My Dashboard &rarr;</button>
           <button class="intake-skip" onclick="dismissIntake()">Skip for now</button>
           <span class="intake-msg" id="intakeMsg"></span>
         </div>
@@ -900,7 +900,7 @@ async function saveIntakeFull(){
     },1000);
   }catch(e){
     if(msg){msg.className='intake-save-msg err';msg.textContent=e.message;}
-    btn.disabled=false;btn.textContent='Start Matching My Bids →';btn.classList.add('ready');
+    btn.disabled=false;btn.textContent='Build My Dashboard →';btn.classList.add('ready');
   }
 }
 
