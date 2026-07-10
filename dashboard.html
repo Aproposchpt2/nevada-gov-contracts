@@ -138,7 +138,7 @@ option{background:var(--ink-3)}
 .intake-sel-count{font-size:.78rem;color:var(--muted);font-weight:500}
 .intake-sel-count b{color:var(--green)}
 .intake-start-btn{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:9px;padding:.65rem 1.3rem;cursor:pointer;transition:.2s;opacity:.5;pointer-events:none}
-.intake-start-btn.ready{opacity:1;pointer-events:auto}
+.intake-start-btn.ready{opacity:1;pointer-events:auto;animation:intakeGlow .6s ease forwards}.intake-start-btn.ready:hover{background:#8ef5c2;transform:translateY(-2px);box-shadow:0 0 28px rgba(110,231,168,.5)}@keyframes intakeGlow{0%{transform:scale(1)}40%{transform:scale(1.06);box-shadow:0 0 0 6px rgba(110,231,168,.25)}100%{transform:scale(1);box-shadow:0 0 18px rgba(110,231,168,.3)}}
 .intake-start-btn.ready:hover{background:#8ef5c2;transform:translateY(-1px)}
 .intake-skip-link{font-size:.72rem;color:rgba(255,255,255,.3);cursor:pointer;background:none;border:none;font-family:var(--body)}
 .intake-skip-link:hover{color:rgba(255,255,255,.6)}
