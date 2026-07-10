@@ -880,28 +880,48 @@ function dismissIntake(){ skipIntakeFull(); }
 
 async function saveIntakeFull(){
   var codes=Object.keys(intakeSelected);
-  if(!codes.length) return;
+  if(!codes.length){
+    var msg=$('intakeSaveMsg');
+    if(msg){msg.className='intake-save-msg err';msg.textContent='Select at least one service category first.';}
+    return;
+  }
   var names=Object.values(intakeSelected).map(function(s){return ctreeShortName(s.n).toLowerCase();});
   var msg=$('intakeSaveMsg'), btn=$('intakeStartBtn');
-  btn.disabled=true; btn.textContent='Saving…';
+  // Show loading state
+  if(btn){btn.disabled=true;btn.textContent='Building your dashboard…';}
+  if(msg){msg.className='intake-save-msg ok';msg.textContent='Saving your selections…';}
   try{
     var r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:names,commodity_codes:codes,
         alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
     var d=await r.json();
     if(!r.ok) throw new Error(d.error||'Could not save.');
+    // Update state
     KEYWORDS=names; VENDOR_CODES=codes; PROFILE.keywords=names; PROFILE.commodity_codes=codes;
-    if(msg){msg.className='intake-save-msg ok';msg.textContent='✓ Matched! Opening your dashboard…';}
+    // Clear bid code cache so fit() recalculates with new codes
+    ALL.forEach(function(b){delete b._codes;});
+    if(msg){msg.className='intake-save-msg ok';msg.textContent='✓ Dashboard ready — taking you there now…';}
     setTimeout(function(){
-      $('intakePage').style.display='none';
-      document.body.style.overflow='';
-      sessionStorage.setItem('nsgcc_intake_skipped','1');
-      $('kwrow').innerHTML='<span class="t">Matched to</span>'+names.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(names.length>5?'<span class="kw">+'+(names.length-5)+' more</span>':'');
-      setStats();render();
-    },1000);
+      // Fade intake page out
+      $('intakePage').style.transition='opacity .4s ease';
+      $('intakePage').style.opacity='0';
+      setTimeout(function(){
+        $('intakePage').style.display='none';
+        $('intakePage').style.opacity='';
+        $('intakePage').style.transition='';
+        document.body.style.overflow='';
+        sessionStorage.setItem('nsgcc_intake_skipped','1');
+        // Update kwrow
+        var cats=[...new Set(Object.values(intakeSelected).map(function(s){return s.parent;}))];
+        $('kwrow').innerHTML='<span class="t">Matched to</span>'+cats.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(cats.length>5?'<span class="kw">+'+(cats.length-5)+' more</span>':'');
+        setStats();render();
+        // Scroll dashboard to top
+        window.scrollTo({top:0,behavior:'smooth'});
+      },400);
+    },600);
   }catch(e){
     if(msg){msg.className='intake-save-msg err';msg.textContent=e.message;}
-    btn.disabled=false;btn.textContent='Build My Dashboard →';btn.classList.add('ready');
+    if(btn){btn.disabled=false;btn.textContent='Build My Dashboard →';btn.classList.add('ready');}
   }
 }
 
