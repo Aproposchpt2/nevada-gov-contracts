@@ -128,13 +128,63 @@ option{background:var(--ink-3)}
 @media(max-width:1140px){.layout{grid-template-columns:212px 1fr}.analysis{display:none}}
 @media(max-width:820px){.layout{grid-template-columns:1fr}.sidebar{display:none}.stats{grid-template-columns:1fr 1fr}}
 
-/* ── COMMODITY INTAKE BANNER ── */
-#intakeBanner{display:none;position:relative;margin-bottom:1.4rem;border-radius:16px;overflow:hidden;background:linear-gradient(160deg,rgba(12,34,87,.96),rgba(7,20,50,.98));border:1px solid rgba(110,231,168,.22)}
-#intakeBanner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--green),var(--amber))}
-.intake-inner{padding:1.4rem 1.6rem}
-.intake-eyebrow{font-size:.56rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
-.intake-title{font-family:var(--disp);font-weight:400;font-size:clamp(1.2rem,2vw,1.55rem);color:#fff;line-height:1.1;margin-bottom:.4rem}
-.intake-sub{font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.55;margin-bottom:1rem;max-width:580px}
+/* ── FULL-PAGE COMMODITY INTAKE ── */
+#intakePage{display:none;position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#0a1a3e 0%,#060d22 60%,#030810 100%);overflow-y:auto;padding:0}
+.intake-page-header{position:sticky;top:0;z-index:10;background:rgba(6,13,34,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(191,214,255,.1);padding:1rem 1.6rem;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.intake-page-brand{display:flex;align-items:center;gap:10px}
+.intake-page-brand .mark{width:36px;height:36px;border-radius:9px;background:var(--white);color:var(--ink);font-weight:700;font-size:.78rem;display:grid;place-items:center;font-family:var(--body)}
+.intake-page-brand span{font-family:var(--disp);font-size:1.1rem;color:#fff}
+.intake-sel-bar{display:flex;align-items:center;gap:12px}
+.intake-sel-count{font-size:.78rem;color:var(--muted);font-weight:500}
+.intake-sel-count b{color:var(--green)}
+.intake-start-btn{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:9px;padding:.65rem 1.3rem;cursor:pointer;transition:.2s;opacity:.5;pointer-events:none}
+.intake-start-btn.ready{opacity:1;pointer-events:auto}
+.intake-start-btn.ready:hover{background:#8ef5c2;transform:translateY(-1px)}
+.intake-skip-link{font-size:.72rem;color:rgba(255,255,255,.3);cursor:pointer;background:none;border:none;font-family:var(--body)}
+.intake-skip-link:hover{color:rgba(255,255,255,.6)}
+.intake-page-body{max-width:1100px;margin:0 auto;padding:2rem 1.4rem 6rem}
+.intake-hero{text-align:center;margin-bottom:2.4rem}
+.intake-hero .eyebrow{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:.7rem}
+.intake-hero h1{font-family:var(--disp);font-size:clamp(2rem,4vw,3rem);color:#fff;line-height:1.05;margin-bottom:.8rem}
+.intake-hero p{font-size:.95rem;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;line-height:1.7}
+/* category grid */
+.intake-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.intake-cat-card{background:rgba(255,255,255,.045);border:1px solid rgba(191,214,255,.12);border-radius:14px;padding:1.1rem 1.2rem;cursor:pointer;transition:.2s;position:relative;user-select:none}
+.intake-cat-card:hover{background:rgba(255,255,255,.08);border-color:rgba(123,220,255,.3);transform:translateY(-2px)}
+.intake-cat-card.has-sel{border-color:rgba(110,231,168,.4);background:rgba(110,231,168,.06)}
+.intake-cat-name{font-size:.9rem;font-weight:600;color:#fff;line-height:1.3;margin-bottom:.4rem}
+.intake-cat-meta{font-size:.68rem;color:var(--muted)}
+.intake-cat-badge{position:absolute;top:10px;right:10px;background:var(--green);color:var(--ink);font-size:.6rem;font-weight:800;border-radius:999px;padding:.18rem .55rem;min-width:20px;text-align:center}
+.intake-cat-arrow{position:absolute;bottom:10px;right:12px;font-size:.7rem;color:rgba(255,255,255,.25)}
+/* DRAWER */
+#catDrawer{position:fixed;top:0;right:0;height:100vh;width:min(480px,100vw);background:linear-gradient(180deg,#0c2060,#071435);border-left:1px solid rgba(191,214,255,.15);z-index:200;transform:translateX(100%);transition:transform .3s cubic-bezier(.22,1,.36,1);box-shadow:-20px 0 60px rgba(0,0,0,.6);display:flex;flex-direction:column}
+#catDrawer.open{transform:translateX(0)}
+#catDrawerOv{display:none;position:fixed;inset:0;background:rgba(2,8,22,.55);z-index:199;backdrop-filter:blur(3px)}
+#catDrawerOv.open{display:block}
+.drawer-head{padding:1.2rem 1.4rem;border-bottom:1px solid rgba(191,214,255,.1);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.drawer-head-left{}
+.drawer-cat-eyebrow{font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:.3rem}
+.drawer-cat-name{font-family:var(--disp);font-size:1.35rem;color:#fff;line-height:1.1}
+.drawer-close{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:#fff;padding:6px 12px;cursor:pointer;font-family:var(--body);font-size:.72rem;font-weight:700;transition:.15s}
+.drawer-close:hover{background:rgba(255,255,255,.12)}
+.drawer-select-all{padding:.7rem 1.4rem;border-bottom:1px solid rgba(191,214,255,.08);display:flex;align-items:center;gap:10px;flex-shrink:0}
+.drawer-select-all label{font-size:.78rem;color:rgba(255,255,255,.6);cursor:pointer;display:flex;align-items:center;gap:8px}
+.drawer-select-all input{accent-color:var(--green);width:14px;height:14px}
+.drawer-body{flex:1;overflow-y:auto;padding:.6rem 1.4rem 1.4rem;display:flex;flex-direction:column;gap:4px;scrollbar-width:thin;scrollbar-color:rgba(123,220,255,.15) transparent}
+.drawer-item{display:flex;align-items:flex-start;gap:11px;padding:.75rem .85rem;border-radius:10px;cursor:pointer;transition:.15s;border:1px solid transparent}
+.drawer-item:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.07)}
+.drawer-item.selected{background:rgba(110,231,168,.07);border-color:rgba(110,231,168,.25)}
+.drawer-item input[type=checkbox]{accent-color:var(--green);width:15px;height:15px;flex-shrink:0;margin-top:2px}
+.drawer-item-name{font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.4}
+.drawer-item.selected .drawer-item-name{color:var(--green)}
+.drawer-foot{padding:1rem 1.4rem;border-top:1px solid rgba(191,214,255,.1);flex-shrink:0}
+.drawer-done{width:100%;font-family:var(--body);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--green);border:none;border-radius:10px;padding:.85rem;cursor:pointer;transition:.2s}
+.drawer-done:hover{background:#8ef5c2}
+.intake-save-msg{font-size:.82rem;text-align:center;min-height:18px;margin-top:.5rem}
+.intake-save-msg.ok{color:var(--green)}.intake-save-msg.err{color:#F87171}
+@media(max-width:600px){.intake-grid{grid-template-columns:1fr 1fr}}
+/* keep old banner hidden */
+#intakeBanner{display:none!important}
 /* chips */
 .intake-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:.9rem;min-height:0}
 .intake-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(110,231,168,.1);border:1px solid rgba(110,231,168,.28);border-radius:999px;padding:.26rem .7rem;font-size:.74rem;color:var(--green);font-weight:500;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -175,6 +225,46 @@ option{background:var(--ink-3)}
 </head>
 <body>
 <div id="gate" class="gate">Loading your bid board…</div>
+
+<!-- ── FULL-PAGE COMMODITY INTAKE ── -->
+<div id="intakePage">
+  <header class="intake-page-header">
+    <div class="intake-page-brand"><span class="mark">NV</span><span>Nevada State Government Contracts Center</span></div>
+    <div class="intake-sel-bar">
+      <span class="intake-sel-count" id="intakeSelCount"><b>0</b> categories selected</span>
+      <button class="intake-start-btn" id="intakeStartBtn" onclick="saveIntakeFull()">Start Matching My Bids &rarr;</button>
+      <button class="intake-skip-link" onclick="skipIntakeFull()">Skip for now</button>
+    </div>
+  </header>
+  <div class="intake-page-body">
+    <div class="intake-hero">
+      <div class="eyebrow">&#9670; One quick step</div>
+      <h1>What services does<br><em style="font-family:var(--subdisp);color:rgba(255,255,255,.55)">your business provide?</em></h1>
+      <p>Select your service categories below — we use Nevada's official procurement codes to match open government bids to exactly what you do.</p>
+    </div>
+    <div class="intake-grid" id="intakeGrid"></div>
+  </div>
+  <div class="intake-save-msg" id="intakeSaveMsg"></div>
+</div>
+
+<!-- Drawer overlay + panel -->
+<div id="catDrawerOv" onclick="closeDrawer()"></div>
+<div id="catDrawer">
+  <div class="drawer-head">
+    <div class="drawer-head-left">
+      <div class="drawer-cat-eyebrow" id="drawerEyebrow">Service Category</div>
+      <div class="drawer-cat-name" id="drawerTitle">—</div>
+    </div>
+    <button class="drawer-close" onclick="closeDrawer()">Done ✓</button>
+  </div>
+  <div class="drawer-select-all">
+    <label><input type="checkbox" id="drawerSelectAll" onchange="drawerToggleAll(this.checked)"> Select all in this category</label>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <button class="drawer-done" onclick="closeDrawer()">Save Selection &amp; Return to Categories</button>
+  </div>
+</div>
 
 <div class="layout" id="app" style="display:none">
   <!-- SIDEBAR -->
@@ -526,8 +616,8 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
   if(data.scanMode && data.scanMode!=='live') $('liveTag').textContent='Sample data · demo';
   hydrate(); setStats(); render();
   $('gate').style.display='none'; $('app').style.display='grid';
-  if(KEYWORDS.length===0 && !sessionStorage.getItem('nsgcc_intake_skipped')) {
-    $('intakeBanner').style.display='block';
+  if(VENDOR_CODES.length===0 && KEYWORDS.length===0 && !sessionStorage.getItem('nsgcc_intake_skipped')) {
+    showIntakePage();
   }
 })();
 
@@ -693,91 +783,106 @@ const CTREE=[
   {p:'P2046',n:'Transportation',kids:[{c:'C40530',n:'Transportation & Transit'},{c:'C40531',n:'Aviation & Airport'},{c:'C40532',n:'Shipping, Freight & Logistics'},{c:'C40534',n:'Towing, Moving & Storage'},{c:'C40535',n:'Vehicle Parts & Fleet Maintenance'},{c:'C40536',n:'Buses & Shuttles'},{c:'C40538',n:'Fleet Vehicles (Cars, Trucks)'},{c:'C40539',n:'Public Safety Vehicles (Ambulance, Fire)'}]}
 ];
 
-/* ── Selected codes state ── */
-var intakeSelected={};  // {code: {c,n,parent}}
+/* ── Full-page intake state ── */
+var intakeSelected={};
+var _drawerCat=null;
 
 function ctreeShortName(n){return n.replace(/:\s*(Equipment,?\s*)?(Machinery,?\s*)?(Supplies,?\s*)?(Technology,?\s*)?(and\s*)?Services?/gi,'').replace(/\(([^)]{0,30})\)/g,'$1').replace(/\s{2,}/g,' ').trim().split(',')[0].trim();}
 
-function renderIntakeChips(){
-  var el=$('intakeChips'), codes=Object.values(intakeSelected);
-  if(!el) return;
-  el.innerHTML=codes.map(function(s){
-    return '<span class="intake-chip" title="'+esc(s.n)+'">'+esc(ctreeShortName(s.n))
-      +'<button class="intake-chip-rm" onclick="removeIntakeCode(\''+s.c+'\')">&times;</button></span>';
+/* ── Build category grid ── */
+function buildIntakeGrid(){
+  var grid=$('intakeGrid'); if(!grid) return;
+  grid.innerHTML=CTREE.map(function(cat){
+    var sel=cat.kids.filter(function(k){return intakeSelected[k.c];}).length;
+    return '<div class="intake-cat-card'+(sel?' has-sel':'')+'" id="icat-'+cat.p+'" onclick="openDrawer(\''+cat.p+'\')">'
+      +'<div class="intake-cat-name">'+esc(cat.n)+'</div>'
+      +'<div class="intake-cat-meta">'+cat.kids.length+' service types</div>'
+      +(sel?'<span class="intake-cat-badge">'+sel+'</span>':'')
+      +'<span class="intake-cat-arrow">&#8250;</span>'
+      +'</div>';
   }).join('');
-  // Update parent counts
-  CTREE.forEach(function(cat){
-    var countEl=document.getElementById('cc-'+cat.p);
-    if(countEl){var sel=cat.kids.filter(function(k){return intakeSelected[k.c];}).length;countEl.textContent=sel||'';}
-  });
 }
 
-function removeIntakeCode(code){delete intakeSelected[code];var chk=document.getElementById('chk-'+code);if(chk)chk.checked=false;renderIntakeChips();}
+function updateIntakeSelCount(){
+  var total=Object.keys(intakeSelected).length;
+  var cats=CTREE.filter(function(c){return c.kids.some(function(k){return intakeSelected[k.c];});}).length;
+  var el=$('intakeSelCount'); if(el) el.innerHTML='<b>'+cats+'</b> categor'+(cats===1?'y':'ies')+' · <b>'+total+'</b> service'+(total===1?'':'s')+' selected';
+  var btn=$('intakeStartBtn'); if(btn){btn.classList.toggle('ready', total>0);}
+}
 
-function toggleCode(code, name, parentName, checked){
-  if(checked) intakeSelected[code]={c:code,n:name,parent:parentName};
+/* ── Drawer ── */
+function openDrawer(parentCode){
+  _drawerCat=CTREE.find(function(c){return c.p===parentCode;});
+  if(!_drawerCat) return;
+  $('drawerEyebrow').textContent='Service Category';
+  $('drawerTitle').textContent=_drawerCat.n;
+  var allSel=_drawerCat.kids.every(function(k){return intakeSelected[k.c];});
+  $('drawerSelectAll').checked=allSel;
+  $('drawerBody').innerHTML=_drawerCat.kids.map(function(k){
+    var sel=!!intakeSelected[k.c];
+    return '<label class="drawer-item'+(sel?' selected':'')+'" id="di-'+k.c+'">'
+      +'<input type="checkbox" '+(sel?'checked':'')+' onchange="drawerToggleItem(\''+k.c+'\','+JSON.stringify(k.n)+',this.checked)">'
+      +'<span class="drawer-item-name">'+esc(k.n)+'</span>'
+      +'</label>';
+  }).join('');
+  $('catDrawer').classList.add('open');
+  $('catDrawerOv').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeDrawer(){
+  $('catDrawer').classList.remove('open');
+  $('catDrawerOv').classList.remove('open');
+  document.body.style.overflow='';
+  buildIntakeGrid();
+  updateIntakeSelCount();
+  _drawerCat=null;
+}
+
+function drawerToggleItem(code, name, checked){
+  if(checked) intakeSelected[code]={c:code,n:name,parent:_drawerCat?_drawerCat.n:''};
   else delete intakeSelected[code];
-  renderIntakeChips();
+  var item=document.getElementById('di-'+code);
+  if(item) item.className='drawer-item'+(checked?' selected':'');
+  if(_drawerCat){var allSel=_drawerCat.kids.every(function(k){return intakeSelected[k.c];});$('drawerSelectAll').checked=allSel;}
+  updateIntakeSelCount();
 }
 
-function toggleParent(parentCode, checked){
-  var cat=CTREE.find(function(c){return c.p===parentCode;});
-  if(!cat) return;
-  cat.kids.forEach(function(k){
-    var chk=document.getElementById('chk-'+k.c);
-    if(chk){chk.checked=checked;}
-    if(checked) intakeSelected[k.c]={c:k.c,n:k.n,parent:cat.n};
+function drawerToggleAll(checked){
+  if(!_drawerCat) return;
+  _drawerCat.kids.forEach(function(k){
+    if(checked) intakeSelected[k.c]={c:k.c,n:k.n,parent:_drawerCat.n};
     else delete intakeSelected[k.c];
+    var item=document.getElementById('di-'+k.c);
+    if(item){item.className='drawer-item'+(checked?' selected':'');item.querySelector('input').checked=checked;}
   });
-  renderIntakeChips();
+  updateIntakeSelCount();
 }
 
-function buildCtree(filter){
-  var list=$('ctreeList'); if(!list) return;
-  var q=(filter||'').toLowerCase().trim();
-  var html='';
-  CTREE.forEach(function(cat){
-    var kids=q?cat.kids.filter(function(k){return k.n.toLowerCase().includes(q)||cat.n.toLowerCase().includes(q);}):cat.kids;
-    if(!kids.length) return;
-    var selCount=cat.kids.filter(function(k){return intakeSelected[k.c];}).length;
-    var open=q||selCount>0?'open':'';
-    html+='<div class="ctree-parent '+open+'" id="cat-'+cat.p+'">'
-      +'<div class="ctree-parent-row" onclick="toggleCatOpen(\''+cat.p+'\')">'
-      +'<input type="checkbox" class="ctree-parent-chk" id="pchk-'+cat.p+'" onclick="event.stopPropagation();toggleParent(\''+cat.p+'\',this.checked)" '+(selCount===cat.kids.length&&selCount>0?'checked':'')+'>'
-      +'<span class="ctree-parent-name">'+esc(cat.n)+'</span>'
-      +'<span class="ctree-parent-count" id="cc-'+cat.p+'">'+(selCount||'')+'</span>'
-      +'<span class="ctree-arrow">&#9654;</span>'
-      +'</div>'
-      +'<div class="ctree-children">';
-    kids.forEach(function(k){
-      var sel=!!intakeSelected[k.c];
-      html+='<label class="ctree-child-row'+(sel?' selected':'')+'"><input type="checkbox" class="ctree-child-chk" id="chk-'+k.c+'" '+(sel?'checked':'')+' onchange="toggleCode(\''+k.c+'\','+JSON.stringify(k.n)+','+JSON.stringify(cat.n)+',this.checked)">'
-        +'<span class="ctree-child-name">'+esc(k.n)+'</span></label>';
-    });
-    html+='</div></div>';
-  });
-  list.innerHTML=html||'<div style="color:var(--muted);font-size:.82rem;padding:.5rem">No categories found.</div>';
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDrawer();});
+
+/* ── Show/hide intake page ── */
+function showIntakePage(){
+  $('intakePage').style.display='block';
+  document.body.style.overflow='hidden';
+  buildIntakeGrid();
+  updateIntakeSelCount();
 }
 
-function toggleCatOpen(p){var el=document.getElementById('cat-'+p);if(el)el.classList.toggle('open');}
-
-document.addEventListener('DOMContentLoaded',function(){
-  buildCtree();
-  var s=$('ctreeSearch');
-  if(s) s.addEventListener('input',function(){buildCtree(this.value);});
-});
-
-function dismissIntake(){
-  $('intakeBanner').style.display='none';
+function skipIntakeFull(){
+  $('intakePage').style.display='none';
+  document.body.style.overflow='';
   sessionStorage.setItem('nsgcc_intake_skipped','1');
 }
 
-async function saveIntake(){
+function dismissIntake(){ skipIntakeFull(); }
+
+async function saveIntakeFull(){
   var codes=Object.keys(intakeSelected);
+  if(!codes.length) return;
   var names=Object.values(intakeSelected).map(function(s){return ctreeShortName(s.n).toLowerCase();});
-  var msg=$('intakeMsg'), btn=$('intakeSaveBtn');
-  if(!codes.length){msg.className='intake-msg err';msg.textContent='Select at least one service category.';return;}
-  btn.disabled=true;btn.textContent='Saving…';
+  var msg=$('intakeSaveMsg'), btn=$('intakeStartBtn');
+  btn.disabled=true; btn.textContent='Saving…';
   try{
     var r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:names,commodity_codes:codes,
@@ -785,15 +890,21 @@ async function saveIntake(){
     var d=await r.json();
     if(!r.ok) throw new Error(d.error||'Could not save.');
     KEYWORDS=names; VENDOR_CODES=codes; PROFILE.keywords=names; PROFILE.commodity_codes=codes;
-    $('kwrow').innerHTML='<span class="t">Matched to</span>'+names.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(names.length>5?'<span class="kw">+'+( names.length-5)+' more</span>':'');
-    setStats();render();
-    msg.className='intake-msg ok';msg.textContent='&#10003; Matched! Loading your bids…';
-    setTimeout(function(){$('intakeBanner').style.display='none';sessionStorage.setItem('nsgcc_intake_skipped','1');},1200);
+    if(msg){msg.className='intake-save-msg ok';msg.textContent='✓ Matched! Opening your dashboard…';}
+    setTimeout(function(){
+      $('intakePage').style.display='none';
+      document.body.style.overflow='';
+      sessionStorage.setItem('nsgcc_intake_skipped','1');
+      $('kwrow').innerHTML='<span class="t">Matched to</span>'+names.slice(0,5).map(function(k){return '<span class="kw"><b>'+esc(k)+'</b></span>';}).join('')+(names.length>5?'<span class="kw">+'+(names.length-5)+' more</span>':'');
+      setStats();render();
+    },1000);
   }catch(e){
-    msg.className='intake-msg err';msg.textContent=e.message;
-    btn.disabled=false;btn.textContent='Start Matching My Bids →';
+    if(msg){msg.className='intake-save-msg err';msg.textContent=e.message;}
+    btn.disabled=false;btn.textContent='Start Matching My Bids →';btn.classList.add('ready');
   }
 }
+
+async function saveIntake(){saveIntakeFull();}
 </script>
 </body>
 </html>
