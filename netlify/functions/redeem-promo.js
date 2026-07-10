@@ -44,7 +44,9 @@ exports.handler = async (event) => {
   const biz   = (body.business_name || '').trim();
   const state = (body.state || 'NV').toUpperCase();
 
+  console.log('[redeem-promo] SUPABASE_URL prefix:', SUPABASE_URL.slice(0, 10));
   if (!SUPABASE_URL || !SUPABASE_KEY) return { statusCode: 500, headers, body: JSON.stringify({ error: 'Server configuration error.' }) };
+  if (!SUPABASE_URL.startsWith('http')) return { statusCode: 500, headers, body: JSON.stringify({ error: 'SUPABASE_URL missing https prefix.' }) };
   if (!email || !code) return { statusCode: 400, headers, body: JSON.stringify({ error: 'Email and promo code required.' }) };
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid email address.' }) };
 
