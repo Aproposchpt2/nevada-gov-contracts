@@ -880,8 +880,8 @@ async function saveIntakeFull(){
     var r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:names,commodity_codes:codes,
         alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
-    var d=await r.json();
-    if(!r.ok) throw new Error(d.error||'Could not save.');
+    var d; try{d=await r.json();}catch(e){throw new Error('Server error ('+ r.status +'). Please try again.');}
+    if(!r.ok) throw new Error((d&&d.error)||'Could not save.');
     // Update state
     KEYWORDS=names; VENDOR_CODES=codes; PROFILE.keywords=names; PROFILE.commodity_codes=codes;
     // Clear bid code cache so fit() recalculates with new codes

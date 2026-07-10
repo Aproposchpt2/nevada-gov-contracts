@@ -6,7 +6,8 @@
 // Path B: a returning subscriber's token → update their profile.
 
 const crypto = require('crypto');
-const SUPABASE_URL = process.env.SUPABASE_URL;
+const _rawSB = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
+const SUPABASE_URL = _rawSB.startsWith('http') ? _rawSB : 'https://' + _rawSB;
 const SERVICE_KEY  = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const { getSession, evalSession } = require('./verify-checkout-session');
 
