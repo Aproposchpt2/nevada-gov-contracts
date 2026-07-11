@@ -1019,12 +1019,13 @@ async function openNvDrawer(idx) {
             body.appendChild(docs);
           }
           // Contact info
-          if (d.contactName || d.contactEmail) {
+          if (d.contactName || d.contactEmail || d.contactPhone) {
             var contact = document.createElement('div');
-            contact.style.cssText = 'margin-top:.8rem;font-size:.78rem;color:rgba(255,255,255,.5)';
-            contact.innerHTML = '<b style="color:rgba(255,255,255,.65)">Contact:</b> '
-              + (d.contactName ? esc(d.contactName) : '')
-              + (d.contactEmail ? ' · ' + esc(d.contactEmail) : '');
+            contact.style.cssText = 'margin-top:.8rem;padding:.7rem .9rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:8px;font-size:.78rem;color:rgba(255,255,255,.55)';
+            contact.innerHTML = '<b style="color:rgba(255,255,255,.7);display:block;margin-bottom:.35rem">Procurement Contact</b>'
+              + (d.contactName ? '<div>' + esc(d.contactName) + '</div>' : '')
+              + (d.contactEmail ? '<div><a href="mailto:' + esc(d.contactEmail) + '" style="color:var(--cyan)">' + esc(d.contactEmail) + '</a></div>' : '')
+              + (d.contactPhone ? '<div>' + esc(d.contactPhone) + '</div>' : '');
             body.appendChild(contact);
           }
         })
