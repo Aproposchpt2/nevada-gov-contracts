@@ -46,7 +46,7 @@ BID OPPORTUNITY:
 
 Analyze this bid for ${businessName} and respond in this exact JSON format:
 {
-  "score": <number 0-100 representing match percentage>,
+  "score": <number 0-100 — must align with recommendation: GO=70-100, REVIEW=40-69, NO-GO=0-39>,
   "recommendation": "<GO | REVIEW | NO-GO>",
   "summary": "<one sentence verdict>",
   "strengths": ["<strength 1>", "<strength 2>"],
@@ -55,7 +55,12 @@ Analyze this bid for ${businessName} and respond in this exact JSON format:
   "next_steps": "<what to do immediately if pursuing this bid>"
 }
 
-Be direct and practical. Base the score on how well the business services match the bid requirements.`;
+Scoring rules — follow strictly:
+- GO (70-100): Business services genuinely match core bid requirements. Realistic chance of winning.
+- REVIEW (40-69): Partial match or requires more investigation before committing. Could qualify with clarification.
+- NO-GO (0-39): Fundamental service/credential mismatch. Do not pursue.
+
+Be direct and practical. The score MUST be consistent with the recommendation.`;
 
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
