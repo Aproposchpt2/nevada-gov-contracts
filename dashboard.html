@@ -286,7 +286,6 @@ option{background:var(--ink-3)}
   <div class="nv-drawer-body" id="nv-drawer-body"></div>
   <div class="nv-drawer-actions">
     <button class="nv-btn-primary" id="nv-analyze-btn" onclick="analyzeNvFit()">&#9733; Analyze Fit for Apropos Group LLC</button>
-    <button class="nv-btn-primary" style="background:var(--gold);color:var(--ink)" onclick="openNvProposal()">&#9998; Generate Proposal Draft</button>
   </div>
 </div>
 <div id="catDrawerOv" onclick="closeDrawer()"></div>
@@ -1076,6 +1075,17 @@ async function analyzeNvFit() {
       + '</div>';
 
     document.getElementById('nv-drawer-body').insertAdjacentHTML('beforeend', html);
+
+    // Inject proposal button below the report
+    var prevProposal = document.getElementById('nv-proposal-cta');
+    if (prevProposal) prevProposal.remove();
+    var proposalBtn = document.createElement('button');
+    proposalBtn.id = 'nv-proposal-cta';
+    proposalBtn.style.cssText = 'width:100%;margin-top:.9rem;font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:var(--gold);border:none;border-radius:10px;padding:.85rem;cursor:pointer;transition:.15s';
+    proposalBtn.innerHTML = '&#9998; Generate Proposal Draft';
+    proposalBtn.onclick = openNvProposal;
+    document.getElementById('nv-drawer-body').appendChild(proposalBtn);
+
     btn.textContent = '✓ Analysis Complete — Refresh';
   } catch (e) {
     btn.textContent = '&#9733; Analyze Fit for Apropos Group LLC';
