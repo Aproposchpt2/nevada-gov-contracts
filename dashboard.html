@@ -287,7 +287,6 @@ option{background:var(--ink-3)}
   <div class="nv-drawer-actions">
     <button class="nv-btn-primary" id="nv-analyze-btn" onclick="analyzeNvFit()">&#9733; Analyze Fit for Apropos Group LLC</button>
     <button class="nv-btn-primary" style="background:var(--gold);color:var(--ink)" onclick="openNvProposal()">&#9998; Generate Proposal Draft</button>
-    <a class="nv-btn-secondary" id="nv-portal-link" href="#" target="_blank" rel="noopener">View on Nevada Procurement Portal ↗</a>
   </div>
 </div>
 <div id="catDrawerOv" onclick="closeDrawer()"></div>
@@ -968,7 +967,7 @@ function openNvDrawer(bid) {
   var urgClass = bid.due_in_days == null ? '' : bid.due_in_days <= 3 ? 'nv-urgency-high' : bid.due_in_days <= 7 ? 'nv-urgency-med' : 'nv-urgency-ok';
   var typeClass = (bid.bid_type||'').toUpperCase().includes('RFP') ? 'nv-type-rfp' : (bid.bid_type||'').toUpperCase().includes('RFQ') ? 'nv-type-rfq' : 'nv-type-bid';
   document.getElementById('nv-drawer-title').textContent = bid.agency || 'Nevada Bid';
-  document.getElementById('nv-portal-link').href = bid.url || '#';
+  // bid URL kept internal — not exposed to user
   document.getElementById('nv-drawer-body').innerHTML =
     '<span class="nv-type-badge '+typeClass+'">'+(bid.bid_type||'BID')+'</span>' +
     '<h2 style="font-family:var(--disp);font-size:1.35rem;color:#fff;line-height:1.2;margin-bottom:.6rem">'+(bid.title||'—')+'</h2>' +
