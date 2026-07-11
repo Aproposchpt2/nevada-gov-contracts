@@ -983,8 +983,8 @@ async function openNvDrawer(idx) {
       '<div class="nv-meta-card"><div class="nv-meta-label">Days Remaining</div><div class="nv-meta-value '+urgClass+'">'+(bid.due_in_days!=null ? bid.due_in_days+' days' : 'Open')+'</div></div>' +
       '<div class="nv-meta-card"><div class="nv-meta-label">Solicitation #</div><div class="nv-meta-value" style="font-size:.78rem">'+esc(bid.solicitation_no||'—')+'</div></div>' +
       '<div class="nv-meta-card"><div class="nv-meta-label">Status</div><div class="nv-meta-value">'+(bid.status||'Open')+'</div></div>' +
-      (bid.issue_date ? '<div class="nv-meta-card"><div class="nv-meta-label">Issued</div><div class="nv-meta-value" style="font-size:.8rem">'+esc(bid.issue_date)+'</div></div>' : '') +
-      (bid.close_date ? '<div class="nv-meta-card"><div class="nv-meta-label">Closes</div><div class="nv-meta-value '+(soon?'nv-urgency-high':'')+'" style="font-size:.8rem">'+esc(bid.close_date)+'</div></div>' : '') +
+      (bid.issue_date ? '<div class="nv-meta-card"><div class="nv-meta-label">Issued</div><div class="nv-meta-value" style="font-size:.8rem">'+esc(new Date(bid.issue_date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}))+'</div></div>' : '') +
+      (bid.close_date ? '<div class="nv-meta-card"><div class="nv-meta-label">Closes</div><div class="nv-meta-value '+(soon?'nv-urgency-high':'')+'" style="font-size:.8rem">'+esc(new Date(bid.close_date).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}))+'</div></div>' : '') +
     '</div>' +
     '<div style="margin-top:1rem;padding:1rem;background:rgba(91,211,255,.05);border:1px solid rgba(91,211,255,.15);border-radius:10px;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6">Review this opportunity in detail on the Nevada Procurement Portal before submitting a response. Verify all requirements, deadlines, and eligibility criteria independently.</div>';
   document.getElementById('nv-overlay').style.display = 'block';
