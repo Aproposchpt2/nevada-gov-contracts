@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nevada State Government Contracts Center — Proposal Writer</title>
+<meta name="robots" content="noindex"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Cormorant:ital,wght@1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F2A6A;--white:#fff;--silver:#C3D0E8;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.22);--green:#6EE7A8;--cyan:#5bd3ff;--amber:#F5C36B;--gold:#C9A84C;--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:linear-gradient(160deg,#0c2257,#070e1e 60%,#040914);min-height:100vh;color:rgba(255,255,255,.82)}
+.topbar{background:rgba(7,20,50,.95);border-bottom:1px solid var(--line);padding:.9rem 1.6rem;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:36px;height:36px;border-radius:8px;background:#fff;color:var(--ink);font-weight:700;font-size:.8rem;display:grid;place-items:center;font-family:var(--body)}
+.bname{font-family:var(--disp);font-size:1.1rem;color:#fff}
+.back-btn{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:.5rem 1rem;cursor:pointer;text-decoration:none;transition:.15s}
+.back-btn:hover{color:#fff;background:rgba(255,255,255,.12)}
+.container{max-width:860px;margin:0 auto;padding:2rem 1.4rem 4rem}
+.bid-card{background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1.6rem}
+.bid-eyebrow{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:.4rem}
+.bid-title{font-family:var(--disp);font-size:1.4rem;color:#fff;margin-bottom:.3rem}
+.bid-meta{font-size:.8rem;color:rgba(255,255,255,.5)}
+h1{font-family:var(--disp);font-size:clamp(1.6rem,3vw,2.2rem);color:#fff;margin-bottom:.5rem}
+.sub{font-size:.9rem;color:rgba(255,255,255,.55);margin-bottom:1.8rem;line-height:1.7}
+#proposalOutput{display:none;background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:14px;padding:1.4rem;margin-top:1.4rem;white-space:pre-wrap;font-size:.9rem;line-height:1.8;color:rgba(255,255,255,.85)}
+#proposalOutput h2{font-family:var(--disp);color:#fff;font-size:1.2rem;margin:1.2rem 0 .5rem;border-bottom:1px solid var(--line);padding-bottom:.4rem}
+#proposalOutput h2:first-child{margin-top:0}
+.generate-btn{width:100%;font-family:var(--body);font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);border:none;border-radius:12px;padding:1rem;cursor:pointer;transition:.2s;margin-top:1rem}
+.generate-btn:hover{background:#e8b84a;transform:translateY(-1px)}
+.generate-btn:disabled{opacity:.6;cursor:wait;transform:none}
+.copy-btn{font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:.5rem 1rem;cursor:pointer;margin-top:1rem;display:none}
+.copy-btn:hover{color:#fff;background:rgba(255,255,255,.12)}
+.status{font-size:.82rem;color:rgba(255,255,255,.5);margin-top:.6rem;min-height:18px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><span class="mark">NV</span><span class="bname">Nevada State Government Contracts Center</span></div>
+  <a class="back-btn" href="/dashboard.html">&#8592; Back to Dashboard</a>
+</div>
+
+<div class="container">
+  <div class="bid-card" id="bidCard">
+    <div class="bid-eyebrow">Bid Opportunity</div>
+    <div class="bid-title" id="bidTitle">Loading…</div>
+    <div class="bid-meta" id="bidMeta"></div>
+  </div>
+
+  <h1>Proposal Writer</h1>
+  <p class="sub">AI-assisted proposal draft tailored to this opportunity and your business profile. Review and customize before submitting.</p>
+
+  <button class="generate-btn" id="generateBtn" onclick="generateProposal()">&#9998; Generate Proposal Draft</button>
+  <div class="status" id="status"></div>
+  <div id="proposalOutput"></div>
+  <button class="copy-btn" id="copyBtn" onclick="copyProposal()">Copy to Clipboard</button>
+</div>
+
+<script>
+'use strict';
+var params = new URLSearchParams(location.search);
+var BID_TITLE = params.get('title') || 'Nevada Government Bid';
+var BID_AGENCY = params.get('agency') || 'Nevada State Agency';
+var BID_SOL = params.get('sol') || '';
+var BID_TYPE = params.get('type') || 'Bid';
+var BUSINESS = params.get('business') || 'Apropos Group LLC';
+var SERVICES = params.get('services') || 'Technology, Software, IT Services';
+
+document.getElementById('bidTitle').textContent = BID_TITLE;
+document.getElementById('bidMeta').textContent = BID_AGENCY + (BID_SOL ? ' · ' + BID_SOL : '') + ' · ' + BID_TYPE;
+
+async function generateProposal() {
+  var btn = document.getElementById('generateBtn');
+  var status = document.getElementById('status');
+  var output = document.getElementById('proposalOutput');
+  btn.disabled = true; btn.textContent = 'Generating…';
+  status.textContent = 'AI is drafting your proposal — this takes about 15 seconds…';
+
+  try {
+    var res = await fetch('/.netlify/functions/proposal-writer-nv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        bid: { title: BID_TITLE, agency: BID_AGENCY, solicitation_no: BID_SOL, bid_type: BID_TYPE },
+        business: BUSINESS,
+        services: SERVICES
+      })
+    });
+    var data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data.error || 'Generation failed.');
+
+    output.innerHTML = formatProposal(data.proposal);
+    output.style.display = 'block';
+    document.getElementById('copyBtn').style.display = 'inline-block';
+    status.textContent = '✓ Draft complete — review carefully before submitting.';
+    btn.textContent = '&#9998; Regenerate Draft';
+  } catch(e) {
+    status.textContent = 'Error: ' + e.message;
+    btn.textContent = '&#9998; Generate Proposal Draft';
+  }
+  btn.disabled = false;
+}
+
+function formatProposal(text) {
+  return text
+    .replace(/^#{1,3}\s+(.+)$/gm, '<h2>$1</h2>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n\n/g, '<br><br>');
+}
+
+function copyProposal() {
+  var text = document.getElementById('proposalOutput').innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    document.getElementById('copyBtn').textContent = '✓ Copied!';
+    setTimeout(function(){ document.getElementById('copyBtn').textContent = 'Copy to Clipboard'; }, 2000);
+  });
+}
+</script>
+</body>
+</html>

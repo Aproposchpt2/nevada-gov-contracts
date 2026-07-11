@@ -994,23 +994,60 @@ function closeNvDrawer() {
   _nvBid = null;
 }
 
-function analyzeNvFit() {
+async function analyzeNvFit() {
   if (!_nvBid) return;
   var btn = document.getElementById('nv-analyze-btn');
-  btn.textContent = 'Analyzing…';
+  btn.textContent = 'Analyzing bid…';
   btn.disabled = true;
-  // Placeholder — wire to Analyze Fit agent in next sprint
-  setTimeout(function() {
+
+  // Remove any previous analysis
+  var prev = document.getElementById('nv-analysis-result');
+  if (prev) prev.remove();
+
+  try {
+    var res = await fetch(API + '/analyze-fit-nv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ bid: _nvBid, profile: PROFILE })
+    });
+    var data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data.error || 'Analysis failed.');
+
+    var a = data.analysis;
+    var recColor = a.recommendation === 'GO' ? 'var(--green)' : a.recommendation === 'NO-GO' ? 'var(--red)' : 'var(--amber)';
+    var recBg = a.recommendation === 'GO' ? 'rgba(62,227,145,.1)' : a.recommendation === 'NO-GO' ? 'rgba(255,105,105,.1)' : 'rgba(245,195,107,.1)';
+
+    var html = '<div id="nv-analysis-result" style="margin-top:1rem;border:1px solid '+recColor+';border-radius:12px;background:'+recBg+';padding:1.1rem 1.2rem">'
+      + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem">'
+      +   '<span style="font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:'+recColor+';font-weight:800">AI Fit Analysis</span>'
+      +   '<span style="font-family:var(--disp);font-size:1.6rem;color:'+recColor+';font-weight:700">'+a.score+'%</span>'
+      + '</div>'
+      + '<div style="font-size:1rem;font-weight:700;color:#fff;margin-bottom:.5rem">'+esc(a.recommendation)+' — '+esc(a.summary)+'</div>'
+      + (a.strengths&&a.strengths.length ? '<div style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:.4rem"><b style="color:var(--green)">✓ Strengths:</b> '+a.strengths.map(function(s){return esc(s);}).join(' · ')+'</div>' : '')
+      + (a.risks&&a.risks.length ? '<div style="font-size:.78rem;color:rgba(255,255,255,.6);margin-bottom:.4rem"><b style="color:var(--amber)">⚠ Risks:</b> '+a.risks.map(function(r){return esc(r);}).join(' · ')+'</div>' : '')
+      + (a.next_steps ? '<div style="font-size:.8rem;color:rgba(255,255,255,.7);margin-top:.6rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.1)"><b>Next step:</b> '+esc(a.next_steps)+'</div>' : '')
+      + '</div>';
+
+    document.getElementById('nv-drawer-body').insertAdjacentHTML('beforeend', html);
+    btn.textContent = '✓ Analysis Complete — Refresh';
+  } catch (e) {
     btn.textContent = '&#9733; Analyze Fit for Apropos Group LLC';
-    btn.disabled = false;
-    alert('Analyze Fit agent coming next — this will score ' + (_nvBid.title||'this bid') + ' against your capabilities and return a Go/No-Go recommendation.');
-  }, 800);
+    alert('Analysis error: ' + e.message);
+  }
+  btn.disabled = false;
 }
 
 function openNvProposal() {
   if (!_nvBid) return;
-  // Placeholder — wire to Proposal Writer in next sprint
-  alert('Proposal Writer coming next — this will generate a tailored proposal draft for ' + (_nvBid.title||'this bid') + '.');
+  var params = new URLSearchParams({
+    title: _nvBid.title || '',
+    agency: _nvBid.agency || '',
+    sol: _nvBid.solicitation_no || '',
+    type: _nvBid.bid_type || '',
+    business: PROFILE.business_name || 'Apropos Group LLC',
+    services: (PROFILE.keywords || []).slice(0,5).join(', ')
+  });
+  window.open('/proposal.html?' + params.toString(), '_blank');
 }
 
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeNvDrawer(); });
