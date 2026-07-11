@@ -42,7 +42,7 @@ BID OPPORTUNITY:
 - Type: ${bid.bid_type || 'Bid'}
 - Solicitation #: ${bid.solicitation_no || 'N/A'}
 - Days remaining: ${bid.due_in_days != null ? bid.due_in_days + ' days' : 'Open'}
-- Status: ${bid.status || 'Issued'}
+- Status: ${bid.status || 'Issued'}${bid.description ? '\n- Scope of Work: ' + bid.description.slice(0, 800) : ''}
 
 Analyze this bid for ${businessName} and respond in this exact JSON format:
 {

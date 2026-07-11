@@ -33,7 +33,7 @@ BID OPPORTUNITY:
 - Title: ${bid.title}
 - Issuing Agency: ${bid.agency || 'Nevada State Agency'}
 - Solicitation #: ${bid.solicitation_no || 'N/A'}
-- Type: ${bid.bid_type || 'Bid'}
+- Type: ${bid.bid_type || 'Bid'}${bid.description ? '\n- Scope of Work: ' + bid.description.slice(0, 800) : ''}
 
 Write a complete proposal draft with these sections:
 ## Executive Summary

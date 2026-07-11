@@ -67,6 +67,7 @@ var BID_SOL = params.get('sol') || '';
 var BID_TYPE = params.get('type') || 'Bid';
 var BUSINESS = params.get('business') || 'Apropos Group LLC';
 var SERVICES = params.get('services') || 'Technology, Software, IT Services';
+var BID_DESCRIPTION = params.get('description') || '';
 
 document.getElementById('bidTitle').textContent = BID_TITLE;
 document.getElementById('bidMeta').textContent = BID_AGENCY + (BID_SOL ? ' · ' + BID_SOL : '') + ' · ' + BID_TYPE;
@@ -83,7 +84,7 @@ async function generateProposal() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        bid: { title: BID_TITLE, agency: BID_AGENCY, solicitation_no: BID_SOL, bid_type: BID_TYPE },
+        bid: { title: BID_TITLE, agency: BID_AGENCY, solicitation_no: BID_SOL, bid_type: BID_TYPE, description: BID_DESCRIPTION || null },
         business: BUSINESS,
         services: SERVICES
       })

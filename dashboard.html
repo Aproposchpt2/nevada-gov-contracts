@@ -960,9 +960,11 @@ async function saveIntake(){saveIntakeFull();}
 
 /* ── NEVADA BID DRAWER ── */
 var _nvBid = null;
+var _nvDetail = null;
 
-function openNvDrawer(bid) {
+async function openNvDrawer(bid) {
   _nvBid = bid;
+  _nvDetail = null;
   var soon = bid.due_in_days != null && bid.due_in_days <= 7;
   var urgClass = bid.due_in_days == null ? '' : bid.due_in_days <= 3 ? 'nv-urgency-high' : bid.due_in_days <= 7 ? 'nv-urgency-med' : 'nv-urgency-ok';
   var typeClass = (bid.bid_type||'').toUpperCase().includes('RFP') ? 'nv-type-rfp' : (bid.bid_type||'').toUpperCase().includes('RFQ') ? 'nv-type-rfq' : 'nv-type-bid';
@@ -984,6 +986,46 @@ function openNvDrawer(bid) {
   document.getElementById('nv-overlay').style.display = 'block';
   document.getElementById('nv-drawer').classList.add('open');
   document.body.style.overflow = 'hidden';
+
+  // Fetch SOW/description in background
+  if (bid.bid_id || bid.id) {
+    var bidID = String(bid.bid_id || bid.id).replace(/[^0-9]/g,'');
+    if (bidID) {
+      fetch(API + '/ngem-detail?bidID=' + bidID)
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          if (!d.ok) return;
+          _nvDetail = d;
+          var body = document.getElementById('nv-drawer-body');
+          // Append SOW section
+          if (d.description) {
+            var sow = document.createElement('div');
+            sow.style.cssText = 'margin-top:1.2rem;padding:1rem 1.1rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:10px';
+            sow.innerHTML = '<div style="font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:.5rem">Scope of Work</div>'
+              + '<div style="font-size:.84rem;color:rgba(255,255,255,.75);line-height:1.65">' + esc(d.description) + '</div>';
+            body.appendChild(sow);
+          }
+          // Append documents checklist
+          if (d.documents && d.documents.length) {
+            var docs = document.createElement('div');
+            docs.style.cssText = 'margin-top:.8rem;padding:1rem 1.1rem;background:rgba(91,211,255,.04);border:1px solid rgba(91,211,255,.12);border-radius:10px';
+            docs.innerHTML = '<div style="font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:.6rem">Bid Documents</div>'
+              + d.documents.map(function(doc){ return '<div style="font-size:.8rem;color:rgba(255,255,255,.7);padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,.06)">&#128196; '+esc(doc)+'</div>'; }).join('');
+            body.appendChild(docs);
+          }
+          // Contact info
+          if (d.contactName || d.contactEmail) {
+            var contact = document.createElement('div');
+            contact.style.cssText = 'margin-top:.8rem;font-size:.78rem;color:rgba(255,255,255,.5)';
+            contact.innerHTML = '<b style="color:rgba(255,255,255,.65)">Contact:</b> '
+              + (d.contactName ? esc(d.contactName) : '')
+              + (d.contactEmail ? ' · ' + esc(d.contactEmail) : '');
+            body.appendChild(contact);
+          }
+        })
+        .catch(function(){});
+    }
+  }
 }
 
 function closeNvDrawer() {
@@ -1007,7 +1049,7 @@ async function analyzeNvFit() {
     var res = await fetch(API + '/analyze-fit-nv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ bid: _nvBid, profile: PROFILE })
+      body: JSON.stringify({ bid: Object.assign({}, _nvBid, { description: _nvDetail && _nvDetail.description || null }), profile: PROFILE })
     });
     var data = await res.json();
     if (!res.ok || !data.ok) throw new Error(data.error || 'Analysis failed.');
@@ -1044,7 +1086,8 @@ function openNvProposal() {
     sol: _nvBid.solicitation_no || '',
     type: _nvBid.bid_type || '',
     business: PROFILE.business_name || 'Apropos Group LLC',
-    services: (PROFILE.keywords || []).slice(0,5).join(', ')
+    services: (PROFILE.keywords || []).slice(0,5).join(', '),
+    description: (_nvDetail && _nvDetail.description || '').slice(0, 600)
   });
   window.open('/proposal.html?' + params.toString(), '_blank');
 }
