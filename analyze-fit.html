@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analyze Fit — Nevada Government Contract Center</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f2a6a;--deep:#071632;--panel:#0d2454;--line:rgba(255,255,255,.12);--text:#f5f8ff;--muted:#a8bad8;--green:#6ee7a8;--amber:#f5c36b;--red:#ff7b7b;--cyan:#5bd3ff;--gold:#d5ae55;--disp:'Bodoni Moda',Georgia,serif;--body:'Jost',Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--ink),var(--deep));color:var(--text);font-family:var(--body);min-height:100vh}.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 22px;background:rgba(7,22,50,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.brand{font-family:var(--disp);font-size:1.05rem}.brand small{display:block;font-family:var(--body);font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.back,.print{border:1px solid var(--line);border-radius:8px;padding:9px 14px;background:rgba(255,255,255,.05);color:var(--text);font-family:var(--body);font-weight:600;cursor:pointer;text-decoration:none}.page{max-width:920px;margin:auto;padding:30px 20px 80px}.loading,.error{text-align:center;padding:72px 20px}.spinner{width:48px;height:48px;border:3px solid rgba(255,255,255,.12);border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 18px}@keyframes spin{to{transform:rotate(360deg)}}.hero{display:flex;align-items:center;gap:26px;flex-wrap:wrap;background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:18px}.score{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;border:4px solid var(--green);font-family:var(--disp);font-size:2rem}.hero-main{flex:1;min-width:240px}.kicker{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}h1{font-family:var(--disp);font-weight:400;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.15;margin:.35rem 0}.meta{color:var(--muted);font-size:.84rem}.badge{display:inline-block;margin-top:10px;padding:6px 13px;border-radius:999px;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1px solid}.pursue{color:var(--green);border-color:rgba(110,231,168,.4);background:rgba(110,231,168,.09)}.review{color:var(--amber);border-color:rgba(245,195,107,.4);background:rgba(245,195,107,.09)}.pass{color:var(--red);border-color:rgba(255,123,123,.4);background:rgba(255,123,123,.09)}.hardstop{margin-top:14px;padding:12px 14px;border-left:4px solid var(--red);background:rgba(255,123,123,.08);border-radius:7px;color:#ffdada}.score-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}.mini{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:11px;padding:13px}.mini b{display:block;font-size:1.15rem}.mini span{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.section{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:13px;padding:21px 24px;margin-bottom:12px}.section h2{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin:0 0 12px}.section h2 i{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;font-style:normal;background:rgba(91,211,255,.12);margin-right:8px}.section p{margin:0;white-space:pre-line;color:rgba(255,255,255,.82);line-height:1.75}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.primary{background:#fff;color:var(--ink);border-color:#fff}.proposal{background:rgba(213,174,85,.15);color:#f1d58d;border-color:rgba(213,174,85,.4)}@media(max-width:700px){.score-grid{grid-template-columns:repeat(2,1fr)}.top{align-items:flex-start}.hero{padding:20px}.section{padding:18px}}@media print{.top,.actions{display:none}body{background:#fff;color:#111}.page{max-width:none}.hero,.section,.mini{background:#fff;color:#111;border-color:#bbb}.section p,.meta{color:#333}}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand">Nevada Government Contract Center<small>Contract Fit Intelligence Report</small></div><a class="back" href="/dashboard.html">← Back to Contracts</a></header>
+<main class="page">
+<div id="loading" class="loading"><div class="spinner"></div><h2>Building your detailed fit report…</h2><p>Reviewing eligibility, capability, compliance, deadline risk, and proposal readiness.</p></div>
+<div id="error" class="error" hidden><h2>Report unavailable</h2><p id="errorText"></p><p><a class="back" href="/dashboard.html">Return to dashboard</a></p></div>
+<div id="report" hidden></div>
+</main>
+<script>
+'use strict';
+const payload = JSON.parse(sessionStorage.getItem('nv_analyze_payload') || 'null');
+const esc = v => String(v ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const titles=['Opportunity Summary','Why This Opportunity Matched','Eligibility Review','Capability Match','Bid / No-Bid Rationale','Performance Requirements','Staffing and Delivery Requirements','Compliance Requirements','Deadline Risk','Pricing Considerations','Draft Technical Approach','Proposal Checklist','Questions for the Contracting Officer','Recommended Next Step'];
+function label(k){return k.replace(/([A-Z])/g,' $1').replace(/^./,m=>m.toUpperCase())}
+function showError(message){document.getElementById('loading').hidden=true;document.getElementById('error').hidden=false;document.getElementById('errorText').textContent=message}
+function render(data){
+ const a=data.analysis||{};const bid=data.bid||payload.bid||{};const rec=a.recommendation||'REVIEW';const cls=rec==='PURSUE'?'pursue':rec==='PASS'?'pass':'review';
+ let html=`<section class="hero"><div class="score" style="border-color:${rec==='PURSUE'?'var(--green)':rec==='PASS'?'var(--red)':'var(--amber)'}">${esc(a.fitScore)}%</div><div class="hero-main"><div class="kicker">Nevada public-contract opportunity</div><h1>${esc(bid.title||'Contract Fit Report')}</h1><div class="meta">${esc(bid.agency||'Nevada public agency')} · ${esc(bid.solicitation_no||bid.id||'Solicitation number unavailable')}</div><span class="badge ${cls}">${esc(rec)}</span>${a.hardStop?`<div class="hardstop"><strong>Mandatory eligibility stop:</strong> ${esc(a.hardStopReason||'A mandatory requirement was not satisfied.')}</div>`:''}</div></section>`;
+ const scores=a.scores||{};html+='<section class="score-grid">'+Object.keys(scores).map(k=>`<div class="mini"><b>${esc(scores[k])}</b><span>${esc(label(k))}</span></div>`).join('')+'</section>';
+ for(let i=1;i<=14;i++){const key='s'+i;html+=`<section class="section"><h2><i>${i}</i>${esc(titles[i-1])}</h2><p>${esc((a.sections||{})[key]||'Information requires verification from the solicitation documents.')}</p></section>`}
+ html+=`<div class="actions"><button class="back primary" onclick="window.print()">Export / Print Report</button><a class="back proposal" href="/proposal.html">Develop Proposal</a><a class="back" href="/dashboard.html">Back to Contracts</a></div>`;
+ document.getElementById('loading').hidden=true;document.getElementById('report').hidden=false;document.getElementById('report').innerHTML=html;
+}
+(async()=>{
+ if(!payload||!payload.bid){showError('No opportunity was selected. Return to the dashboard and select Analyze Fit again.');return}
+ try{const r=await fetch('/.netlify/functions/analyze-fit-nv',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const d=await r.json();if(!r.ok||!d.ok)throw new Error(d.error+(d.detail?' — '+d.detail:''));render(d)}catch(e){showError(e.message||'The analysis could not be completed.')}
+})();
+</script>
+</body>
+</html>
