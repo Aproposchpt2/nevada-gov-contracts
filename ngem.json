@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-07-20T03:02:28.342Z",
+  "generatedAt": "2026-07-20T15:13:05.805Z",
   "count": 20,
-  "detail_fetched_count": 5,
+  "detail_fetched_count": 6,
   "bids": [
     {
       "id": "20172",
@@ -130,12 +130,15 @@
       "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20224&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "This bid will provide a contract for the purchase of Horizontal, split case, double suction pumps and motors. All materials and parts supplied shall be FOB Destination, Freight Prepaid & Allowed, in accordance with the bid specifications and conditions.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20187",
@@ -397,7 +400,10 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
+      "documents": [
+        "Description",
+        "File Size"
+      ],
       "detail_fetched": false
     },
     {
