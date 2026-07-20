@@ -1,0 +1,9 @@
+{
+  "name": "stategen-nv-ingest",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "scrape-ngem": "node scripts/scrape-ngem.js",
+    "sync-supabase": "node scripts/sync-supabase-nv.js"
+  }
+}

@@ -1,0 +1,32 @@
+name: Scrape NGEM (NV) and sync to Supabase
+
+on:
+  schedule:
+    - cron: '0 13 * * 1'   # ~6am Pacific, every Monday — weekly floor per directive (NGEM had zero scheduled cadence to preserve)
+  workflow_dispatch:        # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/scrape-ngem.js
+      - name: Commit refreshed ngem.json
+        run: |
+          git config user.name "stategen-bot"
+          git config user.email "bot@aproposgroupllc.com"
+          git add ngem.json
+          git commit -m "data: refresh NGEM listings" || echo "no changes to commit"
+          git push
+      - name: Sync into Supabase raw table (state_contract_opportunities)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-supabase-nv.js
