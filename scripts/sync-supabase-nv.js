@@ -30,6 +30,12 @@ function readJson(file) {
 }
 
 function fromNgem(b) {
+  const deadline = b.close_date || null;
+  // detail_fetched means the PublicDetail.aspx popup parse actually returned
+  // a description -- known to fail often (Ionwave's label markup varies by
+  // bid, see scrape-ngem.js's detail-fetch failure rate) so list-only rows
+  // are common and genuinely lower-confidence, not a bug to hide.
+  const confidence = b.detail_fetched ? 1.0 : 0.6;
   return {
     state_code: 'NV',
     issuing_organization: b.agency || 'Nevada public agency',
@@ -41,13 +47,18 @@ function fromNgem(b) {
     description: b.description || null,
     notice_type: b.bid_type || null,
     status: 'open',
-    response_deadline: b.close_date || null,
+    response_deadline: deadline,
     posted_at: null,
     place_of_performance_state: 'NV',
     contact_name: b.contact_name || null,
     contact_email: b.contact_email || null,
     contact_phone: b.contact_phone || null,
     document_urls: (b.documents || []).map(d => ({ name: d })),
+    extraction_confidence: confidence,
+    data_quality_score: Math.round(confidence * 100),
+    qa_status: (b.title && deadline) ? 'auto_ingested' : 'incomplete',
+    qa_notes: !deadline ? 'close_date did not parse from source close_date_raw value'
+      : (!b.detail_fetched ? 'list-only record, detail popup not yet fetched' : null),
     raw_source_payload: b,
   };
 }
