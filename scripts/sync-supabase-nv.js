@@ -9,8 +9,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const DEFAULT_SUPABASE_URL = 'https://judislfknmhofcgzyozc.supabase.co';
-const SUPABASE_URL = (process.env.SUPABASE_URL || DEFAULT_SUPABASE_URL).replace(/\/$/, '');
+// No hardcoded fallback URL here on purpose -- Netlify's secret scanner
+// flags any literal string in the repo matching a configured secret env
+// var's value. This broke calgovcc's build the same way; fixing here
+// proactively before nvgovcc's next build hits it too.
+const SUPABASE_URL = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SERVICE_KEY || '';
 const TABLE = 'state_contract_opportunities';
 const BATCH_SIZE = 200;
@@ -109,8 +112,8 @@ async function closeExpired() {
 }
 
 async function main() {
-  if (!SERVICE_KEY) {
-    console.log('[sync-supabase-nv] SUPABASE_SERVICE_ROLE_KEY not set — skipping Supabase sync (ngem.json is unaffected).');
+  if (!SUPABASE_URL || !SERVICE_KEY) {
+    console.log('[sync-supabase-nv] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not set — skipping Supabase sync (ngem.json is unaffected).');
     return;
   }
 
