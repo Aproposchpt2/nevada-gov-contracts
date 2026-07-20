@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-07-20T02:05:08.728Z",
+  "generatedAt": "2026-07-20T03:02:28.342Z",
   "count": 20,
-  "detail_fetched_count": 3,
+  "detail_fetched_count": 5,
   "bids": [
     {
       "id": "20172",
@@ -84,12 +84,15 @@
       "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20178&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The Work to be performed under this Contract is for the replacement of HPS streetlight fixtures with LED Fixtures where needed as identified on the plans. Project also includes installation of streetlight shields where required in residential areas across the Las Vegas Valley.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20121",
@@ -104,12 +107,15 @@
       "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20121&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "It is the intent of this formal Request for Proposals (RFP) to receive proposals from qualified Prospective Proponents and select a qualified firm to examine issues and opportunities related to commercial truck parking in Clark County, Nevada.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20224",
