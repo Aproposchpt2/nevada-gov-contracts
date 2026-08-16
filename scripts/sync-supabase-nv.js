@@ -128,6 +128,34 @@ function fromNgem(b) {
   };
 }
 
+// A row that gets admitted but isn't yet PACKAGE_COMPLETE gets relocated out
+// of state_contract_opportunities into apie_contract_processing by
+// apie_sync_contract_lifecycle_projection (it DELETEs the state_contract_
+// opportunities row after moving it -- by design, that's how the LIVE/
+// PROCESSING/ARCHIVE funnel works). The next sync then has no existing row
+// to upsert-merge against, so PostgREST inserts fresh with a brand-new
+// auto-generated id -- which collides with apie_contract_identity's own
+// UNIQUE(source_platform, source_record_id) from the row's first pass
+// (confirmed live: 23505 on apie_contract_identity_source_platform_source_
+// record_id_key). Reusing the identity table's already-issued id keeps a
+// source record on the same id across that funnel instead of colliding.
+async function fetchExistingIdentities() {
+  try {
+    const res = await fetch(
+      SUPABASE_URL + '/rest/v1/apie_contract_identity?source_platform=eq.ngem&select=id,source_record_id',
+      { headers: sbHeaders() }
+    );
+    if (!res.ok) return {};
+    const rows = await res.json().catch(() => []);
+    const map = {};
+    (Array.isArray(rows) ? rows : []).forEach(r => { if (r.source_record_id) map[r.source_record_id] = r.id; });
+    return map;
+  } catch (e) {
+    console.log('[sync-supabase-nv] fetchExistingIdentities error:', e.message);
+    return {};
+  }
+}
+
 async function upsertBatch(rows) {
   if (!rows.length) return { ok: 0, failed: 0 };
   let ok = 0, failed = 0;
@@ -185,7 +213,11 @@ async function main() {
     return;
   }
 
-  const rows = ngem.bids.map(fromNgem);
+  const identityMap = await fetchExistingIdentities();
+  const rows = ngem.bids.map(fromNgem).map(r => {
+    const existingId = identityMap[r.source_record_id];
+    return existingId ? { ...r, id: existingId } : r;
+  });
   console.log('[sync-supabase-nv] ngem: ' + rows.length + ' bids mapped');
 
   const { ok, failed } = await upsertBatch(rows);
