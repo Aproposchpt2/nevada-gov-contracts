@@ -100,6 +100,38 @@ function extract(html, patterns) {
   }
   return null;
 }
+// rgBidAttachments is the same Telerik RadGrid pattern as rgBidList
+// (parseBids above) -- real rows carry a stable id="..._ctl00__N", so
+// matching that id skips the grid's own header/pager chrome automatically
+// without needing to text-filter it out. Confirmed live (2026-08-16): the
+// old href-based regex was matching the grid's sortable COLUMN HEADER
+// postback links (__doPostBack('...rgBidAttachments...ctl00$ctl02...'))
+// whose visible text is literally "Description" / "File Size" -- that's
+// the "documents": ["Description","File Size"] garbage seen in every prior
+// run, not real filenames. Real filenames are also confirmed to always
+// carry a "(please login to view this document)" suffix -- NGEM gates the
+// actual file the same way Bonfire does; this only captures what's real
+// and public (name/description/size), it does not fabricate a download.
+function parseAttachments(html) {
+  const gi = html.indexOf('rgBidAttachments_ctl00"');
+  if (gi < 0) return [];
+  const seg = html.slice(gi);
+  const rowRe = /id="ctl00_mainContent_rgBidAttachments_ctl00__(\d+)"([\s\S]*?)(?=id="ctl00_mainContent_rgBidAttachments_ctl00__\d+"|<\/table)/g;
+  const docs = [];
+  let m;
+  while ((m = rowRe.exec(seg)) !== null) {
+    const cells = [...m[2].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(c => clean(c[1]));
+    if (cells.length < 3) continue;
+    const raw = cells[0];
+    if (!raw) continue;
+    const requiresLogin = /please login to view/i.test(raw);
+    const name = raw.replace(/\s*\(please login to view this document\)\s*/i, '').trim();
+    if (!name) continue;
+    docs.push({ name, description: cells[1] || null, file_size: cells[2] || null, requires_login: requiresLogin });
+  }
+  return docs;
+}
+
 function parseDetail(html) {
   const description = extract(html, [
     /id="[^"]*lblDescription[^"]*"[^>]*>([\s\S]{10,3000}?)<\/span>/i,
@@ -110,8 +142,7 @@ function parseDetail(html) {
   const contactName = extract(html, [/id="[^"]*lblContactName[^"]*"[^>]*>([^<]{5,100})</i]);
   const contactEmail = extract(html, [/id="[^"]*lnkEmail[^"]*"[^>]*href="mailto:([^"?]+)/i, /mailto:([^"?@\s]{1,80}@[^"?\s]{1,80})"/i]);
   const contactPhone = extract(html, [/id="[^"]*lblPhoneNumber[^"]*"[^>]*>([^<]{7,30})</i]);
-  const docMatches = [...html.matchAll(/href="[^"]*(?:Download|Document|Attachment)[^"]*"[^>]*>([^<]{3,100})</gi)];
-  const documents = [...new Set(docMatches.map(m => clean(m[1])).filter(d => d.length > 3))];
+  const documents = parseAttachments(html);
   return { description, contactName, contactEmail, contactPhone, documents };
 }
 
@@ -184,7 +215,16 @@ async function main() {
 
   bids = bids.filter(b => b.due_in_days === null || b.due_in_days >= 0);
 
-  const needDetail = bids.filter(b => b.bid_id && !(existingById[b.id] && existingById[b.id].detail_fetched)).map(b => b.bid_id);
+  // One-time self-heal: bids already marked detail_fetched from before the
+  // rgBidAttachments fix carry the old broken shape (plain strings, often
+  // literally "Description"/"File Size" column headers). Force those back
+  // into the fetch queue once so the cache corrects itself over the next
+  // few runs instead of keeping stale data forever.
+  const hasStaleDocuments = entry => Array.isArray(entry && entry.documents)
+    && entry.documents.length > 0 && entry.documents.some(d => typeof d === 'string');
+  const needDetail = bids.filter(b => b.bid_id
+    && (!(existingById[b.id] && existingById[b.id].detail_fetched) || hasStaleDocuments(existingById[b.id]))
+  ).map(b => b.bid_id);
   const toFetch = needDetail.slice(0, DETAIL_LIMIT);
   console.log('[scrape-ngem] ' + needDetail.length + ' bid(s) need detail; fetching ' + toFetch.length + ' this run (--detail-limit=' + DETAIL_LIMIT + ').');
 

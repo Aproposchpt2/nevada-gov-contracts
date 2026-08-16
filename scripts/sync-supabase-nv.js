@@ -97,6 +97,16 @@ function fromNgem(b) {
   // are common and genuinely lower-confidence, not a bug to hide.
   const confidence = b.detail_fetched ? 1.0 : 0.6;
   const clark = isClarkCounty(b.agency);
+  // documents is normally the new {name, description, file_size,
+  // requires_login} shape (scrape-ngem.js rgBidAttachments fix, 2026-08-16);
+  // defensively also accept the old plain-string shape until the self-heal
+  // re-fetch cycle (see scrape-ngem.js needDetail) has cycled through every
+  // cached bid. requires_login=true on every real NGEM attachment confirmed
+  // live -- the file itself needs the same vendor login Bonfire does, so
+  // this is discovery, not a completed package: PACKAGE_DISCOVERED, not
+  // PACKAGE_COMPLETE.
+  const docs = (b.documents || []).map(d => (typeof d === 'string' ? { name: d } : d)).filter(d => d && d.name);
+  const packageStatus = docs.length ? 'PACKAGE_DISCOVERED' : 'PACKAGE_NOT_STARTED';
   return {
     state_code: 'NV',
     jurisdiction_type: jurisdictionType(b.agency),
@@ -118,7 +128,9 @@ function fromNgem(b) {
     contact_name: b.contact_name || null,
     contact_email: b.contact_email || null,
     contact_phone: b.contact_phone || null,
-    document_urls: (b.documents || []).map(d => ({ name: d })),
+    document_urls: docs,
+    package_status: packageStatus,
+    package_document_count: docs.length,
     requirements: buildRequirements(b),
     acquisition_method: 'official_public_ionwave_marketplace',
     extraction_confidence: confidence,
