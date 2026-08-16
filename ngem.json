@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-16T07:09:45.577Z",
+  "generatedAt": "2026-08-16T07:14:45.328Z",
   "count": 20,
-  "detail_fetched_count": 12,
+  "detail_fetched_count": 16,
   "bids": [
     {
       "id": "20387",
@@ -107,12 +107,15 @@
       "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20310&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The City of North Las Vegas is seeking bids from qualified and experienced agencies in providing chemical and water treatment services at different facilities throughout the City.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20390",
@@ -127,12 +130,15 @@
       "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20390&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Invitation to Bid (ITB) with the sole purpose and intent of obtaining sealed bids (Bid) from qualified contractors (Contractor) to upgrade the fire suppression and fire alarm system in Hangar 5 at Reno-Stead Airport (RTS).",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20392",
@@ -170,12 +176,15 @@
       "due_in_days": 5,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20179&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "A Job Order Contract is an indefinite quantity construction contract pursuant to which the Contractor may perform an ongoing series of individual Projects at different locations and facilities under the jurisdiction of the City. Job Order Contracting is typically used for small to medium sized repair and rehabilitation work, replacement in kind projects, and new construction. The Work will be set forth in the Detailed Scope of Work for individual Job Orders. The City expects the Contractor to perform the Detailed Scope of Work for each Job Order, which may include, without limitation, the renovation or repair of buildings, utilities, parks, and playgrounds. The Contractor is required to complete each Detailed Scope of Work for the Job Order Price within the Job Order Completion Time. The Contractor will be required to perform Work at any site or facility under the jurisdiction of the City.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20328",
@@ -326,7 +335,10 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
+      "documents": [
+        "Description",
+        "File Size"
+      ],
       "detail_fetched": false
     },
     {
@@ -408,12 +420,15 @@
       "due_in_days": 11,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20231&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Truckee Meadows Water Authority (TMWA) is accepting sealed bids for all labor, materials, equipment, and incidentals required to demo existing HVAC equipment and install new HVAC equipment within various locations at TMWA's Glendale Water Treatment Plant. HVAC units include split units, a package unit, and an exhaust fan in a chemical room. Duct work, electrical, and other items/incidentals will be required to complete this work, as shown in the Plans",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20403",
