@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 // No hardcoded fallback URL here on purpose -- Netlify's secret scanner
 // flags any literal string in the repo matching a configured secret env
@@ -214,10 +215,16 @@ async function main() {
   }
 
   const identityMap = await fetchExistingIdentities();
-  const rows = ngem.bids.map(fromNgem).map(r => {
-    const existingId = identityMap[r.source_record_id];
-    return existingId ? { ...r, id: existingId } : r;
-  });
+  // PostgREST bulk insert requires every object in the array to have the
+  // same key set (PGRST102 "All object keys must match" -- confirmed live
+  // when id was only present on some rows). Always include id explicitly:
+  // reuse the existing apie_contract_identity mapping where one exists,
+  // otherwise generate a fresh uuid client-side rather than relying on the
+  // column default, so every row in the batch has a real, uniform id.
+  const rows = ngem.bids.map(fromNgem).map(r => ({
+    ...r,
+    id: identityMap[r.source_record_id] || crypto.randomUUID(),
+  }));
   console.log('[sync-supabase-nv] ngem: ' + rows.length + ' bids mapped');
 
   const { ok, failed } = await upsertBatch(rows);
