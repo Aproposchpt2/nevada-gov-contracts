@@ -32,6 +32,61 @@ function readJson(file) {
   try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) { return null; }
 }
 
+// Clark County / Las Vegas metro agencies seen live in ngem.json (2026-08-15
+// scoping pass) -- county government itself, its departments/districts, and
+// every incorporated city inside the county. Matched case-insensitively;
+// the regex fallback catches any "Clark County ..." variant not spelled out
+// here (e.g. a new CC department that starts posting later).
+const CLARK_AGENCIES = new Set([
+  'clark county, nevada',
+  'clark county school district',
+  'clark county school district purchasing',
+  'clark county water reclamation district',
+  'clark county department of aviation',
+  'cc dept of aviation',
+  'city of las vegas, nevada',
+  'city of las vegas',
+  'city of henderson',
+  'city of north las vegas',
+  'boulder city, nevada',
+  'boulder city',
+  'las vegas valley water district',
+  'las vegas convention & visitors authority',
+  'las vegas metropolitan police department',
+  'lvmpd',
+  'university medical center',
+]);
+function isClarkCounty(agency) {
+  const a = (agency || '').trim().toLowerCase();
+  if (!a) return false;
+  return CLARK_AGENCIES.has(a) || /clark county/.test(a);
+}
+
+// NGEM is dominated by cities/counties/districts/higher-ed -- true state-level
+// executive-branch postings are the exception here, not the rule. Only agency
+// names that explicitly self-identify as the state are marked 'state'; every
+// other real agency name is 'local' (city/county/district/authority).
+function jurisdictionType(agency) {
+  return /^(state of nevada|nevada department|nevada division|purchasing division)/i.test((agency || '').trim())
+    ? 'state' : 'local';
+}
+
+// Admission guard on state_contract_opportunities (natcorp_canonical_contract_
+// admission_guard_trg) silently drops any row whose `requirements` isn't
+// substantive real content -- confirmed live via natcorp_contract_rejection_
+// ledger (every NGEM row was being rejected, reason
+// missing_substantive_contract_requirements, because this field was never
+// populated). Mirrors the shape CA's PUBLIC_PORTAL rows already use:
+// {scope: <real description text>, source: <provenance>}. Left null (not a
+// placeholder) when there's no real description yet -- a list-only record
+// with zero real content SHOULD fail the gate, that's it working correctly,
+// not a bug to route around.
+function buildRequirements(b) {
+  const scope = (b.description || '').trim();
+  if (scope.length < 20) return null;
+  return { scope, source: 'ngem_public_detail' };
+}
+
 function fromNgem(b) {
   const deadline = b.close_date || null;
   // detail_fetched means the PublicDetail.aspx popup parse actually returned
@@ -39,8 +94,11 @@ function fromNgem(b) {
   // bid, see scrape-ngem.js's detail-fetch failure rate) so list-only rows
   // are common and genuinely lower-confidence, not a bug to hide.
   const confidence = b.detail_fetched ? 1.0 : 0.6;
+  const clark = isClarkCounty(b.agency);
   return {
     state_code: 'NV',
+    jurisdiction_type: jurisdictionType(b.agency),
+    jurisdiction_name: b.agency || null,
     issuing_organization: b.agency || 'Nevada public agency',
     source_platform: 'ngem',
     source_record_id: String(b.bid_id || b.id),
@@ -52,11 +110,15 @@ function fromNgem(b) {
     status: 'open',
     response_deadline: deadline,
     posted_at: null,
+    place_of_performance_city: null,
+    place_of_performance_county: clark ? 'Clark' : null,
     place_of_performance_state: 'NV',
     contact_name: b.contact_name || null,
     contact_email: b.contact_email || null,
     contact_phone: b.contact_phone || null,
     document_urls: (b.documents || []).map(d => ({ name: d })),
+    requirements: buildRequirements(b),
+    acquisition_method: 'official_public_ionwave_marketplace',
     extraction_confidence: confidence,
     data_quality_score: Math.round(confidence * 100),
     qa_status: (b.title && deadline) ? 'auto_ingested' : 'incomplete',
