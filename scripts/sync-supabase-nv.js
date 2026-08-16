@@ -54,13 +54,14 @@ const CLARK_AGENCIES = new Set([
   'las vegas valley water district',
   'las vegas convention & visitors authority',
   'las vegas metropolitan police department',
+  'las vegas metropolitan police',
   'lvmpd',
   'university medical center',
 ]);
 function isClarkCounty(agency) {
   const a = (agency || '').trim().toLowerCase();
   if (!a) return false;
-  return CLARK_AGENCIES.has(a) || /clark county/.test(a);
+  return CLARK_AGENCIES.has(a) || /clark county|las vegas metropolitan/.test(a);
 }
 
 // NGEM is dominated by cities/counties/districts/higher-ed -- true state-level
