@@ -6,13 +6,21 @@
    endpoints, run on a schedule and written to ngem.json — same shape/convention as
    CA's scripts/scrape-caleprocure.js (list pass + capped detail pass with caching).
 
-   Plain fetch only, no headless browser: confirmed live in ngem-pipeline.js that a
-   single GET with a browser User-Agent returns the full rendered Telerik grid HTML,
-   same for PublicDetail.aspx (ngem-detail.js). No JS rendering gate like PlanetBids/
-   Cal eProcure, so no Playwright dependency needed here. */
+   UPDATE 2026-08-16 (Clark County scoping pass): the list endpoint
+   (SourcingEvents.aspx) is still a clean plain fetch, confirmed repeatedly.
+   PublicDetail.aspx is NOT -- confirmed live that it now serves a real
+   Cloudflare interactive JS challenge under repeated automated requests
+   (429 after a handful of hits), the same class of gate PlanetBids needed
+   Playwright for. A bare fetch() only got through by luck; this was the
+   root cause behind ngem.json's document-name garbage ("Description",
+   "File Size" -- actually scraped off a Cloudflare/table-header shell, not
+   real bid content). Detail pass now runs through a single stealth
+   Playwright context (mirrors CALSTATEGEN's scripts/scrape.js pattern) so
+   the challenge gets to execute for real, same as a real browser passes it. */
 
 const fs = require('fs');
 const path = require('path');
+const { chromium } = require('playwright');
 
 const LIST_URL = 'https://nevada.ionwave.net/SourcingEvents.aspx?SourceType=1';
 const DETAIL_URL = 'https://nevada.ionwave.net/PublicDetail.aspx';
@@ -107,17 +115,56 @@ function parseDetail(html) {
   return { description, contactName, contactEmail, contactPhone, documents };
 }
 
-async function fetchDetail(bidID) {
-  const url = `${DETAIL_URL}?bidID=${bidID}&SourceType=1`;
+// Single stealth browser context reused across every bid in the run --
+// looks like one continuous real browsing session rather than N discrete
+// bot-shaped requests, and avoids relaunching Chromium per bid.
+async function fetchDetailBatch(bidIDs) {
+  const browser = await chromium.launch();
+  const results = {};
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'text/html', 'Accept-Language': 'en-US,en;q=0.9' }, signal: AbortSignal.timeout(8000) });
-    if (!res.ok) return null;
-    const html = await res.text();
-    return parseDetail(html);
-  } catch (e) {
-    console.log('[scrape-ngem] detail fetch failed for', bidID, ':', e.message);
-    return null;
+    const ctx = await browser.newContext({
+      userAgent: UA,
+      viewport: { width: 1366, height: 900 },
+      locale: 'en-US',
+      timezoneId: 'America/Los_Angeles',
+    });
+    await ctx.addInitScript(() => {
+      Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+      window.chrome = window.chrome || { runtime: {} };
+      Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+      Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+    });
+    const page = await ctx.newPage();
+
+    for (let i = 0; i < bidIDs.length; i++) {
+      const id = bidIDs[i];
+      const url = `${DETAIL_URL}?bidID=${id}&SourceType=1`;
+      process.stdout.write('[scrape-ngem] detail ' + (i + 1) + '/' + bidIDs.length + ' (' + id + ')... ');
+      try {
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
+        // Cloudflare's interactive challenge briefly titles the page "Just a
+        // moment..." while it runs; give it a window to clear on its own,
+        // same as it did in a real browser session during scoping.
+        const title = await page.title().catch(() => '');
+        if (/just a moment/i.test(title)) {
+          await page.waitForFunction(
+            () => !/just a moment/i.test(document.title),
+            { timeout: 12000 }
+          ).catch(() => {});
+        }
+        const html = await page.content();
+        const detail = parseDetail(html);
+        results[id] = detail;
+        console.log(detail.description ? 'ok' : 'no-description');
+      } catch (e) {
+        console.log('FAILED: ' + e.message);
+      }
+      await sleep(DETAIL_DELAY_MS);
+    }
+  } finally {
+    await browser.close();
   }
+  return results;
 }
 
 async function main() {
@@ -141,15 +188,7 @@ async function main() {
   const toFetch = needDetail.slice(0, DETAIL_LIMIT);
   console.log('[scrape-ngem] ' + needDetail.length + ' bid(s) need detail; fetching ' + toFetch.length + ' this run (--detail-limit=' + DETAIL_LIMIT + ').');
 
-  const detailById = {};
-  for (let i = 0; i < toFetch.length; i++) {
-    const id = toFetch[i];
-    process.stdout.write('[scrape-ngem] detail ' + (i + 1) + '/' + toFetch.length + ' (' + id + ')... ');
-    const d = await fetchDetail(id);
-    console.log(d ? 'ok' : 'FAILED');
-    if (d) detailById[id] = d;
-    await sleep(DETAIL_DELAY_MS);
-  }
+  const detailById = await fetchDetailBatch(toFetch);
 
   const merged = bids.map(b => {
     const prior = existingById[b.id] || {};

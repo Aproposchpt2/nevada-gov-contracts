@@ -5,5 +5,8 @@
   "scripts": {
     "scrape-ngem": "node scripts/scrape-ngem.js",
     "sync-supabase": "node scripts/sync-supabase-nv.js"
+  },
+  "dependencies": {
+    "playwright": "^1.45.0"
   }
 }
