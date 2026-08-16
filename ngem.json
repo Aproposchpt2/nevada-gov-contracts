@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-16T06:54:44.300Z",
+  "generatedAt": "2026-08-16T07:09:45.577Z",
   "count": 20,
-  "detail_fetched_count": 2,
+  "detail_fetched_count": 12,
   "bids": [
     {
       "id": "20387",
@@ -61,12 +61,15 @@
       "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20255&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The City of Henderson, Nevada, is soliciting bids from qualified firms to furnish and install a 5-ton bridge crane and necessary electrical infrastructure located at the Fleet Maintenance Facility, 2201 Moser Dr, 89011 in Henderson, Nevada.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20087",
@@ -81,12 +84,15 @@
       "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20087&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The City of Las Vegas (City) hereby invites qualified firms or individuals (Offerors) to submit written proposals for Jail Food Services at the City's Detention Facility located at 3200 Stewart Avenue, Las Vegas, NV 89101 as more fully described in the Scope of Work set forth herein. Persons with a disability may request accommodations or assistance to participate in the solicitation process by contacting Purchasing & Contracts at 702-229-6231 or 7-1-1 (TTY). To insure the City is able to meet your needs, please submit requests at least 2 business days in advance.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20310",
@@ -141,12 +147,15 @@
       "due_in_days": 5,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20392&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The City of North Las Vegas Deferred Compensation Committee (the “Committee”) is seeking an investment consultant firm (the “Investment Consultant”) who will act as a fiduciary with regard to the City of North Las Vegas’s (the “City”) 457(b) deferred compensation plans (the “457(b) Plans”) and the City’s 401(a) defined contribution plans (the “401(a) Plans”; collectively, the 457(b) Plans and the 401(a) Plans will be referred to as the “Plans”).",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20179",
@@ -181,12 +190,15 @@
       "due_in_days": 5,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20328&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The work to be performed under this contract includes the installation of storm drain and drop inlets in Cadiz Avenue between Pueblo Boulevard and Racetrack Road in the City of Henderson, Nevada. Engineer's Estimate: $9,240,000.00",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20393",
@@ -221,12 +233,15 @@
       "due_in_days": 5,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20400&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "This project involves construction of a pedestrian bridge by removing a portion of drainage channel and replacing it with a reinforced concrete box section. The pedestrian bridge will be located between Via Inspirada and Liselle Street in the City of Henderson, Nevada. A reinforced concrete trail and stairs will also be constructed. Engineer's Estimate: $1,200,000.00",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20238",
@@ -261,12 +276,15 @@
       "due_in_days": 10,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20284&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Las Vegas Valley Water District invites qualified firms (Bidders) to submit Bids for the following Work, see Contract Documents for full details. The Site of the Work is located southwest of Las Vegas Boulevard within the Clark County and City of Henderson jurisdictions. The point of connection for the pipeline is located approximately 850 feet east of the intersection of W Welpman Way and Las Vegas Boulevard. The alignment will go through existing BLM Grants, Private Easements, and Patent Easements to the South Boulevard 2745 Zone Reservoir site (3288L), which is located on A.P.N. 191-30-501-005. Additionally, the project will include Work at the 2860 Zone South Pumping Station and Forebay which is located on Highland Crown Rd on the west side of the Southern Highlands residential community (A.P.N. 191-07-101-002). The project consists of installing approximately 18,000 linear feet of 42-inch-diameter mortar-lined, tape-wrapped, and mortar-coated steel pipe, including communications infrastructure consisting of fiber optic conduit, pull boxes, and necessary appurtenances along the length of the pipeline. The project will also include construction/installation of four 42-inch butterfly valves, with associated cast-in-place concrete vaults, a sacrificial anode cathodic protection system, and other water pipeline appurtenances. Additionally, the project will remove an existing 12-inch gate valve and replace it with a 12-inch butterfly valve located within an existing vault at the 2860 Zone South Pumping Station and Forebay. The project will also include electrical/communications improvements for the new valves. Engineer’s Estimate is: $ 28,203,225.00",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20313",
@@ -281,12 +299,15 @@
       "due_in_days": 10,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20313&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The work generally consists of improvements to amenities at Kiel Ranch Historic Park including a restroom, parking lot, splash pad area, shade structures, fence/gate, site signage, picnic seating area, trash receptacles, retaining walls, landscaping, irrigation, and trails.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20378",
@@ -321,12 +342,15 @@
       "due_in_days": 11,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20112&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Project No. 608007 - ARC BIOHAZARDOUS, NON-BIOHAZARDOUS, AND HAZARDOUS WASTE SERVICES The Las Vegas Metropolitan Police Department (LVMPD) is seeking Bids from qualified Bidders for BIOHAZARDOUS, NON-BIOHAZARDOUS, AND HAZARDOUS WASTE SERVICES. Reference additional information under the Attachments Tab for specific requirements, terms and conditions. This Solicitation includes Response Attachments that must be submitted with the Bid. Bidders may bid on one or both Packages. Awards will be made independently. All questions must be submitted in the NGEM system under the Questions tab.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20314",
@@ -361,12 +385,15 @@
       "due_in_days": 11,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20397&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Invitation to Bid (ITB) with the sole purpose and intent of obtaining sealed bids (Bid) from qualified contractors (Contractor) to re-roof the Airfield Maintenance storage building located at Reno-Tahoe International Airport (RNO).",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20231",
@@ -401,12 +428,15 @@
       "due_in_days": 11,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20403&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Project replaces existing wooden flume with precast concrete channel and new wood flume; installs 2 new culverts and land bridge over existing canal; modifies existing forebay with new isolation gates, weir gate, and replaces radial gate. This project will be eligible for certain Federal Tax Incentives, therefore subject to but not limited to Domestic Content, Foreign Entity of Concern (FEOC) Material Assistance Requirements, and Davis Bacon wages.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        "Description",
+        "File Size"
+      ],
+      "detail_fetched": true
     }
   ]
 }
