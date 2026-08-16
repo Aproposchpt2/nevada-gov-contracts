@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-16T07:17:35.156Z",
+  "generatedAt": "2026-08-16T12:44:39.997Z",
   "count": 20,
-  "detail_fetched_count": 16,
+  "detail_fetched_count": 17,
   "bids": [
     {
       "id": "20387",
@@ -23,8 +23,30 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "ITB 2627-05_Mini Whse Storage Unit Demo_Final.pdf",
+          "description": "ITB #26/27-05 Mini Warehouse Storage Unit Demolition",
+          "file_size": "24.57 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Final_Plans.pdf",
+          "description": "Plans - Mini Warehouse Storage Unit Demolition",
+          "file_size": "8.57 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum #1_Final.pdf",
+          "description": "Addendum #1 - Pre-Bid Meeting",
+          "file_size": "2.76 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum #2_FINAL.pdf",
+          "description": "Addendum #2 - Q&A and Revised Plan Sheet",
+          "file_size": "403 KB",
+          "requires_login": true
+        }
       ],
       "detail_fetched": true
     },
@@ -66,8 +88,84 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "Scope of Work - Bridge Crane.pdf",
+          "description": "Scope of Work - Bridge Crane",
+          "file_size": "166 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit A_Yale YK Crane System.pdf",
+          "description": "Yale YK Crane System",
+          "file_size": "1.79 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit B_Crane Materials Summary.pdf",
+          "description": "Crane Materials Summary",
+          "file_size": "840 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit C_VP Crane Data 1-1.pdf",
+          "description": "VP Crane Data 1-1",
+          "file_size": "63 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit D_VP Frame Cross Section.pdf",
+          "description": "VP Frame Cross Section",
+          "file_size": "1.74 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit E_Bridge Crane Location.pdf",
+          "description": "Bridge Crane Location",
+          "file_size": "2.18 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit F_Architectural.pdf",
+          "description": "Architectural",
+          "file_size": "10.88 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Exhibit G_GSL Electrical as-builts.pdf",
+          "description": "GSL Electrical as-builts",
+          "file_size": "5.75 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Construction IFB Terms & Conditions (Rev 6-3-2025).pdf",
+          "description": "Construction IFB Terms & Conditions",
+          "file_size": "274 KB",
+          "requires_login": true
+        },
+        {
+          "name": "List of Bidders 1% First Tier Subcontractors.docx",
+          "description": "1% Subcontractor List",
+          "file_size": "32 KB",
+          "requires_login": true
+        },
+        {
+          "name": "List of Bidders 5% First Tier Subcontractors.docx",
+          "description": "5% Subcontractor List",
+          "file_size": "31 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Ownership Disclosure Form.docx",
+          "description": "Ownership Disclosure Form",
+          "file_size": "14 KB",
+          "requires_login": true
+        },
+        {
+          "name": "COH NGEM Supplier User Guide (Rev 12-2016).pdf",
+          "description": "COH NGEM Supplier User Guide (Rev 12-2016)",
+          "file_size": "337 KB",
+          "requires_login": true
+        }
       ],
       "detail_fetched": true
     },
@@ -88,10 +186,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -112,8 +207,18 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "BID B-1792 Facility Water Management Program-FINAL.pdf",
+          "description": "BID B-1792 Facility Water Management Program",
+          "file_size": "1.07 MB",
+          "requires_login": false
+        },
+        {
+          "name": "Addendum #1 BID-B-1792 Facility Water Management Program.pdf",
+          "description": "Addendum #1 BID-B-1792 Facility Water Management Program",
+          "file_size": "329 KB",
+          "requires_login": false
+        }
       ],
       "detail_fetched": true
     },
@@ -134,10 +239,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -158,8 +260,24 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "RFP 2026-022- Informal Investment Consultant 7.23.26.pdf",
+          "description": "RFP 2026-022- Informal Investment Consultant Services",
+          "file_size": "666 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Addendum # 1-RFP 2026-022 Investment Consultant Services.pdf",
+          "description": "Addendum # 1-RFP 2026-022 Investment Consultant Services",
+          "file_size": "327 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Addendum # 2-RFP 2026-022.pdf",
+          "description": "Addendum # 2-RFP 2026-022",
+          "file_size": "386 KB",
+          "requires_login": false
+        }
       ],
       "detail_fetched": true
     },
@@ -181,8 +299,96 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "CNLV JOC Supplemental Conditions - July 2026.pdf",
+          "description": "JOC Supplemental Conditions containing JOC specific definitions, the procedure for ordering work, and federal provisions for Job Orders funded in whole or in part with federal funds (applicable only to the federal Contracts).",
+          "file_size": "266 KB",
+          "requires_login": false
+        },
+        {
+          "name": "JOC RFP 2026-023-Job Order Contracting-signed.pdf",
+          "description": "JOC RFP Advertisement - signed",
+          "file_size": "285 KB",
+          "requires_login": false
+        },
+        {
+          "name": "JOC Code in NRS 338.156 to 338.1576.pdf",
+          "description": "For reference, attached is the JOC code contained in NRS 338.156 to 338.1576. It is strongly encouraged all Respondents read the code confirming your ability to meet or exceed ALL requirements.",
+          "file_size": "139 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CNLV JOC RFP 2026-023 - July 2026.pdf",
+          "description": "JOC request for Proposal for Job Order Contracting services. Includes a Contract overview, contract specifics, submission instructions, and evaluation criteria.",
+          "file_size": "847 KB",
+          "requires_login": false
+        },
+        {
+          "name": "General Conditions.pdf",
+          "description": "General Conditions",
+          "file_size": "500 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Draft Construction Contract - July 2026.pdf",
+          "description": "In accordance with NRS 338.157, included with the JOC RFP is the form of Job Order Construction Contract between the Owner and Contractor.",
+          "file_size": "119 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Final Job Order Contracting (JOC) Policy- Effective 6.17.26.pdf",
+          "description": "In accordance with NRS 338.157, included with the JOC RFP is the adopted JOC Policy (Effective 06.17.26)",
+          "file_size": "466 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Special Conditions for JOC - July 2026.pdf",
+          "description": "Special Conditions supplementing the General Conditions",
+          "file_size": "139 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Section 100 Documents.pdf",
+          "description": "Section 100 documents applicable to offsite horizontal projects only.",
+          "file_size": "385 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Response Attachment 1.1 - Comparable Construction Experience - Projects Less than 250K.pdf",
+          "description": "Required Response Attachment for ALL Respondents for Comparable Construction Experience for Projects Less than $250,000. Download, complete, and upload to Response Attachments. Submit a maximum of (5) Projects.",
+          "file_size": "124 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Response Attachment 1.2 - Comparable Construction Experience - Projects Between 250 and 1M.pdf",
+          "description": "Required Response Attachment for ALL Respondents for Comparable Construction Experience for Projects Between $250,000 and $1,000,000. Download, complete, and upload to Response Attachments. Submit a maximum of (5) Projects.",
+          "file_size": "168 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Subcontractor Forms to be Submitted with Each Job Order.pdf",
+          "description": "Subcontractor Forms (To be submitted with each Job Order)",
+          "file_size": "93 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Response Attachment 1.3 - Comparable Construction Experience - Projects Greater than 1M.pdf",
+          "description": "Required Response Attachment for ALL Respondents for Comparable Construction Experience for Projects Greater than $1,000,000. Download, complete, and upload to Response Attachments. Submit a maximum of (3) Projects.",
+          "file_size": "202 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Response Attachment 1.4 - Key Personnel - Project Manager.pdf",
+          "description": "Required Response Attachment for ALL Respondents for Key Personnel Assigned to the Contract: Project Manager. Download, complete, and upload to Response Attachments.",
+          "file_size": "82 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Response Attachment 1.5 - Key Personnel - Superintendent.pdf",
+          "description": "Required Response Attachment for ALL Respondents for Key Personnel Assigned to the Contract: General Field Superintendent. Download, complete, and upload to Response Attachments.",
+          "file_size": "82 KB",
+          "requires_login": false
+        }
       ],
       "detail_fetched": true
     },
@@ -203,10 +409,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -246,10 +449,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -289,10 +489,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -313,8 +510,18 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "Kiel Ranch Park Phase VI - Family Mesa - Bid Set Drawings.pdf",
+          "description": "Drawings - Kiel Ranch Phase VI - Family Mesa",
+          "file_size": "103.16 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Kiel Ranch Park Phase VI - Family Mesa - Bid Set Specifications.pdf",
+          "description": "Specifications - Kiel Ranch Phase VI - Family Mesa",
+          "file_size": "8.18 MB",
+          "requires_login": true
+        }
       ],
       "detail_fetched": true
     },
@@ -335,10 +542,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": false
     },
     {
@@ -359,8 +563,72 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "LVMPD Bid - General Conditions.pdf",
+          "description": "The General Conditions which will be applicable to the project.",
+          "file_size": "185 KB",
+          "requires_login": true
+        },
+        {
+          "name": "LVMPD Bid - Instructions to Bidders - General.pdf",
+          "description": "General instructions to Bidders",
+          "file_size": "124 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608007 LVMPD Bid - Instructions to Bidders - Project Specific.pdf",
+          "description": "Instructions to Bidders for this specific project",
+          "file_size": "418 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608007 LVMPD Bid - Technical Specifications.pdf",
+          "description": "The Technical Specifications and Requirements for the Contract",
+          "file_size": "262 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608007 Exhibit A - CSI Cleaning Checklist.pdf",
+          "description": "Exhibit A - CSI Cleaning Checklist",
+          "file_size": "105 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608007 Exhibit B - Field Work Order - Sample.pdf",
+          "description": "Exhibit B - Field Work Order Sample",
+          "file_size": "194 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608007 LVMPD Bid - Technical Specifications Deviation Worksheet.docx",
+          "description": "Download, complete, and upload as a Response Attachment",
+          "file_size": "176 KB",
+          "requires_login": true
+        },
+        {
+          "name": "LVMPD Bid Attachment - Supplier Information Form.pdf",
+          "description": "Download, complete, and upload as a Response Attachment",
+          "file_size": "98 KB",
+          "requires_login": true
+        },
+        {
+          "name": "LVMPD Bid Attachment - W9 Form (2025).pdf",
+          "description": "Download, complete, and upload as a Response Attachment.",
+          "file_size": "137 KB",
+          "requires_login": true
+        },
+        {
+          "name": "LVMPD_Bid_Attachment_-_Federal_Conditions.docx.pdf",
+          "description": "Federal Conditions which are incorporated into the project, if applicable.",
+          "file_size": "660 KB",
+          "requires_login": true
+        },
+        {
+          "name": "LVMPD Bid Attachment - FEMA Additional Requirements.pdf",
+          "description": "The terms and conditions used when using FEMA Federal grant funds for the purchase.",
+          "file_size": "40 KB",
+          "requires_login": true
+        }
       ],
       "detail_fetched": true
     },
@@ -377,12 +645,25 @@
       "due_in_days": 11,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20314&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The Nellis Industrial Park Interceptor Sewer Project includes the excavation and installation of approximately 5074 lineal feet of sewer, and associated work and appurtenances. The new sewer will be located in Craig Road from Puebla Street to Nellis Boulevard and run south in Nellis Boulevard to Las Vegas Boulevard to connect to the City’s Northeast Interceptor Sewer.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "Nellis Industrial Park Interceptor Sewer Bid Set Plans.pdf",
+          "description": "Drawings - Nellis Industrial Park Interceptor Sewer",
+          "file_size": "28.21 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Nellis Industrial Park Interceptor Sewer Bid Set Specifications.pdf",
+          "description": "Specifications - Nellis Industrial Park Interceptor Sewer",
+          "file_size": "51.56 MB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20397",
@@ -401,10 +682,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     },
     {
@@ -425,8 +703,96 @@
       "contact_email": null,
       "contact_phone": null,
       "documents": [
-        "Description",
-        "File Size"
+        {
+          "name": "01. Instructions to Bidders - Rev. 08.2025.pdf",
+          "description": "Instructions to Bidders",
+          "file_size": "184 KB",
+          "requires_login": true
+        },
+        {
+          "name": "02. Bid Bond.pdf",
+          "description": "Bid Bond",
+          "file_size": "98 KB",
+          "requires_login": true
+        },
+        {
+          "name": "03. Disclosure of Ownership and Vendor Information.pdf",
+          "description": "Disclosure of Ownership and Vendor Information Form",
+          "file_size": "301 KB",
+          "requires_login": true
+        },
+        {
+          "name": "04. Reference Projects and Personnel.pdf",
+          "description": "Project and Personnel Reference Form",
+          "file_size": "383 KB",
+          "requires_login": true
+        },
+        {
+          "name": "05. Contractor 5% Subcontractor List.pdf",
+          "description": "Contractor 5% List",
+          "file_size": "129 KB",
+          "requires_login": true
+        },
+        {
+          "name": "06. Contractor 1% Subcontractor List.pdf",
+          "description": "Contractor 1% List",
+          "file_size": "131 KB",
+          "requires_login": true
+        },
+        {
+          "name": "07. Conflict of Interest Disclosure Form.pdf",
+          "description": "Conflict of Interest Disclosure Form",
+          "file_size": "100 KB",
+          "requires_login": true
+        },
+        {
+          "name": "08. Certification Regarding Debarment.pdf",
+          "description": "Certification Regarding Debarment",
+          "file_size": "102 KB",
+          "requires_login": true
+        },
+        {
+          "name": "09. Local Preference Affidavit NGEM.pdf",
+          "description": "Local Preference Affidavit",
+          "file_size": "101 KB",
+          "requires_login": true
+        },
+        {
+          "name": "10. TMWA End User Data Agreement.pdf",
+          "description": "End User Data Agreement",
+          "file_size": "431 KB",
+          "requires_login": true
+        },
+        {
+          "name": "11. MASTER_FORM_Public_Work_General_Conditions_v17_07.2025.pdf",
+          "description": "TMWA General Conditions",
+          "file_size": "718 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Supplementary Conditions_Glendale HVAC Improvements Phase 2.pdf",
+          "description": "Supplementary Conditions",
+          "file_size": "189 KB",
+          "requires_login": true
+        },
+        {
+          "name": "11-0002-006 GWTP Ph 2 Bid Specs-Revised Dates-7.1.26.pdf",
+          "description": "Technical Specifications",
+          "file_size": "4.57 MB",
+          "requires_login": true
+        },
+        {
+          "name": "TMWA GLENDALE BID SET 2 - FULL SET_06-30-2026-sig.pdf",
+          "description": "Bid Plan Set",
+          "file_size": "7.33 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Sample Construction Agreement - Glendale HVAC Phase 2.pdf",
+          "description": "Sample Construction Agreement",
+          "file_size": "240 KB",
+          "requires_login": true
+        }
       ],
       "detail_fetched": true
     },
@@ -447,10 +813,7 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [
-        "Description",
-        "File Size"
-      ],
+      "documents": [],
       "detail_fetched": true
     }
   ]
