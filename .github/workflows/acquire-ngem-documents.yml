@@ -1,6 +1,13 @@
 name: Acquire NGEM Documents (Clark County)
 
+# Mon/Wed/Fri, base fire time ~8:00am Pacific (15:00 UTC -- PDT; drifts to
+# 7:00am during PST since GitHub cron doesn't follow DST). The script itself
+# adds up to 3 hours of random delay on top of this on scheduled runs (not
+# on manual workflow_dispatch), so the real request time varies each run
+# rather than landing at the same minute every time.
 on:
+  schedule:
+    - cron: '0 15 * * 1,3,5'
   workflow_dispatch:
 
 jobs:
@@ -19,3 +26,5 @@ jobs:
           NGEM_LOGIN_PASSWORD: ${{ secrets.NGEM_LOGIN_PASSWORD }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          MAX_RECORDS_PER_RUN: '5'
+          JITTER_MAX_MINUTES: '180'

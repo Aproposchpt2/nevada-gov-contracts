@@ -27,6 +27,24 @@ const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = 'solicitation-packages';
 const MAX_FILE_BYTES = 50 * 1024 * 1024;
 
+// Rate/visibility discipline: cap how many bids get pulled in a single run,
+// and (on scheduled runs only, not manual workflow_dispatch testing) add a
+// random startup delay so the request pattern doesn't land at the exact
+// same minute every Mon/Wed/Fri. Cron alone can't randomize its own fire
+// time, so the jitter lives here instead.
+const MAX_RECORDS_PER_RUN = Number(process.env.MAX_RECORDS_PER_RUN || 5);
+const JITTER_MAX_MINUTES = Number(process.env.JITTER_MAX_MINUTES || 180);
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+function shuffle(array) {
+  const copy = [...array];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
 function sbHeaders(prefer) {
   const h = { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' };
   if (prefer) h.Prefer = prefer;
@@ -173,12 +191,24 @@ async function main() {
   if (!USERNAME || !PASSWORD) throw new Error('NGEM_LOGIN_USERNAME / NGEM_LOGIN_PASSWORD not set.');
   if (!SUPABASE_URL || !SUPABASE_KEY) throw new Error('SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY not set.');
 
+  // On a real scheduled run (not a manual workflow_dispatch test), wait a
+  // random amount before doing anything -- keeps the actual request time
+  // from landing at the same minute every Mon/Wed/Fri.
+  if (process.env.GITHUB_EVENT_NAME === 'schedule' && JITTER_MAX_MINUTES > 0) {
+    const delayMinutes = Math.random() * JITTER_MAX_MINUTES;
+    console.log(`[acquire-ngem-documents] scheduled run -- waiting ${delayMinutes.toFixed(1)} min before starting.`);
+    await sleep(delayMinutes * 60 * 1000);
+  }
+
   // Pull the real raw records still needing their package -- never hardcode
-  // the bid list, always reflect current DB state.
-  const rawRecords = await sb(
+  // the bid list, always reflect current DB state. Cap and randomly select
+  // which ones get pulled this run so volume/order stays modest and varied
+  // rather than always hitting the same records first.
+  const eligibleRecords = await sb(
     "acquisition_raw_records?package_status=in.(PACKAGE_NOT_STARTED,PACKAGE_DISCOVERED,PACKAGE_PARTIAL,PACKAGE_FAILED)&publisher_id=eq.15314e83-769c-4943-8b29-7312a8cd51d4&select=id,source_record_id,canonical_opportunity_id,publisher_id,raw_payload",
   );
-  console.log('[acquire-ngem-documents] raw records needing packages:', rawRecords.length);
+  const rawRecords = shuffle(eligibleRecords).slice(0, MAX_RECORDS_PER_RUN);
+  console.log('[acquire-ngem-documents] eligible records:', eligibleRecords.length, '| processing this run (cap', MAX_RECORDS_PER_RUN, '):', rawRecords.length);
   if (!rawRecords.length) { console.log('[acquire-ngem-documents] nothing to do.'); return; }
 
   const browser = await chromium.launch();
