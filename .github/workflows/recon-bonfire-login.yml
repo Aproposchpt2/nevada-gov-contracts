@@ -23,4 +23,7 @@ jobs:
             recon-login-form.json
             recon-login-page.html
             recon-login-page.png
+            recon-login-step2.json
+            recon-login-step2.png
+            recon-known-opportunities.json
           retention-days: 3

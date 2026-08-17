@@ -52,6 +52,53 @@ async function main() {
     console.log('[recon] wrote recon-login-page.html,', html.length, 'bytes');
 
     await page.screenshot({ path: 'recon-login-page.png', fullPage: true }).catch(e => console.log('[recon] screenshot failed:', e.message));
+
+    // Submit the email step (using a harmless placeholder, NOT real
+    // credentials -- this recon only needs to see what the NEXT step's
+    // form looks like, it never needs to actually authenticate) to reveal
+    // the password step's field names.
+    const emailInput = await page.$('input[name=email]');
+    if (emailInput) {
+      await emailInput.fill('recon-only@example.com');
+      await Promise.all([
+        page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {}),
+        page.click('button[type=submit]'),
+      ]);
+      await page.waitForTimeout(1500);
+      const step2Inputs = await page.$$eval('input', els => els.map(el => ({
+        tag: el.tagName, type: el.type, name: el.name, id: el.id, placeholder: el.placeholder,
+      })));
+      const step2Buttons = await page.$$eval('button, input[type=submit]', els => els.map(el => ({
+        tag: el.tagName, type: el.type, text: (el.textContent || el.value || '').trim(), id: el.id,
+      })));
+      fs.writeFileSync('recon-login-step2.json', JSON.stringify({ url: page.url(), title: await page.title(), inputs: step2Inputs, buttons: step2Buttons }, null, 2));
+      console.log('[recon] wrote recon-login-step2.json —', step2Inputs.length, 'inputs,', step2Buttons.length, 'buttons');
+      await page.screenshot({ path: 'recon-login-step2.png', fullPage: true }).catch(() => {});
+    } else {
+      console.log('[recon] no email input found, skipping step 2 probe');
+    }
+
+    // Check the two currently public opportunity listings to see if their
+    // titles match any of the known Clark County NGEM bids -- resolves
+    // whether Bonfire actually carries the same opportunities.
+    const knownIds = ['244401', '234773'];
+    const opportunityTitles = [];
+    for (const id of knownIds) {
+      try {
+        await page.goto(`https://clarkcountynv.bonfirehub.com/opportunities/${id}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        const t = await page.title();
+        if (/just a moment/i.test(t)) {
+          await page.waitForFunction(() => !/just a moment/i.test(document.title), { timeout: 15000 }).catch(() => {});
+        }
+        const finalTitle = await page.title();
+        const h1 = await page.$eval('h1', el => el.textContent.trim()).catch(() => null);
+        opportunityTitles.push({ id, pageTitle: finalTitle, h1 });
+        console.log('[recon] opportunity', id, '->', finalTitle, '| h1:', h1);
+      } catch (e) {
+        opportunityTitles.push({ id, error: e.message });
+      }
+    }
+    fs.writeFileSync('recon-known-opportunities.json', JSON.stringify(opportunityTitles, null, 2));
   } finally {
     await browser.close();
   }
