@@ -1,7 +1,7 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-17T07:21:50.673Z",
+  "generatedAt": "2026-08-17T16:12:06.337Z",
   "count": 20,
   "detail_fetched_count": 17,
   "bids": [
@@ -542,7 +542,98 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
+      "documents": [
+        {
+          "name": "1. Volume One - Cover_Index_Instructions to Bidders Addendum 3.pdf",
+          "description": "1. Volume One - Cover_Index_Instructions to Bidders Addendum 3",
+          "file_size": "586 KB",
+          "requires_login": false
+        },
+        {
+          "name": "2. 3089 - ITB_Attachment A_SMWDBE Part 1.pdf",
+          "description": "2. 3089 - ITB_Attachment A_SMWDBE Part 1",
+          "file_size": "74 KB",
+          "requires_login": false
+        },
+        {
+          "name": "3. 3089 - ITB_Attachment B_SMWDBE Part 2.pdf",
+          "description": "3. 3089 - ITB_Attachment B_SMWDBE Part 2",
+          "file_size": "668 KB",
+          "requires_login": false
+        },
+        {
+          "name": "4. 3089 - ITB_Attachment C_DESIGNATION OF SUBCONTRACTORS 1% LIST.pdf",
+          "description": "4. 3089 - ITB_Attachment C_DESIGNATION OF SUBCONTRACTORS 1% LIST",
+          "file_size": "217 KB",
+          "requires_login": false
+        },
+        {
+          "name": "5. 3089 - ITB_Attachment D_AFFIDAVIT PERTAINING TO PREFERENCE ELIGIBILITY.pdf",
+          "description": "5. 3089 - ITB_Attachment D_AFFIDAVIT PERTAINING TO PREFERENCE ELIGIBILITY",
+          "file_size": "794 KB",
+          "requires_login": false
+        },
+        {
+          "name": "6. 3089 - ITB_Attachment E_SMWD BUSINESS ENTERPRISE UTILIZATION.pdf",
+          "description": "6. 3089 - ITB_Attachment E_SMWD BUSINESS ENTERPRISE UTILIZATION",
+          "file_size": "545 KB",
+          "requires_login": false
+        },
+        {
+          "name": "7. 3089 - ITB_Attachment F_CONSTRUCTION EQUIPMENT.pdf",
+          "description": "7. 3089 - ITB_Attachment F_CONSTRUCTION EQUIPMENT",
+          "file_size": "59 KB",
+          "requires_login": false
+        },
+        {
+          "name": "8. 3089 - ITB_Attachment G_-_PWP_RATES_CLARK_COUNTY_2025-2026 Amendment 8.pdf",
+          "description": "8. 3089 - ITB_Attachment G_-_PWP_RATES_CLARK_COUNTY_2025-2026 Amendment 8",
+          "file_size": "1002 KB",
+          "requires_login": false
+        },
+        {
+          "name": "9. 3089 - Volume One - BID_1_Attachment One _BID BOND_NGEM.pdf",
+          "description": "9. 3089 - Volume One - BID_1_Attachment One _BID BOND_NGEM",
+          "file_size": "56 KB",
+          "requires_login": false
+        },
+        {
+          "name": "10. 3089 - Volume One - BID_2_Attachment Two_5% LIST.pdf",
+          "description": "10. 3089 - Volume One - BID_2_Attachment Two_5% LIST",
+          "file_size": "178 KB",
+          "requires_login": false
+        },
+        {
+          "name": "11. 3089 - Volume One - Bid_3_Attachment Three_BUSINESS ENTITY TYPE.pdf",
+          "description": "11. 3089 - Volume One - Bid_3_Attachment Three_BUSINESS ENTITY TYPE",
+          "file_size": "86 KB",
+          "requires_login": false
+        },
+        {
+          "name": "12. 3089 - Volume One - Bid_4_Attachment Four_DISCLOSURE OF OWNERSHIP.pdf",
+          "description": "12. 3089 - Volume One - Bid_4_Attachment Four_DISCLOSURE OF OWNERSHIP",
+          "file_size": "103 KB",
+          "requires_login": false
+        },
+        {
+          "name": "13. 3089 - Volume One - Bid_5_Attachment Five_Bidders List.pdf",
+          "description": "13. 3089 - Volume One - Bid_5_Attachment Five_Bidders List",
+          "file_size": "127 KB",
+          "requires_login": false
+        },
+        {
+          "name": "3089 - Bid Attachment Seven - List of Manufacturers and Suppliers With Long Lead Times.pdf",
+          "description": "3089 - Bid Attachment Seven - List of Manufacturers and Suppliers With Long Lead Times",
+          "file_size": "182 KB",
+          "requires_login": false
+        },
+        {
+          "name": "14. 3089 - Volume One - Contract.pdf",
+          "description": "14. 3089 - Volume One - Contract",
+          "file_size": "115 KB",
+          "requires_login": false
+        }
+      ],
       "detail_fetched": false
     },
     {
@@ -555,7 +646,7 @@
       "issue_date": "7/23/2026",
       "close_date_raw": "8/26/2026 08:00 AM (PT)",
       "close_date": "2026-08-26T15:00:00.000Z",
-      "due_in_days": 10,
+      "due_in_days": 9,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20112&SourceType=1",
       "status": "Open",
       "description": "Project No. 608007 - ARC BIOHAZARDOUS, NON-BIOHAZARDOUS, AND HAZARDOUS WASTE SERVICES The Las Vegas Metropolitan Police Department (LVMPD) is seeking Bids from qualified Bidders for BIOHAZARDOUS, NON-BIOHAZARDOUS, AND HAZARDOUS WASTE SERVICES. Reference additional information under the Attachments Tab for specific requirements, terms and conditions. This Solicitation includes Response Attachments that must be submitted with the Bid. Bidders may bid on one or both Packages. Awards will be made independently. All questions must be submitted in the NGEM system under the Questions tab.",
