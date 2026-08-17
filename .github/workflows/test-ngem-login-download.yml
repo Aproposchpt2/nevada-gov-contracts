@@ -25,8 +25,12 @@ jobs:
             ngem-test-post-login.json
             ngem-test-post-login.png
             ngem-test-login-failure.html
-            ngem-test-bid-detail.html
-            ngem-test-bid-detail.png
-            ngem-test-attachments.json
+            ngem-test-dashboard-nav.json
+            ngem-test-bid-events.png
+            ngem-test-bid-events-rows.json
+            ngem-test-bid-events-search.png
+            ngem-test-authenticated-bid-detail.html
+            ngem-test-authenticated-bid-detail.png
+            ngem-test-authenticated-doc-links.json
           retention-days: 3
           if-no-files-found: warn

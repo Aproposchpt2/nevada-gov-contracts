@@ -71,23 +71,56 @@ async function main() {
       fs.writeFileSync('ngem-test-login-failure.html', await page.content());
       return;
     }
-    console.log('[test] LOGIN SUCCEEDED. Checking bid', TEST_BID_ID, 'detail page for the gated document...');
+    console.log('[test] LOGIN SUCCEEDED. Exploring the authenticated vendor portal for the real bid search...');
 
-    await page.goto(`https://nevada.ionwave.net/PublicDetail.aspx?bidID=${TEST_BID_ID}&SourceType=1`, { waitUntil: 'domcontentloaded', timeout: 20000 });
-    await waitOutCloudflare(page);
-    const html = await page.content();
-    fs.writeFileSync('ngem-test-bid-detail.html', html);
+    const navLinks = await page.$$eval('a, [role=link]', els => els.map(el => ({ text: (el.textContent || '').trim(), href: el.href || null })).filter(x => x.text));
+    fs.writeFileSync('ngem-test-dashboard-nav.json', JSON.stringify(navLinks, null, 2));
 
-    // Look for the attachment grid rows and whether the "please login" text
-    // is still present now that we're authenticated.
-    const stillGated = /please login to view/i.test(html);
-    const attachmentLinks = await page.$$eval('a[href*="extract.aspx"], a[href*="Extract.aspx"]', as => as.map(a => ({ text: a.textContent.trim(), href: a.href })));
-    console.log('[test] still shows "please login to view" text:', stillGated);
-    console.log('[test] extract.aspx links found:', attachmentLinks.length);
-    if (attachmentLinks.length) console.log('[test] sample link:', JSON.stringify(attachmentLinks[0]));
+    const bidEventsLink = navLinks.find(l => /bid\s*events/i.test(l.text));
+    if (bidEventsLink && bidEventsLink.href) {
+      console.log('[test] navigating to Bid Events:', bidEventsLink.href);
+      await page.goto(bidEventsLink.href, { waitUntil: 'networkidle', timeout: 25000 }).catch(() => {});
+      await waitOutCloudflare(page);
+      console.log('[test] Bid Events page:', page.url(), '|', await page.title());
+      await page.screenshot({ path: 'ngem-test-bid-events.png', fullPage: true }).catch(() => {});
 
-    fs.writeFileSync('ngem-test-attachments.json', JSON.stringify({ bidId: TEST_BID_ID, stillGated, attachmentLinks }, null, 2));
-    await page.screenshot({ path: 'ngem-test-bid-detail.png', fullPage: true }).catch(() => {});
+      // Try a search box for the known bid title.
+      const searchBox = await page.$('input[type=search], input[placeholder*=Search i], input[id*=Search i]');
+      if (searchBox) {
+        await searchBox.fill('Mini Warehouse Storage Unit Demolition');
+        await page.waitForTimeout(2500);
+        console.log('[test] searched for the test bid title');
+      } else {
+        console.log('[test] no obvious search box found on Bid Events page');
+      }
+      const rows = await page.$$eval('table tbody tr', trs => trs.slice(0, 40).map(tr => [...tr.querySelectorAll('td')].map(td => td.textContent.trim()))).catch(() => []);
+      fs.writeFileSync('ngem-test-bid-events-rows.json', JSON.stringify(rows, null, 2));
+      console.log('[test] Bid Events row count (after search):', rows.length);
+      if (rows.length) console.log('[test] sample row:', JSON.stringify(rows[0]));
+      await page.screenshot({ path: 'ngem-test-bid-events-search.png', fullPage: true }).catch(() => {});
+
+      // If a row links to a bid detail, follow the first one to inspect its
+      // real document/attachment structure inside the authenticated app.
+      const detailLink = await page.$('table tbody tr a');
+      if (detailLink) {
+        const href = await detailLink.getAttribute('href');
+        console.log('[test] following first result link:', href);
+        await Promise.all([
+          page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {}),
+          detailLink.click(),
+        ]);
+        await page.waitForTimeout(2000);
+        await waitOutCloudflare(page);
+        console.log('[test] detail page:', page.url(), '|', await page.title());
+        fs.writeFileSync('ngem-test-authenticated-bid-detail.html', await page.content());
+        await page.screenshot({ path: 'ngem-test-authenticated-bid-detail.png', fullPage: true }).catch(() => {});
+        const docLinks = await page.$$eval('a', as => as.map(a => ({ text: a.textContent.trim(), href: a.href })).filter(x => /\.(pdf|docx?|xlsx?|zip)(\?|$)/i.test(x.href) || /download|attach|extract/i.test(x.href)));
+        fs.writeFileSync('ngem-test-authenticated-doc-links.json', JSON.stringify(docLinks, null, 2));
+        console.log('[test] document-like links found on authenticated detail page:', docLinks.length);
+      }
+    } else {
+      console.log('[test] no Bid Events link found in nav.');
+    }
 
     console.log('[test] DONE.');
   } finally {
