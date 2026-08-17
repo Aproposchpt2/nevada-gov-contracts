@@ -13,6 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Randomized delay (scheduled runs only -- keeps the real request time from landing at the same minute every week)
+        if: github.event_name == 'schedule'
+        run: |
+          DELAY=$((RANDOM % 10800))
+          echo "Sleeping ${DELAY}s before starting..."
+          sleep $DELAY
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
