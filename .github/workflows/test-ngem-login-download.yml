@@ -1,0 +1,32 @@
+name: Test NGEM Login and Document Access (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-ngem-login-download.js
+        env:
+          NGEM_LOGIN_USERNAME: ${{ secrets.NGEM_LOGIN_USERNAME }}
+          NGEM_LOGIN_PASSWORD: ${{ secrets.NGEM_LOGIN_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ngem-login-test-output
+          path: |
+            ngem-test-post-login.json
+            ngem-test-post-login.png
+            ngem-test-login-failure.html
+            ngem-test-bid-detail.html
+            ngem-test-bid-detail.png
+            ngem-test-attachments.json
+          retention-days: 3
+          if-no-files-found: warn
