@@ -1,0 +1,26 @@
+name: Recon Bonfire Login (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/recon-bonfire-login.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bonfire-recon-output
+          path: |
+            recon-landing-links.json
+            recon-login-form.json
+            recon-login-page.html
+            recon-login-page.png
+          retention-days: 3
