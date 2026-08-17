@@ -86,14 +86,17 @@ async function main() {
     for (const id of knownIds) {
       try {
         await page.goto(`https://clarkcountynv.bonfirehub.com/opportunities/${id}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
-        const t = await page.title();
-        if (/just a moment/i.test(t)) {
-          await page.waitForFunction(() => !/just a moment/i.test(document.title), { timeout: 15000 }).catch(() => {});
+        for (let attempt = 0; attempt < 6; attempt++) {
+          const t = await page.title();
+          if (!/just a moment/i.test(t)) break;
+          await page.waitForTimeout(5000);
         }
         const finalTitle = await page.title();
         const h1 = await page.$eval('h1', el => el.textContent.trim()).catch(() => null);
-        opportunityTitles.push({ id, pageTitle: finalTitle, h1 });
+        const bodyText = await page.$eval('body', el => el.innerText.slice(0, 400)).catch(() => null);
+        opportunityTitles.push({ id, pageTitle: finalTitle, h1, bodyPreview: bodyText });
         console.log('[recon] opportunity', id, '->', finalTitle, '| h1:', h1);
+        if (id === knownIds[0]) await page.screenshot({ path: 'recon-opportunity-244401.png', fullPage: true }).catch(() => {});
       } catch (e) {
         opportunityTitles.push({ id, error: e.message });
       }

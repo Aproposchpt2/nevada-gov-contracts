@@ -464,8 +464,11 @@ function codeOverlap(bidCodes, vendorCodes){
 const BC_SESSION_RAW = sessionStorage.getItem('capgen_bc_session');
 const BC_MEMBER = BC_SESSION_RAW ? JSON.parse(BC_SESSION_RAW) : null;
 const TOKEN = BC_MEMBER ? 'bc_member' : (localStorage.getItem('stategen_session') || '');
+const PROFILE_KEY = 'stategen_profile';
+function loadLocalProfile(){ try{ return JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}'); }catch(e){ return {}; } }
+function saveLocalProfile(patch){ const p=Object.assign(loadLocalProfile(), patch); localStorage.setItem(PROFILE_KEY, JSON.stringify(p)); return p; }
 
-if(!TOKEN){ location.href='/login.html'; }
+if(!TOKEN){ location.href='/welcome.html'; }
 
 // keyword hits → a 0-100 "fit" score (deterministic, no randomness on reload)
 function hits(b){ if(!KEYWORDS.length) return 0; const hay=(b.title+' '+b.agency+' '+(b.bid_type||'')).toLowerCase(); let n=0; for(const k of KEYWORDS){ if(hay.includes(k)) n++; } return n; }
@@ -587,11 +590,10 @@ $('saveSettings').addEventListener('click', async ()=>{
   const kw=$('setKw').value.split(',').map(s=>s.trim()).filter(Boolean);
   if(!kw.length){ msg.className='set-msg err'; msg.textContent='Add at least one keyword.'; return; }
   const optin=$('setOptin').checked;
-  const payload={ session:TOKEN, business_name:$('setBiz').value.trim(), keywords:kw, alerts_opt_in:optin, alert_cadence:optin?setCad:'off', alert_days:[...setDays] };
+  const payload={ business_name:$('setBiz').value.trim(), keywords:kw, alerts_opt_in:optin, alert_cadence:optin?setCad:'off', alert_days:[...setDays] };
   const btn=$('saveSettings'); btn.disabled=true; btn.textContent='Saving…';
   try{
-    const r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    const d=await r.json(); if(!r.ok) throw new Error(d.error||'Could not save.');
+    PROFILE=saveLocalProfile(payload);
     KEYWORDS=kw.map(k=>k.toLowerCase()); PROFILE.business_name=payload.business_name; PROFILE.alerts_opt_in=optin; PROFILE.alert_cadence=payload.alert_cadence; PROFILE.alert_days=payload.alert_days;
     $('biz').textContent=PROFILE.business_name||'member';
     $('kwrow').innerHTML=KEYWORDS.length?'<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join(''):'';
@@ -609,7 +611,7 @@ $('billingBtn').addEventListener('click', async ()=>{
   }catch(e){ btn.disabled=false; btn.textContent='Manage billing & payment ↗'; alert(e.message); }
 });
 ['fSearch','fAgency','fDue'].forEach(id=>$(id).addEventListener(id==='fSearch'?'input':'change',render));
-$('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); sessionStorage.removeItem('capgen_bc_session'); location.href='/'; });
+$('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_session'); localStorage.removeItem(PROFILE_KEY); sessionStorage.removeItem('capgen_bc_session'); location.href='/'; });
 
 (async function init(){
   try{
@@ -630,16 +632,14 @@ $('signout').addEventListener('click',()=>{ localStorage.removeItem('stategen_se
       $('biz').textContent = PROFILE.business_name || 'member';
       $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
     } else {
-      const pr=await fetch(API+'/get-subscriber?token='+encodeURIComponent(TOKEN));
-      const prof=await pr.json();
-      if(!pr.ok) throw new Error('session');
+      const prof=loadLocalProfile();
       KEYWORDS=(prof.keywords||[]).map(k=>String(k).toLowerCase());
       VENDOR_CODES=(prof.commodity_codes||[]);
       $('biz').textContent=prof.business_name||'member';
       $('kwrow').innerHTML = KEYWORDS.length ? '<span class="t">Matched to</span>'+KEYWORDS.map(k=>'<span class="kw"><b>'+esc(k)+'</b></span>').join('') : '';
       PROFILE=prof;
     }
-  }catch(e){ localStorage.removeItem('stategen_session'); location.href='/login.html'; return; }
+  }catch(e){ localStorage.removeItem('stategen_session'); localStorage.removeItem(PROFILE_KEY); location.href='/welcome.html'; return; }
   let data; try{ const r=await fetch(API+'/ngem-pipeline'); data=await r.json(); }catch(e){ data={bids:[]}; }
   ALL=(data.bids||[]).slice();
   if(data.scanMode && data.scanMode!=='live') $('liveTag').textContent='Sample data · demo';
@@ -923,11 +923,8 @@ async function saveIntakeFull(){
   if(btn){btn.disabled=true;btn.textContent='Building your dashboard…';}
   if(msg){msg.className='intake-save-msg ok';msg.textContent='Saving your selections…';}
   try{
-    var r=await fetch(API+'/save-alert-subscriber',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({session:TOKEN,business_name:PROFILE.business_name||'',keywords:names,commodity_codes:codes,
-        alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]})});
-    var d; try{d=await r.json();}catch(e){throw new Error('Server error ('+ r.status +'). Please try again.');}
-    if(!r.ok) throw new Error((d&&d.error)||'Could not save.');
+    PROFILE=saveLocalProfile({business_name:PROFILE.business_name||'',keywords:names,commodity_codes:codes,
+      alerts_opt_in:PROFILE.alerts_opt_in||false,alert_cadence:PROFILE.alert_cadence||'off',alert_days:PROFILE.alert_days||[]});
     // Update state
     KEYWORDS=names; VENDOR_CODES=codes; PROFILE.keywords=names; PROFILE.commodity_codes=codes;
     // Clear bid code cache so fit() recalculates with new codes

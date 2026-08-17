@@ -26,4 +26,5 @@ jobs:
             recon-login-step2.json
             recon-login-step2.png
             recon-known-opportunities.json
+            recon-opportunity-244401.png
           retention-days: 3
