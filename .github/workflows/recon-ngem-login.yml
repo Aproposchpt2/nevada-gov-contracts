@@ -1,0 +1,25 @@
+name: Recon NGEM Login (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/recon-ngem-login.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ngem-recon-output
+          path: |
+            recon-ngem-login-form.json
+            recon-ngem-login-page.html
+            recon-ngem-login-page.png
+          retention-days: 3
