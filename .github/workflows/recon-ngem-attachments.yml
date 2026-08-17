@@ -1,0 +1,31 @@
+name: Recon NGEM Attachments Page (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/recon-ngem-attachments.js
+        env:
+          NGEM_LOGIN_USERNAME: ${{ secrets.NGEM_LOGIN_USERNAME }}
+          NGEM_LOGIN_PASSWORD: ${{ secrets.NGEM_LOGIN_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ngem-attachments-recon-output
+          path: |
+            recon-jobsite-detail.html
+            recon-jobsite-detail.png
+            recon-jobsite-attachments.html
+            recon-jobsite-attachments.png
+            recon-jobsite-attachments-data.json
+          retention-days: 3
+          if-no-files-found: warn
