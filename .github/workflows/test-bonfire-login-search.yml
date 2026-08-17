@@ -1,0 +1,31 @@
+name: Test Bonfire Login and Search (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-bonfire-login-search.js
+        env:
+          CLARK_COUNTY_BONFIRE_EMAIL: ${{ secrets.CLARK_COUNTY_BONFIRE_EMAIL }}
+          CLARK_COUNTY_BONFIRE_PASSWORD: ${{ secrets.CLARK_COUNTY_BONFIRE_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bonfire-login-test-output
+          path: |
+            test-login-failure.html
+            test-post-login.json
+            test-post-login.png
+            test-search-results.json
+            test-dashboard.png
+          retention-days: 3
+          if-no-files-found: warn
