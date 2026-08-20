@@ -33,8 +33,30 @@
       "time": "2026-08-20T18:53Z",
       "action": "Acquisition run against the expanded queue -- first real test of the new seed step feeding real new targets to the document connector.",
       "result": "2 more bids reached PACKAGE_COMPLETE (26 and 18 real documents each). Write-back trigger auto-fired with NO manual intervention this time (unlike the first two). NV live count: 1 -> 3."
+    },
+    {
+      "time": "2026-08-20T18:55Z - 19:02Z",
+      "action": "3 more acquisition runs cycled through the seeded queue.",
+      "result": "5 more PACKAGE_COMPLETE (5, 3, 12, and one addendum re-post at 5 docs). NV live count: 3 -> 6. Final state this session: 10 of 25 acquisition_raw_records at PACKAGE_COMPLETE, 2 still genuinely untried, remainder confirmed NOT_FOUND_IN_PORTAL (likely expired/removed listings)."
+    },
+    {
+      "time": "2026-08-20T19:03Z",
+      "action": "Fixed a real efficiency bug found while cycling runs: the eligibility query never excluded already-failed records, so an increasing share of every run's 5-record cap got wasted re-drawing known-dead NOT_FOUND_IN_PORTAL records.",
+      "commit": "4e67a3b",
+      "fix": "Now tracks processing_attempt_count (column existed, was never written) and excludes records at 3+ failed attempts from future draws. Self-corrects gradually against the existing backlog, no backfill needed."
     }
   ],
+  "end_of_session_totals": {
+    "state_contract_opportunities_NV_live": 6,
+    "apie_contract_processing_NV": 17,
+    "acquisition_raw_records_NV": { "total": 25, "PACKAGE_COMPLETE": 10 },
+    "net_change": "NV live contracts: 1 -> 6 (6x). Full pipeline (discover -> sync -> seed -> acquire -> auto-promote) now self-sustaining without manual intervention at any step, going forward."
+  },
+  "additional_finding_stalled_ca_mission": {
+    "severity": "medium",
+    "status": "observed only, not touched -- out of scope for today's NV push",
+    "summary": "While using the APIE Executive Command Center (apie.aproposgroupllc.com/operations) to seed NV acquisition, noticed an active CA mission (TF-91C1F06E-BEA, 'Complete Contract Packages', state CA) showing STALLED with 800+ seconds of no execution activity. Document preservation and extraction stages both show COMPLETED 100%, but the final 'Package and Match Readiness Determined' stage is stuck at 35%. Run-state evidence shows Authoritative Status QUEUED, dispatch state CAPACITY_AWARE_PACKAGE_ACQUISITION_QUEUED, and an empty 'Worker Claimed' field -- consistent with a dispatched job whose worker never picked it up. Worth a look independently of the NV work."
+  },
   "additional_finding_natcorp_release_gate": {
     "severity": "medium",
     "status": "understood, not yet automated",
