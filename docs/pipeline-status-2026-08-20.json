@@ -1,0 +1,81 @@
+{
+  "report": "Procurement Warehouse pipeline status",
+  "generated_at": "2026-08-20T18:30:00Z",
+  "trigger": "Live browser test of NAT-CORP dashboard for Apropos Group LLC surfaced 0 NV matches -- investigation traced this to real, fixable pipeline gaps ahead of sending NAT-CORP to Albert.",
+  "supabase_project": "judislfknmhofcgzyozc",
+  "baseline_snapshot_before_todays_push": {
+    "state_contract_opportunities": { "NV": 1, "CA": 323 },
+    "apie_contract_processing_NV": 9,
+    "acquisition_raw_records_NV": {
+      "total": 12,
+      "PACKAGE_COMPLETE": 5,
+      "PACKAGE_PARTIAL": 7,
+      "PACKAGE_NOT_STARTED_or_DISCOVERED": 0
+    }
+  },
+  "apps": [
+    {
+      "repo": "nevada-gov-contracts",
+      "role": "NGEM (Clark County, NV) discovery + document acquisition connector",
+      "findings": [
+        {
+          "id": "clobber-bug",
+          "severity": "high",
+          "status": "fixed",
+          "commit": "3e0265c",
+          "summary": "Weekly discovery re-sync (sync-supabase-nv.js) unconditionally recomputed package_status from ngem.json's document-discovery list on every run, silently resetting PACKAGE_COMPLETE/PACKAGE_PARTIAL rows back to PACKAGE_DISCOVERED/NOT_STARTED and undoing real acquisition work.",
+          "fix": "Sync now checks state_contract_opportunities + apie_contract_processing for any id already at COMPLETE/PARTIAL and omits package_status/package_document_count/package_completed_at from that row's upsert payload entirely, relying on PostgREST merge-duplicates leaving omitted columns untouched."
+        },
+        {
+          "id": "stale-write-back",
+          "severity": "medium",
+          "status": "worked-around-manually",
+          "summary": "sync_acquisition_package_to_canonical trigger (DB-side) correctly propagates acquisition_raw_records.package_status into apie_contract_processing/state_contract_opportunities on UPDATE, but 10 NV records sat stale since 2026-08-17 despite acquisition_raw_records showing newer progress -- trigger likely didn't exist yet when those completions happened.",
+          "action_taken": "Manually re-touched (no-op UPDATE) the 2 still-open PACKAGE_COMPLETE acquisition_raw_records rows to re-fire the trigger. One (source_record_id 20328, \"IFB 106-26 Cadiz Storm Drain\", City of Henderson NV) promoted to LIVE in state_contract_opportunities as a result.",
+          "open_question": "Whether this trigger fires reliably going forward for every future acquire-ngem-documents.js run, or whether stale write-backs will keep recurring -- needs observation over the next several scheduled runs."
+        },
+        {
+          "id": "tight-deadline-cadence",
+          "severity": "low",
+          "status": "not fixed -- flagged for tuning",
+          "summary": "3 of the 5 currently PACKAGE_COMPLETE NV records had already passed response_deadline (and were auto-archived) before their packages finished downloading, because the acquisition connector only runs Mon/Wed/Fri while some NGEM bids have short windows.",
+          "recommendation": "Consider a more frequent acquisition cadence, or prioritizing records by response_deadline proximity within MAX_RECORDS_PER_RUN selection (currently random shuffle)."
+        },
+        {
+          "id": "6h-timeout-cancellation",
+          "severity": "medium",
+          "status": "observed, not yet root-caused",
+          "summary": "The 2026-08-19 scheduled acquire-ngem-documents run was auto-cancelled after 6h0m30s (GitHub Actions' default job timeout), unlike the 2026-08-17 run which completed in 38m49s. Cause not yet investigated -- could be a hang in Playwright/Cloudflare wait logic, a stuck NGEM page, or a bad interaction with the JITTER_MAX_MINUTES delay."
+        }
+      ]
+    },
+    {
+      "repo": "Apropos-Opportunity-Intelligence-Engine (APIE)",
+      "role": "Canonical lifecycle tables (state_contract_opportunities, apie_contract_processing, apie_contract_archive), promotion/archive logic, requirements-extraction worker",
+      "findings": [
+        {
+          "id": "nv-requirements-extraction-not-wired",
+          "severity": "high",
+          "status": "not fixed -- scoping only",
+          "summary": "requirements_extraction_status stays NOT_STARTED indefinitely for NV/NGEM-sourced records. The shared extraction worker (contract-package-engine.js / command-contract-package-worker-background.js) exists and runs on schedule, but is currently built only against California sources (CalEProcure, CivicPlus). NGEM/NV was never integrated into it, so even a record that reaches state_contract_opportunities with PACKAGE_COMPLETE stays match_readiness_status=BLOCKED_REQUIREMENTS_INCOMPLETE indefinitely -- it will never surface as a real dashboard match without this.",
+          "recommendation": "This is the real remaining blocker to a substantial, matchable NV contract volume. Scope as its own focused build: extend the shared requirements-extraction worker to accept NGEM's raw payload shape, or write an NGEM-specific extraction path that writes to the same requirements/requirements_extraction_status columns."
+        }
+      ]
+    },
+    {
+      "repo": "NAT-CORP-CONTRACT-EXCHANGE",
+      "role": "Public-facing dashboard, matching UI, resident-state capture during business intake",
+      "findings": [
+        {
+          "id": "resident-state-derivation-error",
+          "severity": "high",
+          "status": "fixed",
+          "commit": "d468966",
+          "summary": "Live tested with Apropos Group LLC's own real site (address: North Las Vegas, Nevada 89081). The AI website-discovery model (gpt-5-mini, reasoning effort low) returned resident_state=\"NE\" instead of \"NV\" despite the literal state name appearing on the page. resident_state feeds the dashboard's Resident State matching filter directly, so a wrong derivation silently breaks geographic matching for the affected business with no visible error.",
+          "fix": "Tightened the discovery prompt to require the literal state name on the page be mapped to its standard USPS abbreviation rather than inferred from the city, and to withhold resident_state entirely when not confident. Does not eliminate all future LLM derivation errors (inherently probabilistic) but directly targets the reproduced failure mode."
+        }
+      ]
+    }
+  ],
+  "immediate_action_in_progress": "Manually triggered scrape-ngem.yml (fresh discovery) and acquire-ngem-documents.yml (document acquisition, workflow_dispatch bypasses the Mon/Wed/Fri schedule and jitter) at 2026-08-20T18:29 UTC, per Jeff's direction to pull NV contract volume today rather than wait for the automated cadence."
+}
