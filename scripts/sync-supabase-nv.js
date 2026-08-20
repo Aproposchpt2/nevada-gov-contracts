@@ -170,6 +170,35 @@ async function fetchExistingIdentities() {
   }
 }
 
+// Real acquisition work (acquire-ngem-documents.js) advances package_status
+// past discovery (PACKAGE_COMPLETE/PACKAGE_PARTIAL) independently of this
+// weekly discovery re-sync. Confirmed live 2026-08-20: this sync always
+// recomputed packageStatus fresh from ngem.json's document *discovery* list
+// (see fromNgem), so the next scheduled run after real acquisition progress
+// silently reset already-completed packages back down to PACKAGE_DISCOVERED/
+// PACKAGE_NOT_STARTED -- undoing real work. A row can live in either
+// state_contract_opportunities or apie_contract_processing (the LIVE/
+// PROCESSING funnel relocates it), so check both.
+async function fetchAdvancedPackageIds(ids) {
+  if (!ids.length) return new Set();
+  const advanced = new Set();
+  const idList = ids.map(id => '"' + id + '"').join(',');
+  for (const [table, idCol] of [['state_contract_opportunities', 'id'], ['apie_contract_processing', 'opportunity_id']]) {
+    try {
+      const res = await fetch(
+        SUPABASE_URL + '/rest/v1/' + table + '?' + idCol + '=in.(' + idList + ')&package_status=in.(PACKAGE_COMPLETE,PACKAGE_PARTIAL)&select=' + idCol,
+        { headers: sbHeaders() }
+      );
+      if (!res.ok) { console.log('[sync-supabase-nv] fetchAdvancedPackageIds(' + table + ') FAILED (' + res.status + ')'); continue; }
+      const rows = await res.json().catch(() => []);
+      (Array.isArray(rows) ? rows : []).forEach(r => advanced.add(r[idCol]));
+    } catch (e) {
+      console.log('[sync-supabase-nv] fetchAdvancedPackageIds(' + table + ') error:', e.message);
+    }
+  }
+  return advanced;
+}
+
 async function upsertBatch(rows) {
   if (!rows.length) return { ok: 0, failed: 0 };
   let ok = 0, failed = 0;
@@ -240,7 +269,27 @@ async function main() {
   }));
   console.log('[sync-supabase-nv] ngem: ' + rows.length + ' bids mapped');
 
-  const { ok, failed } = await upsertBatch(rows);
+  // Never let a fresh discovery pass downgrade a package that real
+  // acquisition work has already advanced past discovery -- see
+  // fetchAdvancedPackageIds. A brand-new id (no prior identity) can't have
+  // advanced status yet, so only pre-existing identity ids need checking.
+  const advancedIds = await fetchAdvancedPackageIds(Object.values(identityMap));
+  const freshRows = [];
+  const advancedRows = [];
+  for (const r of rows) {
+    if (advancedIds.has(r.id)) {
+      const { package_status, package_document_count, package_completed_at, ...rest } = r;
+      advancedRows.push(rest);
+    } else {
+      freshRows.push(r);
+    }
+  }
+  console.log('[sync-supabase-nv] ' + advancedRows.length + ' row(s) already package-advanced -- upserting without touching package_status.');
+
+  const freshResult = await upsertBatch(freshRows);
+  const advancedResult = await upsertBatch(advancedRows);
+  const ok = freshResult.ok + advancedResult.ok;
+  const failed = freshResult.failed + advancedResult.failed;
   console.log('[sync-supabase-nv] upserted ' + ok + ' row(s), ' + failed + ' failed, into ' + TABLE + '.');
 
   const closed = await closeExpired();
