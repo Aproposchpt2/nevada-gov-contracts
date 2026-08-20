@@ -13,13 +13,25 @@ on:
 jobs:
   acquire:
     runs-on: ubuntu-latest
+    # Real incident 2026-08-19: the Playwright/apt install step hung on a
+    # slow mirror with no per-step timeout, and the job silently burned the
+    # full 6h GitHub default before being auto-cancelled -- same failure
+    # class as APIE's process-hourly-package-acquisition-queue.yml. Per-step
+    # timeouts below cap just the hang-prone install steps. The job-level
+    # cap stays generous (not tight) because a *scheduled* run intentionally
+    # sleeps up to JITTER_MAX_MINUTES=180 inside the script itself before
+    # doing any real work -- a tight job timeout would kill that legitimate
+    # sleep, not just a genuine hang.
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - run: npm install
+        timeout-minutes: 5
       - run: npx playwright install --with-deps chromium
+        timeout-minutes: 8
       - run: node scripts/acquire-ngem-documents.js
         env:
           NGEM_LOGIN_USERNAME: ${{ secrets.NGEM_LOGIN_USERNAME }}
