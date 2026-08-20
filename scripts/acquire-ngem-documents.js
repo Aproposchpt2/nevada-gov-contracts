@@ -203,9 +203,15 @@ async function main() {
   // Pull the real raw records still needing their package -- never hardcode
   // the bid list, always reflect current DB state. Cap and randomly select
   // which ones get pulled this run so volume/order stays modest and varied
-  // rather than always hitting the same records first.
+  // rather than always hitting the same records first. Records that have
+  // already failed 3+ times (almost always NOT_FOUND_IN_PORTAL -- genuinely
+  // expired/removed from the authenticated Bid Events list) are excluded:
+  // confirmed live 2026-08-20 that without this, the random draw kept
+  // re-picking known-dead records every run, wasting a chunk of each run's
+  // MAX_RECORDS_PER_RUN slots on repeats that were never going to succeed.
+  const MAX_ATTEMPTS = 3;
   const eligibleRecords = await sb(
-    "acquisition_raw_records?package_status=in.(PACKAGE_NOT_STARTED,PACKAGE_DISCOVERED,PACKAGE_PARTIAL,PACKAGE_FAILED)&publisher_id=eq.15314e83-769c-4943-8b29-7312a8cd51d4&select=id,source_record_id,canonical_opportunity_id,publisher_id,raw_payload",
+    `acquisition_raw_records?package_status=in.(PACKAGE_NOT_STARTED,PACKAGE_DISCOVERED,PACKAGE_PARTIAL,PACKAGE_FAILED)&publisher_id=eq.15314e83-769c-4943-8b29-7312a8cd51d4&processing_attempt_count=lt.${MAX_ATTEMPTS}&select=id,source_record_id,canonical_opportunity_id,publisher_id,raw_payload,processing_attempt_count`,
   );
   const rawRecords = shuffle(eligibleRecords).slice(0, MAX_RECORDS_PER_RUN);
   console.log('[acquire-ngem-documents] eligible records:', eligibleRecords.length, '| processing this run (cap', MAX_RECORDS_PER_RUN, '):', rawRecords.length);
@@ -227,7 +233,7 @@ async function main() {
       const detailHref = solicitation ? bidEventsMap.get(solicitation) : null;
       if (!detailHref) {
         console.log('[acquire-ngem-documents] NOT FOUND in Bid Events:', raw.source_record_id, title, '(solicitation:', solicitation, ')');
-        await sb(`acquisition_raw_records?id=eq.${raw.id}`, { method: 'PATCH', prefer: 'return=minimal', body: JSON.stringify({ package_status: 'PACKAGE_PARTIAL', detail_retrieval_error: 'Not found in authenticated Bid Events list (commodity-code mismatch or not yet posted).' }) });
+        await sb(`acquisition_raw_records?id=eq.${raw.id}`, { method: 'PATCH', prefer: 'return=minimal', body: JSON.stringify({ package_status: 'PACKAGE_PARTIAL', detail_retrieval_error: 'Not found in authenticated Bid Events list (commodity-code mismatch or not yet posted).', processing_attempt_count: (raw.processing_attempt_count || 0) + 1 }) });
         results.push({ id: raw.source_record_id, title, status: 'NOT_FOUND_IN_PORTAL' });
         continue;
       }
@@ -261,7 +267,7 @@ async function main() {
         results.push({ id: raw.source_record_id, title, status: packageStatus, storedCount: stored.length, totalCount: attachments.length });
       } catch (error) {
         console.log('[acquire-ngem-documents] FAILED bid', raw.source_record_id, '-', error.message);
-        await sb(`acquisition_raw_records?id=eq.${raw.id}`, { method: 'PATCH', prefer: 'return=minimal', body: JSON.stringify({ package_status: 'PACKAGE_FAILED', detail_retrieval_error: error.message.slice(0, 500) }) }).catch(() => {});
+        await sb(`acquisition_raw_records?id=eq.${raw.id}`, { method: 'PATCH', prefer: 'return=minimal', body: JSON.stringify({ package_status: 'PACKAGE_FAILED', detail_retrieval_error: error.message.slice(0, 500), processing_attempt_count: (raw.processing_attempt_count || 0) + 1 }) }).catch(() => {});
         results.push({ id: raw.source_record_id, title, status: 'ERROR', error: error.message });
       }
     }
