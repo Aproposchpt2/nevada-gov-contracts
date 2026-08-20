@@ -1,0 +1,284 @@
+{
+  "scraped_at": "2026-08-20T19:27:07.874Z",
+  "bids": [
+    {
+      "doc_id": "43ADG-S3982",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "WCA - Door Hardware Replacement",
+      "bid_opening_date": "09/11/2026 19:59:59",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "4f91f426-923d-4400-8203-cb5f3e05f481",
+      "scope": "The contractor shall fabricate and install new hardware on the exterior doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project. 7 Single exterior exit doors. Remove existing rim panic. Install new rim panics prep area as needed. Install new lever trims. Reuse Cylinders. Install new closers as needed fluid is visible. Fitment check to ensure proper safety and security. 4 Sets of double door entrance. Remove panics and rods (door removal if needed) Install new like for like panic and concealed vertical rod. Adjust panics as needed. Assure proper operation. Fitment check to ensure proper safety and security. Remove the Mag Lock system but leave wiring system for future.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "322457",
+          "name": "WCA Door Hardware Replacement Invitation to Bid"
+        },
+        {
+          "file_nbr": "322458",
+          "name": "WCA Door Hardware Replacement Scope of Work"
+        },
+        {
+          "file_nbr": "322459",
+          "name": "WCA Floor Plan"
+        },
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3982&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S3981",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "LVRC - EXIT GATE REPLACEMENT",
+      "bid_opening_date": "09/11/2026 23:59:59",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "c4bd42b9-2cde-4e61-a6ea-54c5362c58da",
+      "scope": "The contractor shall provide all labor, tools, materials, equipment, supervision, and transportation required for replacing the exit gate. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Gate must meet UL325 compliant. Remove existing gate, post, electrical box and hydraulic supply lines concrete & asphalt, chain link fence. Install a new 24ft chain link double swing gate to match existing height. Set new 6inch gate post, 6ga. 2inch mesh chain link infilled, 2inch sch-40 round galvanized frame, with heavy duty greaseable hinges. Install 3 rows of barbed wire on top of new gate. Pour new concrete pad for new operators. Install 2-HDSW24UL gate operators with battery backup. Install in ground safety loops & exit loops, photo eye, LIFTMASTER 1300libs. Mag lock, operators bolted to new concrete pad.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "322451",
+          "name": "LVRC - Exit Gate Replacement Invitation to Bid"
+        },
+        {
+          "file_nbr": "322452",
+          "name": "LVRC - Exit Gate Replacement Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3981&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S3979",
+      "organization": "Adjutant General",
+      "buyer": "Miriam Garcia",
+      "title": "Building System Controls Services",
+      "bid_opening_date": "09/15/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "a6d22a38-c424-4cda-b6bf-0efd6ed0e016",
+      "scope": "This is a formal RFP request on behalf of the Office of the Military for Building System Controls Services. Please see the attachments tab for further information.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "322423",
+          "name": "43ADG-S3979 -  Request For Proposal.docx"
+        },
+        {
+          "file_nbr": "322430",
+          "name": "43ADG-S3979 - Terms and Conditions for Services.pdf"
+        },
+        {
+          "file_nbr": "322435",
+          "name": "43ADG-S3979 - Standard Form Contract .docx"
+        },
+        {
+          "file_nbr": "322432",
+          "name": "43ADG-S3979 -  Scope of Work .docx"
+        },
+        {
+          "file_nbr": "322427",
+          "name": "43ADG-S3979 - Cost Schedule.pdf"
+        },
+        {
+          "file_nbr": "322428",
+          "name": "43ADG-S3979  - Vendor Information Response.pdf"
+        },
+        {
+          "file_nbr": "322433",
+          "name": "43ADG-S3979 - Reference Questionnaire.docx"
+        },
+        {
+          "file_nbr": "321070",
+          "name": "99SWC-S3974 - Certification Regarding Lobbying.pdf"
+        },
+        {
+          "file_nbr": "322429",
+          "name": "43ADG-S3979 - Certification Regarding Lobbying.pdf"
+        },
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3979&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S3975",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Commissary and Supplemental Services",
+      "bid_opening_date": "10/06/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "70CNR-S3971",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Ed kochendarfer",
+      "title": "Grant subaward",
+      "bid_opening_date": "10/09/2026 17:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "43ADG-S3970",
+      "organization": "Adjutant General",
+      "buyer": "Carlos Fuentes",
+      "title": "Add Shore Power Infrastructure for ALS/MWO at LVRC",
+      "bid_opening_date": "09/04/2026 23:59:59",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "90DETR-S3968",
+      "organization": "Department of Employment, Training and Rehabilitation",
+      "buyer": "Joel Wixon",
+      "title": "Client Payment Card Program",
+      "bid_opening_date": "09/15/2026 13:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "80DOT-S3963",
+      "organization": "Department of Transportation",
+      "buyer": "Heather Moon",
+      "title": "Transit Vehicles",
+      "bid_opening_date": "08/27/2026 12:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "70CNR-S3960",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Emily Larsen",
+      "title": "SR On Call Maintenance",
+      "bid_opening_date": "09/02/2026 10:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "80DOT-S3945",
+      "organization": "Department of Transportation",
+      "buyer": "Jennifer Thomas",
+      "title": "Cattleguard",
+      "bid_opening_date": "08/25/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "72DOW-S3941",
+      "organization": "Department of Wildlife",
+      "buyer": "Jennifer Thomas",
+      "title": "Licensing System",
+      "bid_opening_date": "09/14/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "80DOT-S3940",
+      "organization": "Department of Transportation",
+      "buyer": "Miriam Garcia",
+      "title": "Blank Aluminum Signage Sheets",
+      "bid_opening_date": "09/10/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "40DHHS-S3927",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Arborist Services",
+      "bid_opening_date": "08/20/2026 13:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "40DHHS-S3926",
+      "organization": "Department of Human Services",
+      "buyer": "Jennifer Thomas",
+      "title": "Asset Verification Services",
+      "bid_opening_date": "08/26/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "41NHA-S3922",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Nevada Average Acquisition Cost",
+      "bid_opening_date": "08/24/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "01GO-S3906",
+      "organization": "Governor's Office",
+      "buyer": "Christian Armas",
+      "title": "Disaster Response and Recovery Services",
+      "bid_opening_date": "09/11/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "70CNR-S3892",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "Uniform Provider for State Parks",
+      "bid_opening_date": "09/11/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "70CNR-S3872",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "Aircraft Maintenance Specialist (NDF26-003)",
+      "bid_opening_date": "08/27/2026 14:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "01GO-S3715",
+      "organization": "Governor's Office",
+      "buyer": "Annette Morfin",
+      "title": "BEAD Grant Management Services",
+      "bid_opening_date": "09/08/2026 13:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "01GO-S3713",
+      "organization": "Governor's Office",
+      "buyer": "Annette Morfin",
+      "title": "Environmental Permitting, Right-of-Way Consulting Services",
+      "bid_opening_date": "08/27/2026 13:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "99SWC-S3513",
+      "organization": "Statewide Contracts",
+      "buyer": "Amy Scaffidi",
+      "title": "Direct Client Services",
+      "bid_opening_date": "11/21/2025 17:00:00",
+      "status": "Opened"
+    },
+    {
+      "doc_id": "40DHHS-S3292",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Nevada EBT and Cash Benefit System",
+      "bid_opening_date": "10/26/2026 13:00:00",
+      "status": "Sent"
+    },
+    {
+      "doc_id": "10TCA-S3261",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Travel Nevada Meeting Planner",
+      "bid_opening_date": "09/16/2026 13:00:00",
+      "status": "Sent"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+name: Scrape NevadaePro (State of Nevada) and sync to Supabase
+
+# Daily is reasonable here (unlike NGEM's weekly floor): no login, no
+# Cloudflare, no browser -- just plain HTTP requests, so there's no
+# vendor-portal load/detection concern to pace around. ~7am Pacific
+# (14:00 UTC -- PDT; drifts to 6am during PST since GitHub cron doesn't
+# follow DST).
+on:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/scrape-nevadaepro.js
+      - name: Commit refreshed nevadaepro.json
+        run: |
+          git config user.name "stategen-bot"
+          git config user.email "bot@aproposgroupllc.com"
+          git add nevadaepro.json
+          git commit -m "data: refresh NevadaePro listings" || echo "no changes to commit"
+          git push
+      - name: Sync into Supabase raw table (state_contract_opportunities)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-supabase-nevadaepro.js
