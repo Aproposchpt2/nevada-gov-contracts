@@ -13,6 +13,33 @@
       "PACKAGE_NOT_STARTED_or_DISCOVERED": 0
     }
   },
+  "progress_log": [
+    {
+      "time": "2026-08-20T18:29Z",
+      "action": "Manually re-touched the 2 still-open PACKAGE_COMPLETE acquisition_raw_records rows to re-fire the (previously stale) write-back trigger.",
+      "result": "NV live count 1 -> confirmed 1 (source_record_id 20328 promoted)."
+    },
+    {
+      "time": "2026-08-20T18:39Z",
+      "action": "Fresh scrape-ngem.yml run (clobber-bug fix now live) synced 20 open NV bids into the canonical tables.",
+      "result": "apie_contract_processing NV: 9 -> 18. Confirmed clobber fix working: sync log explicitly reported '2 row(s) already package-advanced -- upserting without touching package_status.'"
+    },
+    {
+      "time": "2026-08-20T18:51Z",
+      "action": "New seed-acquisition-raw-records.js shipped and run for the first time -- seeds acquisition_raw_records (previously frozen at 12) from every NV bid the discovery sync has already placed in the canonical tables.",
+      "result": "acquisition_raw_records NV: 12 -> 25 (13 new rows inserted)."
+    },
+    {
+      "time": "2026-08-20T18:53Z",
+      "action": "Acquisition run against the expanded queue -- first real test of the new seed step feeding real new targets to the document connector.",
+      "result": "2 more bids reached PACKAGE_COMPLETE (26 and 18 real documents each). Write-back trigger auto-fired with NO manual intervention this time (unlike the first two). NV live count: 1 -> 3."
+    }
+  ],
+  "additional_finding_natcorp_release_gate": {
+    "severity": "medium",
+    "status": "understood, not yet automated",
+    "summary": "A live NV record reaching state_contract_opportunities and APIE's LIVE lifecycle state is still not the final gate -- natcorp_release_status (evaluated by natcorp_apply_release_gates(), a safe/idempotent Postgres function) is a separate check for real data completeness (current status/deadline, official source URL, issuing organization, at least one contact method, real scope/documents, real requirements, not a duplicate/superseded/QA-rejected). Ran manually for the first live NV record: result was 'enrichment_required' / reason 'missing_contract_contact' -- this specific NGEM bid's scraped data has no contact name, email, or phone. This is a real per-record data gap (not something to fabricate), not a pipeline bug. CA has 188 'eligible' + 135 'not_evaluated' rows, suggesting this evaluator runs on some schedule CA already benefits from that NV hasn't been included in yet -- worth finding and adding NV to that schedule as a small follow-up."
+  },
   "apps": [
     {
       "repo": "nevada-gov-contracts",
