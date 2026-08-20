@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-20T18:39:54.697Z",
+  "generatedAt": "2026-08-20T18:51:05.724Z",
   "count": 20,
-  "detail_fetched_count": 12,
+  "detail_fetched_count": 16,
   "bids": [
     {
       "id": "20406",
@@ -180,12 +180,103 @@
       "due_in_days": 1,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20437&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "BCN Purchasing does not accept physical documents in response to any solicitation including but not limited to: ITB, RFP, RFQ, or CMAR solicitations. All documents must be submitted electronically via this website. The NGEM system allows for bidders to start and save work/uploads without submitting. Please make use of this capability to begin building your bid early and reduce the chances of internet connectivity or upload issues causing a last-minute inability to submit. Once the ITB/RFP/RFQ/CMAR closes and the responses are unsealed electronically, the list of bidders/responders will be posted online shortly thereafter and available to the public for viewing. This document can be accessed by clicking on Closed Bid Opportunities, selecting the specific opportunity, and scrolling down to Bid Documents. The Bid Tabulation document will be available for review there. Description of Work: This is a prevailing wage project.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "2026_08_19_13_40_39.pdf",
+          "description": "ITB 9124 Second Job Walk Sign-In sheet",
+          "file_size": "167 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ITB 9124 Addendum No. 3.pdf",
+          "description": "ITB 9124 Addendum No. 3",
+          "file_size": "81 KB",
+          "requires_login": true
+        },
+        {
+          "name": "ITB 9124 Addendum No. 2.pdf",
+          "description": "ITB 9124 Addendum No. 2",
+          "file_size": "89 KB",
+          "requires_login": true
+        },
+        {
+          "name": "26RPR03453 Job Walk Sheet Signed.pdf",
+          "description": "ITB 9124 Job Walk Sign-In Sheet",
+          "file_size": "93 KB",
+          "requires_login": false
+        },
+        {
+          "name": "26RPR03453 Drawings.pdf",
+          "description": "ITB 9124 Drawings",
+          "file_size": "14.48 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Prevailing Wages Acknowledgment and Contact Info 011725_ITB_9124.pdf",
+          "description": "ITB 9124 Prevailing Wages Acknowledgment Form",
+          "file_size": "31 KB",
+          "requires_login": true
+        },
+        {
+          "name": "B. General Terms Conditions 012519.pdf",
+          "description": "BCN Purchasing Construction ITB General Terms and Conditions.pdf",
+          "file_size": "21 KB",
+          "requires_login": true
+        },
+        {
+          "name": "A. Instructions to Bidders 071421.pdf",
+          "description": "BCN Purchasing Construction Instructions to Bidders",
+          "file_size": "108 KB",
+          "requires_login": true
+        },
+        {
+          "name": "C. Contract Terms Conditions 020218.pdf",
+          "description": "BCN Purchasing Construction Contract Terms and Conditions",
+          "file_size": "21 KB",
+          "requires_login": true
+        },
+        {
+          "name": "E. Certifications Affidavits 103119.pdf",
+          "description": "BCN Purchasing Construction Certifications and Affidavits Information",
+          "file_size": "101 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Tier 2 Affidavit of Compliance-Report of Local and Disadvantaged Subcontractors.pdf",
+          "description": "Tier 2 Affidavit of Compliance-Report of Local and Disadvantaged Subcontractors",
+          "file_size": "25 KB",
+          "requires_login": true
+        },
+        {
+          "name": "D. Certification Vendor Info Sheet 020218.pdf",
+          "description": "Certification - Vendor Information Sheet",
+          "file_size": "7 KB",
+          "requires_login": true
+        },
+        {
+          "name": "F. Experience Statement 020218.pdf",
+          "description": "Experience Statement",
+          "file_size": "24 KB",
+          "requires_login": true
+        },
+        {
+          "name": "J. Subcontractor List 031722.pdf",
+          "description": "Subcontractors List",
+          "file_size": "105 KB",
+          "requires_login": true
+        },
+        {
+          "name": "2019.08.01 Proposed Template Bid Bond.docx",
+          "description": "TEMPLATE-UNR Bid Bond Form",
+          "file_size": "20 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20400",
@@ -564,12 +655,37 @@
       "due_in_days": 7,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20434&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Invitation to Bid (ITB) with the sole purpose and intent of obtaining sealed bids (Bid) from qualified contractors (Contractor) to provide pavement maintenance operations that include, but are not limited to, pavement preparation, spall repair, patching, joint seal, slab replacement, and placing and maintaining traffic control, for Runway 17L and Taxiway Charlie at Reno-Tahoe International Airport (RNO).",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "Volume I - Bidding Requirements.pdf",
+          "description": "ITB #26/27-09 Bidding Requirements",
+          "file_size": "3.32 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Volume II - Technical Specifications.pdf",
+          "description": "ITB #26/27-09 Volume II - Technical Specifications",
+          "file_size": "2.27 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Volume III - CSPP.pdf",
+          "description": "ITB #26/27-09 Volume III - Construction Safety & Phasing Plan",
+          "file_size": "27.44 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Plans.pdf",
+          "description": "ITB #26/27-09 Plans",
+          "file_size": "59.64 MB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20435",
@@ -823,12 +939,73 @@
       "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20443&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "The City of Las Vegas (City) hereby invites qualified firms or individuals (Offerors) to submit written proposals for Jail Food Services at the City's Detention Facility located at 3200 Stewart Avenue, Las Vegas, NV 89101 as more fully described in the Scope of Work set forth herein. Persons with a disability may request accommodations or assistance to participate in the solicitation process by contacting Purchasing & Contracts at 702-229-6231 or 7-1-1 (TTY). To insure the City is able to meet your needs, please submit requests at least 2 business days in advance.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "RFP Instructions.pdf",
+          "description": "Instructions for RFP participation and submittal of Proposals.",
+          "file_size": "888 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Proposal Format and Statement of Work 260180-JL.pdf",
+          "description": "Statement of Work for the project and guidelines for Proposal content.",
+          "file_size": "554 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Contract 260180-JL.pdf",
+          "description": "Terms, conditions and specifications that will govern any contract resulting from this solicitation.",
+          "file_size": "400 KB",
+          "requires_login": true
+        },
+        {
+          "name": "List of References Form 260180-JL.pdf",
+          "description": "Offeror must download and save this form prior to filling it out. Upload completed form to the Response Attachment Tab.",
+          "file_size": "111 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Pricing Matrix 260180-JL.pdf",
+          "description": "Offeror must enter all required pricing on this form and then upload as Response Attachment No. 2 to the Response Attachments Tab",
+          "file_size": "223 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Certificate - Disclosure of Ownership and Principals 260180-JL.pdf",
+          "description": "Offeror must download and save this form prior to filling it out. Upload completed form to the Response Attachment Tab.",
+          "file_size": "49 KB",
+          "requires_login": true
+        },
+        {
+          "name": "SAMPLE Insurance 260180-JL.pdf",
+          "description": "Examples of insurance certificates, endorsements and forms that may be required under the contract.",
+          "file_size": "1.90 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Video-Culinary Walk Through.MOV",
+          "description": "City of Las Vegas DPS Culinary Unit walk through tour video (685KB .MOV file)",
+          "file_size": "669.20 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Video-Staff Dining Walk Through.MOV",
+          "description": "City of Las Vegas DPS Staff Dining Room walk through tour video (113KB .MOV file)",
+          "file_size": "110.40 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum 1 260180-JL.pdf",
+          "description": "RFP Addendum No. 1, including questions and answers.",
+          "file_size": "514 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "19842",
@@ -863,12 +1040,37 @@
       "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20399&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "This project consists of the demolition of the BMI Pool and Pool Building located at 105 West Basic Road in Henderson, Nevada. The work will include but not be limited to the complete removal of all materials associated with the existing pool area and pool building. Including removal and hauling off of all materials and rough grading in accordance with the Contract Documents. The work also includes Contractor coordination with all existing utilities, both dry and wet, associated with the demolition of the existing structures. The Contractor will be solely responsible for the safe removal and or relocation of all existing utilities. Engineer's Estimate: $300,000.00",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "PR-352 BMI Pool and Building Demo Specs.pdf",
+          "description": "PR-352 BMI Pool and Building Demo Specs",
+          "file_size": "2.43 MB",
+          "requires_login": true
+        },
+        {
+          "name": "PR-352 BMI Pool and Building Demo Plans.pdf",
+          "description": "PR-352 BMI Pool and Building Demo Plans",
+          "file_size": "32.53 MB",
+          "requires_login": true
+        },
+        {
+          "name": "COH NGEM Supplier User Guide (Rev 12-2016).pdf",
+          "description": "COH NGEM Supplier User Guide (Rev 12-2016)",
+          "file_size": "337 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum 1 - PR-352 BMI Pool and Building Demo.pdf",
+          "description": "Addendum 1 - PR-352 BMI Pool and Building Demo",
+          "file_size": "188.51 MB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     }
   ]
 }
