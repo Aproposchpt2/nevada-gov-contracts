@@ -213,6 +213,17 @@ async function main() {
     // via a sync-supabase-*.js upsert; this recovery needs the same seed
     // row before any package-completion update has anything to attach to.
     // Idempotent via on_conflict=source_platform,source_record_id.
+    // Real scope/description text lives under different keys per source
+    // connector family, confirmed live 2026-08-21: ADOT uses "description",
+    // NAU uses "notes"/"rawText", University of Arizona has no long-form
+    // field at all -- just title/contact/dates. Falling back to title
+    // (>=5 chars, matches the admission guard's substantive-requirements
+    // bar) rather than leaving requirements empty and getting silently
+    // rejected by natcorp_canonical_contract_admission_guard.
+    const rsr = opp.raw_source_record || {};
+    const scopeText = rsr.description || rsr.notes || rsr.rawText || opp.title || opp.solicitation_number;
+    const scopeSource = rsr.description ? 'description' : rsr.notes ? 'notes' : rsr.rawText ? 'rawText' : 'title_fallback';
+
     await dst('state_contract_opportunities?on_conflict=source_platform,source_record_id', {
       method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal',
       body: JSON.stringify({
@@ -227,19 +238,21 @@ async function main() {
         official_source_url: opp.official_record_url,
         solicitation_number: opp.solicitation_number,
         title: opp.title || opp.solicitation_number,
-        description: opp.raw_source_record?.description || opp.title || null,
+        description: scopeText,
         status,
         posted_at: opp.posted_date,
         response_deadline: opp.closing_at,
         place_of_performance_state: 'AZ',
         document_urls: docs.map((d) => ({ name: d.document_name, url: d.document_url })),
-        requirements: opp.raw_source_record?.description ? { scope: opp.raw_source_record.description, source: 'acad_recovery_raw_source_record' } : {},
-        raw_source_payload: opp.raw_source_record || {},
+        requirements: { scope: scopeText, source: `acad_recovery_${scopeSource}` },
+        raw_source_payload: rsr,
         acquisition_method: 'acad_recovery_migration',
-        extraction_confidence: 0.85,
-        data_quality_score: 80,
+        extraction_confidence: scopeSource === 'title_fallback' ? 0.6 : 0.85,
+        data_quality_score: scopeSource === 'title_fallback' ? 55 : 80,
         qa_status: 'incomplete',
-        qa_notes: 'Recovered 2026-08-21 from the retired ACAD testing site (already-acquired real documents, status re-verified against current date at recovery time, not carried over blindly from the source).',
+        qa_notes: scopeSource === 'title_fallback'
+          ? 'Recovered 2026-08-21 from the retired ACAD testing site. This source (University of Arizona) has no long-form description field -- title used as scope text, honestly labeled as list-only, not a substitute for the real RFP description.'
+          : 'Recovered 2026-08-21 from the retired ACAD testing site (already-acquired real documents, status re-verified against current date at recovery time, not carried over blindly from the source).',
       }),
     });
 
