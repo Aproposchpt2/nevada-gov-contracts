@@ -165,41 +165,64 @@ async function main() {
     if (!mapping) { console.log('[migrate-acad] SKIP (no publisher mapping):', publisherName, opp.solicitation_number); continue; }
 
     const status = computeStatus(opp.status, opp.closing_at);
-    const canonicalOpportunityId = crypto.randomUUID();
     const sourceRecordId = `acad_${cleanId(opp.solicitation_number)}`;
     const docs = docsByOpportunity[opp.id] || [];
 
     console.log(`[migrate-acad] === ${publisherName} / ${opp.solicitation_number} (${opp.status} -> ${status}) -- ${docs.length} doc(s) ===`);
 
-    const rawRecord = await dst('acquisition_raw_records', {
-      method: 'POST', prefer: 'return=representation',
-      body: JSON.stringify({
-        acquisition_run_id: acquisitionRunByPublisher[publisherName],
-        assignment_id: mapping.assignment_id,
-        publisher_id: mapping.publisher_id,
-        canonical_opportunity_id: canonicalOpportunityId,
-        source_record_id: sourceRecordId,
-        source_url: opp.official_record_url || opp.primary_document_url || 'https://cnsads.azdot.gov/current',
-        raw_payload: {
-          title: opp.title,
-          solicitation_number: opp.solicitation_number,
-          issuing_entity: opp.issuing_entity,
-          status_at_recovery: status,
-          original_source_status: opp.status,
-          posted_date: opp.posted_date,
-          closing_at: opp.closing_at,
-          description: opp.raw_source_record?.description || null,
-          documents: docs.map((d) => ({ name: d.document_name, type: d.document_type })),
-          recovered_from: 'ACAD (APROPOS-CONTRACT-ACQUISITION-DISCOVERY-CENTER)',
-          recovered_at: new Date().toISOString(),
-        },
-        package_status: docs.length ? 'PACKAGE_DISCOVERED' : 'PACKAGE_NOT_STARTED',
-        package_document_count: docs.length,
-        source_fingerprint: crypto.createHash('sha256').update(sourceRecordId + '|acad_arizona_recovery').digest('hex'),
-        content_fingerprint: crypto.createHash('sha256').update(sourceRecordId + '|acad_arizona_recovery').digest('hex'),
-      }),
-    });
-    const rawRecordId = rawRecord[0].id;
+    // Idempotent: reuse an existing raw record (and its already-registered
+    // apie_contract_identity row) if this script already ran once for this
+    // opportunity, instead of creating a duplicate.
+    const existing = await dst(`acquisition_raw_records?source_record_id=eq.${encodeURIComponent(sourceRecordId)}&select=id,canonical_opportunity_id`);
+    let rawRecordId, canonicalOpportunityId;
+    if (existing.length) {
+      rawRecordId = existing[0].id;
+      canonicalOpportunityId = existing[0].canonical_opportunity_id;
+      console.log('[migrate-acad]   reusing existing raw record', rawRecordId);
+    } else {
+      canonicalOpportunityId = crypto.randomUUID();
+      // apie_contract_identity must exist before contract_package_documents
+      // can reference this canonical_opportunity_id (FK constraint).
+      await dst('apie_contract_identity', {
+        method: 'POST', prefer: 'return=minimal',
+        body: JSON.stringify({
+          id: canonicalOpportunityId,
+          pdas_record_id: `PDAS-${crypto.randomUUID().replace(/-/g, '')}`,
+          source_platform: 'acad_arizona_recovery',
+          source_record_id: sourceRecordId,
+          current_location: 'PROCESSING',
+        }),
+      });
+      const rawRecord = await dst('acquisition_raw_records', {
+        method: 'POST', prefer: 'return=representation',
+        body: JSON.stringify({
+          acquisition_run_id: acquisitionRunByPublisher[publisherName],
+          assignment_id: mapping.assignment_id,
+          publisher_id: mapping.publisher_id,
+          canonical_opportunity_id: canonicalOpportunityId,
+          source_record_id: sourceRecordId,
+          source_url: opp.official_record_url || opp.primary_document_url || 'https://cnsads.azdot.gov/current',
+          raw_payload: {
+            title: opp.title,
+            solicitation_number: opp.solicitation_number,
+            issuing_entity: opp.issuing_entity,
+            status_at_recovery: status,
+            original_source_status: opp.status,
+            posted_date: opp.posted_date,
+            closing_at: opp.closing_at,
+            description: opp.raw_source_record?.description || null,
+            documents: docs.map((d) => ({ name: d.document_name, type: d.document_type })),
+            recovered_from: 'ACAD (APROPOS-CONTRACT-ACQUISITION-DISCOVERY-CENTER)',
+            recovered_at: new Date().toISOString(),
+          },
+          package_status: docs.length ? 'PACKAGE_DISCOVERED' : 'PACKAGE_NOT_STARTED',
+          package_document_count: docs.length,
+          source_fingerprint: crypto.createHash('sha256').update(sourceRecordId + '|acad_arizona_recovery').digest('hex'),
+          content_fingerprint: crypto.createHash('sha256').update(sourceRecordId + '|acad_arizona_recovery').digest('hex'),
+        }),
+      });
+      rawRecordId = rawRecord[0].id;
+    }
 
     let stored = 0;
     for (const doc of docs) {
