@@ -138,22 +138,34 @@ async function main() {
   console.log(`[migrate-acad] ${opportunities.length} opportunities, ${documents.length} acquired documents to migrate.`);
 
   // One command_run for the whole recovery, one acquisition_run per publisher.
-  const commandRun = await dst('command_runs', {
-    method: 'POST', prefer: 'return=representation',
-    body: JSON.stringify({
-      idempotency_key: 'acad-arizona-recovery-2026-08-21',
-      mission_name: 'ACAD Arizona Opportunity Recovery',
-      mission_type_key: 'CONTRACT_PACKAGE_ACQUISITION',
-      state_code: 'AZ',
-      status: 'completed',
-      aadp_state: 'COMPLETED',
-      result_summary: 'One-off recovery of real AZ opportunities + already-acquired documents from the retired APROPOS-CONTRACT-ACQUISITION-DISCOVERY-CENTER (ACAD) testing site before its tables are cleaned up.',
-    }),
-  });
-  const commandRunId = commandRun[0].id;
+  // Idempotent: reuse the existing command_run/acquisition_runs on a retry
+  // instead of failing on the idempotency_key unique constraint.
+  const IDEMPOTENCY_KEY = 'acad-arizona-recovery-2026-08-21';
+  let commandRunId;
+  const existingCommandRun = await dst(`command_runs?idempotency_key=eq.${IDEMPOTENCY_KEY}&select=id`);
+  if (existingCommandRun.length) {
+    commandRunId = existingCommandRun[0].id;
+    console.log('[migrate-acad] reusing existing command_run', commandRunId);
+  } else {
+    const commandRun = await dst('command_runs', {
+      method: 'POST', prefer: 'return=representation',
+      body: JSON.stringify({
+        idempotency_key: IDEMPOTENCY_KEY,
+        mission_name: 'ACAD Arizona Opportunity Recovery',
+        mission_type_key: 'CONTRACT_PACKAGE_ACQUISITION',
+        state_code: 'AZ',
+        status: 'completed',
+        aadp_state: 'COMPLETED',
+        result_summary: 'One-off recovery of real AZ opportunities + already-acquired documents from the retired APROPOS-CONTRACT-ACQUISITION-DISCOVERY-CENTER (ACAD) testing site before its tables are cleaned up.',
+      }),
+    });
+    commandRunId = commandRun[0].id;
+  }
 
   const acquisitionRunByPublisher = {};
   for (const [name, { assignment_id }] of Object.entries(PUBLISHER_MAP)) {
+    const existingRun = await dst(`acquisition_runs?command_run_id=eq.${commandRunId}&assignment_id=eq.${assignment_id}&select=id`);
+    if (existingRun.length) { acquisitionRunByPublisher[name] = existingRun[0].id; continue; }
     const run = await dst('acquisition_runs', { method: 'POST', prefer: 'return=representation', body: JSON.stringify({ command_run_id: commandRunId, assignment_id, status: 'CREATED' }) });
     acquisitionRunByPublisher[name] = run[0].id;
   }
