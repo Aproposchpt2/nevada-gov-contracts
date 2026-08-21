@@ -1,0 +1,27 @@
+name: Migrate ACAD Arizona Opportunities (one-off recovery)
+
+# One-off, manual only -- recovers real AZ opportunities + already-
+# acquired documents from the retired ACAD testing site before its
+# tables get cleaned up. Not scheduled.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run recovery migration
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ACAD_SUPABASE_URL: ${{ secrets.ACAD_SUPABASE_URL }}
+          ACAD_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.ACAD_SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/migrate-acad-arizona-opportunities.js
