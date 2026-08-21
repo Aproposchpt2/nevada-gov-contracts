@@ -1,0 +1,34 @@
+name: Scrape Washoe County SD (Reno) and sync to Supabase
+
+# No login, no browser -- plain server-rendered HTML like NevadaePro, so
+# daily is fine.
+on:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/scrape-washoe.js
+      - name: Commit refreshed washoe.json
+        run: |
+          git config user.name "stategen-bot"
+          git config user.email "bot@aproposgroupllc.com"
+          git add washoe.json
+          git commit -m "data: refresh Washoe County SD listings" || echo "no changes to commit"
+          git push
+      - name: Sync into Supabase raw table (state_contract_opportunities)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-supabase-washoe.js
