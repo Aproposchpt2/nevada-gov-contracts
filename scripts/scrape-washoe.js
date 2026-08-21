@@ -66,8 +66,15 @@ function parseRows(html) {
 async function main() {
   console.log('[scrape-washoe] loading Washoe County SD solicitations list...');
   const html = await fetchList();
-  const rows = parseRows(html);
-  console.log('[scrape-washoe] list loaded:', rows.length, 'solicitations');
+  const allRows = parseRows(html);
+  // Confirmed live 2026-08-21: this grid is a full recent-activity table,
+  // not an open-bids-only view -- of 45 rows on first check, only 5 were
+  // Active (the rest: 25 Awarded, 4 Under Evaluation, 3 Recommendation of
+  // Award, 3 Letter of Intent Issued, 3 Cancelled, 2 Closed/Evaluation
+  // Completed). Filtering to Active here avoids syncing 40 records every
+  // run just to watch the archive trigger correctly discard them.
+  const rows = allRows.filter(r => String(r.status || '').trim().toLowerCase() === 'active');
+  console.log('[scrape-washoe] list loaded:', allRows.length, 'total rows,', rows.length, 'Active');
 
   const out = { scraped_at: new Date().toISOString(), solicitations: rows };
   fs.writeFileSync(path.join(__dirname, '..', 'washoe.json'), JSON.stringify(out, null, 2));
