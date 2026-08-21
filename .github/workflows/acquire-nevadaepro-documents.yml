@@ -1,0 +1,25 @@
+name: Acquire NevadaePro Documents (State of Nevada)
+
+# No login, no browser, no rate-limit concern the way NGEM's vendor portal
+# has -- plain HTTP requests only. Runs daily alongside the discovery
+# scrape, offset by an hour so newly-discovered bids from that run have
+# already synced before this one looks for eligible records.
+on:
+  schedule:
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/acquire-nevadaepro-documents.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          MAX_RECORDS_PER_RUN: '8'
