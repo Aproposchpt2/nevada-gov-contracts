@@ -1,0 +1,27 @@
+name: Acquire CivicPlus NV Documents (Lyon, Churchill, White Pine, Nye, Humboldt)
+
+# Plain public GET, no auth -- confirmed live 2026-08-21. No rate-limit
+# pacing needed (unlike NevadaePro/NGEM); this connector's whole current
+# backlog is a handful of documents.
+on:
+  schedule:
+    - cron: '30 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Acquire real documents into contract_package_documents
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/acquire-civicplus-nv-documents.js
