@@ -11,7 +11,7 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const SUPABASE_URL = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = 'solicitation-packages';
-const MAX_FILE_BYTES = 50 * 1024 * 1024;
+const MAX_FILE_BYTES = 100 * 1024 * 1024; // matches solicitation-packages bucket file_size_limit, raised 2026-08-21 -- large civil-engineering drawing sets were routinely tripping the old 50MB cap
 const PLATFORM = 'civicplus_nv_county';
 
 function sbHeaders(prefer) {

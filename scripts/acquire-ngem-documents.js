@@ -25,7 +25,7 @@ const PASSWORD = process.env.NGEM_LOGIN_PASSWORD;
 const SUPABASE_URL = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const BUCKET = 'solicitation-packages';
-const MAX_FILE_BYTES = 50 * 1024 * 1024;
+const MAX_FILE_BYTES = 100 * 1024 * 1024; // matches solicitation-packages bucket file_size_limit, raised 2026-08-21 -- large civil-engineering drawing sets were routinely tripping the old 50MB cap
 
 // Rate/visibility discipline: cap how many bids get pulled in a single run,
 // and (on scheduled runs only, not manual workflow_dispatch testing) add a
