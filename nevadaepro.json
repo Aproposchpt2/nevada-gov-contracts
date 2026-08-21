@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-20T19:29:44.729Z",
+  "scraped_at": "2026-08-21T01:22:29.119Z",
   "bids": [
     {
       "doc_id": "43ADG-S3982",
@@ -427,6 +427,83 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3960&external=true&parentUrl=close"
     },
     {
+      "doc_id": "44DOC-S3955",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "bid_opening_date": "10/08/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "763ec546-0ba3-4fa3-b652-0bcee25cdfef",
+      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "322903",
+          "name": "44DOC-S3955 RFP~7.docx"
+        },
+        {
+          "file_nbr": "318130",
+          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "318138",
+          "name": "44DOC-S3955 SOW.docx"
+        },
+        {
+          "file_nbr": "318129",
+          "name": "44DOC-S3955 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "322879",
+          "name": "44DOC-S3955 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "318140",
+          "name": "44DOC-S3955 Facility Contact Information.xlsx"
+        },
+        {
+          "file_nbr": "318141",
+          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
+        },
+        {
+          "file_nbr": "322893",
+          "name": "44DOC-S3955 Site visit schedule~1.docx"
+        },
+        {
+          "file_nbr": "318132",
+          "name": "44DOC-S3955-site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "318133",
+          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
+        },
+        {
+          "file_nbr": "318131",
+          "name": "44DOC-S3955-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "318143",
+          "name": "44DOC-S3955 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "318126",
+          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "318134",
+          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "80DOT-S3945",
       "organization": "Department of Transportation",
       "buyer": "Jennifer Thomas",
@@ -576,63 +653,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3940&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3927",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Arborist Services",
-      "bid_opening_date": "08/20/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c4254dd4-2b04-44a2-ac5c-a36e4f12951d",
-      "scope": "ARBORIST SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "316853",
-          "name": "Terms-and-conditions-for-services~31.pdf"
-        },
-        {
-          "file_nbr": "316870",
-          "name": "40DHHS-S3927 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "316861",
-          "name": "Standard-form-contract~25.docx"
-        },
-        {
-          "file_nbr": "316868",
-          "name": "40DHHS-S3927 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "316873",
-          "name": "40DHHS-S3927 - site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "316855",
-          "name": "40DHHS-S3927 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "316854",
-          "name": "40DHHS-S3927 - Cost Schedule.pdf"
-        },
-        {
-          "file_nbr": "316860",
-          "name": "Certification-regarding-lobbying~26.pdf"
-        },
-        {
-          "file_nbr": "316858",
-          "name": "40DHHS-S3927 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3927&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S3926",
