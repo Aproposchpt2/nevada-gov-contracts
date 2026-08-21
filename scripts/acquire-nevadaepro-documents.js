@@ -25,6 +25,17 @@ const BUCKET = 'solicitation-packages';
 const MAX_FILE_BYTES = 50 * 1024 * 1024;
 const MAX_RECORDS_PER_RUN = Number(process.env.MAX_RECORDS_PER_RUN || 8);
 const PUBLISHER_ID = '2c3a9a0e-5299-44db-9ffa-6c5d7e3371ad';
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+// Real incident 2026-08-21: the first live run downloaded 43 files across
+// 4 records cleanly in ~25s, then every subsequent record failed outright
+// (3 records errored on the detail-page fetch itself, one failed all 23 of
+// its attachments with "returned HTML instead of a file") -- consistent
+// with tripping a rate limit after a burst of rapid requests. A small delay
+// between records keeps the request rate well under whatever threshold
+// that is, without meaningfully slowing a small daily batch.
+const BETWEEN_RECORDS_MS = Number(process.env.BETWEEN_RECORDS_MS || 4000);
+const BETWEEN_FILES_MS = Number(process.env.BETWEEN_FILES_MS || 600);
 
 function sbHeaders(prefer) {
   const h = { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' };
@@ -152,7 +163,10 @@ async function main() {
   if (!batch.length) { console.log('[acquire-nevadaepro-documents] nothing to do.'); return; }
 
   const results = [];
+  let isFirstRecord = true;
   for (const raw of batch) {
+    if (!isFirstRecord) await sleep(BETWEEN_RECORDS_MS);
+    isFirstRecord = false;
     const docId = raw.source_record_id;
     const attachments = raw.raw_payload?.attachments || [];
     console.log('[acquire-nevadaepro-documents] ===', docId, '(' + attachments.length + ' attachments) ===');
@@ -165,7 +179,10 @@ async function main() {
       const jar = new Jar();
       const csrf = await fetchDetailAndCsrf(docId, jar);
       const stored = [];
+      let isFirstFile = true;
       for (const att of attachments) {
+        if (!isFirstFile) await sleep(BETWEEN_FILES_MS);
+        isFirstFile = false;
         try {
           const { buffer, contentType } = await downloadFile(docId, att.file_nbr, csrf, jar);
           const result = await storeDocument({
