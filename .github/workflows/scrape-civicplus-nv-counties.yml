@@ -1,0 +1,34 @@
+name: Scrape CivicPlus NV counties and sync to Supabase
+
+# No login, no browser -- plain server-rendered HTML across all 5 sites
+# (Lyon, Churchill, White Pine, Nye, Humboldt), same as Washoe/NevadaePro.
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/scrape-civicplus-nv-counties.js
+      - name: Commit refreshed civicplus-nv-counties.json
+        run: |
+          git config user.name "stategen-bot"
+          git config user.email "bot@aproposgroupllc.com"
+          git add civicplus-nv-counties.json
+          git commit -m "data: refresh CivicPlus NV county bid listings" || echo "no changes to commit"
+          git push
+      - name: Sync into Supabase raw table (state_contract_opportunities)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-supabase-civicplus-nv-counties.js

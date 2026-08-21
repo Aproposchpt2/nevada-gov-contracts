@@ -1,0 +1,55 @@
+{
+  "scraped_at": "2026-08-21T15:50:36.464Z",
+  "bids": [
+    {
+      "bid_id": "23",
+      "title": "Lyon County Courthouse Site Improvements - Yerington, NV",
+      "description": "NOTICE TO CONTRACTORS  INVITATION TO BID  INVITATION TO BID LYON COUNTY Site Improvements. Lyon County invites and will receive sealed bids for the Site  Improvements project...",
+      "status": "Open",
+      "closes": "9/17/2029 10:00 AM",
+      "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=23",
+      "documents": [],
+      "county": "Lyon",
+      "jurisdiction_name": "Lyon County",
+      "city": "Yerington",
+      "source_base": "https://www.lyon-county.org/bids.aspx"
+    },
+    {
+      "bid_id": "22",
+      "title": "Request for Qualifications - Sewer Rehabilitation Project",
+      "description": "REQUEST FOR QUALIFICATIONS   NOTICE IS HEREBY GIVEN that the Lyon County Utilities Department (LCUD) will receive written Statements of Qualifications (SOQ) for Engineering...",
+      "status": "Open",
+      "closes": "9/7/2026 4:00 PM",
+      "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=22",
+      "documents": [
+        {
+          "url": "https://lyon-county.org/DocumentCenter/View/14288/Sewer-Rehab-RFQ-Document"
+        }
+      ],
+      "county": "Lyon",
+      "jurisdiction_name": "Lyon County",
+      "city": "Yerington",
+      "source_base": "https://www.lyon-county.org/bids.aspx"
+    },
+    {
+      "bid_id": "76",
+      "title": "Fallon Churchill Fire Department Maintenance Shop Project",
+      "description": null,
+      "status": "Open",
+      "closes": "8/27/2026 4:00 PM",
+      "detail_url": "https://www.churchillcountynv.gov/bids.aspx?bidID=76",
+      "documents": [
+        {
+          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19242"
+        },
+        {
+          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19248"
+        }
+      ],
+      "county": "Churchill",
+      "jurisdiction_name": "Churchill County",
+      "city": "Fallon",
+      "source_base": "https://www.churchillcountynv.gov/bids.aspx"
+    }
+  ]
+}
