@@ -205,6 +205,45 @@ async function main() {
           current_location: 'PROCESSING',
         }),
       });
+    }
+
+    // sync_acquisition_package_to_canonical() only ever UPDATEs
+    // apie_contract_processing/state_contract_opportunities -- it never
+    // inserts. Every other connector this session gets its initial row
+    // via a sync-supabase-*.js upsert; this recovery needs the same seed
+    // row before any package-completion update has anything to attach to.
+    // Idempotent via on_conflict=source_platform,source_record_id.
+    await dst('state_contract_opportunities?on_conflict=source_platform,source_record_id', {
+      method: 'POST', prefer: 'resolution=merge-duplicates,return=minimal',
+      body: JSON.stringify({
+        id: canonicalOpportunityId,
+        state_code: 'AZ',
+        jurisdiction_type: publisherName.includes('University') ? 'higher_education' : publisherName.includes('Judicial') ? 'state' : 'state',
+        jurisdiction_name: publisherName,
+        issuing_organization: opp.issuing_entity || publisherName,
+        source_platform: 'acad_arizona_recovery',
+        source_record_id: sourceRecordId,
+        source_url: opp.official_record_url || opp.primary_document_url || 'https://cnsads.azdot.gov/current',
+        official_source_url: opp.official_record_url,
+        solicitation_number: opp.solicitation_number,
+        title: opp.title || opp.solicitation_number,
+        description: opp.raw_source_record?.description || opp.title || null,
+        status,
+        posted_at: opp.posted_date,
+        response_deadline: opp.closing_at,
+        place_of_performance_state: 'AZ',
+        document_urls: docs.map((d) => ({ name: d.document_name, url: d.document_url })),
+        requirements: opp.raw_source_record?.description ? { scope: opp.raw_source_record.description, source: 'acad_recovery_raw_source_record' } : {},
+        raw_source_payload: opp.raw_source_record || {},
+        acquisition_method: 'acad_recovery_migration',
+        extraction_confidence: 0.85,
+        data_quality_score: 80,
+        qa_status: 'incomplete',
+        qa_notes: 'Recovered 2026-08-21 from the retired ACAD testing site (already-acquired real documents, status re-verified against current date at recovery time, not carried over blindly from the source).',
+      }),
+    });
+
+    if (!existing.length) {
       const rawRecord = await dst('acquisition_raw_records', {
         method: 'POST', prefer: 'return=representation',
         body: JSON.stringify({
