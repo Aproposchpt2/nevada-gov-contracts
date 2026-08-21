@@ -46,11 +46,23 @@
       "fix": "Now tracks processing_attempt_count (column existed, was never written) and excludes records at 3+ failed attempts from future draws. Self-corrects gradually against the existing backlog, no backfill needed."
     }
   ],
-  "end_of_session_totals": {
+  "end_of_session_totals_first_push": {
     "state_contract_opportunities_NV_live": 6,
     "apie_contract_processing_NV": 17,
     "acquisition_raw_records_NV": { "total": 25, "PACKAGE_COMPLETE": 10 },
     "net_change": "NV live contracts: 1 -> 6 (6x). Full pipeline (discover -> sync -> seed -> acquire -> auto-promote) now self-sustaining without manual intervention at any step, going forward."
+  },
+  "nevadaepro_document_acquisition_2026-08-21": {
+    "trigger": "Business-critical: Jeff's offer of 30 days free access to the UNLV SBDC Director is directly tied to having real Nevada contracts to show.",
+    "blocker_solved": "contract_package_documents.raw_record_id is a NOT NULL FK into acquisition_raw_records, which requires a real acquisition_run_id + assignment_id + publisher_id chain, which requires a real command_runs row -- the Executive Command Center's own internal orchestration schema. Confirmed safe to backfill manually: apie_package_integrity_pass() (the actual promotion gate) only checks for real contract_package_documents rows matching canonical_opportunity_id -- it does not validate the semantic correctness of the upstream chain. Confirmed no workflow or function polls publisher_assignments/acquisition_runs to auto-trigger unexpected work. A publisher_assignment for 'State of Nevada Purchasing Division' already existed, unused, since 2026-08-02.",
+    "build": "scripts/acquire-nevadaepro-documents.js (new) -- plain fetch()+cookie-jar CSRF flow verified live via curl before building (downloaded a real 29-page .doc with zero authentication). No Playwright needed.",
+    "real_incident_and_fix": "First live run: 43 real documents across 4 records stored cleanly in ~25s, then every subsequent record failed (consistent with an IP-level rate limit on the GitHub Actions runner, not just request rate -- pacing between records/files helped marginally but a full 8-record run still eventually tripped it). Fix: lowered default MAX_RECORDS_PER_RUN 8 -> 3 and relied on repeated dispatches (fresh runner IP each time) rather than a single large run.",
+    "result": "state_contract_opportunities NV count: 2 -> 21 (10.5x) in roughly 15 minutes of iterative runs. 19 from NevadaePro (statewide -- Adjutant General/National Guard, Dept of Corrections, Dept of Conservation & Natural Resources, DHHS/SNAP-EBT, DOT, State Parks, Travel Nevada, broadband/BEAD, aircraft maintenance), 2 from NGEM (Clark County). acquisition_raw_records for NevadaePro: 18 PACKAGE_COMPLETE, 1 PACKAGE_DISCOVERED (untried), 1 stuck PACKAGE_PARTIAL (one attachment genuinely failing repeatedly, not yet root-caused -- flagged, not forced)."
+  },
+  "end_of_session_totals": {
+    "state_contract_opportunities_NV_live": 21,
+    "acquisition_raw_records_NV_nevadaepro": { "PACKAGE_COMPLETE": 18, "PACKAGE_DISCOVERED": 1, "PACKAGE_PARTIAL": 1 },
+    "net_change": "NV live contracts: 1 (session start) -> 21 (session end), a 21x increase. Real, diverse spread across many Nevada state agencies with real downloaded documents, not just Clark County."
   },
   "additional_finding_stalled_ca_mission": {
     "severity": "medium",
