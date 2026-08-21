@@ -22,4 +22,4 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          MAX_RECORDS_PER_RUN: '8'
+          MAX_RECORDS_PER_RUN: '3'
