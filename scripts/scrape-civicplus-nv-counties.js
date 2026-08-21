@@ -9,6 +9,7 @@
      White Pine County https://www.whitepinecounty.net/Bids.aspx
      Nye County        https://www.nyecountynv.gov/Bids.aspx
      Humboldt County   https://www.humboldtcountynv.gov/Bids.aspx
+     Storey County     https://www.storeycounty.org/bids.aspx  (added 2026-08-21)
 
    (Nye County already had a publisher_registry row marked READY with
    connector_strategy=STATEFUL_SESSION_OR_HEADLESS_BROWSER / HIGH
@@ -35,6 +36,7 @@ const SITES = [
   { key: 'white_pine', county: 'White Pine', jurisdiction_name: 'White Pine County', base: 'https://www.whitepinecounty.net/Bids.aspx', city: 'Ely' },
   { key: 'nye', county: 'Nye', jurisdiction_name: 'Nye County', base: 'https://www.nyecountynv.gov/Bids.aspx', city: 'Tonopah' },
   { key: 'humboldt', county: 'Humboldt', jurisdiction_name: 'Humboldt County', base: 'https://www.humboldtcountynv.gov/Bids.aspx', city: 'Winnemucca' },
+  { key: 'storey', county: 'Storey', jurisdiction_name: 'Storey County', base: 'https://www.storeycounty.org/bids.aspx', city: 'Virginia City' },
 ];
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
