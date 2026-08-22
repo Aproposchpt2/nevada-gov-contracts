@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-21T16:30:38.386Z",
+  "scraped_at": "2026-08-22T14:13:22.000Z",
   "bids": [
     {
       "doc_id": "43ADG-S3982",
@@ -62,6 +62,31 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3981&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S3980",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "Southern Nevada Dust Control",
+      "bid_opening_date": "08/28/2026 17:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "7b43fd46-5259-4452-8587-bae259f4b1b2",
+      "scope": "Cost estimation for Dust Control services over four years.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "322456",
+          "name": "Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3980&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S3979",
