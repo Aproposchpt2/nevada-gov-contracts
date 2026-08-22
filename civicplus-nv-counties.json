@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-21T16:29:32.566Z",
+  "scraped_at": "2026-08-22T16:19:50.607Z",
   "bids": [
     {
       "bid_id": "23",
@@ -44,6 +44,12 @@
         },
         {
           "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19248"
+        },
+        {
+          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19266"
+        },
+        {
+          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19267"
         }
       ],
       "county": "Churchill",
