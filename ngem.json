@@ -1,9 +1,9 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-08-21T16:38:37.594Z",
+  "generatedAt": "2026-08-24T13:58:47.009Z",
   "count": 20,
-  "detail_fetched_count": 14,
+  "detail_fetched_count": 16,
   "bids": [
     {
       "id": "20436",
@@ -15,7 +15,7 @@
       "issue_date": "7/15/2026",
       "close_date_raw": "8/24/2026 01:00 PM (PT)",
       "close_date": "2026-08-24T20:00:00.000Z",
-      "due_in_days": 4,
+      "due_in_days": 1,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20436&SourceType=1",
       "status": "Open",
       "description": "The City of North Las Vegas is seeking bids from qualified and experienced agencies in providing chemical and water treatment services at different facilities throughout the City.",
@@ -54,7 +54,7 @@
       "issue_date": "7/28/2026",
       "close_date_raw": "8/25/2026 10:00 AM (PT)",
       "close_date": "2026-08-25T17:00:00.000Z",
-      "due_in_days": 5,
+      "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20455&SourceType=1",
       "status": "Open",
       "description": "Las Vegas Valley Water District invites qualified firms (Bidders) to submit Bids for the following Work, see Contract Documents for full details. The Site of the Work is located southwest of Las Vegas Boulevard within the Clark County and City of Henderson jurisdictions. The point of connection for the pipeline is located approximately 850 feet east of the intersection of W Welpman Way and Las Vegas Boulevard. The alignment will go through existing BLM Grants, Private Easements, and Patent Easements to the South Boulevard 2745 Zone Reservoir site (3288L), which is located on A.P.N. 191-30-501-005. Additionally, the project will include Work at the 2860 Zone South Pumping Station and Forebay which is located on Highland Crown Rd on the west side of the Southern Highlands residential community (A.P.N. 191-07-101-002). The project consists of installing approximately 18,000 linear feet of 42-inch-diameter mortar-lined, tape-wrapped, and mortar-coated steel pipe, including communications infrastructure consisting of fiber optic conduit, pull boxes, and necessary appurtenances along the length of the pipeline. The project will also include construction/installation of four 42-inch butterfly valves, with associated cast-in-place concrete vaults, a sacrificial anode cathodic protection system, and other water pipeline appurtenances. Additionally, the project will remove an existing 12-inch gate valve and replace it with a 12-inch butterfly valve located within an existing vault at the 2860 Zone South Pumping Station and Forebay. The project will also include electrical/communications improvements for the new valves. Engineer’s Estimate is: $ 28,203,225.00",
@@ -153,7 +153,7 @@
       "issue_date": "7/30/2026",
       "close_date_raw": "8/25/2026 10:00 AM (PT)",
       "close_date": "2026-08-25T17:00:00.000Z",
-      "due_in_days": 5,
+      "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20456&SourceType=1",
       "status": "Open",
       "description": "The work generally consists of improvements to amenities at Kiel Ranch Historic Park including a restroom, parking lot, splash pad area, shade structures, fence/gate, site signage, picnic seating area, trash receptacles, retaining walls, landscaping, irrigation, and trails.",
@@ -192,14 +192,105 @@
       "issue_date": "7/14/2026",
       "close_date_raw": "8/25/2026 01:30 PM (PT)",
       "close_date": "2026-08-25T20:30:00.000Z",
-      "due_in_days": 5,
+      "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20432&SourceType=1",
       "status": "Open",
       "description": null,
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
+      "documents": [
+        {
+          "name": "1. Volume One - Cover_Index_Instructions to Bidders Addendum 3.pdf",
+          "description": "1. Volume One - Cover_Index_Instructions to Bidders Addendum 3",
+          "file_size": "586 KB",
+          "requires_login": false
+        },
+        {
+          "name": "2. 3089 - ITB_Attachment A_SMWDBE Part 1.pdf",
+          "description": "2. 3089 - ITB_Attachment A_SMWDBE Part 1",
+          "file_size": "74 KB",
+          "requires_login": false
+        },
+        {
+          "name": "3. 3089 - ITB_Attachment B_SMWDBE Part 2.pdf",
+          "description": "3. 3089 - ITB_Attachment B_SMWDBE Part 2",
+          "file_size": "668 KB",
+          "requires_login": false
+        },
+        {
+          "name": "4. 3089 - ITB_Attachment C_DESIGNATION OF SUBCONTRACTORS 1% LIST.pdf",
+          "description": "4. 3089 - ITB_Attachment C_DESIGNATION OF SUBCONTRACTORS 1% LIST",
+          "file_size": "217 KB",
+          "requires_login": false
+        },
+        {
+          "name": "5. 3089 - ITB_Attachment D_AFFIDAVIT PERTAINING TO PREFERENCE ELIGIBILITY.pdf",
+          "description": "5. 3089 - ITB_Attachment D_AFFIDAVIT PERTAINING TO PREFERENCE ELIGIBILITY",
+          "file_size": "794 KB",
+          "requires_login": false
+        },
+        {
+          "name": "6. 3089 - ITB_Attachment E_SMWD BUSINESS ENTERPRISE UTILIZATION.pdf",
+          "description": "6. 3089 - ITB_Attachment E_SMWD BUSINESS ENTERPRISE UTILIZATION",
+          "file_size": "545 KB",
+          "requires_login": false
+        },
+        {
+          "name": "7. 3089 - ITB_Attachment F_CONSTRUCTION EQUIPMENT.pdf",
+          "description": "7. 3089 - ITB_Attachment F_CONSTRUCTION EQUIPMENT",
+          "file_size": "59 KB",
+          "requires_login": false
+        },
+        {
+          "name": "8. 3089 - ITB_Attachment G_-_PWP_RATES_CLARK_COUNTY_2025-2026 Amendment 8.pdf",
+          "description": "8. 3089 - ITB_Attachment G_-_PWP_RATES_CLARK_COUNTY_2025-2026 Amendment 8",
+          "file_size": "1002 KB",
+          "requires_login": false
+        },
+        {
+          "name": "9. 3089 - Volume One - BID_1_Attachment One _BID BOND_NGEM.pdf",
+          "description": "9. 3089 - Volume One - BID_1_Attachment One _BID BOND_NGEM",
+          "file_size": "56 KB",
+          "requires_login": false
+        },
+        {
+          "name": "10. 3089 - Volume One - BID_2_Attachment Two_5% LIST.pdf",
+          "description": "10. 3089 - Volume One - BID_2_Attachment Two_5% LIST",
+          "file_size": "178 KB",
+          "requires_login": false
+        },
+        {
+          "name": "11. 3089 - Volume One - Bid_3_Attachment Three_BUSINESS ENTITY TYPE.pdf",
+          "description": "11. 3089 - Volume One - Bid_3_Attachment Three_BUSINESS ENTITY TYPE",
+          "file_size": "86 KB",
+          "requires_login": false
+        },
+        {
+          "name": "12. 3089 - Volume One - Bid_4_Attachment Four_DISCLOSURE OF OWNERSHIP.pdf",
+          "description": "12. 3089 - Volume One - Bid_4_Attachment Four_DISCLOSURE OF OWNERSHIP",
+          "file_size": "103 KB",
+          "requires_login": false
+        },
+        {
+          "name": "13. 3089 - Volume One - Bid_5_Attachment Five_Bidders List.pdf",
+          "description": "13. 3089 - Volume One - Bid_5_Attachment Five_Bidders List",
+          "file_size": "127 KB",
+          "requires_login": false
+        },
+        {
+          "name": "3089 - Bid Attachment Seven - List of Manufacturers and Suppliers With Long Lead Times.pdf",
+          "description": "3089 - Bid Attachment Seven - List of Manufacturers and Suppliers With Long Lead Times",
+          "file_size": "182 KB",
+          "requires_login": false
+        },
+        {
+          "name": "14. 3089 - Volume One - Contract.pdf",
+          "description": "14. 3089 - Volume One - Contract",
+          "file_size": "115 KB",
+          "requires_login": false
+        }
+      ],
       "detail_fetched": false
     },
     {
@@ -212,7 +303,7 @@
       "issue_date": "7/30/2026",
       "close_date_raw": "8/26/2026 10:00 AM (PT)",
       "close_date": "2026-08-26T17:00:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20438&SourceType=1",
       "status": "Open",
       "description": "The Nellis Industrial Park Interceptor Sewer Project includes the excavation and installation of approximately 5074 lineal feet of sewer, and associated work and appurtenances. The new sewer will be located in Craig Road from Puebla Street to Nellis Boulevard and run south in Nellis Boulevard to Las Vegas Boulevard to connect to the City’s Northeast Interceptor Sewer.",
@@ -251,7 +342,7 @@
       "issue_date": "7/22/2026",
       "close_date_raw": "8/26/2026 01:00 PM (PT)",
       "close_date": "2026-08-26T20:00:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20424&SourceType=1",
       "status": "Open",
       "description": "The City of Henderson, Nevada, is soliciting bids from qualified firms to furnish and install a 5-ton bridge crane and necessary electrical infrastructure located at the Fleet Maintenance Facility, 2201 Moser Dr, 89011 in Henderson, Nevada.",
@@ -350,7 +441,7 @@
       "issue_date": "8/19/2026",
       "close_date_raw": "8/26/2026 01:00 PM (PT)",
       "close_date": "2026-08-26T20:00:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20434&SourceType=1",
       "status": "Open",
       "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Invitation to Bid (ITB) with the sole purpose and intent of obtaining sealed bids (Bid) from qualified contractors (Contractor) to provide pavement maintenance operations that include, but are not limited to, pavement preparation, spall repair, patching, joint seal, slab replacement, and placing and maintaining traffic control, for Runway 17L and Taxiway Charlie at Reno-Tahoe International Airport (RNO).",
@@ -395,7 +486,7 @@
       "issue_date": "8/5/2026",
       "close_date_raw": "8/26/2026 02:00 PM (PT)",
       "close_date": "2026-08-26T21:00:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20435&SourceType=1",
       "status": "Open",
       "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Invitation to Bid (ITB) with the sole purpose and intent of obtaining sealed bids (Bid) from qualified contractors (Contractor) to re-roof the Airfield Maintenance storage building located at Reno-Tahoe International Airport (RNO).",
@@ -440,15 +531,106 @@
       "issue_date": "7/22/2026",
       "close_date_raw": "8/26/2026 02:00 PM (PT)",
       "close_date": "2026-08-26T21:00:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20419&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Truckee Meadows Water Authority (TMWA) is accepting sealed bids for all labor, materials, equipment, and incidentals required to demo existing HVAC equipment and install new HVAC equipment within various locations at TMWA's Glendale Water Treatment Plant. HVAC units include split units, a package unit, and an exhaust fan in a chemical room. Duct work, electrical, and other items/incidentals will be required to complete this work, as shown in the Plans",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "01. Instructions to Bidders - Rev. 08.2025.pdf",
+          "description": "Instructions to Bidders",
+          "file_size": "184 KB",
+          "requires_login": true
+        },
+        {
+          "name": "02. Bid Bond.pdf",
+          "description": "Bid Bond",
+          "file_size": "98 KB",
+          "requires_login": true
+        },
+        {
+          "name": "03. Disclosure of Ownership and Vendor Information.pdf",
+          "description": "Disclosure of Ownership and Vendor Information Form",
+          "file_size": "301 KB",
+          "requires_login": true
+        },
+        {
+          "name": "04. Reference Projects and Personnel.pdf",
+          "description": "Project and Personnel Reference Form",
+          "file_size": "383 KB",
+          "requires_login": true
+        },
+        {
+          "name": "05. Contractor 5% Subcontractor List.pdf",
+          "description": "Contractor 5% List",
+          "file_size": "129 KB",
+          "requires_login": true
+        },
+        {
+          "name": "06. Contractor 1% Subcontractor List.pdf",
+          "description": "Contractor 1% List",
+          "file_size": "131 KB",
+          "requires_login": true
+        },
+        {
+          "name": "07. Conflict of Interest Disclosure Form.pdf",
+          "description": "Conflict of Interest Disclosure Form",
+          "file_size": "100 KB",
+          "requires_login": true
+        },
+        {
+          "name": "08. Certification Regarding Debarment.pdf",
+          "description": "Certification Regarding Debarment",
+          "file_size": "102 KB",
+          "requires_login": true
+        },
+        {
+          "name": "09. Local Preference Affidavit NGEM.pdf",
+          "description": "Local Preference Affidavit",
+          "file_size": "101 KB",
+          "requires_login": true
+        },
+        {
+          "name": "10. TMWA End User Data Agreement.pdf",
+          "description": "End User Data Agreement",
+          "file_size": "431 KB",
+          "requires_login": true
+        },
+        {
+          "name": "11. MASTER_FORM_Public_Work_General_Conditions_v17_07.2025.pdf",
+          "description": "TMWA General Conditions",
+          "file_size": "718 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Supplementary Conditions_Glendale HVAC Improvements Phase 2.pdf",
+          "description": "Supplementary Conditions",
+          "file_size": "189 KB",
+          "requires_login": true
+        },
+        {
+          "name": "11-0002-006 GWTP Ph 2 Bid Specs-Revised Dates-7.1.26.pdf",
+          "description": "Technical Specifications",
+          "file_size": "4.57 MB",
+          "requires_login": true
+        },
+        {
+          "name": "TMWA GLENDALE BID SET 2 - FULL SET_06-30-2026-sig.pdf",
+          "description": "Bid Plan Set",
+          "file_size": "7.33 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Sample Construction Agreement - Glendale HVAC Phase 2.pdf",
+          "description": "Sample Construction Agreement",
+          "file_size": "240 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "20447",
@@ -460,7 +642,7 @@
       "issue_date": "8/5/2026",
       "close_date_raw": "8/26/2026 02:15 PM (PT)",
       "close_date": "2026-08-26T21:15:00.000Z",
-      "due_in_days": 6,
+      "due_in_days": 3,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20447&SourceType=1",
       "status": "Open",
       "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The work to be performed under this Contract is for the construction of fully operational Traffic Signal Systems at the intersections of Jones Blvd/Shelbourne Ave, Badura Ave/Tenaya Way, and Silverado Ranch/Valley View Blvd; and construction of median worm islands at the intersections of Las Vegas Blvd/Shelbourne Ave, Las Vegas Blvd/Richmar Ave, Las Vegas Blvd/Ford Ave, Lamb Blvd/Colorado Ave, and Fort Apache Rd/Post Rd in Clark County, Nevada. The Work will generally consist of demolition, removal, and disposal of existing improvements and removal and salvage of designated items; cold planing; sidewalk ramp reconstruction for Americans with Disabilities Act (ADA) current standards; miscellaneous roadway improvements including UTACS, median islands, concrete sidewalk, curb and gutter, pavement markings and markers, and permanent signs; valve box and manhole adjustments; intersection streetlighting; installation of traffic signal system and appurtenances; installation of ITS systems; ITS improvements; restoration of landscape and irrigation; traffic control; dust control; and miscellaneous improvements as shown on the Drawings.",
@@ -547,7 +729,7 @@
       "issue_date": "8/6/2026",
       "close_date_raw": "8/27/2026 10:00 AM (PT)",
       "close_date": "2026-08-27T17:00:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20433&SourceType=1",
       "status": "Open",
       "description": "Las Vegas Valley Water District invites qualified firms (Bidders) to submit Bids for the following work, see Contract Documents for full details: The Sites of Work includes The Origen Museum, and Buildings A, B, B1, and C at the Desert Living Center located at the Las Vegas Springs Preserve in the City of Las Vegas. The site address is 333 South Valley View Boulevard, Las Vegas, Nevada 89107. The Work consists of replacement of the existing evaporative cooling systems with new air-cooled chilled water/hot water heat pump equipment at the Origen Museum and at the Desert Living Center, Buildings A, B1, B2 and C. Engineer's estimate: $4,493,742 Questions regarding this bid must be directed to the Bid Contact listed in this Bid.",
@@ -640,7 +822,7 @@
       "issue_date": "7/6/2026",
       "close_date_raw": "8/27/2026 01:30 PM (PT)",
       "close_date": "2026-08-27T20:30:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20443&SourceType=1",
       "status": "Open",
       "description": "The City of Las Vegas (City) hereby invites qualified firms or individuals (Offerors) to submit written proposals for Jail Food Services at the City's Detention Facility located at 3200 Stewart Avenue, Las Vegas, NV 89101 as more fully described in the Scope of Work set forth herein. Persons with a disability may request accommodations or assistance to participate in the solicitation process by contacting Purchasing & Contracts at 702-229-6231 or 7-1-1 (TTY). To insure the City is able to meet your needs, please submit requests at least 2 business days in advance.",
@@ -721,7 +903,7 @@
       "issue_date": "7/29/2026",
       "close_date_raw": "8/27/2026 03:00 PM (PT)",
       "close_date": "2026-08-27T22:00:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=19842&SourceType=1",
       "status": "Open",
       "description": "COUNTY is soliciting proposals from firms who are qualified as a construction manager/general contractor for the performance of Construction Manager at Risk (CMAR) services for the Pinto Campus New Coroner's Facility & Parking Garage. The intent of this formal Request for Proposal is to receive responses from qualified respondents for awards exempt from competitive solicitation under Nevada Revised Statutes (NRS) 332.115, Revised 2019. Questions regarding this RFP must be directed to the contact listed in the RFP document. All questions and proposals for this RFP shall be submitted electronically on the Clark County Bonfire Portal. Please find RFP No. 607962-26 on the Bonfire website at https://clarkcountynv.bonfirehub.com/opportunities. A Pre-Proposal Conference will be held on August 5, 2026 at 9:00 a.m. via Webex. See RFP package for instructions. A Site walk has been scheduled for August 6, 2026 at 7:00 a.m. See RFP package for instructions.",
@@ -741,7 +923,7 @@
       "issue_date": "8/5/2026",
       "close_date_raw": "8/27/2026 03:00 PM (PT)",
       "close_date": "2026-08-27T22:00:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20453&SourceType=1",
       "status": "Open",
       "description": null,
@@ -761,7 +943,7 @@
       "issue_date": "7/21/2026",
       "close_date_raw": "8/27/2026 03:00 PM (PT)",
       "close_date": "2026-08-27T22:00:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20451&SourceType=1",
       "status": "Open",
       "description": null,
@@ -872,7 +1054,7 @@
       "issue_date": "6/26/2026",
       "close_date_raw": "8/27/2026 11:59 PM (PT)",
       "close_date": "2026-08-28T06:59:00.000Z",
-      "due_in_days": 7,
+      "due_in_days": 4,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20120&SourceType=1",
       "status": "Open",
       "description": null,
@@ -892,7 +1074,7 @@
       "issue_date": "5/26/2026",
       "close_date_raw": "8/31/2026 02:00 PM (PT)",
       "close_date": "2026-08-31T21:00:00.000Z",
-      "due_in_days": 11,
+      "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20427&SourceType=1",
       "status": "Open",
       "description": "The Reno-Tahoe Airport Authority (RTAA) has issued this Request for Proposals (RFP) with the sole purpose and intent of obtaining sealed proposals (Proposal) from qualified and experienced concessionaires (Respondents) to design, develop, manage, and operate food & beverage and retail concessions at Reno-Tahoe International Airport (RNO, or Airport).",
@@ -949,7 +1131,7 @@
       "issue_date": "8/10/2026",
       "close_date_raw": "8/31/2026 02:15 PM (PT)",
       "close_date": "2026-08-31T21:15:00.000Z",
-      "due_in_days": 11,
+      "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20411&SourceType=1",
       "status": "Open",
       "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The Work will generally consist of improvements to arterial streets in Clark County, Nevada, including pavement removal and replacement, sidewalk ramp reconstruction to meet Americans with Disabilities Act (ADA) current standards, street lighting, medians, concrete sidewalk and curb & gutter, permanent striping and signing, utility adjustments, storm drain improvements, fencing, traffic signal modifications, and other necessary appurtenances required to make a good, complete, and serviceable project. The work also consists of miscellaneous removal and disposal and removal and salvage/replacement of designated items, traffic control, dust control, quality control, and other related items of work as specified and shown on the Drawings.",
@@ -1054,15 +1236,64 @@
       "issue_date": "7/27/2026",
       "close_date_raw": "8/31/2026 03:00 PM (PT)",
       "close_date": "2026-08-31T22:00:00.000Z",
-      "due_in_days": 11,
+      "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20457&SourceType=1",
       "status": "Open",
-      "description": null,
+      "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The mandatory pre-bid conference & site walk held on AUGUST 6, 2026 @ 10:00 AM at the Dr. William “Doc” Pearson Community Center located at 1625 West Carey Avenue, North Las Vegas, Nevada 89106. The mandatory site walk will begin immediately after the pre-bid conference at the Doc Pearson Community Center, and then the site walk will continue to North Las Vegas Community Resource Campus located at 2424 Martin Luther King Blvd., North Las Vegas, Nevada 89030, Building A (Justice Center). If your firm is unfamiliar with the Clark County Bid Submittal procedures and would like to obtain training on the submittal process for this Bid, please contact Designated Contact listed on the Bid document no later than AUGUST 13, 2026 and a training session will be scheduled via WebEx. Please refer to the attached Bid Document under Activities Tab for details/instructions. Thank you.",
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
+      "documents": [
+        {
+          "name": "607820-25 Bidder Statement of Authority to Submit Bid.pdf",
+          "description": "Bidder Statement of Authority must be uploaded with your bid submittal in the Response Attachments tab.",
+          "file_size": "186 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Disclosure of Ownership Form.pdf",
+          "description": "Disclosure of Ownership form",
+          "file_size": "460 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 3 Distribution of Line-Item Price.pdf",
+          "description": "Distribution of Line-Item Price",
+          "file_size": "53 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 4 Subcontractor Form.pdf",
+          "description": "Subcontractor Form",
+          "file_size": "56 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 5 Business Associate Agreement.pdf",
+          "description": "Business Associate Agreement",
+          "file_size": "236 KB",
+          "requires_login": true
+        },
+        {
+          "name": "607820-25_acl.pdf",
+          "description": "Bid Document",
+          "file_size": "3.95 MB",
+          "requires_login": true
+        },
+        {
+          "name": "607820-25 ad1_acl.pdf",
+          "description": "607820-25 Addendum No. 1",
+          "file_size": "6.25 MB",
+          "requires_login": true
+        },
+        {
+          "name": "607820-25 ad2_acl.pdf",
+          "description": "607820-25 Addendum No. 2",
+          "file_size": "1.72 MB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
     },
     {
       "id": "19946",
@@ -1074,7 +1305,7 @@
       "issue_date": "6/30/2026",
       "close_date_raw": "8/31/2026 03:00 PM (PT)",
       "close_date": "2026-08-31T22:00:00.000Z",
-      "due_in_days": 11,
+      "due_in_days": 8,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=19946&SourceType=1",
       "status": "Open",
       "description": "The City of Henderson, Nevada, Parks and Recreation Department is seeking proposals from qualified proposers to operate, manage, and maintain the Whitney Mesa Tennis Complex (the \"Complex\"), located at 1575 W. Galleria Drive, Henderson, NV 89014.",
