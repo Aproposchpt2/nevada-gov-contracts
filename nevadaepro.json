@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-24T14:34:09.290Z",
+  "scraped_at": "2026-08-25T14:36:42.357Z",
   "bids": [
     {
       "doc_id": "43ADG-S3982",
@@ -767,79 +767,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3926&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "41NHA-S3922",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Nevada Average Acquisition Cost",
-      "bid_opening_date": "08/24/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "bc46706e-f01d-40d6-a949-6b17f2791620",
-      "scope": "Please see the Cost Schedule located in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "319348",
-          "name": "41NHA-S3922 - Cost Schedule - Updated 7-29.xlsx"
-        },
-        {
-          "file_nbr": "319507",
-          "name": "Questions - Answers~2.xlsx"
-        },
-        {
-          "file_nbr": "319904",
-          "name": "Questions - Answers - Updated 8-3-26.xlsx"
-        },
-        {
-          "file_nbr": "316345",
-          "name": "41NHA-S3922 - Request-for-Proposals.docx"
-        },
-        {
-          "file_nbr": "315598",
-          "name": "41NHA-S3922 - Scope of Work and Deliverables.docx"
-        },
-        {
-          "file_nbr": "315597",
-          "name": "41NHA-S3922 - RFP Technical Proposal Questions.docx"
-        },
-        {
-          "file_nbr": "314607",
-          "name": "Terms-and-conditions-for-services~7.pdf"
-        },
-        {
-          "file_nbr": "314609",
-          "name": "Standard-form-contract~5.docx"
-        },
-        {
-          "file_nbr": "314685",
-          "name": "41NHA-S3922 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "314684",
-          "name": "41NHA-S3922 - Business Associate Addendum.docx"
-        },
-        {
-          "file_nbr": "315599",
-          "name": "41NHA-S3922-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "315596",
-          "name": "41NHA-S3922 - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "314606",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "314611",
-          "name": "41NHA-S3922-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3922&external=true&parentUrl=close"
     },
     {
       "doc_id": "01GO-S3906",
