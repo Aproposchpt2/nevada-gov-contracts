@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-24T16:33:22.413Z",
+  "scraped_at": "2026-08-25T16:33:26.174Z",
   "bids": [
     {
       "bid_id": "23",
@@ -23,7 +23,7 @@
       "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=22",
       "documents": [
         {
-          "url": "https://lyon-county.org/DocumentCenter/View/14288/Sewer-Rehab-RFQ-Document"
+          "url": "https://www.lyon-county.org/DocumentCenter/View/14329/Sewer-Rehab-RFQ-Document-v1"
         }
       ],
       "county": "Lyon",
