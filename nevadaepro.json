@@ -1,6 +1,59 @@
 {
-  "scraped_at": "2026-08-25T14:36:42.357Z",
+  "scraped_at": "2026-08-26T14:36:26.481Z",
   "bids": [
+    {
+      "doc_id": "81DMV-S3985",
+      "organization": "Department of Motor Vehicles",
+      "buyer": "Heather Moon",
+      "title": "Vehicle Remote Sensing",
+      "bid_opening_date": "09/29/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "833a11b5-7ca3-4d30-8cfc-7866003847dc",
+      "scope": "Please see the Cost Sheet in the Attachments tab.",
+      "contact_org": "Admin Services",
+      "contact_email": "DMVInvoices@dmv.nv.gov",
+      "contact_phone": "(775) 684-4849",
+      "attachments": [
+        {
+          "file_nbr": "19845",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "323674",
+          "name": "81DMV-S3985-Request-for-Proposals.docx"
+        },
+        {
+          "file_nbr": "323019",
+          "name": "Terms-and-conditions-for-services~3.pdf"
+        },
+        {
+          "file_nbr": "323022",
+          "name": "Standard Form Contract - DMV Language~2.docx"
+        },
+        {
+          "file_nbr": "323024",
+          "name": "Insurance Schedule - RFP 81DMV-S3985 - RFP.docx"
+        },
+        {
+          "file_nbr": "323031",
+          "name": "81DMV-S3985-Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "323032",
+          "name": "81DMV-S3985 - Cost Schedule.xls"
+        },
+        {
+          "file_nbr": "323021",
+          "name": "Certification-regarding-lobbying~3.pdf"
+        },
+        {
+          "file_nbr": "323018",
+          "name": "81DMV-S3985-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=81DMV-S3985&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S3982",
       "organization": "Adjutant General",
@@ -527,39 +580,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S3945",
-      "organization": "Department of Transportation",
-      "buyer": "Jennifer Thomas",
-      "title": "Cattleguard",
-      "bid_opening_date": "08/25/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "6f3fde04-ee14-4c5b-b434-56ab7a764905",
-      "scope": "40&#034; PRECAST CONCRETE CATTLE GUARD WITH POSTS AND END WINGS TO BE DELIVERED TO THE TONOPAH AIRPORT PIT, US 6 NYE, 8 MP",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "322411",
-          "name": "80DOT-S3945- Bid_Questions and Answers.xlsx"
-        },
-        {
-          "file_nbr": "322412",
-          "name": "2024 Standard Precast Cattle Guard specifications.pdf"
-        },
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3945&external=true&parentUrl=close"
     },
     {
       "doc_id": "72DOW-S3941",
