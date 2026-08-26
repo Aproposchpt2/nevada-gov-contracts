@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-25T16:33:26.174Z",
+  "scraped_at": "2026-08-26T16:46:06.473Z",
   "bids": [
     {
       "bid_id": "23",
@@ -56,6 +56,23 @@
       "jurisdiction_name": "Churchill County",
       "city": "Fallon",
       "source_base": "https://www.churchillcountynv.gov/bids.aspx"
+    },
+    {
+      "bid_id": "86",
+      "title": "WiFi hotspot for Bookmobile Annex (Book Bike)",
+      "description": "Humboldt County Library is seeking bids for Internet access for its Bookmobile Annex. FCC Form 470 # 270000244 and all associated RFPs are publicly available at the following...",
+      "status": "Open",
+      "closes": "11/4/2026 12:00 PM",
+      "detail_url": "https://www.humboldtcountynv.gov/Bids.aspx?bidID=86",
+      "documents": [
+        {
+          "url": "https://www.humboldtcountynv.gov/DocumentCenter/View/8836"
+        }
+      ],
+      "county": "Humboldt",
+      "jurisdiction_name": "Humboldt County",
+      "city": "Winnemucca",
+      "source_base": "https://www.humboldtcountynv.gov/Bids.aspx"
     }
   ]
 }
