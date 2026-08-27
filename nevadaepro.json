@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-26T14:36:26.481Z",
+  "scraped_at": "2026-08-27T23:24:35.123Z",
   "bids": [
     {
       "doc_id": "81DMV-S3985",
@@ -415,47 +415,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=90DETR-S3968&external=true&parentUrl=close"
     },
     {
-      "doc_id": "80DOT-S3963",
-      "organization": "Department of Transportation",
-      "buyer": "Heather Moon",
-      "title": "Transit Vehicles",
-      "bid_opening_date": "08/27/2026 12:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "2fc8d368-5178-4699-b5ea-a1ebd7636693",
-      "scope": "Transit Vehicles --- Please see the &#039;Attachments&#039; tab for the project overview and specification information. Vendors must read and upload all required documents as part of their response.",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "322251",
-          "name": "Questions-Answers~1.xlsx"
-        },
-        {
-          "file_nbr": "319653",
-          "name": "Specs 7-21-26.docx"
-        },
-        {
-          "file_nbr": "319654",
-          "name": "FTA Required Clauses and Certification Procurement Pro.pdf"
-        },
-        {
-          "file_nbr": "319655",
-          "name": "Vehicle Floorplans J-Q.pdf"
-        },
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3963&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "70CNR-S3960",
       "organization": "Department of Conservation and Natural Resources",
       "buyer": "Emily Larsen",
@@ -700,93 +659,61 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3940&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S3926",
+      "doc_id": "40DHHS-S3910",
       "organization": "Department of Human Services",
-      "buyer": "Jennifer Thomas",
-      "title": "Asset Verification Services",
-      "bid_opening_date": "08/26/2026 14:00:00",
+      "buyer": "Annette Morfin",
+      "title": "Food Services",
+      "bid_opening_date": "10/22/2026 13:00:00",
       "status": "Sent",
       "detail_fetched": true,
-      "csrf_token": "1ca3cba4-c720-47b8-a5fe-a83caa2d7df0",
-      "scope": "Services for verification and validation of assets to ensure accuracy, completeness, and compliance with established inventory and financial records.",
-      "contact_org": "Central Office - Admin Services",
-      "contact_email": "dssaccounting@dss.nv.gov",
-      "contact_phone": "(775) 684-0500",
+      "csrf_token": "89b4031f-a909-463f-966b-576c56d12f63",
+      "scope": "FOOD SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
       "attachments": [
-        {
-          "file_nbr": "321433",
-          "name": "Bid 40DHHS-S3926-Questions_Answers_State Responses.pdf"
-        },
         {
           "file_nbr": "19726",
           "name": "Quote Instructions"
         },
         {
-          "file_nbr": "317179",
-          "name": "40DHHS-S3926_RFP_AVS.docx"
+          "file_nbr": "323817",
+          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
         },
         {
-          "file_nbr": "317215",
-          "name": "40DHHS-S3926-Scope of Work_AVS.docx"
+          "file_nbr": "323813",
+          "name": "Terms-and-conditions-for-services~32.pdf"
         },
         {
-          "file_nbr": "315206",
-          "name": "Terms-and-conditions-for-services~30.pdf"
+          "file_nbr": "323810",
+          "name": "Standard-form-contract~26.docx"
         },
         {
-          "file_nbr": "315212",
-          "name": "40DHHS-S3926-Deliverables - 2026 AVS RFP Attachment .docx"
+          "file_nbr": "323804",
+          "name": "40DHHS-S3910 - Insurance Schedule.docx"
         },
         {
-          "file_nbr": "315215",
-          "name": "ATTACHMENT - Federal Laws and Authorities.docx"
+          "file_nbr": "323870",
+          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
         },
         {
-          "file_nbr": "317132",
-          "name": "NIST.SP.800-53r5.pdf"
+          "file_nbr": "323805",
+          "name": "40DHHS-S3910-reference-questionnaire.docx"
         },
         {
-          "file_nbr": "317134",
-          "name": "NIST.SP.800-171r2.pdf"
+          "file_nbr": "323803",
+          "name": "40DHHS-S3910 - Cost Schedule.docx"
         },
         {
-          "file_nbr": "317133",
-          "name": "NIST.SP.800-210.pdf"
+          "file_nbr": "323808",
+          "name": "Certification-regarding-lobbying~27.pdf"
         },
         {
-          "file_nbr": "315205",
-          "name": "Standard-form-contract~24.docx"
-        },
-        {
-          "file_nbr": "315213",
-          "name": "40DHHS-S3926-Insurance Schedule.pdf"
-        },
-        {
-          "file_nbr": "317217",
-          "name": "40DHHS-S3926-AVS_Cost Schedule.xls"
-        },
-        {
-          "file_nbr": "315210",
-          "name": "40DHHS-S3926-Cloud Checklist - 2026 AVS RFP Attachment.xlsx"
-        },
-        {
-          "file_nbr": "315211",
-          "name": "40DHHS-S3926-Data Use and Cloud Service Agreement 2026 AVS RFP Attachment.docx"
-        },
-        {
-          "file_nbr": "315203",
-          "name": "40DHHS-S3926-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "317218",
-          "name": "40DHHS-S3926_reference_questionnaire.docx"
-        },
-        {
-          "file_nbr": "315207",
-          "name": "40DHHS-S3926-Certification-regarding-lobbying.pdf"
+          "file_nbr": "323807",
+          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3926&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
     },
     {
       "doc_id": "01GO-S3906",
@@ -921,59 +848,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3892&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3872",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Nocoasha Henry",
-      "title": "Aircraft Maintenance Specialist (NDF26-003)",
-      "bid_opening_date": "08/27/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "158bdb9a-aac9-4a7a-b4b1-2af626aa4445",
-      "scope": "Aircraft Maintenance Specialist (NDF26-003)",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "319710",
-          "name": "70CNR-S3872 Request-for-Proposal~2.docx"
-        },
-        {
-          "file_nbr": "319479",
-          "name": "70CNR-S3872 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "319480",
-          "name": "70CNR-S3872 Standard-Form-Contract.docx"
-        },
-        {
-          "file_nbr": "319481",
-          "name": "70CNR-S3872 Insurance Template Aircraft rev052126.docx"
-        },
-        {
-          "file_nbr": "319679",
-          "name": "70CNR-S3872 Reference - Questionnaire.docx"
-        },
-        {
-          "file_nbr": "319663",
-          "name": "70CNR-S3872 Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "319482",
-          "name": "70CNR-S3872 Certification-Regarding-Lobbying.pdf"
-        },
-        {
-          "file_nbr": "319478",
-          "name": "70CNR-S3872 Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3872&external=true&parentUrl=close"
     },
     {
       "doc_id": "01GO-S3715",
