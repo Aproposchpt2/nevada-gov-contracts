@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-26T16:46:06.473Z",
+  "scraped_at": "2026-08-28T00:44:19.365Z",
   "bids": [
     {
       "bid_id": "23",
@@ -32,30 +32,21 @@
       "source_base": "https://www.lyon-county.org/bids.aspx"
     },
     {
-      "bid_id": "76",
-      "title": "Fallon Churchill Fire Department Maintenance Shop Project",
-      "description": null,
+      "bid_id": "134",
+      "title": "Bid For 2026/27 A Chevy Tahoe, Commercial 4X4",
+      "description": "WHITE PINE COUNTY  NOTICE OF REQUEST FOR BIDS  The White Pine County Sheriff&rsquo;s Office is seeking bids for the following vehicles.  The White Pine County Sheriff&rsquo;s...",
       "status": "Open",
-      "closes": "8/27/2026 4:00 PM",
-      "detail_url": "https://www.churchillcountynv.gov/bids.aspx?bidID=76",
+      "closes": "9/30/2026 5:00 PM",
+      "detail_url": "https://www.whitepinecounty.net/Bids.aspx?bidID=134",
       "documents": [
         {
-          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19242"
-        },
-        {
-          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19248"
-        },
-        {
-          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19266"
-        },
-        {
-          "url": "https://www.churchillcountynv.gov/DocumentCenter/View/19267"
+          "url": "https://www.whitepinecounty.net/DocumentCenter/View/14093"
         }
       ],
-      "county": "Churchill",
-      "jurisdiction_name": "Churchill County",
-      "city": "Fallon",
-      "source_base": "https://www.churchillcountynv.gov/bids.aspx"
+      "county": "White Pine",
+      "jurisdiction_name": "White Pine County",
+      "city": "Ely",
+      "source_base": "https://www.whitepinecounty.net/Bids.aspx"
     },
     {
       "bid_id": "86",
