@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-27T23:42:03.024Z",
+  "scraped_at": "2026-08-28T23:30:22.474Z",
   "solicitations": [
     {
       "project_number": "RFP #10-P-07-27-AA",
@@ -32,16 +32,6 @@
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     },
     {
-      "project_number": "RFB #117-B-04-26-ML",
-      "project_type": "Request for Bid",
-      "title": "CERTAIN PRINT SHOP CARD STOCK, PAPER, PRINTABLE FORMS, & RELATED SUPPLIES",
-      "pre_bid_date": "N/A",
-      "question_deadline": "08/06/2026",
-      "due_date": "08/25/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
-    },
-    {
       "project_number": "RFP #137-P-05-26-AA",
       "project_type": "Request for Proposal",
       "title": "Request for Proposal for Hazardous Materials Consulting Services for the Washoe County School District",
@@ -49,7 +39,7 @@
       "question_deadline": "07/22/2026",
       "due_date": "08/05/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl06$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
     }
   ]
 }
