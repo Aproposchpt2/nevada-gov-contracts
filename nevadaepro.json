@@ -1,6 +1,35 @@
 {
-  "scraped_at": "2026-08-27T23:24:35.123Z",
+  "scraped_at": "2026-08-28T23:20:19.047Z",
   "bids": [
+    {
+      "doc_id": "69CRC-S3991",
+      "organization": "Colorado River Commission",
+      "buyer": "Gina Goodman",
+      "title": "CRCBMI-01 230kV Circuit Breakers",
+      "bid_opening_date": "09/24/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "1a4e15d2-6a4a-4f95-a812-ceb4b1f6c2bc",
+      "scope": "Vendors are to respond using the &#034;Create Quote&#034; and upload the requested CRCBMI-01 documents.",
+      "contact_org": "Colorado River Commission",
+      "contact_email": "invoices@crchydro.org",
+      "contact_phone": "(702) 486-2670",
+      "attachments": [
+        {
+          "file_nbr": "19802",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "323974",
+          "name": "CRCBMI-01_230kV Power Circuit Breakers_Bid 69CRC-S3991Contract _NATIVE.docx"
+        },
+        {
+          "file_nbr": "323975",
+          "name": "Section 1100 Drawings Bid 69CRC-S3991.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3991&external=true&parentUrl=close"
+    },
     {
       "doc_id": "81DMV-S3985",
       "organization": "Department of Motor Vehicles",
@@ -53,6 +82,59 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=81DMV-S3985&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "30DOE-S3984",
+      "organization": "Department of Education",
+      "buyer": "Chuy Ampudia",
+      "title": "Administrator, Office of Assessment, Data, and Accountability Management (ADAM)",
+      "bid_opening_date": "10/01/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "fa7c3dda-ff19-47a6-aece-d76e03052874",
+      "scope": "The State of Nevada Purchasing, on behalf of the Nevada Department of Education is seeking proposals from qualified vendors to provide the Nevada Student Assessments required by the Every Student Succeeds Act (ESSA). This will include Math and English Language Arts in grades 3-8, Science in 5, 8 and high school, and an alternate assessment designed for students with the most significant cognitive disabilities, as well as additional services as described below and in the scope of work and attachments.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19701",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "324297",
+          "name": "30DOE-S3984-request-for-proposals-2026-08-27.docx"
+        },
+        {
+          "file_nbr": "324290",
+          "name": "Terms-and-conditions-for-services~3.pdf"
+        },
+        {
+          "file_nbr": "324291",
+          "name": "30DOE-S3984 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "324292",
+          "name": "INSURANCE REQUIREMENTS 30DOE-S3984.pdf"
+        },
+        {
+          "file_nbr": "324289",
+          "name": "30DOE-S3984 Scope of Work.docx"
+        },
+        {
+          "file_nbr": "324293",
+          "name": "NV_ Data Sharing Agreement_.docx"
+        },
+        {
+          "file_nbr": "324294",
+          "name": "Certification-regarding-lobbying~2.pdf"
+        },
+        {
+          "file_nbr": "324295",
+          "name": "30DOE-S3984-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S3982",
