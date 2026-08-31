@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-30T17:51:14.699Z",
+  "scraped_at": "2026-08-31T19:46:11.815Z",
   "bids": [
     {
       "doc_id": "69CRC-S3991",
@@ -29,6 +29,67 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3991&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "81DMV-S3990",
+      "organization": "Department of Motor Vehicles",
+      "buyer": "Heather Moon",
+      "title": "Independent Verification and Validation (IV&V) Services for DMV Transformation Effort (DTE)",
+      "bid_opening_date": "09/29/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "63283cb9-6453-4dd0-a95c-ba2ff9485fcb",
+      "scope": "Please see the cost schedule located in the &#039;Attachments&#039; tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "324466",
+          "name": "81DMV-S3990-Request-for-Proposals~1.docx"
+        },
+        {
+          "file_nbr": "318456",
+          "name": "Terms-and-conditions-for-services~2.pdf"
+        },
+        {
+          "file_nbr": "318394",
+          "name": "Standard Form Contract - DMV Language~1.docx"
+        },
+        {
+          "file_nbr": "323569",
+          "name": "81DMV-S3990 - Insurance Schedule - RFP.docx"
+        },
+        {
+          "file_nbr": "323555",
+          "name": "81DMV-S3990 - Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "323556",
+          "name": "81DMV-S3990 - Cost Schedule.xls"
+        },
+        {
+          "file_nbr": "318455",
+          "name": "Certification-regarding-lobbying~2.pdf"
+        },
+        {
+          "file_nbr": "323559",
+          "name": "81DMV-S3990 -Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "324467",
+          "name": "Attachment B Requirements Response Matrix 8-31-26.xlsx"
+        },
+        {
+          "file_nbr": "324468",
+          "name": "Attachment C Vendor Response Workbook 8-31-26.xlsx"
+        },
+        {
+          "file_nbr": "19845",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=81DMV-S3990&external=true&parentUrl=close"
     },
     {
       "doc_id": "81DMV-S3985",
@@ -905,6 +966,43 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3892&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "80DOT-S3845",
+      "organization": "Department of Transportation",
+      "buyer": "Mason Bondi",
+      "title": "Traffic Paint - District 1 - 5 Gallon Paint Buckets",
+      "bid_opening_date": "09/28/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "d2eec80a-936a-40bc-87dc-8af5038ec0db",
+      "scope": "Las Vegas Waterborne (lead-free) Totes (Type II) Red traffic paint",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19837",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "304264",
+          "name": "0000 Standard Terms and Conditions for Commodities.pdf"
+        },
+        {
+          "file_nbr": "324208",
+          "name": "80DOT-S3845 Traffic Paint District 1 Specifications.pdf"
+        },
+        {
+          "file_nbr": "324207",
+          "name": "80DOT-S3845 Additional Requirements.pdf"
+        },
+        {
+          "file_nbr": "324209",
+          "name": "OTC-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3845&external=true&parentUrl=close"
     },
     {
       "doc_id": "01GO-S3715",
