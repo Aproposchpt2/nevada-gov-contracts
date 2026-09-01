@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-31T21:17:32.731Z",
+  "scraped_at": "2026-09-01T19:11:21.539Z",
   "bids": [
     {
       "bid_id": "23",
@@ -47,6 +47,26 @@
       "jurisdiction_name": "White Pine County",
       "city": "Ely",
       "source_base": "https://www.whitepinecounty.net/Bids.aspx"
+    },
+    {
+      "bid_id": "242",
+      "title": "Cottonwood Park Playground Installation",
+      "description": "NOTICE OF REQUEST FOR BID NO. BGID-2026-01/ PWP-NY-2026-482  COTTONWOOD PARK PLAYGROUND INSTALLATION  NOTICE IS HEREBY GIVEN that the Beatty General Improvement District,...",
+      "status": "Open",
+      "closes": "9/30/2026 2:00 PM",
+      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=242",
+      "documents": [
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51751"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51752"
+        }
+      ],
+      "county": "Nye",
+      "jurisdiction_name": "Nye County",
+      "city": "Tonopah",
+      "source_base": "https://www.nyecountynv.gov/Bids.aspx"
     },
     {
       "bid_id": "86",
