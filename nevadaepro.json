@@ -1,6 +1,56 @@
 {
-  "scraped_at": "2026-08-31T19:46:11.815Z",
+  "scraped_at": "2026-09-01T17:30:59.426Z",
   "bids": [
+    {
+      "doc_id": "40DHHS-S3998",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Nevada Youth Training Center Quarterly Dairy Solicitation",
+      "bid_opening_date": "09/17/2026 13:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "1d989ffd-58a7-4bd1-9269-fb03056818ec",
+      "scope": "MILK: 1%; 1/2 PINT.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19719",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3998&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S3997",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Nevada Youth Training Center Quarterly Meat Solicitation",
+      "bid_opening_date": "09/15/2026 13:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "e6a530b5-bfdf-4ddd-96bf-f20b5fe19084",
+      "scope": "GROUND BEEF: MAXIMUM 20% FAT CONTENT, NO SOSYBEAN HIGH PROTEIN ADDED, CHILLED, FREEZER WRAPPED, 10 LBS. PER PKG., IN ACCORDANCE W/ #136 EXCEPT MUST BE FROM U.S.. GRADE CHOICE BEEF.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19719",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3997&external=true&parentUrl=close"
+    },
     {
       "doc_id": "69CRC-S3991",
       "organization": "Colorado River Commission",
@@ -1271,63 +1321,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3292&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S3261",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "Travel Nevada Meeting Planner",
-      "bid_opening_date": "09/16/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "845031bc-ba2f-484b-a256-d721b2bc7b41",
-      "scope": "TRAVEL NEVADA MEETING PLANNER:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "321372",
-          "name": "10TCA-S3261 - Revised and Updated Cost Schedule Revised.docx"
-        },
-        {
-          "file_nbr": "321375",
-          "name": "10TCA-S3261 - request-for-proposal - Updated.docx"
-        },
-        {
-          "file_nbr": "243270",
-          "name": "Terms-and-conditions-for-services~1.pdf"
-        },
-        {
-          "file_nbr": "321261",
-          "name": "10TCA-S3261 - request-for-proposal~1.docx"
-        },
-        {
-          "file_nbr": "243271",
-          "name": "Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "243287",
-          "name": "Insurance Schedule~25.docx"
-        },
-        {
-          "file_nbr": "321217",
-          "name": "10TCA-S3261 - reference-questionnaire - 2025-03-27~1.pdf"
-        },
-        {
-          "file_nbr": "321278",
-          "name": "10TCA-S3261 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "243289",
-          "name": "Certification-regarding-lobbying.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3261&external=true&parentUrl=close"
     }
   ]
 }
