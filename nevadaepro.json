@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-01T17:30:59.426Z",
+  "scraped_at": "2026-09-02T17:31:36.784Z",
   "bids": [
     {
       "doc_id": "40DHHS-S3998",
@@ -583,53 +583,41 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=90DETR-S3968&external=true&parentUrl=close"
     },
     {
-      "doc_id": "70CNR-S3960",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Emily Larsen",
-      "title": "SR On Call Maintenance",
-      "bid_opening_date": "09/02/2026 10:00:00",
+      "doc_id": "99SWC-S3964",
+      "organization": "Statewide Contracts",
+      "buyer": "Miriam Garcia",
+      "title": "Electric Vehicle Charging Stations",
+      "bid_opening_date": "09/23/2026 14:00:00",
       "status": "Sent",
       "detail_fetched": true,
-      "csrf_token": "56aa890f-f749-4ec5-9cf2-457a53109984",
-      "scope": "General Maintenance",
-      "contact_org": "State Parks Bryan Building",
-      "contact_email": "NDSPAccounting@parks.nv.gov",
-      "contact_phone": "(775) 684-2770",
+      "csrf_token": "ef09008e-84bb-4671-82ed-a54d46750337",
+      "scope": "This is an informational release for the found Electric Vehicle Charging Stations.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
       "attachments": [
         {
-          "file_nbr": "320605",
-          "name": "S3960-request-for-proposals-2026-08-06.docx"
+          "file_nbr": "324846",
+          "name": "99SWC-S3964 - RFI - EVCS .docx"
         },
         {
-          "file_nbr": "320607",
-          "name": "4.1.1 Terms-and-conditions-for-services~6.pdf"
+          "file_nbr": "324849",
+          "name": "99SWC-S3964 - SOW - EVCS.docx"
         },
         {
-          "file_nbr": "320608",
-          "name": "4.1.2 Scope of work.docx"
+          "file_nbr": "324850",
+          "name": "99SWC-S3964 - Cost Schedule - EVCS .xlsx"
         },
         {
-          "file_nbr": "320609",
-          "name": "4.2.1 Standard-form-contract~1.docx"
+          "file_nbr": "324852",
+          "name": "Insurance Requirements.pdf"
         },
         {
-          "file_nbr": "320610",
-          "name": "4.2.2 Insurance Schedule~1.pdf"
-        },
-        {
-          "file_nbr": "320611",
-          "name": "4.3.1  S3960-cost-schedule.xlsx"
-        },
-        {
-          "file_nbr": "320612",
-          "name": "4.3.2 Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "19810",
+          "file_nbr": "19561",
           "name": "Quote Instructions"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3960&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
     },
     {
       "doc_id": "44DOC-S3955",
