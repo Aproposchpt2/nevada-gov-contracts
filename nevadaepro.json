@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-04T17:17:57.598Z",
+  "scraped_at": "2026-09-05T16:25:19.780Z",
   "bids": [
     {
       "doc_id": "43ADG-S4000",
@@ -661,43 +661,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S3970",
-      "organization": "Adjutant General",
-      "buyer": "Carlos Fuentes",
-      "title": "Add Shore Power Infrastructure for ALS/MWO at LVRC",
-      "bid_opening_date": "09/04/2026 23:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "5a7250dd-2e02-4ebe-856f-9d457803e7be",
-      "scope": "Provide and install dedicated shore power infrastructure to support ALS/MWO vehicle operations at the Las Vegas Readiness Center (LVRC).",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320629",
-          "name": "Invitation to Bid (ITB) LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320631",
-          "name": "Scope of Work - LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320633",
-          "name": "LVRC Shore Power Construction Documents"
-        },
-        {
-          "file_nbr": "320630",
-          "name": "Proposal Evaluation and Scoring"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3970&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "90DETR-S3968",
       "organization": "Department of Employment, Training and Rehabilitation",
       "buyer": "Joel Wixon",
@@ -1213,6 +1176,75 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3845&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "01GO-S3715",
+      "organization": "Governor's Office",
+      "buyer": "Annette Morfin",
+      "title": "BEAD Grant Management Services",
+      "bid_opening_date": "09/08/2026 13:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "4158d8c2-eb45-44b4-a41b-23b2db6ffc1d",
+      "scope": "BEAD GRANT MANAGEMENT SERVICES",
+      "contact_org": "Administrative Services Division",
+      "contact_email": "ASDAccounting@admin.nv.gov",
+      "contact_phone": "(775) 684-0273",
+      "attachments": [
+        {
+          "file_nbr": "19570",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "319307",
+          "name": "Updated Timeline.docx"
+        },
+        {
+          "file_nbr": "322836",
+          "name": "01GO-S3715 - Questions and Answers.docx"
+        },
+        {
+          "file_nbr": "322839",
+          "name": "01GO-S3715 - Updated Timeline - Final Version.docx"
+        },
+        {
+          "file_nbr": "323751",
+          "name": "01GO-S3715 - Questions and Answers - Updated~1.docx"
+        },
+        {
+          "file_nbr": "315791",
+          "name": "01GO-S3715-request-for-proposals~5.docx"
+        },
+        {
+          "file_nbr": "315735",
+          "name": "Terms-and-conditions-for-services~2.pdf"
+        },
+        {
+          "file_nbr": "315741",
+          "name": "Standard-form-contract~2.docx"
+        },
+        {
+          "file_nbr": "315748",
+          "name": "01GO-S3714 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "315750",
+          "name": "01GO-S3715 - Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "315751",
+          "name": "01GO-S3715 - Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "315754",
+          "name": "Certification-regarding-lobbying~2.pdf"
+        },
+        {
+          "file_nbr": "323976",
+          "name": "01GO-S3715 - reference-questionnaire~1.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=01GO-S3715&external=true&parentUrl=close"
     }
   ]
 }
