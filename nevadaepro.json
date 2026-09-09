@@ -1,6 +1,137 @@
 {
-  "scraped_at": "2026-09-08T17:41:15.070Z",
+  "scraped_at": "2026-09-09T17:27:14.302Z",
   "bids": [
+    {
+      "doc_id": "43ADG-S4008",
+      "organization": "Adjutant General",
+      "buyer": "Carlos Fuentes",
+      "title": "Add Shore Power Infrastructure for ALS/MWO at LVRC",
+      "bid_opening_date": "09/18/2026 23:59:59",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "7abc102f-4a92-49ca-a8a9-e5a23cfd1b6b",
+      "scope": "Provide and install dedicated shore power infrastructure to support ALS/MWO vehicle operations at the Las Vegas Readiness Center (LVRC).",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "320629",
+          "name": "Invitation to Bid (ITB) LVRC Shore Power"
+        },
+        {
+          "file_nbr": "320630",
+          "name": "Proposal Evaluation and Scoring"
+        },
+        {
+          "file_nbr": "320631",
+          "name": "Scope of Work - LVRC Shore Power"
+        },
+        {
+          "file_nbr": "320633",
+          "name": "LVRC Shore Power Construction Documents"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4008&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "99SWC-S4004",
+      "organization": "Statewide Contracts",
+      "buyer": "Christian Armas",
+      "title": "Employee Drug and Alcohol Testing",
+      "bid_opening_date": "10/02/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "16d7fc58-84a7-4fb6-bb70-24e607227cbf",
+      "scope": "Employee Alcohol and Drug Testing Services",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "325632",
+          "name": "RFQ_99SWC-S4004~1.docx"
+        },
+        {
+          "file_nbr": "309723",
+          "name": "Terms-and-conditions-for-services~9.pdf"
+        },
+        {
+          "file_nbr": "309722",
+          "name": "Standard-form-contract~7.docx"
+        },
+        {
+          "file_nbr": "322716",
+          "name": "INSURANCE REQUIREMENTS.docx"
+        },
+        {
+          "file_nbr": "325598",
+          "name": "Vendor_Qualifications_Response_RFQ_99SWC-S4004.xlsx"
+        },
+        {
+          "file_nbr": "325596",
+          "name": "Service Locations RFQ 99SWC-S4004.xlsx"
+        },
+        {
+          "file_nbr": "325595",
+          "name": "Scope_of_Work_99SWC-S4004.docx"
+        },
+        {
+          "file_nbr": "325593",
+          "name": "Cost Schedule 99SWC-S4004.xlsx"
+        },
+        {
+          "file_nbr": "322712",
+          "name": "Certification-regarding-lobbying~5.pdf"
+        },
+        {
+          "file_nbr": "19561",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4004&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "80DOT-S4003",
+      "organization": "Department of Transportation",
+      "buyer": "Mason Bondi",
+      "title": "De-Icing Sand & Cinders District 3 Elko/Ely",
+      "bid_opening_date": "09/30/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "2efcce20-ad2a-49e1-b240-4dd862f73ef8",
+      "scope": "The State of Nevada Purchasing Division on behalf of the Nevada Department of Transportation is seeking vendors for De-Icing Sand and Cinders. This will be a multiple award and will be a one-year open term contract. Vendors must enter pricing on each line to indicate your company is proposing; select NO BID if not providing pricing. Failure to complete this line accurately may result in an unintended &#034;no bid&#034; and prevent your quote from being considered, even if documentation is attached. Pricing must be provided under each item vendor is bidding on. Vendors must also provide Plant location answer on the Questions Tab on items 2, 3, 4, 46, 76, 77, 78, 79 and 112. In the specifications attachment Vendor Information must be provided.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19837",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19830",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "325613",
+          "name": "80DOT-S4003 De-Icing Sand and Cinders Specifications.docx"
+        },
+        {
+          "file_nbr": "325605",
+          "name": "80DOT-S4003 Additional Requirements.docx"
+        },
+        {
+          "file_nbr": "325611",
+          "name": "OTC-Vendor-Information-Response~1.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4003&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4000",
       "organization": "Adjutant General",
@@ -1042,177 +1173,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "01GO-S3906",
-      "organization": "Governor's Office",
-      "buyer": "Christian Armas",
-      "title": "Disaster Response and Recovery Services",
-      "bid_opening_date": "09/11/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "3806c9c4-a564-4897-b293-0680dc89d1c0",
-      "scope": "EOC Augmentation, Individual Assistance, Public Assistance, Damage Assessment, Interim Housing, Debris Removal, Case Management, Resource Center Operations.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "321171",
-          "name": "01GO-S3906 Disaster Response and Recovery Services Answers.xlsx"
-        },
-        {
-          "file_nbr": "321160",
-          "name": "01GO-S3906 Disaster Response and Recovery Services RFP Revised.pdf"
-        },
-        {
-          "file_nbr": "313458",
-          "name": "Terms-and-conditions-for-services~1.pdf"
-        },
-        {
-          "file_nbr": "313460",
-          "name": "Standard-form-contract~1.docx"
-        },
-        {
-          "file_nbr": "313491",
-          "name": "01GO-S3906 INSURANCE REQUIREMENTS.pdf"
-        },
-        {
-          "file_nbr": "321161",
-          "name": "01GO-S3906 SOW Revised.pdf"
-        },
-        {
-          "file_nbr": "318991",
-          "name": "01GO-S3906-reference-questionnaire~1.docx"
-        },
-        {
-          "file_nbr": "321159",
-          "name": "01GO-S3906 Service_Identifier_Spreadsheet_Revised.xlsx"
-        },
-        {
-          "file_nbr": "313461",
-          "name": "Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "313463",
-          "name": "01GO-S3906-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "316032",
-          "name": "Federal Funding.pdf"
-        },
-        {
-          "file_nbr": "19570",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=01GO-S3906&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3892",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Nocoasha Henry",
-      "title": "Uniform Provider for State Parks",
-      "bid_opening_date": "09/11/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c2897b3b-10ac-41bb-8104-92aff28621fc",
-      "scope": "Uniform Provider for State Parks",
-      "contact_org": "State Parks Bryan Building",
-      "contact_email": "NDSPAccounting@parks.nv.gov",
-      "contact_phone": "(775) 684-2770",
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "322159",
-          "name": "70CNR-S3892 Bid_Q and A Responses 081726.xlsx"
-        },
-        {
-          "file_nbr": "321290",
-          "name": "70CNR-S3892 RFP for Uniform Provider for State Parks~6.docx"
-        },
-        {
-          "file_nbr": "321183",
-          "name": "70CNR-S3892 Attachment A Park Uniform Pictures and Patch Listing_FINAL.docx"
-        },
-        {
-          "file_nbr": "321184",
-          "name": "70CNR-S3892 Attachment B State Park Listing_FINAL.docx"
-        },
-        {
-          "file_nbr": "307567",
-          "name": "70CNR-S3892 Terms-and-Conditions-for-Services.pdf"
-        },
-        {
-          "file_nbr": "320473",
-          "name": "70CNR-S3892 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "307566",
-          "name": "70CNR-S3892 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "307664",
-          "name": "70CNR-S3892  Insuranace Template.docx"
-        },
-        {
-          "file_nbr": "321255",
-          "name": "70CNR-S3892 Reference-Questionnaire~1.docx"
-        },
-        {
-          "file_nbr": "307568",
-          "name": "70CNR-S3892 Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321180",
-          "name": "70CNR-S3892 Cost Proposal for Uniform Provider for State Parks.xlsx"
-        },
-        {
-          "file_nbr": "307564",
-          "name": "70CNR-S3892 Certification-Regarding-Lobbying.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3892&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S3845",
-      "organization": "Department of Transportation",
-      "buyer": "Mason Bondi",
-      "title": "Traffic Paint - District 1 - 5 Gallon Paint Buckets",
-      "bid_opening_date": "09/28/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "d2eec80a-936a-40bc-87dc-8af5038ec0db",
-      "scope": "Las Vegas Waterborne (lead-free) Totes (Type II) Red traffic paint",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "304264",
-          "name": "0000 Standard Terms and Conditions for Commodities.pdf"
-        },
-        {
-          "file_nbr": "324208",
-          "name": "80DOT-S3845 Traffic Paint District 1 Specifications.pdf"
-        },
-        {
-          "file_nbr": "324207",
-          "name": "80DOT-S3845 Additional Requirements.pdf"
-        },
-        {
-          "file_nbr": "324209",
-          "name": "OTC-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3845&external=true&parentUrl=close"
     }
   ]
 }
