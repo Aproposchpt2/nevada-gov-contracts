@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-10T17:24:58.309Z",
+  "scraped_at": "2026-09-11T17:26:18.597Z",
   "bids": [
     {
       "doc_id": "43ADG-S4008",
@@ -37,6 +37,96 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4008&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4007",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "Southern Nevada Dust Control",
+      "bid_opening_date": "10/13/2026 10:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "8d5f8637-7c6e-48ba-9229-7895d0cf3c31",
+      "scope": "Cost estimation for Dust Control services over four years.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325809",
+          "name": "Request for Proposal"
+        },
+        {
+          "file_nbr": "325811",
+          "name": "Scope of Work"
+        },
+        {
+          "file_nbr": "325802",
+          "name": "Cost Schedule"
+        },
+        {
+          "file_nbr": "325806",
+          "name": "Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "325804",
+          "name": "Terms and Conditions for Services"
+        },
+        {
+          "file_nbr": "325805",
+          "name": "Term and Conditions for Goods"
+        },
+        {
+          "file_nbr": "325819",
+          "name": "Standard From Contract"
+        },
+        {
+          "file_nbr": "325823",
+          "name": "Insurance Requirements"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4007&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "80DOT-S4006",
+      "organization": "Department of Transportation",
+      "buyer": "Mason Bondi",
+      "title": "Glass Traffic Beads",
+      "bid_opening_date": "10/08/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "1c7f3764-bc1f-48de-bd39-03d9e61e66dc",
+      "scope": "Glass traffic beads for use with waterborne traffic paint; shall be in accordance with attached Specifications and Additional Requirements. Vendors shall provide pricing on the items tab in NevadaEPro.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19837",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19830",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "326088",
+          "name": "80DOT-S4006 Specifications and Requirements~1.docx"
+        },
+        {
+          "file_nbr": "325735",
+          "name": "80DOT-S4006 Addtional Requirements.docx"
+        },
+        {
+          "file_nbr": "325736",
+          "name": "OTC-Vendor-Information-Response~2.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4006&external=true&parentUrl=close"
     },
     {
       "doc_id": "99SWC-S4004",
@@ -1087,92 +1177,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3941&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S3940",
-      "organization": "Department of Transportation",
-      "buyer": "Miriam Garcia",
-      "title": "Blank Aluminum Signage Sheets",
-      "bid_opening_date": "09/10/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c32afa7a-e453-4e8b-b589-8cf68196cd22",
-      "scope": "24&#034; X 144&#034; Flat Stock (No Holes/No Corners/No Slipsheet) All aluminum to be .080 - 5052 Alloy",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "319070",
-          "name": "80DOT-3940 - Project Overview .docx"
-        },
-        {
-          "file_nbr": "304264",
-          "name": "0000 Standard Terms and Conditions for Commodities.pdf"
-        },
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3940&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3910",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Food Services",
-      "bid_opening_date": "10/22/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "89b4031f-a909-463f-966b-576c56d12f63",
-      "scope": "FOOD SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "323817",
-          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
-        },
-        {
-          "file_nbr": "323813",
-          "name": "Terms-and-conditions-for-services~32.pdf"
-        },
-        {
-          "file_nbr": "323810",
-          "name": "Standard-form-contract~26.docx"
-        },
-        {
-          "file_nbr": "323804",
-          "name": "40DHHS-S3910 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "323870",
-          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
-        },
-        {
-          "file_nbr": "323805",
-          "name": "40DHHS-S3910-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "323803",
-          "name": "40DHHS-S3910 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "323808",
-          "name": "Certification-regarding-lobbying~27.pdf"
-        },
-        {
-          "file_nbr": "323807",
-          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
     }
   ]
 }
