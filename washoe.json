@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-10T17:37:34.897Z",
+  "scraped_at": "2026-09-11T17:41:38.317Z",
   "solicitations": [
     {
       "project_number": "RFP #14-P-08-27-SA",
@@ -30,16 +30,6 @@
       "due_date": "09/15/2026",
       "status": "Active",
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
-    },
-    {
-      "project_number": "RFP #137-P-05-26-AA",
-      "project_type": "Request for Proposal",
-      "title": "Request for Proposal for Hazardous Materials Consulting Services for the Washoe County School District",
-      "pre_bid_date": "07/15/2026 (Mandatory)",
-      "question_deadline": "07/22/2026",
-      "due_date": "08/05/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
     }
   ]
 }
