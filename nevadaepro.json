@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-11T17:26:18.597Z",
+  "scraped_at": "2026-09-12T14:04:46.213Z",
   "bids": [
     {
       "doc_id": "43ADG-S4008",
@@ -641,68 +641,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S3982",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "WCA - Door Hardware Replacement",
-      "bid_opening_date": "09/11/2026 19:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "4f91f426-923d-4400-8203-cb5f3e05f481",
-      "scope": "The contractor shall fabricate and install new hardware on the exterior doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project. 7 Single exterior exit doors. Remove existing rim panic. Install new rim panics prep area as needed. Install new lever trims. Reuse Cylinders. Install new closers as needed fluid is visible. Fitment check to ensure proper safety and security. 4 Sets of double door entrance. Remove panics and rods (door removal if needed) Install new like for like panic and concealed vertical rod. Adjust panics as needed. Assure proper operation. Fitment check to ensure proper safety and security. Remove the Mag Lock system but leave wiring system for future.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "322457",
-          "name": "WCA Door Hardware Replacement Invitation to Bid"
-        },
-        {
-          "file_nbr": "322458",
-          "name": "WCA Door Hardware Replacement Scope of Work"
-        },
-        {
-          "file_nbr": "322459",
-          "name": "WCA Floor Plan"
-        },
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3982&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S3981",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "LVRC - EXIT GATE REPLACEMENT",
-      "bid_opening_date": "09/11/2026 23:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c4bd42b9-2cde-4e61-a6ea-54c5362c58da",
-      "scope": "The contractor shall provide all labor, tools, materials, equipment, supervision, and transportation required for replacing the exit gate. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Gate must meet UL325 compliant. Remove existing gate, post, electrical box and hydraulic supply lines concrete & asphalt, chain link fence. Install a new 24ft chain link double swing gate to match existing height. Set new 6inch gate post, 6ga. 2inch mesh chain link infilled, 2inch sch-40 round galvanized frame, with heavy duty greaseable hinges. Install 3 rows of barbed wire on top of new gate. Pour new concrete pad for new operators. Install 2-HDSW24UL gate operators with battery backup. Install in ground safety loops & exit loops, photo eye, LIFTMASTER 1300libs. Mag lock, operators bolted to new concrete pad.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "322451",
-          "name": "LVRC - Exit Gate Replacement Invitation to Bid"
-        },
-        {
-          "file_nbr": "322452",
-          "name": "LVRC - Exit Gate Replacement Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3981&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "43ADG-S3979",
       "organization": "Adjutant General",
       "buyer": "Miriam Garcia",
@@ -880,43 +818,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S3970",
-      "organization": "Adjutant General",
-      "buyer": "Carlos Fuentes",
-      "title": "Add Shore Power Infrastructure for ALS/MWO at LVRC",
-      "bid_opening_date": "09/11/2026 23:59:59",
-      "status": "Opened",
-      "detail_fetched": true,
-      "csrf_token": "12713c26-b62e-4d20-a50a-d169145e00d8",
-      "scope": "Provide and install dedicated shore power infrastructure to support ALS/MWO vehicle operations at the Las Vegas Readiness Center (LVRC).",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320629",
-          "name": "Invitation to Bid (ITB) LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320631",
-          "name": "Scope of Work - LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320633",
-          "name": "LVRC Shore Power Construction Documents"
-        },
-        {
-          "file_nbr": "320630",
-          "name": "Proposal Evaluation and Scoring"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3970&external=true&parentUrl=close"
     },
     {
       "doc_id": "90DETR-S3968",
@@ -1177,6 +1078,205 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3941&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S3910",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Food Services",
+      "bid_opening_date": "10/22/2026 13:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "1ae4c698-ce90-4e2c-910c-0ab160e1fb43",
+      "scope": "FOOD SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "323817",
+          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
+        },
+        {
+          "file_nbr": "323813",
+          "name": "Terms-and-conditions-for-services~32.pdf"
+        },
+        {
+          "file_nbr": "323810",
+          "name": "Standard-form-contract~26.docx"
+        },
+        {
+          "file_nbr": "323804",
+          "name": "40DHHS-S3910 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "323870",
+          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
+        },
+        {
+          "file_nbr": "323805",
+          "name": "40DHHS-S3910-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "323803",
+          "name": "40DHHS-S3910 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "323808",
+          "name": "Certification-regarding-lobbying~27.pdf"
+        },
+        {
+          "file_nbr": "323807",
+          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "01GO-S3906",
+      "organization": "Governor's Office",
+      "buyer": "Christian Armas",
+      "title": "Disaster Response and Recovery Services",
+      "bid_opening_date": "09/25/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "f5c387ee-0043-4a90-87fa-fd8ff440b8f3",
+      "scope": "EOC Augmentation, Individual Assistance, Public Assistance, Damage Assessment, Interim Housing, Debris Removal, Case Management, Resource Center Operations.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "321171",
+          "name": "01GO-S3906 Disaster Response and Recovery Services Answers.xlsx"
+        },
+        {
+          "file_nbr": "321160",
+          "name": "01GO-S3906 Disaster Response and Recovery Services RFP Revised.pdf"
+        },
+        {
+          "file_nbr": "313458",
+          "name": "Terms-and-conditions-for-services~1.pdf"
+        },
+        {
+          "file_nbr": "313460",
+          "name": "Standard-form-contract~1.docx"
+        },
+        {
+          "file_nbr": "313491",
+          "name": "01GO-S3906 INSURANCE REQUIREMENTS.pdf"
+        },
+        {
+          "file_nbr": "321161",
+          "name": "01GO-S3906 SOW Revised.pdf"
+        },
+        {
+          "file_nbr": "318991",
+          "name": "01GO-S3906-reference-questionnaire~1.docx"
+        },
+        {
+          "file_nbr": "321159",
+          "name": "01GO-S3906 Service_Identifier_Spreadsheet_Revised.xlsx"
+        },
+        {
+          "file_nbr": "313461",
+          "name": "Certification-regarding-lobbying~1.pdf"
+        },
+        {
+          "file_nbr": "313463",
+          "name": "01GO-S3906-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "316032",
+          "name": "Federal Funding.pdf"
+        },
+        {
+          "file_nbr": "19570",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=01GO-S3906&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "70CNR-S3892",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "Uniform Provider for State Parks",
+      "bid_opening_date": "10/01/2026 14:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "ad374f82-5fa0-4d1a-bf70-b70469d8bdb0",
+      "scope": "Uniform Provider for State Parks",
+      "contact_org": "State Parks Bryan Building",
+      "contact_email": "NDSPAccounting@parks.nv.gov",
+      "contact_phone": "(775) 684-2770",
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325710",
+          "name": "70CNR-S3892 Reference-Questionnaire-Amend 2_rev090826.docx"
+        },
+        {
+          "file_nbr": "325709",
+          "name": "70CNR-S3892 RFP for Uniform Provider for State Parks_Amend 2-PG 1 and 4_ONLY_rev090826.pdf"
+        },
+        {
+          "file_nbr": "322159",
+          "name": "70CNR-S3892 Bid_Q and A Responses 081726.xlsx"
+        },
+        {
+          "file_nbr": "321290",
+          "name": "70CNR-S3892 RFP for Uniform Provider for State Parks~6.docx"
+        },
+        {
+          "file_nbr": "321183",
+          "name": "70CNR-S3892 Attachment A Park Uniform Pictures and Patch Listing_FINAL.docx"
+        },
+        {
+          "file_nbr": "321184",
+          "name": "70CNR-S3892 Attachment B State Park Listing_FINAL.docx"
+        },
+        {
+          "file_nbr": "307567",
+          "name": "70CNR-S3892 Terms-and-Conditions-for-Services.pdf"
+        },
+        {
+          "file_nbr": "320473",
+          "name": "70CNR-S3892 Terms-and-conditions-for-goods.pdf"
+        },
+        {
+          "file_nbr": "307566",
+          "name": "70CNR-S3892 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "307664",
+          "name": "70CNR-S3892  Insuranace Template.docx"
+        },
+        {
+          "file_nbr": "321255",
+          "name": "70CNR-S3892 Reference-Questionnaire~1.docx"
+        },
+        {
+          "file_nbr": "307568",
+          "name": "70CNR-S3892 Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "321180",
+          "name": "70CNR-S3892 Cost Proposal for Uniform Provider for State Parks.xlsx"
+        },
+        {
+          "file_nbr": "307564",
+          "name": "70CNR-S3892 Certification-Regarding-Lobbying.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3892&external=true&parentUrl=close"
     }
   ]
 }
