@@ -1,6 +1,68 @@
 {
-  "scraped_at": "2026-09-13T14:05:04.337Z",
+  "scraped_at": "2026-09-14T14:06:19.105Z",
   "bids": [
+    {
+      "doc_id": "43ADG-S4012",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "Southern Nevada - Pest Control Services",
+      "bid_opening_date": "10/09/2026 18:59:59",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "40f0cca7-7c92-4a3a-9e25-03d2a8a1387e",
+      "scope": "The Contractor shall provide comprehensive pest control and nuisance wildlife management services at all Agency facilities on a semiannual and as-needed basis. Semiannual services shall consist of two scheduled preventive maintenance visits at each identified complex during every twelve-month period, with visits occurring approximately six months apart. Bidders shall submit separate pricing for each complex, and the attached facility maps shall be used as references to identify the buildings, interior and exterior areas included in the semiannual service. Semiannual service shall include the accessible interior and exterior areas of each identified building. Interior service shall be limited to hallways, restrooms, lobbies, entryways, and other common or public-use areas. Individual offices and other nonpublic areas shall not be included in the regularly scheduled semiannual service and shall be serviced only when specifically requested and authorized by the Agency. Exterior service shall include building perimeters, entrances, utility penetrations, loading areas, dumpsters, waste-storage areas, landscaping immediately adjacent to buildings, accessible roof areas, and other exterior locations identified on the attached maps. During each scheduled visit, the Contractor shall inspect the included areas for evidence of pest activity, nesting, entry points, harborage areas, moisture conditions, sanitation concerns, structural openings, and other conditions that may contribute to pest or animal activity. Services shall include monitoring, trapping, baiting, treatment, removal, minor exclusion work, and the servicing or replacement of pest-control devices, as necessary. The Contractor shall also provide Agency-authorized, as-needed response services throughout the contract term for, but not limited to, ants, cockroaches, spiders, scorpions, crickets, beetles, flies, mosquitoes, fleas, ticks, bed bugs, bees, wasps, hornets, rodents, gophers, ground squirrels, snakes, birds, bats, feral animals, nuisance wildlife, dead animals, and other pest-related conditions encountered at Agency facilities. As-needed services shall include requested office treatments and other additional work not included in the semiannual service and shall be priced and invoiced based on the actual man-hours required, using the labor rates submitted in the Contractor&#039;s bid. All as-needed work must be requested and authorized by the Agency before services are performed. As-needed services may include inspection, identification, treatment, trapping, removal, lawful relocation or disposal, cleaning, disinfection, deodorization, minor exclusion, and follow-up treatment when necessary. The Contractor shall use integrated pest management practices that prioritize prevention, sanitation, physical exclusion, trapping, targeted treatment, and the least hazardous effective control method. All services shall be performed by trained and properly licensed personnel in accordance with applicable pesticide, safety, environmental, wildlife, animal-control, and disposal requirements. The Contractor shall coordinate all work with the designated Agency representative; provide all necessary labor, supervision, vehicles, tools, equipment, traps, bait stations, pesticides, personal protective equipment, and incidental materials; and minimize disruption to Agency personnel and operations. Following each service visit, the Contractor shall provide a written report identifying the complex, facility, and areas inspected or serviced; pest or animal activity observed; treatments and products used; traps or devices installed or serviced; animals removed; safety or reentry requirements; recommended corrective actions; photographs when appropriate; actual man-hours expended for as-needed work; and any required follow-up services.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "326202",
+          "name": "Southern Nevada Pest Control Services Invitation to Bid"
+        },
+        {
+          "file_nbr": "326203",
+          "name": "Southern Nevada Pest Control Services Scope of Work"
+        },
+        {
+          "file_nbr": "326204",
+          "name": "Southern Nevada Pest Control Services Bldg Map"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4012&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4011",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "Northern Nevada - Generator Services",
+      "bid_opening_date": "09/28/2026 18:59:59",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "f8373776-92aa-447b-a63d-8eec5c328977",
+      "scope": "The scope of work for generator services encompasses a comprehensive range of activities aimed at ensuring the optimal performance, reliability, and longevity of generators in various applications. Initially, the service will include a thorough assessment of the generator&#039;s current condition, including inspections of all critical components such as the engine, hoses, belts, alternator, fuel system, and electrical components. Preventative maintenance tasks will be conducted regularly, which may include oil changes, air filter replacements, coolant flushes, and battery tests to prevent unexpected failures and prolong service life. In addition to routine maintenance, the scope will involve troubleshooting and repair services addressing any emergent issues identified during inspections or reported by end-users. This includes the diagnosis of electrical faults, mechanical problems, and fuel system inefficiencies. To enhance operational readiness, load bank testing will also be performed periodically to evaluate the generator&#039;s performance under various load conditions, ensuring it can handle peak demands effectively. Moreover, the service may incorporate upgrades or modifications to existing generator systems, ensuring they meet the latest industry standards and regulations for safety and efficiency. Documentation of all services performed, along with performance reports, will be provided to the client, ensuring transparency and enabling effective planning for future maintenance. Furthermore, the scope may include emergency response services, providing clients with peace of mind that should a failure occur, expert technicians will be available quickly to mitigate downtime and restore power. Overall, these generator services aim to provide clients with a reliable power supply, minimizing operational disruptions and enhancing overall systems performance.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "326170",
+          "name": "Northern Nevada Generator Services Invitation to Bid"
+        },
+        {
+          "file_nbr": "326171",
+          "name": "Northern Nevada Generator Services Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4011&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4008",
       "organization": "Adjutant General",
@@ -1135,148 +1197,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "01GO-S3906",
-      "organization": "Governor's Office",
-      "buyer": "Christian Armas",
-      "title": "Disaster Response and Recovery Services",
-      "bid_opening_date": "09/25/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "f5c387ee-0043-4a90-87fa-fd8ff440b8f3",
-      "scope": "EOC Augmentation, Individual Assistance, Public Assistance, Damage Assessment, Interim Housing, Debris Removal, Case Management, Resource Center Operations.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "321171",
-          "name": "01GO-S3906 Disaster Response and Recovery Services Answers.xlsx"
-        },
-        {
-          "file_nbr": "321160",
-          "name": "01GO-S3906 Disaster Response and Recovery Services RFP Revised.pdf"
-        },
-        {
-          "file_nbr": "313458",
-          "name": "Terms-and-conditions-for-services~1.pdf"
-        },
-        {
-          "file_nbr": "313460",
-          "name": "Standard-form-contract~1.docx"
-        },
-        {
-          "file_nbr": "313491",
-          "name": "01GO-S3906 INSURANCE REQUIREMENTS.pdf"
-        },
-        {
-          "file_nbr": "321161",
-          "name": "01GO-S3906 SOW Revised.pdf"
-        },
-        {
-          "file_nbr": "318991",
-          "name": "01GO-S3906-reference-questionnaire~1.docx"
-        },
-        {
-          "file_nbr": "321159",
-          "name": "01GO-S3906 Service_Identifier_Spreadsheet_Revised.xlsx"
-        },
-        {
-          "file_nbr": "313461",
-          "name": "Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "313463",
-          "name": "01GO-S3906-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "316032",
-          "name": "Federal Funding.pdf"
-        },
-        {
-          "file_nbr": "19570",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=01GO-S3906&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3892",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Nocoasha Henry",
-      "title": "Uniform Provider for State Parks",
-      "bid_opening_date": "10/01/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "ad374f82-5fa0-4d1a-bf70-b70469d8bdb0",
-      "scope": "Uniform Provider for State Parks",
-      "contact_org": "State Parks Bryan Building",
-      "contact_email": "NDSPAccounting@parks.nv.gov",
-      "contact_phone": "(775) 684-2770",
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325710",
-          "name": "70CNR-S3892 Reference-Questionnaire-Amend 2_rev090826.docx"
-        },
-        {
-          "file_nbr": "325709",
-          "name": "70CNR-S3892 RFP for Uniform Provider for State Parks_Amend 2-PG 1 and 4_ONLY_rev090826.pdf"
-        },
-        {
-          "file_nbr": "322159",
-          "name": "70CNR-S3892 Bid_Q and A Responses 081726.xlsx"
-        },
-        {
-          "file_nbr": "321290",
-          "name": "70CNR-S3892 RFP for Uniform Provider for State Parks~6.docx"
-        },
-        {
-          "file_nbr": "321183",
-          "name": "70CNR-S3892 Attachment A Park Uniform Pictures and Patch Listing_FINAL.docx"
-        },
-        {
-          "file_nbr": "321184",
-          "name": "70CNR-S3892 Attachment B State Park Listing_FINAL.docx"
-        },
-        {
-          "file_nbr": "307567",
-          "name": "70CNR-S3892 Terms-and-Conditions-for-Services.pdf"
-        },
-        {
-          "file_nbr": "320473",
-          "name": "70CNR-S3892 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "307566",
-          "name": "70CNR-S3892 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "307664",
-          "name": "70CNR-S3892  Insuranace Template.docx"
-        },
-        {
-          "file_nbr": "321255",
-          "name": "70CNR-S3892 Reference-Questionnaire~1.docx"
-        },
-        {
-          "file_nbr": "307568",
-          "name": "70CNR-S3892 Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321180",
-          "name": "70CNR-S3892 Cost Proposal for Uniform Provider for State Parks.xlsx"
-        },
-        {
-          "file_nbr": "307564",
-          "name": "70CNR-S3892 Certification-Regarding-Lobbying.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3892&external=true&parentUrl=close"
     }
   ]
 }
