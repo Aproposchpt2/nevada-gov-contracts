@@ -1,728 +1,119 @@
 {
   "source": "ngem",
   "state": "NV",
-  "generatedAt": "2026-09-07T18:18:37.465Z",
+  "generatedAt": "2026-09-14T19:45:10.477Z",
   "count": 20,
   "detail_fetched_count": 8,
   "bids": [
     {
-      "id": "20473",
-      "bid_id": "20473",
-      "solicitation_no": "1790",
-      "title": "FY 19-21 Citywide School Safety Improvements Project Phase II",
-      "bid_type": "BID",
-      "agency": "City of North Las Vegas",
-      "issue_date": "8/25/2026",
-      "close_date_raw": "9/9/2026 10:00 AM (PT)",
-      "close_date": "2026-09-09T17:00:00.000Z",
-      "due_in_days": 2,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20473&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20368",
-      "bid_id": "20368",
-      "solicitation_no": "608051",
-      "title": "LVMPD HQ Plumbing Drain Relining",
-      "bid_type": "BID",
-      "agency": "Las Vegas Metropolitan Police",
-      "issue_date": "8/12/2026",
-      "close_date_raw": "9/9/2026 10:00 AM (PT)",
-      "close_date": "2026-09-09T17:00:00.000Z",
-      "due_in_days": 2,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20368&SourceType=1",
-      "status": "Open",
-      "description": "Bid No. 608051 - LVMPD HQ Plumbing Drain Relining PWP No. CL-2026-494 The LVMPD is seeking Bids for the Relining of Plumbing Drain Lines at LVMPD HQ. Reference additional information under the Bid Tabs for specific requirements, terms and conditions.",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "LVMPD Construction Bid - Instructions to Bidders - General.pdf",
-          "description": "Instructions to Bidders - General",
-          "file_size": "320 KB",
-          "requires_login": false
-        },
-        {
-          "name": "LVMPD Construction Bid - General Conditions.pdf",
-          "description": "General Conditions",
-          "file_size": "286 KB",
-          "requires_login": false
-        },
-        {
-          "name": "Bid #608051 Instructions to Bidders - Project Specific.pdf",
-          "description": "Instructions to Bidders - Project Specific",
-          "file_size": "174 KB",
-          "requires_login": false
-        },
-        {
-          "name": "LVMPD Bid Attachment - Technical Specifications.pdf",
-          "description": "Technical Specifications",
-          "file_size": "185 KB",
-          "requires_login": false
-        },
-        {
-          "name": "HQ's Plumbling Draws.pdf",
-          "description": "LVMPD HQ Plumbing As-Builts",
-          "file_size": "45.40 MB",
-          "requires_login": false
-        },
-        {
-          "name": "LVMPD Bid Attachment - 1% Subcontractors.pdf",
-          "description": "1% Subcontractors List",
-          "file_size": "28 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - 5% Subcontractors.pdf",
-          "description": "5% Subcontractors List",
-          "file_size": "27 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Affidavit Pertaining to Preference Eligibility.pdf",
-          "description": "Affidavit for Preference",
-          "file_size": "31 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Bid Bond.pdf",
-          "description": "Bid Bond",
-          "file_size": "26 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Labor and Material Payment Bond.pdf",
-          "description": "Labor & Material Payment Bond",
-          "file_size": "27 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Performance Bond.pdf",
-          "description": "Performance Bond",
-          "file_size": "27 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Project Workforce Checklist.pdf",
-          "description": "Workforce Checklist",
-          "file_size": "27 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Schedule of Values - Divisions 1 - 48.pdf",
-          "description": "Schedule of Values",
-          "file_size": "32 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Sample Documents (multiple).pdf",
-          "description": "Sample Documents",
-          "file_size": "407 KB",
-          "requires_login": true
-        },
-        {
-          "name": "LVMPD Bid Attachment - Insurance Requirements.pdf",
-          "description": "Insurance Requirements",
-          "file_size": "202 KB",
-          "requires_login": true
-        }
-      ],
-      "detail_fetched": true
-    },
-    {
-      "id": "20401",
-      "bid_id": "20401",
-      "solicitation_no": "1791 Addendum 1",
-      "title": "Neighborhood Sidewalk Grinding Service Contract",
-      "bid_type": "BID",
-      "agency": "City of North Las Vegas",
-      "issue_date": "8/4/2026",
-      "close_date_raw": "9/9/2026 11:00 AM (PT)",
-      "close_date": "2026-09-09T18:00:00.000Z",
-      "due_in_days": 2,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20401&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20526",
-      "bid_id": "20526",
-      "solicitation_no": "27300192 Addendum 1",
-      "title": "Aquatic Facility Roof",
-      "bid_type": "BID",
-      "agency": "Carson City, Nevada",
-      "issue_date": "8/19/2026",
-      "close_date_raw": "9/9/2026 02:00 PM (PT)",
-      "close_date": "2026-09-09T21:00:00.000Z",
-      "due_in_days": 3,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20526&SourceType=1",
-      "status": "Open",
-      "description": "Carson City invites qualified firms to submit sealed bids for the below referenced project. Sealed bids must be submitted in accordance with the bid documents, drawings and plans, specifications, and special conditions related hereto.",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "CC-BID-01 Vendor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "1.30 MB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-03 Conflict of Interest Disclosures.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "859 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-05 Certified Payroll Certification of Authorization & Understanding.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "848 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-06 Subcontractors, Suppliers, & Subconsultants Bidding (non-DBE).pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "2.07 MB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-07 5% Subcontractor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
-          "file_size": "823 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-08 Bid Bond.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
-          "file_size": "826 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-09 Bidding Preference Affidavit.pdf",
-          "description": "Bidder/Prime Contractor | Due within two hours of bid opening to receive a preference in bidding; Email to cakers@carsoncity.gov (This document may be submitted with the bid when accompanied by the Bidding Preference Certificate of Eligibility.) Subcontractor | N/A",
-          "file_size": "1.08 MB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-10 1% Subcontractor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due within two hours of bid opening to receive a preference in bidding; Email to cakers@carsoncity.gov (This document may be submitted with the bid.) Subcontractor | N/A",
-          "file_size": "853 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-01 Instructions to Bidders LOCAL.pdf",
-          "description": "Reference Document",
-          "file_size": "227 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-02 General Conditions.pdf",
-          "description": "Reference Document",
-          "file_size": "924 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-03 Construction Independent Contractor Agreement.pdf",
-          "description": "Reference Document",
-          "file_size": "476 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-04 Contract Award Information.pdf",
-          "description": "Reference Document",
-          "file_size": "150 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-05 Required Postings & Notices.pdf",
-          "description": "Reference Document",
-          "file_size": "212 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-06 Senate Bill 82 Regulations.pdf",
-          "description": "Reference Document",
-          "file_size": "232 KB",
-          "requires_login": false
-        },
-        {
-          "name": "Bid Plans Aquatic Facility Roof.pdf",
-          "description": "Bid Plans",
-          "file_size": "682 KB",
-          "requires_login": false
-        }
-      ],
-      "detail_fetched": true
-    },
-    {
-      "id": "20475",
-      "bid_id": "20475",
-      "solicitation_no": "IFB 102-27 Fleet Maintenance Bridge Crane Addendum 2",
-      "title": "Fleet Maintenance Bridge Crane",
-      "bid_type": "BID",
-      "agency": "City of Henderson",
-      "issue_date": "7/22/2026",
-      "close_date_raw": "9/9/2026 02:00 PM (PT)",
-      "close_date": "2026-09-09T21:00:00.000Z",
-      "due_in_days": 3,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20475&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20510",
-      "bid_id": "20510",
-      "solicitation_no": "607970-26 Addendum 1",
-      "title": "RESIDENTIAL STREETS PAVEMENT RECONSTRUCTION #108",
-      "bid_type": "Clark County BID",
-      "agency": "Clark County, Nevada",
-      "issue_date": "8/19/2026",
-      "close_date_raw": "9/9/2026 02:15 PM (PT)",
-      "close_date": "2026-09-09T21:15:00.000Z",
-      "due_in_days": 3,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20510&SourceType=1",
-      "status": "Open",
-      "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The work to be performed under this contract consists of excavating existing pavement material, repairing base failures as needed by replacing with Type II aggregate and re-compacting the subgrade materials, and placing new 3” or 4” asphalt concrete pavement on the top on various residential streets within Clark County. In addition, this contract consists of widening existing roadway pavement in various residential rural preservation areas, removing and replacing concrete sidewalk panels, curb & gutter, and spandrels/cross gutters at locations shown on the plans, bringing sidewalk ramps up to ADA Standards, installing drainage curb & valley gutters, reconstruct multiple storm drain drop-inlet top slabs and grate openings, adjustment of manholes and water valves among other appurtenances, removing and replacing pavement markings, striping and traffic signs, traffic loops, installation of traffic conduit and other related items of work within the unincorporated area of Clark County, Nevada.",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "607970-26 ad1_sdj.pdf",
-          "description": "607970-26 - Addendum No. 1",
-          "file_size": "665 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26_sdj.pdf",
-          "description": "607970-26 - Bid Document",
-          "file_size": "9.00 MB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 - Plans.pdf",
-          "description": "607970-26 - Plans",
-          "file_size": "134.25 MB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Bid Attachment 1 - Bid Bond_sdj.pdf",
-          "description": "607970-26 Bid Attachment 1 - Bid Bond",
-          "file_size": "80 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Bid Attachment 2 - 5% Subcontractors List_sdj.pdf",
-          "description": "607970-26 Bid Attachment 2 - 5% Subcontractors List",
-          "file_size": "104 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Bid Attachment 3 - 1% Designation of Subcontractors_sdj.pdf",
-          "description": "607970-26 Bid Attachment 3 - 1% Designation of Subcontractors",
-          "file_size": "106 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Bid Attachment 4 - Affidavit Pertaining to Preference of Eligibility_sdj.pdf",
-          "description": "607970-26 Bid Attachment 4 - Affidavit Pertaining to Preference of Eligibility",
-          "file_size": "90 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Bidder's Statement of Authority to Submit Bid_sdj.pdf",
-          "description": "607970-26 Bidder's Statement of Authority to Submit Bid",
-          "file_size": "109 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607970-26 Disclosure of Ownership_sdj.pdf",
-          "description": "607970-26 Disclosure of Ownership",
-          "file_size": "81 KB",
-          "requires_login": true
-        },
-        {
-          "name": "The Office of the Labor Commissioner Contact Information.pdf",
-          "description": "The Office of the Labor Commissioner Contact Information",
-          "file_size": "26 KB",
-          "requires_login": false
-        }
-      ],
-      "detail_fetched": true
-    },
-    {
-      "id": "20517",
-      "bid_id": "20517",
-      "solicitation_no": "27012BJN Addendum 1",
-      "title": "Pre-Kindergarten Naturalistic Developmental Behavioral Intervention Curriculum",
-      "bid_type": "CCSD Opportunities",
-      "agency": "Clark County School District Purchasing",
-      "issue_date": "8/13/2026",
-      "close_date_raw": "9/10/2026 01:00 PM (PT)",
-      "close_date": "2026-09-10T20:00:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20517&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20499",
-      "bid_id": "20499",
-      "solicitation_no": "27300194 Addendum 1",
-      "title": "North Lompa Multi-Use Path Extension Project",
-      "bid_type": "BID",
-      "agency": "Carson City, Nevada",
-      "issue_date": "8/20/2026",
-      "close_date_raw": "9/10/2026 02:00 PM (PT)",
-      "close_date": "2026-09-10T21:00:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20499&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "CC-BID-01 Vendor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "1.30 MB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-03 Conflict of Interest Disclosures.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "859 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-05 Certified Payroll Certification of Authorization & Understanding.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "848 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-06a Subcontractors, Suppliers, & Subconsultants Bidding (RTC-CAMPO) (no DBE).pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "1.92 MB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-07 5% Subcontractor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
-          "file_size": "823 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-08 Bid Bond.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
-          "file_size": "826 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-10 1% Subcontractor Information.pdf",
-          "description": "Bidder/Prime Contractor | Due from the three (3) lowest bidders within two (2) hours of bid opening; Email to cakers@carsoncity.gov (This document may be submitted with the bid.) Subcontractor | N/A",
-          "file_size": "853 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-11 Affidavit Regarding Debarment & Suspension 23 USC 112(c).pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "290 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-12 Debarment & Suspension Certification.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "911 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-13 Lobbying Certification & Disclosure.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "1009 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-16a Buy America Certification (RTC-CAMPO).pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "90 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-BID-17 BABAA Certification.pdf",
-          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
-          "file_size": "837 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-01 Instructions to Bidders RTC-CAMPO(FED).pdf",
-          "description": "Reference Document - Instructions to Bidders",
-          "file_size": "267 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-02 General Conditions.pdf",
-          "description": "Reference Document - General Conditions",
-          "file_size": "924 KB",
-          "requires_login": false
-        },
-        {
-          "name": "CC-REF-03 Construction Independent Contractor Agreement.pdf",
-          "description": "Reference Document - Construction Independent Contractor Agreement",
-          "file_size": "476 KB",
-          "requires_login": false
-        }
-      ],
-      "detail_fetched": false
-    },
-    {
-      "id": "20516",
-      "bid_id": "20516",
-      "solicitation_no": "RFP 9125 Addendum 1",
-      "title": "GBC - Salary Market Analysis for Academic and Administrative Faculty",
-      "bid_type": "RFP",
-      "agency": "BCN Purchasing",
-      "issue_date": "8/20/2026",
-      "close_date_raw": "9/10/2026 02:00 PM (PT)",
-      "close_date": "2026-09-10T21:00:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20516&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20493",
-      "bid_id": "20493",
-      "solicitation_no": "607994-26 Addendum 2",
-      "title": "TRAFFIC SIGNAL IMPROVEMENTS AT BRUCE WOODBURY DRIVE AND NEEDLES HIGHWAY",
-      "bid_type": "Clark County BID",
-      "agency": "Clark County, Nevada",
-      "issue_date": "8/20/2026",
-      "close_date_raw": "9/10/2026 02:15 PM (PT)",
-      "close_date": "2026-09-10T21:15:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20493&SourceType=1",
-      "status": "Open",
-      "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. The work to be performed under this Contract is for the construction of fully operational Traffic Signal System at the intersection of Bruce Woodbury Drive and Needles Highway, in Clark County, Nevada. The Work will generally consist of demolition, removal, and disposal of existing improvements and removal and salvage of designated items; miscellaneous roadway improvements including pavement rehabilitation, curb and gutter, sidewalk, medians, sidewalk ramps with tactile warning panels, pavement markings and markers, and permanent signs; valve box and manhole adjustments; intersection streetlighting; installation of traffic signal system and appurtenances; ITS improvements; traffic control; dust control; and miscellaneous improvements as shown on the Drawings.",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "607994-26 ad2_sdj.pdf",
-          "description": "607994-26 - Addendum No. 2",
-          "file_size": "466 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 ad1_sdj.pdf",
-          "description": "607994-26 - Addendum No. 1",
-          "file_size": "2.37 MB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26_sdj.pdf",
-          "description": "607994-26 - Bid Document",
-          "file_size": "7.52 MB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 - Plans.pdf",
-          "description": "607994-26 - Plans",
-          "file_size": "14.56 MB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Bid Attachment 1 - Bid Bond_sdj.pdf",
-          "description": "607994-26 Bid Attachment 1 - Bid Bond",
-          "file_size": "81 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Bid Attachment 2 - 5% Subcontractors List_sdj.pdf",
-          "description": "607994-26 Bid Attachment 2 - 5% Subcontractors List",
-          "file_size": "103 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Bid Attachment 3 - 1% Designation of Subcontractors_sdj.pdf",
-          "description": "607994-26 Bid Attachment 3 - 1% Designation of Subcontractors",
-          "file_size": "106 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Bid Attachment 4 - Affidavit Pertaining to Preference of Eligibility_sdj.pdf",
-          "description": "607994-26 Bid Attachment 4 - Affidavit Pertaining to Preference of Eligibility",
-          "file_size": "88 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Bidder's Statement of Authority to Submit Bid_sdj.pdf",
-          "description": "607994-26 Bidder's Statement of Authority to Submit Bid",
-          "file_size": "110 KB",
-          "requires_login": true
-        },
-        {
-          "name": "607994-26 Disclosure of Ownership_sdj.pdf",
-          "description": "607994-26 Disclosure of Ownership",
-          "file_size": "81 KB",
-          "requires_login": true
-        },
-        {
-          "name": "The Office of the Labor Commissioner Contact Information.pdf",
-          "description": "The Office of the Labor Commissioner Contact Information",
-          "file_size": "26 KB",
-          "requires_login": false
-        }
-      ],
-      "detail_fetched": true
-    },
-    {
-      "id": "20415",
-      "bid_id": "20415",
-      "solicitation_no": "25-067CON Addendum 3",
-      "title": "BUS STOP SHELTER FABRICATION AND INSTALLATION",
-      "bid_type": "BID",
-      "agency": "Regional Transportation Commission of Southern Nevada",
-      "issue_date": "7/30/2026",
-      "close_date_raw": "9/10/2026 03:00 PM (PT)",
-      "close_date": "2026-09-10T22:00:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20415&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20503",
-      "bid_id": "20503",
-      "solicitation_no": "608037-26 Addendum 1",
-      "title": "Contract for Ford Captive Parts",
-      "bid_type": "BID",
-      "agency": "Clark County, Nevada",
-      "issue_date": "8/12/2026",
-      "close_date_raw": "9/10/2026 03:00 PM (PT)",
-      "close_date": "2026-09-10T22:00:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20503&SourceType=1",
-      "status": "Open",
-      "description": "Annual Requirements Contract for Ford Captive Parts. Clark County invites qualified firms or individuals to submit bids for Ford Captive Parts. Questions regarding this Bid must be directed to the Bid Contact listed in this bid. For the Pre-Bid conference details see the Activities Tab. Bid Opening:",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [
-        {
-          "name": "608037-26_djf.pdf",
-          "description": "B608037-26 Bid Document",
-          "file_size": "678 KB",
-          "requires_login": true
-        },
-        {
-          "name": "608037-26 Bidder Statement of Authority_dfj.pdf",
-          "description": "B608037-26 Bidder Statement of Authority to Submit Bid",
-          "file_size": "184 KB",
-          "requires_login": true
-        },
-        {
-          "name": "608037-26 ad1_djf.pdf",
-          "description": "608037-26 / Addendum NO. 1",
-          "file_size": "435 KB",
-          "requires_login": true
-        }
-      ],
-      "detail_fetched": true
-    },
-    {
-      "id": "20440",
-      "bid_id": "20440",
-      "solicitation_no": "26-4944, PWP-CL-2026-384 Addendum 7",
-      "title": "Replacement of Data Command Center UPS System",
-      "bid_type": "CIP",
-      "agency": "Las Vegas Convention & Visitors Authority",
-      "issue_date": "6/2/2026",
-      "close_date_raw": "9/10/2026 03:15 PM (PT)",
-      "close_date": "2026-09-10T22:15:00.000Z",
-      "due_in_days": 4,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20440&SourceType=1",
-      "status": "Open",
-      "description": null,
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": false
-    },
-    {
-      "id": "20431",
-      "bid_id": "20431",
-      "solicitation_no": "014760.0",
-      "title": "Construction Manager at Risk for Cliffs Edge 3355 Zone Pumping Station and Washburn 3355 Zone",
-      "bid_type": "RFP",
-      "agency": "Las Vegas Valley Water District",
-      "issue_date": "8/18/2026",
-      "close_date_raw": "9/14/2026 12:00 PM (PT)",
-      "close_date": "2026-09-14T19:00:00.000Z",
-      "due_in_days": 8,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20431&SourceType=1",
-      "status": "Open",
-      "description": "The Las Vegas Valley Water District (Owner) is soliciting proposals from qualified and interested firms for Construction Manager at Risk (CMAR) services to provide pre-construction and construction services for the Owner’s Cliffs Edge 3355 Zone Pumping Station and Washburn 3355 Zone Reservoir Project, located in the City of Las Vegas.",
-      "contact_name": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "documents": [],
-      "detail_fetched": true
-    },
-    {
-      "id": "20524",
-      "bid_id": "20524",
-      "solicitation_no": "27.69111.02-JG Addendum 3",
+      "id": "20545",
+      "bid_id": "20545",
+      "solicitation_no": "27.69111.02-JG Addendum 4",
       "title": "CMAR Fire Administration Restrooms/Central Plant Modernization",
       "bid_type": "CMAR-BCN",
       "agency": "City of Las Vegas, Nevada",
       "issue_date": "8/20/2026",
       "close_date_raw": "9/14/2026 01:30 PM (PT)",
       "close_date": "2026-09-14T20:30:00.000Z",
-      "due_in_days": 8,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20524&SourceType=1",
+      "due_in_days": 1,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20545&SourceType=1",
       "status": "Open",
       "description": null,
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "documents": [],
+      "documents": [
+        {
+          "name": "Instructions to Applicants CMAR.pdf",
+          "description": "Instructions for RFP participation and submittal of Proposals",
+          "file_size": "749 KB",
+          "requires_login": true
+        },
+        {
+          "name": "CMAR OnSite Pre-Construction Contract.pdf",
+          "description": "Terms, conditions and specifications that will govern any contract resulting from this solicitation.",
+          "file_size": "1.42 MB",
+          "requires_login": true
+        },
+        {
+          "name": "CMAR OnSite Construction Contract.pdf",
+          "description": "Terms, conditions and specifications that will govern any contract resulting from this solicitation.",
+          "file_size": "2.89 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 1 - Certification.pdf",
+          "description": "Required submittal - download and save this form prior to filling it out. Completed form must be included in the Proposal",
+          "file_size": "54 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 2 - Example Projects.pdf",
+          "description": "Required submittal - download and save this form prior to filling it out. Completed form must be included in the Proposal",
+          "file_size": "2.09 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 3 - Key Personnel.pdf",
+          "description": "Required submittal - download and save this form prior to filling it out. Completed form must be included in the Proposal",
+          "file_size": "55 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Attachment 4 - Bidders Preference Affidavit.pdf",
+          "description": "Download and save this form prior to filling it out. Proposals received without a completed Affidavit will not be eligible for the bidders preference",
+          "file_size": "23 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Construction Bonds Example.pdf",
+          "description": "Examples of the bonds that will be required upon award of a construction contract",
+          "file_size": "145 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Drawings Set.pdf",
+          "description": "Drawings set to include site plan and floor plan",
+          "file_size": "16.46 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Base and Alternate Bid Narrative - 27.69111.02-JG.pdf",
+          "description": "Base bid and Additive Alternates description of scope.",
+          "file_size": "832 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Add 1 27.69111.02-JG.pdf",
+          "description": "Update to Project Location in Events Details, Activities, and Attributes tab. Update location applies to Pre-bid conference and site-walk.",
+          "file_size": "175 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Add 2 27.69111.02-JG.pdf",
+          "description": "Addendum 2 provides the sign-in sheet for the non-mandatory conference and site walk.",
+          "file_size": "1.13 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Add 3 27.69111.02-JG.pdf",
+          "description": "Addendum 3 provides Question and Answers.",
+          "file_size": "134 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Add 4 27.69111.02-JG.pdf",
+          "description": "Addendum 4 replaces NGEM Attachment titled \"Project Details & Proposal Format\" with \"Add 4 Project Details & Proposal Format\" to update Sec 8 (e) to \"intentionally omitted\".",
+          "file_size": "171 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Add 4 Project Details & Proposal Format.pdf",
+          "description": "Project-specific information including evaluation criteria and guidelines for Proposal content",
+          "file_size": "617 KB",
+          "requires_login": true
+        }
+      ],
       "detail_fetched": false
     },
     {
@@ -735,7 +126,7 @@
       "issue_date": "6/16/2026",
       "close_date_raw": "9/14/2026 05:00 PM (PT)",
       "close_date": "2026-09-15T00:00:00.000Z",
-      "due_in_days": 8,
+      "due_in_days": 1,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20459&SourceType=1",
       "status": "Open",
       "description": null,
@@ -837,17 +228,124 @@
       "detail_fetched": false
     },
     {
-      "id": "20494",
-      "bid_id": "20494",
-      "solicitation_no": "26.MWA222.C1-SK Addendum 1",
+      "id": "20544",
+      "bid_id": "20544",
+      "solicitation_no": "26.MWA222.C1-SK Addendum 2",
       "title": "Sewer Rehabilitation Group L - Sahara, Durango, Charleston",
       "bid_type": "BID",
       "agency": "City of Las Vegas, Nevada",
       "issue_date": "8/18/2026",
       "close_date_raw": "9/15/2026 01:30 PM (PT)",
       "close_date": "2026-09-15T20:30:00.000Z",
-      "due_in_days": 9,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20494&SourceType=1",
+      "due_in_days": 2,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20544&SourceType=1",
+      "status": "Open",
+      "description": "The City of Las Vegas (Owner) hereby invites qualified firms or individuals (Bidders) to submit Bids for Rehabilitation of sanitary sewer manholes and pipes, sewer manhole construction, diversion of sewage flow, traffic control, dust control, stormwater discharge control, and all other incidental improvements as necessary to complete as specified and as shown on the Drawings. PWP No: CL-2026-496 - Estimate: $6,880,000 to $8,400,000 Persons with a disability may request accommodations or assistance to participate in the solicitation process by contacting Purchasing & Contracts at 702-229-6231 or 7-1-1 (TTY). To insure the City is able to meet your needs, please submit requests at least 2 business days in advance.",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "ITB Instructions CIPP Offsite.pdf",
+          "description": "Instructions to Bidders for submitting a Response to this Invitation to Bid.",
+          "file_size": "438 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Contract 26.MWA222.1-SK Sewer Rehabilitation Group L - Sahara, Durango, Charleston.pdf",
+          "description": "Terms, conditions and specifications that will govern any contract resulting from this solicitation.",
+          "file_size": "706 KB",
+          "requires_login": true
+        },
+        {
+          "name": "26.MWA222.C1-SK Sewer Group L Special Provisions.pdf",
+          "description": "Written descriptions of the requirements for the Work, to be incorporated as a part of the Contract",
+          "file_size": "17.71 MB",
+          "requires_login": true
+        },
+        {
+          "name": "26.MWA222.C1-SK Plan Sheet Index.pdf",
+          "description": "A list of the project Plans included in Exhibit D, to be incorporated as a part of the Contract",
+          "file_size": "77 KB",
+          "requires_login": true
+        },
+        {
+          "name": "26.MWA222.C1-SK Sewer Group L-Plans.pdf",
+          "description": "Diagrammatic representations of the requirements for construction of the Work, to be incorporated as a part of the Contract",
+          "file_size": "186.54 MB",
+          "requires_login": true
+        },
+        {
+          "name": "26.MWA222.C1-SK Sewer Group L - Bid schedule - REFERENCE ONLY.pdf",
+          "description": "REFERENCE DOCUMENT ONLY - line items and quantities",
+          "file_size": "33 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RESPONSE ATTACHMENTS Req with CIPP Offsite.pdf",
+          "description": "Attachments 1.1 through 1.3, which must be submitted WITH THE BID. See ITB 6 of the ITB Instructions for more information on this requirement. DOWNLOAD AND SAVE these Attachments prior to completing and uploading to the Response Attachments Tab.",
+          "file_size": "1.13 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RESPONSE ATTACHMENTS Req WITHIN 2 HRS.pdf",
+          "description": "Attachments 2.1 and 2.2, which must be submitted by the 3 Low Bidders WITHIN 2 HOURS of completion of Bid opening. See ITB 7 for more information on this requirement. DOWNLOAD and SAVE these attachments prior to completing this form.",
+          "file_size": "879 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RESPONSE ATTACHMENTS Req WITHIN 1 DAY - CIPP.pdf",
+          "description": "Attachments 3.1 through 3.3, which must be submitted by the 3 Low Bidders WITHIN 1 BUSINESS DAY of completion of Bid opening. See ITB 8 for more information on this requirement. DOWNLOAD and SAVE these attachments prior to completing this form.",
+          "file_size": "1.02 MB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum 1 26.MWA222.C1-SK.pdf",
+          "description": "Addendum No. 1 extends the bid and provides answers to questions.",
+          "file_size": "351 KB",
+          "requires_login": true
+        },
+        {
+          "name": "Addendum 2 26.MWA222.C1-SK.pdf",
+          "description": "Addendum No. 2 is issued to provides answers to questions.",
+          "file_size": "348 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20519",
+      "bid_id": "20519",
+      "solicitation_no": "RFP #25/26-17",
+      "title": "FOOD2 Package Only: Food & Beverage Concessions",
+      "bid_type": "RFP",
+      "agency": "Reno-Tahoe Airport Authority",
+      "issue_date": "9/8/2026",
+      "close_date_raw": "9/15/2026 02:00 PM (PT)",
+      "close_date": "2026-09-15T21:00:00.000Z",
+      "due_in_days": 2,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20519&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20532",
+      "bid_id": "20532",
+      "solicitation_no": "607992-26 Addendum 2",
+      "title": "SLOAN ROAD - DECATUR BOULEVARD TO LAS VEGAS BOULEVARD",
+      "bid_type": "Clark County BID",
+      "agency": "Clark County, Nevada",
+      "issue_date": "8/25/2026",
+      "close_date_raw": "9/15/2026 02:15 PM (PT)",
+      "close_date": "2026-09-15T21:15:00.000Z",
+      "due_in_days": 2,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20532&SourceType=1",
       "status": "Open",
       "description": null,
       "contact_name": null,
@@ -866,7 +364,7 @@
       "issue_date": "8/10/2026",
       "close_date_raw": "9/15/2026 02:30 PM (PT)",
       "close_date": "2026-09-15T21:30:00.000Z",
-      "due_in_days": 9,
+      "due_in_days": 2,
       "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20370&SourceType=1",
       "status": "Open",
       "description": "The City of Boulder City, Nevada, a municipal corporation located at 401 California Avenue, Boulder City, Nevada is seeking Proposals from highly qualified Respondents who are knowledgeable about and have the ability to plan, finance, develop, construct and operate a recreational vehicle, boat and trailer storage facility to lease property from the City for such purpose.",
@@ -884,17 +382,17 @@
       "detail_fetched": true
     },
     {
-      "id": "20514",
-      "bid_id": "20514",
-      "solicitation_no": "607880-26 Addendum 1",
+      "id": "20533",
+      "bid_id": "20533",
+      "solicitation_no": "607880-26 Addendum 2",
       "title": "Inmate Soap",
       "bid_type": "Clark County BID",
       "agency": "Clark County, Nevada",
       "issue_date": "8/31/2026",
       "close_date_raw": "9/15/2026 03:00 PM (PT)",
       "close_date": "2026-09-15T22:00:00.000Z",
-      "due_in_days": 9,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20514&SourceType=1",
+      "due_in_days": 2,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20533&SourceType=1",
       "status": "Open",
       "description": "Inmate Soap Clark County invites qualified firms or individuals to submit bids to Clark County, NV. Questions about this bid must be directed to the Bid Contact listed in this bid.",
       "contact_name": null,
@@ -918,22 +416,664 @@
           "description": "607880-26 Addendum No. 1",
           "file_size": "351 KB",
           "requires_login": true
+        },
+        {
+          "name": "607880-26 ad2_ab.pdf",
+          "description": "607880-26 Addendum No. 2",
+          "file_size": "365 KB",
+          "requires_login": true
+        },
+        {
+          "name": "607880-26 prebid_ab.pdf",
+          "description": "607880-26 Pre-Bid Sign-In Sheet (from Addendum No. 2)",
+          "file_size": "81 KB",
+          "requires_login": true
         }
       ],
       "detail_fetched": true
     },
     {
-      "id": "20509",
-      "bid_id": "20509",
-      "solicitation_no": "607992-26 Addendum 1",
-      "title": "SLOAN ROAD - DECATUR BOULEVARD TO LAS VEGAS BOULEVARD",
+      "id": "20535",
+      "bid_id": "20535",
+      "solicitation_no": "607971-26 Addendum 5",
+      "title": "STREETLIGHT LED UPGRADES PHASE 5",
       "bid_type": "Clark County BID",
       "agency": "Clark County, Nevada",
+      "issue_date": "6/30/2026",
+      "close_date_raw": "9/16/2026 02:15 PM (PT)",
+      "close_date": "2026-09-16T21:15:00.000Z",
+      "due_in_days": 3,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20535&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20500",
+      "bid_id": "20500",
+      "solicitation_no": "27-100575 Addendum 1",
+      "title": "Consultant Selection for Human Capital Management (HCM)/Human Resource Information System (HRIS)",
+      "bid_type": "RFI",
+      "agency": "Las Vegas Convention & Visitors Authority",
+      "issue_date": "8/19/2026",
+      "close_date_raw": "9/17/2026 11:00 AM (PT)",
+      "close_date": "2026-09-17T18:00:00.000Z",
+      "due_in_days": 3,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20500&SourceType=1",
+      "status": "Open",
+      "description": "This Addendum No. 1 is being issued to extend the deadline for responses to this RFI. The revised Close Date and Time is September 17, 2026, at 11:00 a.m. In addition, a standard Professional Services Agreement (“PSA”) has been posted in the \"Attachments\" tab of this RFI for your review. You may submit, with your RFI response, a separate one-page document identifying any requested exceptions to or modifications of the standard PSA. This one-page document will not count toward the 15-page limit applicable to RFI responses. The Las Vegas Convention and Visitors Authority (\"LVCVA\" or \"Authority\") seeks to engage a Consultant to advise and support the procurement of a new Human Capital Management (HCM)/Human Resource Information System (HRIS) solution to support comprehensive human resources and payroll functions. The engagement is intended to help the Authority define requirements, identify appropriate software options, conduct a competitive software solicitation or request for proposals (RFP), evaluate vendors, support contract negotiations, and assess functional fit.",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "Consultant Selection for HCM_HRIS Scope of Work.pdf",
+          "description": "Consultant Selection for Human Capital Management (HCM)/Human Resource Information System (HRIS) Scope of Work",
+          "file_size": "215 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 1 - Company Profile.doc",
+          "description": "Form 1 - Company Profile",
+          "file_size": "114 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 2 - Qualifications and Experience.docx",
+          "description": "Form 2 - Qualifications and Experience",
+          "file_size": "33 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 3 - Project Plan.docx",
+          "description": "Form 3 - Project Plan",
+          "file_size": "37 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 4 - Pricing.docx",
+          "description": "Form 4 - Pricing",
+          "file_size": "32 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 5 - Disclosure of Ownership and Principals.docx",
+          "description": "Form 5 - Disclosure of Ownership and Principals",
+          "file_size": "33 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Form 6 - Conflict of Interest & Litigation Statement.docx",
+          "description": "Form 6 - Conflict of Interest & Litigation Statement",
+          "file_size": "21 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Standard Professional Services Agreement.docx",
+          "description": "Standard Professional Services Agreement",
+          "file_size": "103 KB",
+          "requires_login": false
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20554",
+      "bid_id": "20554",
+      "solicitation_no": "27.MWB233.D1-JG Addendum 4",
+      "title": "Medical Education and Training Center",
+      "bid_type": "SOQ",
+      "agency": "City of Las Vegas, Nevada",
       "issue_date": "8/25/2026",
-      "close_date_raw": "9/15/2026 05:00 PM (PT)",
-      "close_date": "2026-09-16T00:00:00.000Z",
-      "due_in_days": 9,
-      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20509&SourceType=1",
+      "close_date_raw": "9/17/2026 01:30 PM (PT)",
+      "close_date": "2026-09-17T20:30:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20554&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20531",
+      "bid_id": "20531",
+      "solicitation_no": "27300194 Addendum 2",
+      "title": "North Lompa Multi-Use Path Extension Project",
+      "bid_type": "BID",
+      "agency": "Carson City, Nevada",
+      "issue_date": "8/20/2026",
+      "close_date_raw": "9/17/2026 02:00 PM (PT)",
+      "close_date": "2026-09-17T21:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20531&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "CC-BID-01 Vendor Information.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "1.30 MB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-03 Conflict of Interest Disclosures.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "859 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-05 Certified Payroll Certification of Authorization & Understanding.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "848 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-06a Subcontractors, Suppliers, & Subconsultants Bidding (RTC-CAMPO) (no DBE).pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "1.92 MB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-07 5% Subcontractor Information.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
+          "file_size": "823 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-08 Bid Bond.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | N/A",
+          "file_size": "826 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-10 1% Subcontractor Information.pdf",
+          "description": "Bidder/Prime Contractor | Due from the three (3) lowest bidders within two (2) hours of bid opening; Email to cakers@carsoncity.gov (This document may be submitted with the bid.) Subcontractor | N/A",
+          "file_size": "853 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-11 Affidavit Regarding Debarment & Suspension 23 USC 112(c).pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "290 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-12 Debarment & Suspension Certification.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "911 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-13 Lobbying Certification & Disclosure.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "1009 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-16a Buy America Certification (RTC-CAMPO).pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "90 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-BID-17 BABAA Certification.pdf",
+          "description": "Bidder/Prime Contractor | Due at bid. Subcontractor | Due via VPM at award of contract.",
+          "file_size": "837 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-REF-01 Instructions to Bidders RTC-CAMPO(FED).pdf",
+          "description": "Reference Document - Instructions to Bidders",
+          "file_size": "267 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-REF-02 General Conditions.pdf",
+          "description": "Reference Document - General Conditions",
+          "file_size": "924 KB",
+          "requires_login": false
+        },
+        {
+          "name": "CC-REF-03 Construction Independent Contractor Agreement.pdf",
+          "description": "Reference Document - Construction Independent Contractor Agreement",
+          "file_size": "476 KB",
+          "requires_login": false
+        }
+      ],
+      "detail_fetched": false
+    },
+    {
+      "id": "20556",
+      "bid_id": "20556",
+      "solicitation_no": "5583-GS Addendum 1",
+      "title": "Parking Lot Maintenance 14 Lots",
+      "bid_type": "BID",
+      "agency": "UNLV (NSHE-Business Center South)",
+      "issue_date": "8/24/2026",
+      "close_date_raw": "9/17/2026 02:00 PM (PT)",
+      "close_date": "2026-09-17T21:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20556&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20490",
+      "bid_id": "20490",
+      "solicitation_no": "5584-GS Addendum 1",
+      "title": "Emergency Phone Tower Installations and Upgrades",
+      "bid_type": "BID",
+      "agency": "UNLV (NSHE-Business Center South)",
+      "issue_date": "8/17/2026",
+      "close_date_raw": "9/17/2026 02:00 PM (PT)",
+      "close_date": "2026-09-17T21:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20490&SourceType=1",
+      "status": "Open",
+      "description": "PLEASE NOTE: FOR PUBLIC WORKS PROJECTS, A BIDDER MUST BE QUALIFIED AS A BIDDER WITH THE STATE PUBLIC WORKS DIVISION OF THE DEPARTMENT OF ADMINISTRATION FOR THE COST CATEGORY REQUIRED FOR THE PROJECT. PLEASE REFER TO http://publicworks.nv.gov/Bids/Bids/.",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "Addendum 1 to 5584-GS.pdf",
+          "description": "Addendum 1 - Site walk sign in sheets",
+          "file_size": "286 KB",
+          "requires_login": false
+        },
+        {
+          "name": "5584-GS Bid Document.docx.pdf",
+          "description": "Bid Documents",
+          "file_size": "1.60 MB",
+          "requires_login": false
+        },
+        {
+          "name": "Attachment 9 - Apprentice Request Form.pdf",
+          "description": "Attachment 9 - Apprentice Request Form",
+          "file_size": "266 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Exhibit A - Form Contract.pdf",
+          "description": "Exhibit A - Form Contract",
+          "file_size": "512 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Exhibit B Drawings - Bid Set 2026-07-14 - KDP Signed.pdf",
+          "description": "Exhibit B Drawings - Bid Set 2026-07-14 - KDP Signed",
+          "file_size": "29.44 MB",
+          "requires_login": false
+        },
+        {
+          "name": "Exhibit C Specifications - Bid Set 2026-07-14 - KDP Signed.pdf",
+          "description": "Exhibit C Specifications - Bid Set 2026-07-14 - KDP Signed",
+          "file_size": "1.58 MB",
+          "requires_login": false
+        },
+        {
+          "name": "Exhibit D - UNLV VSS Standards & Specs 04292024.pdf",
+          "description": "Exhibit D - UNLV VSS Standards & Specs 04292024",
+          "file_size": "130 KB",
+          "requires_login": false
+        },
+        {
+          "name": "Exhibit D - UNLV BA Emergency Phone Standards v3.0.pdf",
+          "description": "Exhibit D - UNLV BA Emergency Phone Standards v3.0",
+          "file_size": "14.48 MB",
+          "requires_login": false
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20529",
+      "bid_id": "20529",
+      "solicitation_no": "PWP-WA-2026-493 Addendum 3",
+      "title": "Fleish Hydroelectric Conveyance Improvements",
+      "bid_type": "BID",
+      "agency": "Truckee Meadows Water Authority",
+      "issue_date": "7/29/2026",
+      "close_date_raw": "9/17/2026 02:00 PM (PT)",
+      "close_date": "2026-09-17T21:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20529&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20534",
+      "bid_id": "20534",
+      "solicitation_no": "25-067CON Addendum 4",
+      "title": "BUS STOP SHELTER FABRICATION AND INSTALLATION",
+      "bid_type": "BID",
+      "agency": "Regional Transportation Commission of Southern Nevada",
+      "issue_date": "7/30/2026",
+      "close_date_raw": "9/17/2026 03:00 PM (PT)",
+      "close_date": "2026-09-17T22:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20534&SourceType=1",
+      "status": "Open",
+      "description": "SCOPE: It is the intent of this formal Invitation to Bid (ITB) to receive Bid Proposals from qualified Bidders for the fabrication of Dual Directional Bus Shelters, removal of existing bus shelter units, construction of new concrete bus shelter pads, and installation of Dual Directional Bus Shelters and General Market Shelters on existing and newly constructed bus shelter pads throughout the Las Vegas Valley. FEDERAL FUNDS : This project is federally funded. The RTC contract goal is stated in the Instructions Solicitation Document. Proponents must submit the Federal Conditions forms (with required signatures where indicated) as part of the Bid response and document submission. Ornamental and Architectural Metal Work Manufacturing - 332323 Commercial and Institutional Building Construction - 236220 Electrical and Other Wiring Installation Contractors - 238210 Highway, Street, and Bridge Construction - 237310",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "RTC ITB 25-067CON_INSTRUCTIONS TO BIDDERS.pdf",
+          "description": "Instructions to Bidders Document - This document provides general information and Bid submittal instructions.",
+          "file_size": "387 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_SAMPLE CONTRACT.pdf",
+          "description": "Sample Contract- This should be thoroughly reviewed. It is intended that any resultant contract awarded to a successful proponent contain substantially the same terms and conditions set forth in the Sample Contract.",
+          "file_size": "583 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_SCOPE OF WORK.pdf",
+          "description": "Scope of Work - This document provides the Bid Scope of Work.",
+          "file_size": "363 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO. 25-067CON__PERMIT SET .pdf",
+          "description": "Dual Directional Permit Set",
+          "file_size": "5.49 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_REFERENCE DOCUMENTS.pdf",
+          "description": "Attachments A-D -Anchor Bolt, Shrouds, Security Pin, and Standalone Light Details.",
+          "file_size": "1.61 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO. 25-067CON_SLIMLINE LOCATIONS.pdf",
+          "description": "Slimline Shelters - Bus Stop Locations",
+          "file_size": "157 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO. 25-067CON_INSURANCE REQUIREMENTS.pdf",
+          "description": "Insurance Requirements - Failure to Maintain Coverage: If the Service Provider fails to maintain any of the insurance coverages required herein, RTC may withhold payment, order the Service Provider to stop the Services, declare the Service Provider in breach, suspend or terminate the Contract, assess liquidated damages as defined herein.",
+          "file_size": "3.10 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO 25-067CON_BID PROPOSAL INFORMATION FILL-IN-FORM.pdf",
+          "description": "Bid Proposal Information Fill-in-Form - Document to be completed and uploaded in NGEM as part of the electronic or sealed Bid.",
+          "file_size": "1.16 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO. 25-067_BID BOND FILL-IN-FORM.pdf",
+          "description": "Bid Bond - Document to be completed and uploaded in NGEM as part of the electronic or sealed Bid.",
+          "file_size": "434 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO 25-067CON - FEDERAL CERTIFICATIONS_DBE_SBE FORMS.pdf",
+          "description": "Federal Certifications and DBE Forms - The Proponent is required to submit the Federal Certifications, Disadvantaged Business Enterprise (DBE), and Small Business Enterprise (SBE) participation forms with the bid.",
+          "file_size": "1.24 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_FEDERAL CLAUSES.pdf",
+          "description": "This document provides the BID Federal Clauses.",
+          "file_size": "486 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_ PREVAILING WAGE_DAVIS BACON.pdf",
+          "description": "Prevailing Wage and Davis Bacon Rates.",
+          "file_size": "1.14 MB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_EXTENDED SUBCONTRACTOR AND SUPPLIER LISTING.pdf",
+          "description": "EXTENDED SUBCONTRACTORS AND SUPPLIER LISTING - The low bidder shall submit the expanded subcontractors and supplier listing to the RTC within 24 hours after the bid opening.",
+          "file_size": "113 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB NO. 25-067CON_1% LISTING.pdf",
+          "description": "1% Percent Listing - Within two (2) hours after the completion of the opening of the bids, the general contractors that submitted the three lowest bids must submit a list of the name of each subcontractor that will provide labor or a portion of the work to the contractor for which the subcontractor will be paid in an amount exceeding one percent of the prime contractor’s total bid or $50,000, whichever is greater, and the license number issued to the subcontractor, pursuant to Chapter 624 of NRS. Submit the list to the Purchasing Representative noted in NGEM via email within two (2) hours OR provide it at the time of the bid.",
+          "file_size": "109 KB",
+          "requires_login": true
+        },
+        {
+          "name": "RTC ITB 25-067CON_5% SUBCONTRACTOR LISTING.pdf",
+          "description": "5% Percent Listing - The Contractor must include with its bid, the name of each subcontractor that will provide labor or a portion of the work or improvement to the contractor for which the subcontractor will be paid an amount exceeding five percent of the prime contractor’s total bid.",
+          "file_size": "109 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20541",
+      "bid_id": "20541",
+      "solicitation_no": "608015-26 Addendum 1",
+      "title": "ANNUAL REQUIREMENTS CONTRACT FORFOR AIR CONDITIONING PARTS AND SUPPLIES COUNTYWIDE",
+      "bid_type": "Clark County BID",
+      "agency": "Clark County, Nevada",
+      "issue_date": "8/31/2026",
+      "close_date_raw": "9/17/2026 03:00 PM (PT)",
+      "close_date": "2026-09-17T22:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20541&SourceType=1",
+      "status": "Open",
+      "description": "Clark County invites qualified firms or individuals to submit bids. Questions regarding this bid must be directed to the Bid Contact listed in this bid. A Webex Pre-Bid Conference will be held virtually, we will have a brief overview of the document and answer questions regarding this bid. This meeting is not mandatory. Please see the Bid document or Activities Tab for instructions. Bid Opening will be held on WebEx. 9/17/2026 AT 3:00PM To join copy and paste URL: https://clarkcountynv.webex.com/clarkcountynv/j.php?MTID=me52da0abc8f51a4be86f6e6d0b6e892f To join by phone: 1-408-418-9388 Meeting number (access code): 2486 697 0886 ------------------------------------------------------------------------------------------------------------------------------------------------------------ PRE-BID CONFERENCE will be held on WebEx. 9/8/2026 AT 9:00AM To join copy and paste URL: https://clarkcountynv.webex.com/clarkcountynv/j.php?MTID=m0e6b4eac0ddea91c9a685bfd31ac2da1",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "608015-26 Bidder's Statement of Authority to Submit Bid_cg.pdf",
+          "description": "608015-26 Bidder's Statement of Authority to Submit Bid",
+          "file_size": "131 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608015-26_cg.pdf",
+          "description": "608015-26 BID DOCUMENT",
+          "file_size": "586 KB",
+          "requires_login": true
+        },
+        {
+          "name": "608015-26 ad1_cg.pdf",
+          "description": "608015-26 Addendum 1",
+          "file_size": "452 KB",
+          "requires_login": true
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20479",
+      "bid_id": "20479",
+      "solicitation_no": "RFP 109-27 Armored Personnel Carrier",
+      "title": "Armored Personnel Carrier",
+      "bid_type": "RFP",
+      "agency": "City of Henderson",
+      "issue_date": "8/27/2026",
+      "close_date_raw": "9/17/2026 03:00 PM (PT)",
+      "close_date": "2026-09-17T22:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20479&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20559",
+      "bid_id": "20559",
+      "solicitation_no": "2026-10 Addendum 3",
+      "title": "UMC MLK Warehouse Remodel",
+      "bid_type": "BID",
+      "agency": "University Medical Center",
+      "issue_date": "8/21/2026",
+      "close_date_raw": "9/18/2026 11:00 AM (PT)",
+      "close_date": "2026-09-18T18:00:00.000Z",
+      "due_in_days": 4,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20559&SourceType=1",
+      "status": "Open",
+      "description": "PWP-CL-2026-501 SCOPE OF WORK SUMMARY: This work will primarily take place within the building located at 300 S M.L.K. Blvd, Las Vegas, NV 89106. The building is approximately 35,309 square feet. As part of the work, finishes will be refreshed for office space use, and a warehouse area will be prepared to conform to architectural drawings. Renovation work will include, but not be limited to, demolition of flooring. Upgrades are to be made to the existing light fixtures. New electrical and data access points are to be installed to accommodate planned workstations.",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [
+        {
+          "name": "ADDENDUM 3 - 2026-10 - UMC MLK Warehouse Remodel - Instructions.pdf",
+          "description": "ADDENDUM 3 - 2026-10 - UMC MLK Warehouse Remodel - Instructions.pdf",
+          "file_size": "1.00 MB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - BID ATTACHMENT 2 - BID FORM.pdf",
+          "description": "ADDENDUM 3 - BID ATTACHMENT 2 - BID FORM.pdf",
+          "file_size": "161 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - BID ATTACHMENT 7 - SCHEDULE OF VALUES.pdf",
+          "description": "ADDENDUM 3 - BID ATTACHMENT 7 - SCHEDULE OF VALUES.pdf",
+          "file_size": "117 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - Exhibit A - Scope of Work.pdf",
+          "description": "ADDENDUM 3 - Exhibit A - Scope of Work.pdf",
+          "file_size": "392 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - Reference Material - Floor Plan Doors.pdf",
+          "description": "ADDENDUM 3 - Reference Material - Floor Plan Doors.pdf",
+          "file_size": "480 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - Reference Material - Edge-Mount-LEVELERS4.pdf",
+          "description": "ADDENDUM 3 - Reference Material - Edge-Mount-LEVELERS4.pdf",
+          "file_size": "334 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - Reference Material - UMC Sign Design.pdf",
+          "description": "ADDENDUM 3 - Reference Material - UMC Sign Design.pdf",
+          "file_size": "129 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 3 - Reference Material - Exterior Paint.pdf",
+          "description": "ADDENDUM 3 - Reference Material - Exterior Paint.pdf",
+          "file_size": "1.39 MB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 2 - 2026-10 UMC MLK Warehouse - Sign-In Sheet w Signatures 083126.pdf",
+          "description": "ADDENDUM 2 - 2026-10 UMC MLK Warehouse - Sign-In Sheet w Signatures 083126.pdf",
+          "file_size": "1.62 MB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 1 - Reference Material - Architectural - Drawing Index rev1.pdf",
+          "description": "ADDENDUM 1 - Reference Material - Architectural - Drawing Index rev1.pdf",
+          "file_size": "53 KB",
+          "requires_login": false
+        },
+        {
+          "name": "ADDENDUM 1 - Reference Material - Architectural - Rev2-FullSet rev1.pdf",
+          "description": "ADDENDUM 1 - Reference Material - Architectural - Rev2-FullSet rev1.pdf",
+          "file_size": "22.40 MB",
+          "requires_login": false
+        },
+        {
+          "name": "BID ATTACHMENT 1 - AUTHORITY TO SUBMIT BID.pdf",
+          "description": "BID ATTACHMENT 1 - AUTHORITY TO SUBMIT BID.pdf",
+          "file_size": "1.04 MB",
+          "requires_login": false
+        },
+        {
+          "name": "BID ATTACHMENT 3 - BID BOND.pdf",
+          "description": "BID ATTACHMENT 3 - BID BOND.pdf",
+          "file_size": "406 KB",
+          "requires_login": false
+        },
+        {
+          "name": "BID ATTACHMENT 4 - 1% DESIGNATION OF SUBCONTRACTORS.pdf",
+          "description": "BID ATTACHMENT 4 - 1% DESIGNATION OF SUBCONTRACTORS.pdf",
+          "file_size": "379 KB",
+          "requires_login": false
+        },
+        {
+          "name": "BID ATTACHMENT 5 - 5% DESIGNATION OF SUBCONTRACTORS.pdf",
+          "description": "BID ATTACHMENT 5 - 5% DESIGNATION OF SUBCONTRACTORS.pdf",
+          "file_size": "213 KB",
+          "requires_login": false
+        }
+      ],
+      "detail_fetched": true
+    },
+    {
+      "id": "20530",
+      "bid_id": "20530",
+      "solicitation_no": "607994-26 Addendum 3",
+      "title": "TRAFFIC SIGNAL IMPROVEMENTS AT BRUCE WOODBURY DRIVE AND NEEDLES HIGHWAY",
+      "bid_type": "Clark County BID",
+      "agency": "Clark County, Nevada",
+      "issue_date": "8/20/2026",
+      "close_date_raw": "9/21/2026 02:15 PM (PT)",
+      "close_date": "2026-09-21T21:15:00.000Z",
+      "due_in_days": 8,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20530&SourceType=1",
+      "status": "Open",
+      "description": null,
+      "contact_name": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "documents": [],
+      "detail_fetched": false
+    },
+    {
+      "id": "20537",
+      "bid_id": "20537",
+      "solicitation_no": "1790 Addendum 1",
+      "title": "FY 19-21 Citywide School Safety Improvements Project Phase II",
+      "bid_type": "BID",
+      "agency": "City of North Las Vegas",
+      "issue_date": "8/25/2026",
+      "close_date_raw": "9/22/2026 10:00 AM (PT)",
+      "close_date": "2026-09-22T17:00:00.000Z",
+      "due_in_days": 8,
+      "url": "https://nevada.ionwave.net/PublicDetail.aspx?bidID=20537&SourceType=1",
       "status": "Open",
       "description": null,
       "contact_name": null,
