@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-14T14:06:19.105Z",
+  "scraped_at": "2026-09-15T14:06:15.905Z",
   "bids": [
     {
       "doc_id": "43ADG-S4012",
@@ -62,6 +62,116 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4011&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4010",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "AASF Fuel Farm Gangway",
+      "bid_opening_date": "10/21/2026 00:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "d59a8ec7-0f6f-4dc1-8793-347d9a80cce8",
+      "scope": "Design and installation of fuel farm gangway",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325947",
+          "name": "Request for Proposal"
+        },
+        {
+          "file_nbr": "325945",
+          "name": "Scope of Work"
+        },
+        {
+          "file_nbr": "325949",
+          "name": "Cost Schedule"
+        },
+        {
+          "file_nbr": "325951",
+          "name": "Site Visit Registration Form"
+        },
+        {
+          "file_nbr": "325806",
+          "name": "Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "325804",
+          "name": "Terms and Conditions for Services"
+        },
+        {
+          "file_nbr": "325805",
+          "name": "Term and Conditions for Goods"
+        },
+        {
+          "file_nbr": "325819",
+          "name": "Standard From Contract"
+        },
+        {
+          "file_nbr": "325823",
+          "name": "Insurance Requirements"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4010&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4009",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "AASF Exterior Paint",
+      "bid_opening_date": "10/14/2026 10:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "2e9aefa6-a01c-459c-a5ff-5f461981cf54",
+      "scope": "Cost estimation for exterior prep, coating, and inspection of AASF.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325862",
+          "name": "Request for Proposal"
+        },
+        {
+          "file_nbr": "325860",
+          "name": "Scope of Work"
+        },
+        {
+          "file_nbr": "325802",
+          "name": "Cost Schedule"
+        },
+        {
+          "file_nbr": "325806",
+          "name": "Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "325804",
+          "name": "Terms and Conditions for Services"
+        },
+        {
+          "file_nbr": "325805",
+          "name": "Term and Conditions for Goods"
+        },
+        {
+          "file_nbr": "325819",
+          "name": "Standard From Contract"
+        },
+        {
+          "file_nbr": "325823",
+          "name": "Insurance Requirements"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4009&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4008",
@@ -407,6 +517,31 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3997&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "72DOW-S3996",
+      "organization": "Department of Wildlife",
+      "buyer": "Jennifer Thomas",
+      "title": "FEMALE GPS SOLAR EAR TAG - GAME - 2027",
+      "bid_opening_date": "10/22/2026 00:00:00",
+      "status": "Sent",
+      "detail_fetched": true,
+      "csrf_token": "f4158cff-6c79-421e-828c-086d9becf2e0",
+      "scope": "TIER 3 -FEMALE GPS SOLAR EAR TAG (MULE DEER FAWN AND ADULTS). DATA PLAN ACTIVATION (INCLUDED IN TAG PURCHASE) TRACK TAG KING UNIT - 6 PINGS HARDWARE + 3 YEARS OF DATA",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19818",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19811",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3996&external=true&parentUrl=close"
     },
     {
       "doc_id": "80DOT-S3994",
@@ -974,229 +1109,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3955",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "bid_opening_date": "10/08/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "763ec546-0ba3-4fa3-b652-0bcee25cdfef",
-      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "322903",
-          "name": "44DOC-S3955 RFP~7.docx"
-        },
-        {
-          "file_nbr": "318130",
-          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "318138",
-          "name": "44DOC-S3955 SOW.docx"
-        },
-        {
-          "file_nbr": "318129",
-          "name": "44DOC-S3955 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "322879",
-          "name": "44DOC-S3955 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "318140",
-          "name": "44DOC-S3955 Facility Contact Information.xlsx"
-        },
-        {
-          "file_nbr": "318141",
-          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
-        },
-        {
-          "file_nbr": "322893",
-          "name": "44DOC-S3955 Site visit schedule~1.docx"
-        },
-        {
-          "file_nbr": "318132",
-          "name": "44DOC-S3955-site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "318133",
-          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
-        },
-        {
-          "file_nbr": "318131",
-          "name": "44DOC-S3955-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "318143",
-          "name": "44DOC-S3955 Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "318126",
-          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "318134",
-          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "72DOW-S3941",
-      "organization": "Department of Wildlife",
-      "buyer": "Jennifer Thomas",
-      "title": "Licensing System",
-      "bid_opening_date": "09/14/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "8bc312d1-b77e-4310-88aa-863ea4ad7350",
-      "scope": "Licensing System",
-      "contact_org": "DOW Headquarters",
-      "contact_email": "ndowpo@ndow.org",
-      "contact_phone": "(775) 688-1574",
-      "attachments": [
-        {
-          "file_nbr": "320379",
-          "name": "72DOW-S3941-RFP_Licensing_Services~1.docx"
-        },
-        {
-          "file_nbr": "319306",
-          "name": "Goals_Objectives and Scope of Work.docx"
-        },
-        {
-          "file_nbr": "320384",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.1 Draw, Product, Program, Functionality Requirements.docx"
-        },
-        {
-          "file_nbr": "318918",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.2 System_Technical_Functional Requirements.docx"
-        },
-        {
-          "file_nbr": "320386",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.3 Calendar of Activities~1.docx"
-        },
-        {
-          "file_nbr": "320387",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.4 Software State Resources State Requirements Misc.docx"
-        },
-        {
-          "file_nbr": "320388",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.5 Project Kick Off Project Management Design Process.docx"
-        },
-        {
-          "file_nbr": "318923",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.6 Product List.xlsx"
-        },
-        {
-          "file_nbr": "318924",
-          "name": "NDOW Licensing System - RFP - Attachment 4.1.7 Implementation Timeline.docx"
-        },
-        {
-          "file_nbr": "318910",
-          "name": "Terms-and-conditions-for-services~2.pdf"
-        },
-        {
-          "file_nbr": "318909",
-          "name": "Standard-form-contract~1.docx"
-        },
-        {
-          "file_nbr": "319465",
-          "name": "72DOW-S3941-Insurance.pdf"
-        },
-        {
-          "file_nbr": "318908",
-          "name": "72DOW-S3941-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "318907",
-          "name": "72DOW-S3941-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "318912",
-          "name": "NDOW Licensing System - RFP - Attachemnt 4.3.3 Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "318906",
-          "name": "72DOW-S3941-Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "318925",
-          "name": "TIE Completion Memo - NDOW - 1904 - NDOW Licensing System -RFP - Revision 0 - 4461.pdf"
-        },
-        {
-          "file_nbr": "19818",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3941&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3910",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Food Services",
-      "bid_opening_date": "10/22/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "1ae4c698-ce90-4e2c-910c-0ab160e1fb43",
-      "scope": "FOOD SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "323817",
-          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
-        },
-        {
-          "file_nbr": "323813",
-          "name": "Terms-and-conditions-for-services~32.pdf"
-        },
-        {
-          "file_nbr": "323810",
-          "name": "Standard-form-contract~26.docx"
-        },
-        {
-          "file_nbr": "323804",
-          "name": "40DHHS-S3910 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "323870",
-          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
-        },
-        {
-          "file_nbr": "323805",
-          "name": "40DHHS-S3910-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "323803",
-          "name": "40DHHS-S3910 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "323808",
-          "name": "Certification-regarding-lobbying~27.pdf"
-        },
-        {
-          "file_nbr": "323807",
-          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
     }
   ]
 }
