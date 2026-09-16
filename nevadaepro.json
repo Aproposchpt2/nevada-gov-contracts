@@ -1,6 +1,63 @@
 {
-  "scraped_at": "2026-09-15T14:06:15.905Z",
+  "scraped_at": "2026-09-16T14:06:10.152Z",
   "bids": [
+    {
+      "doc_id": "43ADG-S4017",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "Camp Washoe Gas Upgrade",
+      "bid_opening_date": "10/23/2026 10:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "26a6391a-f8c1-4b2b-88e5-3c1bff07ff58",
+      "scope": "Restoration of polyethylene gas supply lines",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "326827",
+          "name": "Request for Proposal"
+        },
+        {
+          "file_nbr": "326830",
+          "name": "Standard Form Contract"
+        },
+        {
+          "file_nbr": "326723",
+          "name": "Scope of Work"
+        },
+        {
+          "file_nbr": "326727",
+          "name": "GEA_16~1.PDF"
+        },
+        {
+          "file_nbr": "326729",
+          "name": "Camp Washoe Google Maps"
+        },
+        {
+          "file_nbr": "326833",
+          "name": "Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "326834",
+          "name": "Site Visit Registration"
+        },
+        {
+          "file_nbr": "326835",
+          "name": "Cost Schedule"
+        },
+        {
+          "file_nbr": "326831",
+          "name": "Terms and Conditions for Services"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4017&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4012",
       "organization": "Adjutant General",
@@ -494,31 +551,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3998&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S3997",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Nevada Youth Training Center Quarterly Meat Solicitation",
-      "bid_opening_date": "09/15/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "e6a530b5-bfdf-4ddd-96bf-f20b5fe19084",
-      "scope": "GROUND BEEF: MAXIMUM 20% FAT CONTENT, NO SOSYBEAN HIGH PROTEIN ADDED, CHILLED, FREEZER WRAPPED, 10 LBS. PER PKG., IN ACCORDANCE W/ #136 EXCEPT MUST BE FROM U.S.. GRADE CHOICE BEEF.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19719",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3997&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "72DOW-S3996",
       "organization": "Department of Wildlife",
       "buyer": "Jennifer Thomas",
@@ -838,63 +870,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S3979",
-      "organization": "Adjutant General",
-      "buyer": "Miriam Garcia",
-      "title": "Building System Controls Services",
-      "bid_opening_date": "09/15/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "a6d22a38-c424-4cda-b6bf-0efd6ed0e016",
-      "scope": "This is a formal RFP request on behalf of the Office of the Military for Building System Controls Services. Please see the attachments tab for further information.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "322423",
-          "name": "43ADG-S3979 -  Request For Proposal.docx"
-        },
-        {
-          "file_nbr": "322430",
-          "name": "43ADG-S3979 - Terms and Conditions for Services.pdf"
-        },
-        {
-          "file_nbr": "322435",
-          "name": "43ADG-S3979 - Standard Form Contract .docx"
-        },
-        {
-          "file_nbr": "322432",
-          "name": "43ADG-S3979 -  Scope of Work .docx"
-        },
-        {
-          "file_nbr": "322427",
-          "name": "43ADG-S3979 - Cost Schedule.pdf"
-        },
-        {
-          "file_nbr": "322428",
-          "name": "43ADG-S3979  - Vendor Information Response.pdf"
-        },
-        {
-          "file_nbr": "322433",
-          "name": "43ADG-S3979 - Reference Questionnaire.docx"
-        },
-        {
-          "file_nbr": "321070",
-          "name": "99SWC-S3974 - Certification Regarding Lobbying.pdf"
-        },
-        {
-          "file_nbr": "322429",
-          "name": "43ADG-S3979 - Certification Regarding Lobbying.pdf"
-        },
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3979&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "44DOC-S3975",
       "organization": "Department of Corrections",
       "buyer": "Joel Wixon",
@@ -1017,63 +992,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
     },
     {
-      "doc_id": "90DETR-S3968",
-      "organization": "Department of Employment, Training and Rehabilitation",
-      "buyer": "Joel Wixon",
-      "title": "Client Payment Card Program",
-      "bid_opening_date": "09/15/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c1f941dd-0912-4b74-8c43-993595eee1d1",
-      "scope": "Client Payment Card Program",
-      "contact_org": "DETR Fiscal",
-      "contact_email": "VRAccounting@detr.nv.gov",
-      "contact_phone": "(775) 684-3967",
-      "attachments": [
-        {
-          "file_nbr": "321151",
-          "name": "90DETR-S3968 RFP.docx"
-        },
-        {
-          "file_nbr": "320824",
-          "name": "90DETR-S3968 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "320823",
-          "name": "90DETR-S3968 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "320828",
-          "name": "90DETR-S3968 Insurance Requirements.docx"
-        },
-        {
-          "file_nbr": "320825",
-          "name": "90DETR-S3968-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "320821",
-          "name": "90DETR-S3968 Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "320822",
-          "name": "90DETR-S3968 Requirements Matrix CPC 2026.xlsx"
-        },
-        {
-          "file_nbr": "320820",
-          "name": "90DETR-S3968 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "320826",
-          "name": "90DETR-S3968-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19853",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=90DETR-S3968&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "99SWC-S3964",
       "organization": "Statewide Contracts",
       "buyer": "Miriam Garcia",
@@ -1109,6 +1027,140 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S3955",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "bid_opening_date": "10/08/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "0e2f10fc-49f8-43f8-b54b-426c8733cd42",
+      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "322903",
+          "name": "44DOC-S3955 RFP~7.docx"
+        },
+        {
+          "file_nbr": "318130",
+          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "318138",
+          "name": "44DOC-S3955 SOW.docx"
+        },
+        {
+          "file_nbr": "318129",
+          "name": "44DOC-S3955 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "322879",
+          "name": "44DOC-S3955 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "318140",
+          "name": "44DOC-S3955 Facility Contact Information.xlsx"
+        },
+        {
+          "file_nbr": "318141",
+          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
+        },
+        {
+          "file_nbr": "322893",
+          "name": "44DOC-S3955 Site visit schedule~1.docx"
+        },
+        {
+          "file_nbr": "318132",
+          "name": "44DOC-S3955-site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "318133",
+          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
+        },
+        {
+          "file_nbr": "318131",
+          "name": "44DOC-S3955-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "318143",
+          "name": "44DOC-S3955 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "318126",
+          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "318134",
+          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S3910",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Food Services",
+      "bid_opening_date": "10/22/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "de73ec11-88bb-4c73-9e79-6560a8e05f93",
+      "scope": "FOOD SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "323817",
+          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
+        },
+        {
+          "file_nbr": "323813",
+          "name": "Terms-and-conditions-for-services~32.pdf"
+        },
+        {
+          "file_nbr": "323810",
+          "name": "Standard-form-contract~26.docx"
+        },
+        {
+          "file_nbr": "323804",
+          "name": "40DHHS-S3910 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "323870",
+          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
+        },
+        {
+          "file_nbr": "323805",
+          "name": "40DHHS-S3910-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "323803",
+          "name": "40DHHS-S3910 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "323808",
+          "name": "Certification-regarding-lobbying~27.pdf"
+        },
+        {
+          "file_nbr": "323807",
+          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
     }
   ]
 }
