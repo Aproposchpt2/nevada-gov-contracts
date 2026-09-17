@@ -1,6 +1,80 @@
 {
-  "scraped_at": "2026-09-16T14:06:10.152Z",
+  "scraped_at": "2026-09-17T14:06:34.500Z",
   "bids": [
+    {
+      "doc_id": "90DETR-S4020",
+      "organization": "Department of Employment, Training and Rehabilitation",
+      "buyer": "Lauren Vaccaro",
+      "title": "Economic Impact Analysis",
+      "bid_opening_date": "09/25/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "c33f6a8b-be5f-435e-a7a3-4fe73bd95159",
+      "scope": "Economic Impact Analysis Report",
+      "contact_org": "DETR Fiscal",
+      "contact_email": "VRAccounting@detr.nv.gov",
+      "contact_phone": "(775) 684-3967",
+      "attachments": [
+        {
+          "file_nbr": "19853",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "326928",
+          "name": "90DETR-S4020 Economic Impact Analysis Informal Solicitation"
+        },
+        {
+          "file_nbr": "326929",
+          "name": "Standard-form-contract"
+        },
+        {
+          "file_nbr": "326930",
+          "name": "Insurance Schedule  Standard"
+        },
+        {
+          "file_nbr": "326931",
+          "name": "Terms-and-conditions-for-services"
+        },
+        {
+          "file_nbr": "326933",
+          "name": "Contract Provisions for Non-Federal Entity Contracts  Funding Disclosure Statement FFY2024"
+        },
+        {
+          "file_nbr": "326936",
+          "name": "Cost Schedule"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=90DETR-S4020&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4019",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "LVRC - EXIT GATE REPLACEMENT",
+      "bid_opening_date": "09/30/2026 3:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "f4d5b8a4-a895-4beb-89c9-c4b7fdadc2f2",
+      "scope": "The contractor shall provide all labor, tools, materials, equipment, supervision, and transportation required for replacing the exit gate. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Gate must meet UL325 compliant. Remove existing gate, post, electrical box and hydraulic supply lines concrete & asphalt, chain link fence. Install a new 24ft chain link double swing gate to match existing height. Set new 6inch gate post, 6ga. 2inch mesh chain link infilled, 2inch sch-40 round galvanized frame, with heavy duty greaseable hinges. Install 3 rows of barbed wire on top of new gate. Pour new concrete pad for new operators. Install 2-HDSW24UL gate operators with battery backup. Install in ground safety loops & exit loops, photo eye, LIFTMASTER 1300libs. Mag lock, operators bolted to new concrete pad.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "326900",
+          "name": "LVRC Exit Gate Replacement Invitation to Bid"
+        },
+        {
+          "file_nbr": "326902",
+          "name": "LVRC - Exit Gate Replacement Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4019&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4017",
       "organization": "Adjutant General",
@@ -57,6 +131,60 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4017&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S4015",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Telehandler",
+      "bid_opening_date": "10/13/2026 1:00 PM",
+      "status": "10TCA-R146411",
+      "detail_fetched": true,
+      "csrf_token": "658b2471-31a7-48af-a64c-cd7c431d4dfa",
+      "scope": "TELEHANDLER: TO INCLUDE AN ENCLOSED CAB WITH HEAT AND AC; CARRIAGE - 72&#034; FIXED, 6 X 2.5&#034; X 60&#034; (QTY 2), SWIVEL HOOK, 17.5 X 25 E3 FOAM FILLED (QTY 4), BUCKET 1.65 CU YD (STAR), 20,000 LBS CAPACITY, 45 FT LIFT HEIGHT, 27 FT. 4 IN FORWARD REACH, 134 HP HT (TIER 4F) ENGINE. MODEL XTREME XR2045-C",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19626",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "327055",
+          "name": "10TCA-S4015 - Specifications and Features.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4015&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S4014",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Locomotive",
+      "bid_opening_date": "10/06/2026 1:00 PM",
+      "status": "10TCA-R146408",
+      "detail_fetched": true,
+      "csrf_token": "4dceed39-9c1c-4912-8161-944b87e8a1bc",
+      "scope": "ESTIMATED FREIGHT CHARGES:",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19626",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4014&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4012",
@@ -551,6 +679,31 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3998&external=true&parentUrl=close"
     },
     {
+      "doc_id": "40DHHS-S3997",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Nevada Youth Training Center Quarterly Meat Solicitation",
+      "bid_opening_date": "09/17/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "1cf0381f-183d-4ad0-852d-88d9afeeb7d3",
+      "scope": "GROUND BEEF: MAXIMUM 20% FAT CONTENT, NO SOSYBEAN HIGH PROTEIN ADDED, CHILLED, FREEZER WRAPPED, 10 LBS. PER PKG., IN ACCORDANCE W/ #136 EXCEPT MUST BE FROM U.S.. GRADE CHOICE BEEF.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19719",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3997&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "72DOW-S3996",
       "organization": "Department of Wildlife",
       "buyer": "Jennifer Thomas",
@@ -868,299 +1021,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3975",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Commissary and Supplemental Services",
-      "bid_opening_date": "10/06/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "b3ed0dc1-04a7-4172-8a56-06fe5dd0dd50",
-      "scope": "Commissary and Supplemental Services",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "322224",
-          "name": "44DOC-S3975 RFP~3.docx"
-        },
-        {
-          "file_nbr": "321540",
-          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "321539",
-          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "321547",
-          "name": "44DOC-S3975 Facility Contacts.docx"
-        },
-        {
-          "file_nbr": "321533",
-          "name": "44DOC-S3975 Facility Map.pdf"
-        },
-        {
-          "file_nbr": "321538",
-          "name": "44DOC-S3975 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "321799",
-          "name": "44DOC-S3975 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "321542",
-          "name": "44DOC-S3975-site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "321534",
-          "name": "44DOC-S3975 Site Visit Schedule.docx"
-        },
-        {
-          "file_nbr": "321541",
-          "name": "44DOC-S3975-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "321543",
-          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321536",
-          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "321530",
-          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "321531",
-          "name": "44DOC-S3975 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "321532",
-          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
-        },
-        {
-          "file_nbr": "321528",
-          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "321529",
-          "name": "44DOC-S3975 Commissary Pricing.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "321535",
-          "name": "44DOC-S3975 TIE Completion Memo - NDOC - 1958 - Commissary Services - RFP - Revision 0 - 3708.pdf"
-        },
-        {
-          "file_nbr": "321809",
-          "name": "44DOC-S3975 Master Scorecard.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3971",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Ed kochendarfer",
-      "title": "Grant subaward",
-      "bid_opening_date": "10/09/2026 17:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "4ac03cfb-f938-40d1-9063-5c6dd7ee93e1",
-      "scope": "Grant subaward details, please see attached. Project funding range, $25,000-$500,000.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320799",
-          "name": "319 (h) 2026 Funding Opportunity"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "99SWC-S3964",
-      "organization": "Statewide Contracts",
-      "buyer": "Miriam Garcia",
-      "title": "Electric Vehicle Charging Stations",
-      "bid_opening_date": "09/23/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "ef09008e-84bb-4671-82ed-a54d46750337",
-      "scope": "This is an informational release for the found Electric Vehicle Charging Stations.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "324846",
-          "name": "99SWC-S3964 - RFI - EVCS .docx"
-        },
-        {
-          "file_nbr": "324849",
-          "name": "99SWC-S3964 - SOW - EVCS.docx"
-        },
-        {
-          "file_nbr": "324850",
-          "name": "99SWC-S3964 - Cost Schedule - EVCS .xlsx"
-        },
-        {
-          "file_nbr": "324852",
-          "name": "Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "19561",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3955",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "bid_opening_date": "10/08/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "0e2f10fc-49f8-43f8-b54b-426c8733cd42",
-      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "322903",
-          "name": "44DOC-S3955 RFP~7.docx"
-        },
-        {
-          "file_nbr": "318130",
-          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "318138",
-          "name": "44DOC-S3955 SOW.docx"
-        },
-        {
-          "file_nbr": "318129",
-          "name": "44DOC-S3955 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "322879",
-          "name": "44DOC-S3955 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "318140",
-          "name": "44DOC-S3955 Facility Contact Information.xlsx"
-        },
-        {
-          "file_nbr": "318141",
-          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
-        },
-        {
-          "file_nbr": "322893",
-          "name": "44DOC-S3955 Site visit schedule~1.docx"
-        },
-        {
-          "file_nbr": "318132",
-          "name": "44DOC-S3955-site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "318133",
-          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
-        },
-        {
-          "file_nbr": "318131",
-          "name": "44DOC-S3955-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "318143",
-          "name": "44DOC-S3955 Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "318126",
-          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "318134",
-          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3910",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Food Services",
-      "bid_opening_date": "10/22/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "de73ec11-88bb-4c73-9e79-6560a8e05f93",
-      "scope": "FOOD SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "323817",
-          "name": "40DHHS-S3910 - request-for-proposals~1.docx"
-        },
-        {
-          "file_nbr": "323813",
-          "name": "Terms-and-conditions-for-services~32.pdf"
-        },
-        {
-          "file_nbr": "323810",
-          "name": "Standard-form-contract~26.docx"
-        },
-        {
-          "file_nbr": "323804",
-          "name": "40DHHS-S3910 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "323870",
-          "name": "40DHHS-S3910 - Site Visit Registration Form.docx"
-        },
-        {
-          "file_nbr": "323805",
-          "name": "40DHHS-S3910-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "323803",
-          "name": "40DHHS-S3910 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "323808",
-          "name": "Certification-regarding-lobbying~27.pdf"
-        },
-        {
-          "file_nbr": "323807",
-          "name": "40DHHS-S3910-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3910&external=true&parentUrl=close"
     }
   ]
 }
