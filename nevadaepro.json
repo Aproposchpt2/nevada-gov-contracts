@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-17T14:06:34.500Z",
+  "scraped_at": "2026-09-18T14:05:32.248Z",
   "bids": [
     {
       "doc_id": "90DETR-S4020",
@@ -654,56 +654,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S3999&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S3998",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Nevada Youth Training Center Quarterly Dairy Solicitation",
-      "bid_opening_date": "09/17/2026 13:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "1d989ffd-58a7-4bd1-9269-fb03056818ec",
-      "scope": "MILK: 1%; 1/2 PINT.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19719",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3998&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3997",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Nevada Youth Training Center Quarterly Meat Solicitation",
-      "bid_opening_date": "09/17/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "1cf0381f-183d-4ad0-852d-88d9afeeb7d3",
-      "scope": "GROUND BEEF: MAXIMUM 20% FAT CONTENT, NO SOSYBEAN HIGH PROTEIN ADDED, CHILLED, FREEZER WRAPPED, 10 LBS. PER PKG., IN ACCORDANCE W/ #136 EXCEPT MUST BE FROM U.S.. GRADE CHOICE BEEF.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19719",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3997&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "72DOW-S3996",
       "organization": "Department of Wildlife",
       "buyer": "Jennifer Thomas",
@@ -1021,6 +971,116 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S3975",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Commissary and Supplemental Services",
+      "bid_opening_date": "10/06/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "9d680671-6628-4e3f-a58b-49eff60c80c8",
+      "scope": "Commissary and Supplemental Services",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "323161",
+          "name": "44DOC-S3975 RFP~4.docx"
+        },
+        {
+          "file_nbr": "321540",
+          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "321539",
+          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
+        },
+        {
+          "file_nbr": "321547",
+          "name": "44DOC-S3975 Facility Contacts.docx"
+        },
+        {
+          "file_nbr": "321533",
+          "name": "44DOC-S3975 Facility Map.pdf"
+        },
+        {
+          "file_nbr": "321538",
+          "name": "44DOC-S3975 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "321799",
+          "name": "44DOC-S3975 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "321541",
+          "name": "44DOC-S3975-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "321543",
+          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "321536",
+          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
+        },
+        {
+          "file_nbr": "321530",
+          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "321531",
+          "name": "44DOC-S3975 Contractor Background Check Application.docx"
+        },
+        {
+          "file_nbr": "321532",
+          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
+        },
+        {
+          "file_nbr": "321528",
+          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "321529",
+          "name": "44DOC-S3975 Commissary Pricing.pdf"
+        },
+        {
+          "file_nbr": "323159",
+          "name": "44DOC-S3975 Certification-regarding-lobbying~1.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "70CNR-S3971",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Ed kochendarfer",
+      "title": "Grant subaward",
+      "bid_opening_date": "10/09/2026 5:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "2d5047eb-8310-4dfe-afa9-8e580ff37d39",
+      "scope": "Grant subaward details, please see attached. Project funding range, $25,000-$500,000.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "320799",
+          "name": "319 (h) 2026 Funding Opportunity"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
     }
   ]
 }
