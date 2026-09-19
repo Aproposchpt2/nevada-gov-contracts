@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-18T14:05:32.248Z",
+  "scraped_at": "2026-09-19T14:04:52.712Z",
   "bids": [
     {
       "doc_id": "90DETR-S4020",
@@ -74,6 +74,67 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4019&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4018",
+      "organization": "Department of Human Services",
+      "buyer": "Jennifer Thomas",
+      "title": "Family to Family Support Services-2027",
+      "bid_opening_date": "10/08/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "f5b2ac6c-7ad6-46b0-a089-37b29c5606dc",
+      "scope": "Vendors to provide the clients Family Peer Support Services as described in the scope of work in the attachments tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "327466",
+          "name": "40DHHS-S4018 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "327453",
+          "name": "40DHHS-S4018 - Scope of Work.docx"
+        },
+        {
+          "file_nbr": "327446",
+          "name": "40DHHS-S4018 - Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "327450",
+          "name": "40DHHS-S4018 - Business Associate Addendum.docx"
+        },
+        {
+          "file_nbr": "327451",
+          "name": "40DHHS-S4018 - Fiscal Procedures.doc"
+        },
+        {
+          "file_nbr": "327447",
+          "name": "40DHHS-S4018 - Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "327452",
+          "name": "40DHHS-S4018 - Insurance Requirements.docx"
+        },
+        {
+          "file_nbr": "327457",
+          "name": "40DHHS-S4018 - Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "327445",
+          "name": "40DHHS-S4018-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "327449",
+          "name": "40DHHS-S4018 - reference_questionnaire.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4018&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4017",
@@ -357,43 +418,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4009&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4008",
-      "organization": "Adjutant General",
-      "buyer": "Carlos Fuentes",
-      "title": "Add Shore Power Infrastructure for ALS/MWO at LVRC",
-      "bid_opening_date": "09/18/2026 23:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "7abc102f-4a92-49ca-a8a9-e5a23cfd1b6b",
-      "scope": "Provide and install dedicated shore power infrastructure to support ALS/MWO vehicle operations at the Las Vegas Readiness Center (LVRC).",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320629",
-          "name": "Invitation to Bid (ITB) LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320630",
-          "name": "Proposal Evaluation and Scoring"
-        },
-        {
-          "file_nbr": "320631",
-          "name": "Scope of Work - LVRC Shore Power"
-        },
-        {
-          "file_nbr": "320633",
-          "name": "LVRC Shore Power Construction Documents"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4008&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4007",
