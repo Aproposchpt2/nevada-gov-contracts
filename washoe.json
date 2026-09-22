@@ -1,6 +1,16 @@
 {
-  "scraped_at": "2026-09-21T14:21:20.793Z",
+  "scraped_at": "2026-09-22T14:19:39.471Z",
   "solicitations": [
+    {
+      "project_number": "RFQ #28-QF-09-27-GS",
+      "project_type": "Request for Formal Quote",
+      "title": "Health Services Supplies for Warehouse Inventory",
+      "pre_bid_date": "N/A",
+      "question_deadline": "09/28/2026",
+      "due_date": "10/14/2026",
+      "status": "Active",
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl02$btnSelect"
+    },
     {
       "project_number": "RFQ #27-QF-09-27-GS",
       "project_type": "Request for Formal Quote",
@@ -9,7 +19,7 @@
       "question_deadline": "09/28/2026",
       "due_date": "10/14/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl02$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
     },
     {
       "project_number": "RFP #14-P-08-27-SA",
@@ -19,7 +29,7 @@
       "question_deadline": "09/14/2026",
       "due_date": "10/08/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     },
     {
       "project_number": "RFP #10-P-07-27-AA",
@@ -28,16 +38,6 @@
       "pre_bid_date": "09/03/2026",
       "question_deadline": "09/24/2026",
       "due_date": "10/14/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
-    },
-    {
-      "project_number": "RFP #12-P-07-27-LR",
-      "project_type": "Request for Proposal",
-      "title": "Employee Benefits Brokerage and Consulting Services",
-      "pre_bid_date": "N/A",
-      "question_deadline": "08/24/2026",
-      "due_date": "09/15/2026",
       "status": "Active",
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
     }
