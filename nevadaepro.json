@@ -1,6 +1,27 @@
 {
-  "scraped_at": "2026-09-21T14:06:16.355Z",
+  "scraped_at": "2026-09-22T14:06:03.785Z",
   "bids": [
+    {
+      "doc_id": "CTYNLV-S4022",
+      "organization": "City of North Las Vegas",
+      "buyer": "Joy Yoshida",
+      "title": "NGEM-RFP 2026-024 Customer Portal & AMI Technology",
+      "bid_opening_date": "10/19/2026 1:00 PM",
+      "status": "NGEM-RFP 2026-024 Customer Portal & AMI Technology",
+      "detail_fetched": true,
+      "csrf_token": "c43cc936-075c-48fb-a1a2-e0ea8d0d4fe7",
+      "scope": "The City of North Las Vegas is seeking Proposals from qualified Respondents to provide a customer portal and a mobile workforce management solution for the Utility Department.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "327134",
+          "name": "NGEM Information"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=CTYNLV-S4022&external=true&parentUrl=close"
+    },
     {
       "doc_id": "90DETR-S4020",
       "organization": "Department of Employment, Training and Rehabilitation",
@@ -1080,31 +1101,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3971",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Ed kochendarfer",
-      "title": "Grant subaward",
-      "bid_opening_date": "10/09/2026 5:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "2d5047eb-8310-4dfe-afa9-8e580ff37d39",
-      "scope": "Grant subaward details, please see attached. Project funding range, $25,000-$500,000.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320799",
-          "name": "319 (h) 2026 Funding Opportunity"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
     }
   ]
 }
