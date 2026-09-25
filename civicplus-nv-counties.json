@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-24T16:11:23.109Z",
+  "scraped_at": "2026-09-25T16:11:25.253Z",
   "bids": [
     {
       "bid_id": "23",
@@ -44,6 +44,26 @@
         },
         {
           "url": "https://www.nyecountynv.gov/DocumentCenter/View/51752"
+        }
+      ],
+      "county": "Nye",
+      "jurisdiction_name": "Nye County",
+      "city": "Tonopah",
+      "source_base": "https://www.nyecountynv.gov/Bids.aspx"
+    },
+    {
+      "bid_id": "244",
+      "title": "Nye County Courts Security Enhancement",
+      "description": "NOTICE OF REQUEST FOR RESPONSE NO. 2026-09 NYE COUNTY COURTS SECURITY ENHANCEMENT         NOTICE IS HEREBY GIVEN  that the Nye County Board of Commissioners, on behalf of the...",
+      "status": "Open",
+      "closes": "10/15/2026 2:00 PM",
+      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=244",
+      "documents": [
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51915"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51914"
         }
       ],
       "county": "Nye",
