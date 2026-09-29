@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-28T14:06:29.134Z",
+  "scraped_at": "2026-09-29T14:06:00.318Z",
   "bids": [
     {
       "doc_id": "80DOT-S4026",
@@ -374,35 +374,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4012&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4011",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "Northern Nevada - Generator Services",
-      "bid_opening_date": "09/28/2026 18:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "f8373776-92aa-447b-a63d-8eec5c328977",
-      "scope": "The scope of work for generator services encompasses a comprehensive range of activities aimed at ensuring the optimal performance, reliability, and longevity of generators in various applications. Initially, the service will include a thorough assessment of the generator&#039;s current condition, including inspections of all critical components such as the engine, hoses, belts, alternator, fuel system, and electrical components. Preventative maintenance tasks will be conducted regularly, which may include oil changes, air filter replacements, coolant flushes, and battery tests to prevent unexpected failures and prolong service life. In addition to routine maintenance, the scope will involve troubleshooting and repair services addressing any emergent issues identified during inspections or reported by end-users. This includes the diagnosis of electrical faults, mechanical problems, and fuel system inefficiencies. To enhance operational readiness, load bank testing will also be performed periodically to evaluate the generator&#039;s performance under various load conditions, ensuring it can handle peak demands effectively. Moreover, the service may incorporate upgrades or modifications to existing generator systems, ensuring they meet the latest industry standards and regulations for safety and efficiency. Documentation of all services performed, along with performance reports, will be provided to the client, ensuring transparency and enabling effective planning for future maintenance. Furthermore, the scope may include emergency response services, providing clients with peace of mind that should a failure occur, expert technicians will be available quickly to mitigate downtime and restore power. Overall, these generator services aim to provide clients with a reliable power supply, minimizing operational disruptions and enhancing overall systems performance.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "326170",
-          "name": "Northern Nevada Generator Services Invitation to Bid"
-        },
-        {
-          "file_nbr": "326171",
-          "name": "Northern Nevada Generator Services Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4011&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4010",
@@ -1125,6 +1096,51 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "99SWC-S3964",
+      "organization": "Statewide Contracts",
+      "buyer": "Miriam Garcia",
+      "title": "Electric Vehicle Charging Stations",
+      "bid_opening_date": "10/02/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "d4066ba4-52bd-48c4-af76-9f1523f11bc3",
+      "scope": "This is an informational release for the found Electric Vehicle Charging Stations.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "327929",
+          "name": "99SWC-S3964 - Answers - Updated.xlsx"
+        },
+        {
+          "file_nbr": "327336",
+          "name": "99SWC-S3964 - Answers.xlsx"
+        },
+        {
+          "file_nbr": "324846",
+          "name": "99SWC-S3964 - RFI - EVCS .docx"
+        },
+        {
+          "file_nbr": "324849",
+          "name": "99SWC-S3964 - SOW - EVCS.docx"
+        },
+        {
+          "file_nbr": "324850",
+          "name": "99SWC-S3964 - Cost Schedule - EVCS .xlsx"
+        },
+        {
+          "file_nbr": "324852",
+          "name": "Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "19561",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
     }
   ]
 }
