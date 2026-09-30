@@ -1,6 +1,47 @@
 {
-  "scraped_at": "2026-09-29T14:06:00.318Z",
+  "scraped_at": "2026-09-30T14:06:48.471Z",
   "bids": [
+    {
+      "doc_id": "99SWC-S4027",
+      "organization": "Statewide Contracts",
+      "buyer": "Sierra Biddle",
+      "title": "Direct Client Services",
+      "bid_opening_date": "10/16/2026 5:00 PM",
+      "status": "Provider Services",
+      "detail_fetched": true,
+      "csrf_token": "6b0b57ec-9de1-4cd7-aae5-699108dcd7af",
+      "scope": "MEDICAL AND RELATED SERVICES: Providers are to reference the Scope of Services Attachment for common descriptions of services related to the Medical services. Provider will then ensure &#034;see quote attachment&#034; is checked for this item if their services is included in the medical services description. Provider shall complete the Direct Client Services Submission Packet and use the included Service Descriptions Table to indicate the types of services they provide.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "271808",
+          "name": "Creating a Direct Client Service Quote.pdf"
+        },
+        {
+          "file_nbr": "328933",
+          "name": "Provider Application Response~4.pdf"
+        },
+        {
+          "file_nbr": "328840",
+          "name": "99SWC-S4027 Direct Client Services~1.pdf"
+        },
+        {
+          "file_nbr": "328838",
+          "name": "Nevada Terms and Conditions for Services~1.pdf"
+        },
+        {
+          "file_nbr": "328841",
+          "name": "Scope of Services Examples~2.pdf"
+        },
+        {
+          "file_nbr": "328835",
+          "name": "Affidavit of Rejection of Coverage.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4027&external=true&parentUrl=close"
+    },
     {
       "doc_id": "80DOT-S4026",
       "organization": "Department of Transportation",
@@ -728,67 +769,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S3994&external=true&parentUrl=close"
     },
     {
-      "doc_id": "81DMV-S3990",
-      "organization": "Department of Motor Vehicles",
-      "buyer": "Heather Moon",
-      "title": "Independent Verification and Validation (IV&V) Services for DMV Transformation Effort (DTE)",
-      "bid_opening_date": "09/29/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "63283cb9-6453-4dd0-a95c-ba2ff9485fcb",
-      "scope": "Please see the cost schedule located in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "324466",
-          "name": "81DMV-S3990-Request-for-Proposals~1.docx"
-        },
-        {
-          "file_nbr": "318456",
-          "name": "Terms-and-conditions-for-services~2.pdf"
-        },
-        {
-          "file_nbr": "318394",
-          "name": "Standard Form Contract - DMV Language~1.docx"
-        },
-        {
-          "file_nbr": "323569",
-          "name": "81DMV-S3990 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "323555",
-          "name": "81DMV-S3990 - Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "323556",
-          "name": "81DMV-S3990 - Cost Schedule.xls"
-        },
-        {
-          "file_nbr": "318455",
-          "name": "Certification-regarding-lobbying~2.pdf"
-        },
-        {
-          "file_nbr": "323559",
-          "name": "81DMV-S3990 -Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "324467",
-          "name": "Attachment B Requirements Response Matrix 8-31-26.xlsx"
-        },
-        {
-          "file_nbr": "324468",
-          "name": "Attachment C Vendor Response Workbook 8-31-26.xlsx"
-        },
-        {
-          "file_nbr": "19845",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=81DMV-S3990&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "69CRC-S3987",
       "organization": "Colorado River Commission",
       "buyer": "Gina Goodman",
@@ -852,59 +832,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "81DMV-S3985",
-      "organization": "Department of Motor Vehicles",
-      "buyer": "Heather Moon",
-      "title": "Vehicle Remote Sensing",
-      "bid_opening_date": "09/29/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "833a11b5-7ca3-4d30-8cfc-7866003847dc",
-      "scope": "Please see the Cost Sheet in the Attachments tab.",
-      "contact_org": "Admin Services",
-      "contact_email": "DMVInvoices@dmv.nv.gov",
-      "contact_phone": "(775) 684-4849",
-      "attachments": [
-        {
-          "file_nbr": "19845",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "323674",
-          "name": "81DMV-S3985-Request-for-Proposals.docx"
-        },
-        {
-          "file_nbr": "323019",
-          "name": "Terms-and-conditions-for-services~3.pdf"
-        },
-        {
-          "file_nbr": "323022",
-          "name": "Standard Form Contract - DMV Language~2.docx"
-        },
-        {
-          "file_nbr": "323024",
-          "name": "Insurance Schedule - RFP 81DMV-S3985 - RFP.docx"
-        },
-        {
-          "file_nbr": "323031",
-          "name": "81DMV-S3985-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "323032",
-          "name": "81DMV-S3985 - Cost Schedule.xls"
-        },
-        {
-          "file_nbr": "323021",
-          "name": "Certification-regarding-lobbying~3.pdf"
-        },
-        {
-          "file_nbr": "323018",
-          "name": "81DMV-S3985-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=81DMV-S3985&external=true&parentUrl=close"
     },
     {
       "doc_id": "30DOE-S3984",
@@ -1141,6 +1068,99 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S3955",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "bid_opening_date": "10/26/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "2aa00149-9012-4b47-b473-60a56ee7854c",
+      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "327622",
+          "name": "44DOC-S3955 RFP~9.docx"
+        },
+        {
+          "file_nbr": "318130",
+          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "318138",
+          "name": "44DOC-S3955 SOW.docx"
+        },
+        {
+          "file_nbr": "318129",
+          "name": "44DOC-S3955 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "322879",
+          "name": "44DOC-S3955 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "318140",
+          "name": "44DOC-S3955 Facility Contact Information.xlsx"
+        },
+        {
+          "file_nbr": "318141",
+          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
+        },
+        {
+          "file_nbr": "318132",
+          "name": "44DOC-S3955-site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "318133",
+          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
+        },
+        {
+          "file_nbr": "318131",
+          "name": "44DOC-S3955-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "327624",
+          "name": "44DOC-S3955 PREA Zero Tolerance Policy and Reporting.docx"
+        },
+        {
+          "file_nbr": "327625",
+          "name": "44DOC-S3955 Contractor and Volunteer PREA Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "327626",
+          "name": "44DOC-S3955 Contractor Background Check Application.docx"
+        },
+        {
+          "file_nbr": "327627",
+          "name": "44DOC-S3955Contractor Security Regulations Acknowledgement Form (2-22).docx"
+        },
+        {
+          "file_nbr": "327628",
+          "name": "44DOC-S3955 Request to Possess Mobile Device (8-26).pdf"
+        },
+        {
+          "file_nbr": "318143",
+          "name": "44DOC-S3955 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "318126",
+          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "318134",
+          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
     }
   ]
 }
