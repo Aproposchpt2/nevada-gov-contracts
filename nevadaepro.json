@@ -1,6 +1,81 @@
 {
-  "scraped_at": "2026-09-30T14:06:48.471Z",
+  "scraped_at": "2026-10-01T14:06:25.340Z",
   "bids": [
+    {
+      "doc_id": "41NHA-S4034",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Pharmaceutical Data and Retrospective Pricing Analysis SaaS",
+      "bid_opening_date": "10/29/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "4f663d16-322a-4a71-b1c2-3dca416d0904",
+      "scope": "Pharmaceutical Data and Retrospective Pricing Analysis SaaS. Please see the &#039;Attachments&#039; tab for information.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "329401",
+          "name": "41NHA-S4034-RFI - Pharm Data and Retrospective Pricing Analysis.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4034&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "99SWC-S4033",
+      "organization": "Statewide Contracts",
+      "buyer": "Jennifer Thomas",
+      "title": "RFI-Employee Airline Travel Program",
+      "bid_opening_date": "11/03/2026 2:00 PM",
+      "status": "Request for Information (RFI)",
+      "detail_fetched": true,
+      "csrf_token": "5d428b25-58fa-4851-b825-c32bbafb4e16",
+      "scope": "The purpose of this Request for Information (RFI) is to to obtain information from qualified commercial air carriers regarding the availability, structure, pricing, administration, technology, traveler services, and other features of air travel programs available to State employees traveling for official State business. Please see RFI - Employee Airline Travel Program for more details in the attachments tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19561",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "329500",
+          "name": "RFI_Employee Airline Travel Program.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4033&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4030",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "Northern Nevada - HVAC Services",
+      "bid_opening_date": "10/23/2026 6:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "a688724c-23f6-4272-8077-fac84f9de338",
+      "scope": "The scope of work for HVAC services encompasses a comprehensive range of tasks aimed at ensuring optimal heating, ventilation, and air conditioning performance within residential, commercial, or industrial settings. This includes an initial assessment of existing HVAC systems to determine efficiency and compliance with current regulations. The services involve the installation of new HVAC units, including ductwork and associated components, ensuring proper sizing and configuration for maximum efficiency. Routine maintenance and repair services are integral to the scope, involving inspections, cleaning, and servicing of air filters, coils, and condensers, as well as checking refrigerant levels extends to all associated components, such as compressors, motors, evaporators, heat exchangers, exhaust fans, piping, ductwork and electrical connections to prevent system failures. The Contractor shall be available to provide emergency and on-call services to address urgent repair requests necessary to maintain mission-critical operations and facility safety. The Contractor must be capable of providing an expedited response for critical failures. For any deficient conditions observed during the performance of work that exceeds the original service request, the Contractor shall document and report them to the Office of the Military/Facility Supervisor with recommended corrective actions prior to proceeding. The provision of parts, materials, and chemicals, as well as purchasing from the Contractor shall also be included. Comprehensive documentation, including service reports and maintenance logs, will be provided to ensure transparency and accountability. All services will adhere to industry standards and local codes to guarantee safety and reliability.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "328442",
+          "name": "Northern Nevada HVAC Services Invitation to Bid"
+        },
+        {
+          "file_nbr": "328443",
+          "name": "Northern Nevada HVAC Services Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4030&external=true&parentUrl=close"
+    },
     {
       "doc_id": "99SWC-S4027",
       "organization": "Statewide Contracts",
@@ -181,35 +256,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4021&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4019",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "LVRC - EXIT GATE REPLACEMENT",
-      "bid_opening_date": "09/30/2026 3:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "f4d5b8a4-a895-4beb-89c9-c4b7fdadc2f2",
-      "scope": "The contractor shall provide all labor, tools, materials, equipment, supervision, and transportation required for replacing the exit gate. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Gate must meet UL325 compliant. Remove existing gate, post, electrical box and hydraulic supply lines concrete & asphalt, chain link fence. Install a new 24ft chain link double swing gate to match existing height. Set new 6inch gate post, 6ga. 2inch mesh chain link infilled, 2inch sch-40 round galvanized frame, with heavy duty greaseable hinges. Install 3 rows of barbed wire on top of new gate. Pour new concrete pad for new operators. Install 2-HDSW24UL gate operators with battery backup. Install in ground safety loops & exit loops, photo eye, LIFTMASTER 1300libs. Mag lock, operators bolted to new concrete pad.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "326900",
-          "name": "LVRC Exit Gate Replacement Invitation to Bid"
-        },
-        {
-          "file_nbr": "326902",
-          "name": "LVRC - Exit Gate Replacement Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4019&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S4018",
@@ -674,43 +720,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4004&external=true&parentUrl=close"
     },
     {
-      "doc_id": "80DOT-S4003",
-      "organization": "Department of Transportation",
-      "buyer": "Mason Bondi",
-      "title": "De-Icing Sand & Cinders District 3 Elko/Ely",
-      "bid_opening_date": "09/30/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "2efcce20-ad2a-49e1-b240-4dd862f73ef8",
-      "scope": "The State of Nevada Purchasing Division on behalf of the Nevada Department of Transportation is seeking vendors for De-Icing Sand and Cinders. This will be a multiple award and will be a one-year open term contract. Vendors must enter pricing on each line to indicate your company is proposing; select NO BID if not providing pricing. Failure to complete this line accurately may result in an unintended &#034;no bid&#034; and prevent your quote from being considered, even if documentation is attached. Pricing must be provided under each item vendor is bidding on. Vendors must also provide Plant location answer on the Questions Tab on items 2, 3, 4, 46, 76, 77, 78, 79 and 112. In the specifications attachment Vendor Information must be provided.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "325613",
-          "name": "80DOT-S4003 De-Icing Sand and Cinders Specifications.docx"
-        },
-        {
-          "file_nbr": "325605",
-          "name": "80DOT-S4003 Additional Requirements.docx"
-        },
-        {
-          "file_nbr": "325611",
-          "name": "OTC-Vendor-Information-Response~1.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4003&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "72DOW-S3996",
       "organization": "Department of Wildlife",
       "buyer": "Jennifer Thomas",
@@ -1068,99 +1077,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3955",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "bid_opening_date": "10/26/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "2aa00149-9012-4b47-b473-60a56ee7854c",
-      "scope": "Water Treatment Services for Boilers, Chillers, and Cooling Towers",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "327622",
-          "name": "44DOC-S3955 RFP~9.docx"
-        },
-        {
-          "file_nbr": "318130",
-          "name": "44DOC-S3955 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "318138",
-          "name": "44DOC-S3955 SOW.docx"
-        },
-        {
-          "file_nbr": "318129",
-          "name": "44DOC-S3955 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "322879",
-          "name": "44DOC-S3955 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "318140",
-          "name": "44DOC-S3955 Facility Contact Information.xlsx"
-        },
-        {
-          "file_nbr": "318141",
-          "name": "44DOC-S3955 FACILITY ADRESSES.docx"
-        },
-        {
-          "file_nbr": "318132",
-          "name": "44DOC-S3955-site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "318133",
-          "name": "44DOC-S3955-site-visit-sign-in-sheet.xlsx"
-        },
-        {
-          "file_nbr": "318131",
-          "name": "44DOC-S3955-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "327624",
-          "name": "44DOC-S3955 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "327625",
-          "name": "44DOC-S3955 Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "327626",
-          "name": "44DOC-S3955 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "327627",
-          "name": "44DOC-S3955Contractor Security Regulations Acknowledgement Form (2-22).docx"
-        },
-        {
-          "file_nbr": "327628",
-          "name": "44DOC-S3955 Request to Possess Mobile Device (8-26).pdf"
-        },
-        {
-          "file_nbr": "318143",
-          "name": "44DOC-S3955 Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "318126",
-          "name": "44DOC-S3955 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "318134",
-          "name": "44DOC-S3955-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3955&external=true&parentUrl=close"
     }
   ]
 }
