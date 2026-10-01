@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-30T16:11:49.081Z",
+  "scraped_at": "2026-10-01T16:11:00.654Z",
   "bids": [
     {
       "bid_id": "23",
@@ -13,43 +13,6 @@
       "jurisdiction_name": "Lyon County",
       "city": "Yerington",
       "source_base": "https://www.lyon-county.org/bids.aspx"
-    },
-    {
-      "bid_id": "134",
-      "title": "Bid For 2026/27 A Chevy Tahoe, Commercial 4X4",
-      "description": "WHITE PINE COUNTY  NOTICE OF REQUEST FOR BIDS  The White Pine County Sheriff&rsquo;s Office is seeking bids for the following vehicles.  The White Pine County Sheriff&rsquo;s...",
-      "status": "Open",
-      "closes": "9/30/2026 5:00 PM",
-      "detail_url": "https://www.whitepinecounty.net/Bids.aspx?bidID=134",
-      "documents": [
-        {
-          "url": "https://www.whitepinecounty.net/DocumentCenter/View/14093"
-        }
-      ],
-      "county": "White Pine",
-      "jurisdiction_name": "White Pine County",
-      "city": "Ely",
-      "source_base": "https://www.whitepinecounty.net/Bids.aspx"
-    },
-    {
-      "bid_id": "242",
-      "title": "Cottonwood Park Playground Installation",
-      "description": "NOTICE OF REQUEST FOR BID NO. BGID-2026-01/ PWP-NY-2026-482  COTTONWOOD PARK PLAYGROUND INSTALLATION  NOTICE IS HEREBY GIVEN that the Beatty General Improvement District,...",
-      "status": "Open",
-      "closes": "9/30/2026 2:00 PM",
-      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=242",
-      "documents": [
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51751"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51752"
-        }
-      ],
-      "county": "Nye",
-      "jurisdiction_name": "Nye County",
-      "city": "Tonopah",
-      "source_base": "https://www.nyecountynv.gov/Bids.aspx"
     },
     {
       "bid_id": "244",
