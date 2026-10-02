@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-01T14:06:25.340Z",
+  "scraped_at": "2026-10-02T14:06:20.021Z",
   "bids": [
     {
       "doc_id": "41NHA-S4034",
@@ -75,6 +75,27 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4030&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "65DPS-S4029",
+      "organization": "Department of Public Safety",
+      "buyer": "Miriam Garcia",
+      "title": "2027 Motorcycles",
+      "bid_opening_date": "11/02/2026 2:00 PM",
+      "status": "R146257",
+      "detail_fetched": true,
+      "csrf_token": "bf220f01-5320-43a8-9b6c-be237392809a",
+      "scope": "2027 BMW R 1300 RT-P KA3/ MODEL CODE 0M43 N99 GLACIER SILVER MATALLIC U.S. AUTHORITY PACKAGE; BMW ELECTRONIC SIREN; WEATHER PROOF BMW BATTERY CHARGER AND MOTORCYCLE CHARGING PLUG] FMS STANDARD EMERGENCY LIGHTING PACKAGE",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19793",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4029&external=true&parentUrl=close"
     },
     {
       "doc_id": "99SWC-S4027",
@@ -374,6 +395,39 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4017&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "80DOT-S4016",
+      "organization": "Department of Transportation",
+      "buyer": "Christian Armas",
+      "title": "Temporary Impact Attenuators",
+      "bid_opening_date": "10/27/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "0c57469f-375f-4f55-b206-9aa9de1e21ff",
+      "scope": "625.02.04: Temporary Impact Attenuators. One year Open Term Contract for Temporary Impact Attenuators. The temporary impact attenuators MUST be an approved product reflected on the Department of Transportation&#039;s Qualified Product List (QPL) in order to be considered. Proposals on products not listed on the QPL but accepted by NDOT prior to bid opening date and time must be accompanied by documentation from the Department of Transportation confirming that the product(s) has been approved. Award may be made to multiple vendors. Vendors wishing to propose pricing for multiple product lines must submit a separate quote for each product.",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "329852",
+          "name": "80DOT-S4016- Specifications and Requirements~1.docx"
+        },
+        {
+          "file_nbr": "329833",
+          "name": "80DOT-S4016 Additional Requirements.docx"
+        },
+        {
+          "file_nbr": "19837",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19830",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4016&external=true&parentUrl=close"
     },
     {
       "doc_id": "10TCA-S4015",
@@ -1007,76 +1061,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S3971",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Ed kochendarfer",
-      "title": "Grant subaward",
-      "bid_opening_date": "10/09/2026 5:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "fb2ac232-708a-4413-ad9e-a013390196c3",
-      "scope": "Grant subaward details, please see attached. Project funding range, $25,000-$500,000.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "320799",
-          "name": "319 (h) 2026 Funding Opportunity"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3971&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "99SWC-S3964",
-      "organization": "Statewide Contracts",
-      "buyer": "Miriam Garcia",
-      "title": "Electric Vehicle Charging Stations",
-      "bid_opening_date": "10/02/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "d4066ba4-52bd-48c4-af76-9f1523f11bc3",
-      "scope": "This is an informational release for the found Electric Vehicle Charging Stations.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "327929",
-          "name": "99SWC-S3964 - Answers - Updated.xlsx"
-        },
-        {
-          "file_nbr": "327336",
-          "name": "99SWC-S3964 - Answers.xlsx"
-        },
-        {
-          "file_nbr": "324846",
-          "name": "99SWC-S3964 - RFI - EVCS .docx"
-        },
-        {
-          "file_nbr": "324849",
-          "name": "99SWC-S3964 - SOW - EVCS.docx"
-        },
-        {
-          "file_nbr": "324850",
-          "name": "99SWC-S3964 - Cost Schedule - EVCS .xlsx"
-        },
-        {
-          "file_nbr": "324852",
-          "name": "Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "19561",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S3964&external=true&parentUrl=close"
     }
   ]
 }
