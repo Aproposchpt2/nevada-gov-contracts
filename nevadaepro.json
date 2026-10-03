@@ -1,6 +1,60 @@
 {
-  "scraped_at": "2026-10-02T14:06:20.021Z",
+  "scraped_at": "2026-10-03T14:51:55.078Z",
   "bids": [
+    {
+      "doc_id": "44DOC-S4037",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "RFI - Photo Processing, Screening, and Delivery Services",
+      "bid_opening_date": "10/29/2026 3:00 PM",
+      "status": "NDOC-RFI-2026-001",
+      "detail_fetched": true,
+      "csrf_token": "d47b55fb-f908-48d6-a82d-f8496cfdb90a",
+      "scope": "RFI - Photo Processing, Screening, and Delivery Services",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "330190",
+          "name": "44DOC-S3407  JW RFI_PHOTOSERVICES.docx"
+        },
+        {
+          "file_nbr": "77390",
+          "name": "4.1.1 Terms and Conditions for Services.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "30DOE-S4035",
+      "organization": "Department of Education",
+      "buyer": "Irene Ledezma",
+      "title": "Nevada Early Childhood Data Systems Infrastructure & Support RFI",
+      "bid_opening_date": "10/15/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "eb417d7c-dbbd-4fe7-bd92-c6a4b97c8c78",
+      "scope": "2.1. The State of Nevada, through the Nevada Department of Education&#039;s Office of Early Learning and Development (NDE-OELD), is issuing this Request for Information (RFI) to explore market capabilities, technical architectures, and fair-market cost structures to support its response to and development of future funding requests and sustainability planning. In the short-term, responses to this RFI will inform the development of the state&#039;s proposal for the federal Preschool Development Grant Birth through Five (PDG B-5) Strategic Measurement, Analytics, and Results using Technology (SMART) grant, Option 1. This effort aims to strengthen NDE&#039;s internal data pipelines within a compressed 10-month execution window, while continuing to build technical readiness for future statewide early childhood integrated data systems (ECIDS).",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "329550",
+          "name": "30DOE-S4035-FY27.PDG.RFI_SMART.pdf"
+        },
+        {
+          "file_nbr": "19701",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S4035&external=true&parentUrl=close"
+    },
     {
       "doc_id": "41NHA-S4034",
       "organization": "Nevada Health Authority",
@@ -717,63 +771,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4006&external=true&parentUrl=close"
     },
     {
-      "doc_id": "99SWC-S4004",
-      "organization": "Statewide Contracts",
-      "buyer": "Christian Armas",
-      "title": "Employee Drug and Alcohol Testing",
-      "bid_opening_date": "10/02/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "16d7fc58-84a7-4fb6-bb70-24e607227cbf",
-      "scope": "Employee Alcohol and Drug Testing Services",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "325632",
-          "name": "RFQ_99SWC-S4004~1.docx"
-        },
-        {
-          "file_nbr": "309723",
-          "name": "Terms-and-conditions-for-services~9.pdf"
-        },
-        {
-          "file_nbr": "309722",
-          "name": "Standard-form-contract~7.docx"
-        },
-        {
-          "file_nbr": "322716",
-          "name": "INSURANCE REQUIREMENTS.docx"
-        },
-        {
-          "file_nbr": "325598",
-          "name": "Vendor_Qualifications_Response_RFQ_99SWC-S4004.xlsx"
-        },
-        {
-          "file_nbr": "325596",
-          "name": "Service Locations RFQ 99SWC-S4004.xlsx"
-        },
-        {
-          "file_nbr": "325595",
-          "name": "Scope_of_Work_99SWC-S4004.docx"
-        },
-        {
-          "file_nbr": "325593",
-          "name": "Cost Schedule 99SWC-S4004.xlsx"
-        },
-        {
-          "file_nbr": "322712",
-          "name": "Certification-regarding-lobbying~5.pdf"
-        },
-        {
-          "file_nbr": "19561",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4004&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "72DOW-S3996",
       "organization": "Department of Wildlife",
       "buyer": "Jennifer Thomas",
@@ -948,119 +945,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3975",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Commissary and Supplemental Services",
-      "bid_opening_date": "10/06/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "b1a38a53-8d72-4654-96b1-0eceea119216",
-      "scope": "Commissary and Supplemental Services",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "327713",
-          "name": "44DOC-S3975 QandA 1.xlsx"
-        },
-        {
-          "file_nbr": "327714",
-          "name": "FY25 7.1.24 -6.30.25 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327715",
-          "name": "FY26 July 2025 - June 2026 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327716",
-          "name": "Nevada Commissary Price List .pdf"
-        },
-        {
-          "file_nbr": "327717",
-          "name": "Nevada Package Sales FY25.pdf"
-        },
-        {
-          "file_nbr": "327718",
-          "name": "Nevada Package Sales FY26.pdf"
-        },
-        {
-          "file_nbr": "327719",
-          "name": "Special Order Price List .pdf"
-        },
-        {
-          "file_nbr": "323161",
-          "name": "44DOC-S3975 RFP~4.docx"
-        },
-        {
-          "file_nbr": "321540",
-          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "321539",
-          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "321547",
-          "name": "44DOC-S3975 Facility Contacts.docx"
-        },
-        {
-          "file_nbr": "321533",
-          "name": "44DOC-S3975 Facility Map.pdf"
-        },
-        {
-          "file_nbr": "321538",
-          "name": "44DOC-S3975 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "321799",
-          "name": "44DOC-S3975 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "321541",
-          "name": "44DOC-S3975-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "321543",
-          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321536",
-          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "321530",
-          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "321531",
-          "name": "44DOC-S3975 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "321532",
-          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
-        },
-        {
-          "file_nbr": "321528",
-          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "321529",
-          "name": "44DOC-S3975 Commissary Pricing.pdf"
-        },
-        {
-          "file_nbr": "323159",
-          "name": "44DOC-S3975 Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
     }
   ]
 }
