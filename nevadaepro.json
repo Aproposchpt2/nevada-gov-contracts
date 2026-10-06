@@ -1,6 +1,31 @@
 {
-  "scraped_at": "2026-10-05T14:08:44.822Z",
+  "scraped_at": "2026-10-06T14:06:24.946Z",
   "bids": [
+    {
+      "doc_id": "30DOE-S4039",
+      "organization": "Department of Education",
+      "buyer": "Kaylene Hoyt",
+      "title": "Anonymous School Safety and Tip Management Platform",
+      "bid_opening_date": "10/16/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "78366865-672d-4d21-8827-c304c24eb81e",
+      "scope": "The Nevada Department of Education (NDE) is seeking information on qualified vendors who can provide a modern, cloud-based, anonymous tip acquisition and management platform to support the state&#039;s SafeVoice Nevada initiative. The platform will serve as the primary technology infrastructure for students, parents, school staff, mental health providers, and law enforcement agencies to securely report, route, and manage anonymous safety concerns and threats.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "330375",
+          "name": "Nevada Department of Education - request-for-information-30DOE-S4039.pdf"
+        },
+        {
+          "file_nbr": "19701",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S4039&external=true&parentUrl=close"
+    },
     {
       "doc_id": "44DOC-S4037",
       "organization": "Department of Corrections",
@@ -912,119 +937,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3975",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Commissary and Supplemental Services",
-      "bid_opening_date": "10/26/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "e64304d0-b90e-4985-813f-21c865faf820",
-      "scope": "Commissary and Supplemental Services",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "330163",
-          "name": "44DOC-S3975 RFP~5.docx"
-        },
-        {
-          "file_nbr": "327713",
-          "name": "44DOC-S3975 QandA 1.xlsx"
-        },
-        {
-          "file_nbr": "327714",
-          "name": "FY25 7.1.24 -6.30.25 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327715",
-          "name": "FY26 July 2025 - June 2026 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327716",
-          "name": "Nevada Commissary Price List .pdf"
-        },
-        {
-          "file_nbr": "327717",
-          "name": "Nevada Package Sales FY25.pdf"
-        },
-        {
-          "file_nbr": "327718",
-          "name": "Nevada Package Sales FY26.pdf"
-        },
-        {
-          "file_nbr": "327719",
-          "name": "Special Order Price List .pdf"
-        },
-        {
-          "file_nbr": "321540",
-          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "321539",
-          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "321547",
-          "name": "44DOC-S3975 Facility Contacts.docx"
-        },
-        {
-          "file_nbr": "321533",
-          "name": "44DOC-S3975 Facility Map.pdf"
-        },
-        {
-          "file_nbr": "321538",
-          "name": "44DOC-S3975 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "321799",
-          "name": "44DOC-S3975 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "321541",
-          "name": "44DOC-S3975-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "321543",
-          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321536",
-          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "321530",
-          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "321531",
-          "name": "44DOC-S3975 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "321532",
-          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
-        },
-        {
-          "file_nbr": "321528",
-          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "321529",
-          "name": "44DOC-S3975 Commissary Pricing.pdf"
-        },
-        {
-          "file_nbr": "323159",
-          "name": "44DOC-S3975 Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
     }
   ]
 }
