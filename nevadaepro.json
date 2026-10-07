@@ -1,6 +1,27 @@
 {
-  "scraped_at": "2026-10-06T14:06:24.946Z",
+  "scraped_at": "2026-10-07T14:05:35.555Z",
   "bids": [
+    {
+      "doc_id": "40DHHS-S4040",
+      "organization": "Department of Human Services",
+      "buyer": "Jeremy Redman",
+      "title": "SOLICITATION WAVIER, COMMUNITY HEALTH NURSING",
+      "bid_opening_date": "10/15/2026 5:00 PM",
+      "status": "SW261001",
+      "detail_fetched": true,
+      "csrf_token": "a31581bb-0878-49cd-964c-6f6f5e613917",
+      "scope": "Patagonia provides the Community Health Nursing Program with the implementation and maintenance of a comprehensive cloud-based patient electronic health record system.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "330486",
+          "name": "40DHHS-S4040-261001.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4040&external=true&parentUrl=close"
+    },
     {
       "doc_id": "30DOE-S4039",
       "organization": "Department of Education",
@@ -296,6 +317,79 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4025&external=true&parentUrl=close"
     },
     {
+      "doc_id": "08DOA-S4023",
+      "organization": "Department of Administration",
+      "buyer": "Annette Morfin",
+      "title": "Janitorial Services for Various Agencies",
+      "bid_opening_date": "11/10/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "aec6dd97-c588-4507-8bf3-bfeef694cd12",
+      "scope": "JANITORIAL SERVICES FOR VARIOUS DMV LOCATIONS IN LAS VEGAS.",
+      "contact_org": "B&G Carson City",
+      "contact_email": "bandginvoices@admin.nv.gov",
+      "contact_phone": "(775) 684-1800",
+      "attachments": [
+        {
+          "file_nbr": "19625",
+          "name": "Quote Instructions.pdf"
+        },
+        {
+          "file_nbr": "330419",
+          "name": "Terms-and-conditions-for-services~6.pdf"
+        },
+        {
+          "file_nbr": "330436",
+          "name": "08DOA-S4023 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "330421",
+          "name": "Standard-form-contract~6.docx"
+        },
+        {
+          "file_nbr": "330424",
+          "name": "08DOA-S4023 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "330425",
+          "name": "08DOA-S4023 - site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "330428",
+          "name": "Scope of Work - DMV Silverado Main and CDL Building - Scope of Work_.pdf"
+        },
+        {
+          "file_nbr": "330429",
+          "name": "Scope of Work - DMV Decatur-DMV Flamingo and DMV Sahara - Scope of Work_.pdf"
+        },
+        {
+          "file_nbr": "330430",
+          "name": "Scope of Work - Campos - Scope of Work_.pdf"
+        },
+        {
+          "file_nbr": "330431",
+          "name": "Scope of Work - Fire Marshal Building - Scope of Work_.pdf"
+        },
+        {
+          "file_nbr": "330432",
+          "name": "08DOA-S4023 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "330433",
+          "name": "08DOA-S4023 - Cost Schedule - Final.docx"
+        },
+        {
+          "file_nbr": "330434",
+          "name": "Certification-regarding-lobbying~7.pdf"
+        },
+        {
+          "file_nbr": "330435",
+          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=08DOA-S4023&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "CTYNLV-S4022",
       "organization": "City of North Las Vegas",
       "buyer": "Joy Yoshida",
@@ -538,29 +632,73 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4015&external=true&parentUrl=close"
     },
     {
-      "doc_id": "10TCA-S4014",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "Locomotive",
-      "bid_opening_date": "10/06/2026 1:00 PM",
-      "status": "10TCA-R146408",
+      "doc_id": "43ADG-S4013",
+      "organization": "Adjutant General",
+      "buyer": "Mason Bondi",
+      "title": "National Guard - Landscaping Services",
+      "bid_opening_date": "11/03/2026 2:00 PM",
+      "status": "Landscaping Services",
       "detail_fetched": true,
-      "csrf_token": "4dceed39-9c1c-4912-8161-944b87e8a1bc",
-      "scope": "ESTIMATED FREIGHT CHARGES:",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
+      "csrf_token": "bf1499a4-ab1f-4ede-8173-59a9283658b3",
+      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Office of the Military (NOM), Nevada Department of Adjutant General and National Guard (ADG) is seeking proposals from qualified vendors to provide Landscaping Services for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
       "attachments": [
         {
-          "file_nbr": "19626",
-          "name": "0000 Standard Terms and Conditions for Commodities"
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
         },
         {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
+          "file_nbr": "329955",
+          "name": "43ADG-S4013 - Request for Qualifications~1.pdf"
+        },
+        {
+          "file_nbr": "329742",
+          "name": "Terms-and-conditions-for-services~6.pdf"
+        },
+        {
+          "file_nbr": "329932",
+          "name": "NVARNG Environmental Policy Statement.pdf"
+        },
+        {
+          "file_nbr": "329931",
+          "name": "NVARNG Personal Security Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "329750",
+          "name": "43ADG-S4013 - NOM Standard Form Contract.docx"
+        },
+        {
+          "file_nbr": "329744",
+          "name": "43ADG-S4013-Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "329954",
+          "name": "43ADG-S4013 RFQ_Vendor_Qualifications_Response_Form~1.xlsx"
+        },
+        {
+          "file_nbr": "329934",
+          "name": "43ADG-S4013 RFQ Service Locations~1.xlsx"
+        },
+        {
+          "file_nbr": "329933",
+          "name": "43ADG-S4013 Scope of Work.pdf"
+        },
+        {
+          "file_nbr": "329936",
+          "name": "43ADG-S4013_Cost_Schedule.xlsx"
+        },
+        {
+          "file_nbr": "329743",
+          "name": "Certification-regarding-lobbying~7.pdf"
+        },
+        {
+          "file_nbr": "329745",
+          "name": "43ADG-S4013 -Vendor-Information-Response.pdf"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4014&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4012",
@@ -819,124 +957,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3996&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "69CRC-S3987",
-      "organization": "Colorado River Commission",
-      "buyer": "Gina Goodman",
-      "title": "High Voltage System Engineering Services",
-      "bid_opening_date": "10/26/2026 17:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "c8c2f79b-6364-419d-9133-bbd4bb7fae69",
-      "scope": "Engineering Services - See Section 9 of the RFP Document for Proposal Submission instructions. Cost to be submitted via Attachment E- Cost Schedule",
-      "contact_org": "Colorado River Commission",
-      "contact_email": "invoices@crchydro.org",
-      "contact_phone": "(702) 486-2670",
-      "attachments": [
-        {
-          "file_nbr": "19802",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325118",
-          "name": "69CRC-S3987 - ES-27- RFP.pdf"
-        },
-        {
-          "file_nbr": "325119",
-          "name": "ATT A - Scope of Work 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325120",
-          "name": "Att B - Terms and Conditions for Services 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325121",
-          "name": "Att C - Standard Form Contract NATIVE 69CRC-S3987.docx"
-        },
-        {
-          "file_nbr": "325123",
-          "name": "Att C - Standard Form Contract  69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325124",
-          "name": "Att D - Insurance Schedule 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325125",
-          "name": "Att E - Cost Schedule 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325126",
-          "name": "Att F - Proposed Staff Resume 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325127",
-          "name": "Att G - Reference Questionnarie NATIVE 69CRC-S3987.docx"
-        },
-        {
-          "file_nbr": "325128",
-          "name": "Att G - Reference Questionnarie 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325129",
-          "name": "Att H - Vendor Information Response 69CRC-S3987.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "30DOE-S3984",
-      "organization": "Department of Education",
-      "buyer": "Chuy Ampudia",
-      "title": "Administrator, Office of Assessment, Data, and Accountability Management (ADAM)",
-      "bid_opening_date": "10/01/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "e5a32250-2457-47ff-b59d-42120c8d3c37",
-      "scope": "The State of Nevada Purchasing, on behalf of the Nevada Department of Education is seeking proposals from qualified vendors to provide the Nevada Student Assessments required by the Every Student Succeeds Act (ESSA). This will include Math and English Language Arts in grades 3-8, Science in 5, 8 and high school, and an alternate assessment designed for students with the most significant cognitive disabilities, as well as additional services as described below and in the scope of work and attachments.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19701",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "324297",
-          "name": "30DOE-S3984-request-for-proposals-2026-08-27.docx"
-        },
-        {
-          "file_nbr": "324290",
-          "name": "Terms-and-conditions-for-services~3.pdf"
-        },
-        {
-          "file_nbr": "324291",
-          "name": "30DOE-S3984 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "324292",
-          "name": "INSURANCE REQUIREMENTS 30DOE-S3984.pdf"
-        },
-        {
-          "file_nbr": "324289",
-          "name": "30DOE-S3984 Scope of Work.docx"
-        },
-        {
-          "file_nbr": "324293",
-          "name": "NV_ Data Sharing Agreement_.docx"
-        },
-        {
-          "file_nbr": "324294",
-          "name": "Certification-regarding-lobbying~2.pdf"
-        },
-        {
-          "file_nbr": "324295",
-          "name": "30DOE-S3984-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S3984&external=true&parentUrl=close"
     }
   ]
 }
