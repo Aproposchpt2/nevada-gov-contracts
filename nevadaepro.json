@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-07T14:05:35.555Z",
+  "scraped_at": "2026-10-08T14:06:37.151Z",
   "bids": [
     {
       "doc_id": "40DHHS-S4040",
@@ -77,6 +77,35 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
     },
     {
+      "doc_id": "43ADG-S4036",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "OTAG - New Flagpole Installation",
+      "bid_opening_date": "10/23/2026 5:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "8ecbf0bd-edb6-4451-9faa-561f0d8b0257",
+      "scope": "The contractor shall install a new 35ft flagpole in front of the OTAG building. Contractor is responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Contractor is responsible for contacting 811 to clear all underground utilities prior to any excavation. Contractor is to provide a new 35ft commercial grade flagpole. Contractor is to core concrete and excavate, install flagpole sleeve and flagpole per manufactures specs. Repair any sidewalk that was removed to install new 35ft flagpole. if needed Fabricate a light cove for the existing inner lights to accept 4 new upper lights. 2 will face each outer existing flagpole. 2 will face the new flagpole. Property test the halyard system to verify smooth, binding-free operation of the truck pulley, cleat/winch and swivel snaps. Contractor must thoroughly clean the work area and properly dispose of all materials used and removed from this project.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "329927",
+          "name": "OTAG Flag Pole Installation Invitation to Bid"
+        },
+        {
+          "file_nbr": "329928",
+          "name": "OTAG Flag Pole Installation Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4036&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "30DOE-S4035",
       "organization": "Department of Education",
       "buyer": "Irene Ledezma",
@@ -146,6 +175,63 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4033&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "41NHA-S4031",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Rural Value Acceleration Network (RVAN) Vendor",
+      "bid_opening_date": "11/30/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "4282584e-07d6-488f-9f84-6646fa35ea63",
+      "scope": "Rural Value Acceleration Network (RVAN) Vendor - Please see the Cost Schedule located in the &#039;Attachments&#039; tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "330908",
+          "name": "41NHA-S4031-Request-for-Proposals.docx"
+        },
+        {
+          "file_nbr": "329015",
+          "name": "Terms-and-conditions-for-services~9.pdf"
+        },
+        {
+          "file_nbr": "329017",
+          "name": "Standard-form-contract~8.docx"
+        },
+        {
+          "file_nbr": "329337",
+          "name": "41NHA-S4031 - Insurance Schedule - RFP.docx"
+        },
+        {
+          "file_nbr": "329338",
+          "name": "41NHA-S4031 - Business Associate Addendum.docx"
+        },
+        {
+          "file_nbr": "329339",
+          "name": "41NHA-S4031 - Business Continuity Agreement.docx"
+        },
+        {
+          "file_nbr": "329023",
+          "name": "41NHA-S4031-Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "329340",
+          "name": "41NHA-S4031 - Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "329014",
+          "name": "Certification-regarding-lobbying~9.pdf"
+        },
+        {
+          "file_nbr": "329021",
+          "name": "41NHA-S4031-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4030",
@@ -895,68 +981,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4007&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S4006",
-      "organization": "Department of Transportation",
-      "buyer": "Mason Bondi",
-      "title": "Glass Traffic Beads",
-      "bid_opening_date": "10/08/2026 14:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "1c7f3764-bc1f-48de-bd39-03d9e61e66dc",
-      "scope": "Glass traffic beads for use with waterborne traffic paint; shall be in accordance with attached Specifications and Additional Requirements. Vendors shall provide pricing on the items tab in NevadaEPro.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "326088",
-          "name": "80DOT-S4006 Specifications and Requirements~1.docx"
-        },
-        {
-          "file_nbr": "325735",
-          "name": "80DOT-S4006 Addtional Requirements.docx"
-        },
-        {
-          "file_nbr": "325736",
-          "name": "OTC-Vendor-Information-Response~2.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4006&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "72DOW-S3996",
-      "organization": "Department of Wildlife",
-      "buyer": "Jennifer Thomas",
-      "title": "FEMALE GPS SOLAR EAR TAG - GAME - 2027",
-      "bid_opening_date": "10/22/2026 00:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "f4158cff-6c79-421e-828c-086d9becf2e0",
-      "scope": "TIER 3 -FEMALE GPS SOLAR EAR TAG (MULE DEER FAWN AND ADULTS). DATA PLAN ACTIVATION (INCLUDED IN TAG PURCHASE) TRACK TAG KING UNIT - 6 PINGS HARDWARE + 3 YEARS OF DATA",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19818",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19811",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S3996&external=true&parentUrl=close"
     }
   ]
 }
