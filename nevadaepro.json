@@ -1,6 +1,84 @@
 {
-  "scraped_at": "2026-10-08T14:06:37.151Z",
+  "scraped_at": "2026-10-09T14:06:57.760Z",
   "bids": [
+    {
+      "doc_id": "40DHHS-S4045",
+      "organization": "Department of Human Services",
+      "buyer": "Jeremy Redman",
+      "title": "Solicitation Waiver, provide data driven, internet-based reporting system",
+      "bid_opening_date": "11/21/2026 5:00 PM",
+      "status": "SW261022",
+      "detail_fetched": true,
+      "csrf_token": "4b344352-a56e-4983-915a-719df7d625ca",
+      "scope": "Chain Hal shall provide access to an internet-based reporting system for use by the Division of Child and Family Services (DCFS), the Nevada Judicial System, and other authorized entities.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "331144",
+          "name": "40DHHS-S4040-261001~1.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4045&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "70CNR-S4044",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "NDSP Wifi Services",
+      "bid_opening_date": "11/03/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "b497dc9a-a7fd-4be6-a474-f278422dc07b",
+      "scope": "NDSP Wifi Services",
+      "contact_org": "State Parks Bryan Building",
+      "contact_email": "NDSPAccounting@parks.nv.gov",
+      "contact_phone": "(775) 684-2770",
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "331057",
+          "name": "70CNR-S4044 RFP for NDSP Wifi Services.docx"
+        },
+        {
+          "file_nbr": "330904",
+          "name": "70CNR-S4044 Terms-and-conditions-for-services.docx"
+        },
+        {
+          "file_nbr": "330902",
+          "name": "70CNR-S4044 Terms-and-conditions-for-goods.docx"
+        },
+        {
+          "file_nbr": "330901",
+          "name": "70CNR-S4044 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "331045",
+          "name": "70CNR-S4044 Insurance Requirements.docx"
+        },
+        {
+          "file_nbr": "331044",
+          "name": "70CNR-S4044 Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "330912",
+          "name": "70CNR-S4044 Cost Schedule -WIFI.xlsx"
+        },
+        {
+          "file_nbr": "330900",
+          "name": "70CNR-S4044 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "330905",
+          "name": "70CNR-S4044 Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4044&external=true&parentUrl=close"
+    },
     {
       "doc_id": "40DHHS-S4040",
       "organization": "Department of Human Services",
@@ -46,6 +124,71 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S4039&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "41NHA-S4038",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Program of All Inclusive Care for the Elderly (PACE)",
+      "bid_opening_date": "12/10/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "27da3978-3e55-42c6-b6f1-709e65bb9745",
+      "scope": "Please see Scope of Work located in the &#039;Attachments&#039; tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "331170",
+          "name": "41NHA-S4038-Request-for-Proposals.docx"
+        },
+        {
+          "file_nbr": "331169",
+          "name": "41NHA-S4038 - SOW - 10-08.docx"
+        },
+        {
+          "file_nbr": "331097",
+          "name": "Terms-and-conditions-for-services~11.pdf"
+        },
+        {
+          "file_nbr": "330553",
+          "name": "Standard-form-contract~9.docx"
+        },
+        {
+          "file_nbr": "331009",
+          "name": "41NHA-S4038 - Insurance Schedule - RFP.docx"
+        },
+        {
+          "file_nbr": "330550",
+          "name": "41NHA-S4038 - Business Associate Addendum 07.01.25.docx"
+        },
+        {
+          "file_nbr": "330551",
+          "name": "41NHA-S4038 - Business Continuity Agreement 12.01.25.docx"
+        },
+        {
+          "file_nbr": "331100",
+          "name": "41NHA-S4038 - Attachment A- PACE Technical Proposal Questions.docx"
+        },
+        {
+          "file_nbr": "331101",
+          "name": "41NHA-S4038 - Attachment B - PACE Service Delivery Arrangements.docx"
+        },
+        {
+          "file_nbr": "331096",
+          "name": "41NHA-S4038-Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "330555",
+          "name": "Certification-regarding-lobbying~10.pdf"
+        },
+        {
+          "file_nbr": "330552",
+          "name": "41NHA-S4038-Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4038&external=true&parentUrl=close"
     },
     {
       "doc_id": "44DOC-S4037",
@@ -538,67 +681,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4021&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S4018",
-      "organization": "Department of Human Services",
-      "buyer": "Jennifer Thomas",
-      "title": "Family to Family Support Services-2027",
-      "bid_opening_date": "10/08/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "f5b2ac6c-7ad6-46b0-a089-37b29c5606dc",
-      "scope": "Vendors to provide the clients Family Peer Support Services as described in the scope of work in the attachments tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "327466",
-          "name": "40DHHS-S4018 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "327453",
-          "name": "40DHHS-S4018 - Scope of Work.docx"
-        },
-        {
-          "file_nbr": "327446",
-          "name": "40DHHS-S4018 - Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "327450",
-          "name": "40DHHS-S4018 - Business Associate Addendum.docx"
-        },
-        {
-          "file_nbr": "327451",
-          "name": "40DHHS-S4018 - Fiscal Procedures.doc"
-        },
-        {
-          "file_nbr": "327447",
-          "name": "40DHHS-S4018 - Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "327452",
-          "name": "40DHHS-S4018 - Insurance Requirements.docx"
-        },
-        {
-          "file_nbr": "327457",
-          "name": "40DHHS-S4018 - Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "327445",
-          "name": "40DHHS-S4018-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "327449",
-          "name": "40DHHS-S4018 - reference_questionnaire.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4018&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "43ADG-S4017",
       "organization": "Adjutant General",
       "buyer": "Devin Earl",
@@ -875,112 +957,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4010&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4009",
-      "organization": "Adjutant General",
-      "buyer": "Devin Earl",
-      "title": "AASF Exterior Paint",
-      "bid_opening_date": "10/14/2026 10:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "2e9aefa6-a01c-459c-a5ff-5f461981cf54",
-      "scope": "Cost estimation for exterior prep, coating, and inspection of AASF.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325862",
-          "name": "Request for Proposal"
-        },
-        {
-          "file_nbr": "325860",
-          "name": "Scope of Work"
-        },
-        {
-          "file_nbr": "325802",
-          "name": "Cost Schedule"
-        },
-        {
-          "file_nbr": "325806",
-          "name": "Certification Regarding Lobbying"
-        },
-        {
-          "file_nbr": "325804",
-          "name": "Terms and Conditions for Services"
-        },
-        {
-          "file_nbr": "325805",
-          "name": "Term and Conditions for Goods"
-        },
-        {
-          "file_nbr": "325819",
-          "name": "Standard From Contract"
-        },
-        {
-          "file_nbr": "325823",
-          "name": "Insurance Requirements"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4009&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4007",
-      "organization": "Adjutant General",
-      "buyer": "Devin Earl",
-      "title": "Southern Nevada Dust Control",
-      "bid_opening_date": "10/13/2026 10:00:00",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "8d5f8637-7c6e-48ba-9229-7895d0cf3c31",
-      "scope": "Cost estimation for Dust Control services over four years.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325809",
-          "name": "Request for Proposal"
-        },
-        {
-          "file_nbr": "325811",
-          "name": "Scope of Work"
-        },
-        {
-          "file_nbr": "325802",
-          "name": "Cost Schedule"
-        },
-        {
-          "file_nbr": "325806",
-          "name": "Certification Regarding Lobbying"
-        },
-        {
-          "file_nbr": "325804",
-          "name": "Terms and Conditions for Services"
-        },
-        {
-          "file_nbr": "325805",
-          "name": "Term and Conditions for Goods"
-        },
-        {
-          "file_nbr": "325819",
-          "name": "Standard From Contract"
-        },
-        {
-          "file_nbr": "325823",
-          "name": "Insurance Requirements"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4007&external=true&parentUrl=close"
     }
   ]
 }
