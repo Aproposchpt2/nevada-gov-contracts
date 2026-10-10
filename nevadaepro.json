@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-09T14:06:57.760Z",
+  "scraped_at": "2026-10-10T14:05:33.255Z",
   "bids": [
     {
       "doc_id": "40DHHS-S4045",
@@ -546,6 +546,39 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4025&external=true&parentUrl=close"
     },
     {
+      "doc_id": "55AGR-S4024",
+      "organization": "Department of Agriculture",
+      "buyer": "Joel Wixon",
+      "title": "Nitrogen Analyzer",
+      "bid_opening_date": "10/23/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "51b51742-57c4-4f15-9e58-c968b20c896c",
+      "scope": "100010453 rMAXNexPLUS-Ar rapid MAX N exceed PLUS - Elemental analyzer for nitrogen determination. Calibrated with argon as carrier gas. Includes initial outfit kit (all items necessary for installation and operation) and starter kit (all necessary consumables for installation and initial operation).",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "307300",
+          "name": "Terms and Conditions for Goods.pdf"
+        },
+        {
+          "file_nbr": "133789",
+          "name": "Terms and Conditions for Services~2.pdf"
+        },
+        {
+          "file_nbr": "242866",
+          "name": "4.2.2 Insurance Schedule~1.docx"
+        },
+        {
+          "file_nbr": "19759",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4024&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "08DOA-S4023",
       "organization": "Department of Administration",
       "buyer": "Annette Morfin",
@@ -867,39 +900,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4012",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "Southern Nevada - Pest Control Services",
-      "bid_opening_date": "10/09/2026 18:59:59",
-      "status": "Sent",
-      "detail_fetched": true,
-      "csrf_token": "40f0cca7-7c92-4a3a-9e25-03d2a8a1387e",
-      "scope": "The Contractor shall provide comprehensive pest control and nuisance wildlife management services at all Agency facilities on a semiannual and as-needed basis. Semiannual services shall consist of two scheduled preventive maintenance visits at each identified complex during every twelve-month period, with visits occurring approximately six months apart. Bidders shall submit separate pricing for each complex, and the attached facility maps shall be used as references to identify the buildings, interior and exterior areas included in the semiannual service. Semiannual service shall include the accessible interior and exterior areas of each identified building. Interior service shall be limited to hallways, restrooms, lobbies, entryways, and other common or public-use areas. Individual offices and other nonpublic areas shall not be included in the regularly scheduled semiannual service and shall be serviced only when specifically requested and authorized by the Agency. Exterior service shall include building perimeters, entrances, utility penetrations, loading areas, dumpsters, waste-storage areas, landscaping immediately adjacent to buildings, accessible roof areas, and other exterior locations identified on the attached maps. During each scheduled visit, the Contractor shall inspect the included areas for evidence of pest activity, nesting, entry points, harborage areas, moisture conditions, sanitation concerns, structural openings, and other conditions that may contribute to pest or animal activity. Services shall include monitoring, trapping, baiting, treatment, removal, minor exclusion work, and the servicing or replacement of pest-control devices, as necessary. The Contractor shall also provide Agency-authorized, as-needed response services throughout the contract term for, but not limited to, ants, cockroaches, spiders, scorpions, crickets, beetles, flies, mosquitoes, fleas, ticks, bed bugs, bees, wasps, hornets, rodents, gophers, ground squirrels, snakes, birds, bats, feral animals, nuisance wildlife, dead animals, and other pest-related conditions encountered at Agency facilities. As-needed services shall include requested office treatments and other additional work not included in the semiannual service and shall be priced and invoiced based on the actual man-hours required, using the labor rates submitted in the Contractor&#039;s bid. All as-needed work must be requested and authorized by the Agency before services are performed. As-needed services may include inspection, identification, treatment, trapping, removal, lawful relocation or disposal, cleaning, disinfection, deodorization, minor exclusion, and follow-up treatment when necessary. The Contractor shall use integrated pest management practices that prioritize prevention, sanitation, physical exclusion, trapping, targeted treatment, and the least hazardous effective control method. All services shall be performed by trained and properly licensed personnel in accordance with applicable pesticide, safety, environmental, wildlife, animal-control, and disposal requirements. The Contractor shall coordinate all work with the designated Agency representative; provide all necessary labor, supervision, vehicles, tools, equipment, traps, bait stations, pesticides, personal protective equipment, and incidental materials; and minimize disruption to Agency personnel and operations. Following each service visit, the Contractor shall provide a written report identifying the complex, facility, and areas inspected or serviced; pest or animal activity observed; treatments and products used; traps or devices installed or serviced; animals removed; safety or reentry requirements; recommended corrective actions; photographs when appropriate; actual man-hours expended for as-needed work; and any required follow-up services.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "326202",
-          "name": "Southern Nevada Pest Control Services Invitation to Bid"
-        },
-        {
-          "file_nbr": "326203",
-          "name": "Southern Nevada Pest Control Services Scope of Work"
-        },
-        {
-          "file_nbr": "326204",
-          "name": "Southern Nevada Pest Control Services Bldg Map"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4012&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4010",
