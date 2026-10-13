@@ -1,6 +1,67 @@
 {
-  "scraped_at": "2026-10-12T14:11:56.531Z",
+  "scraped_at": "2026-10-13T14:08:05.716Z",
   "bids": [
+    {
+      "doc_id": "31PCSA-S4046",
+      "organization": "State Public Charter School Authority",
+      "buyer": "Miriam Garcia",
+      "title": "Document Draft, Consulting, and Project Management",
+      "bid_opening_date": "11/16/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "4c1fdeaf-c3bb-4033-b6ef-610481afc05f",
+      "scope": "The SPCSA seeks to enter into four-year contract with one or more vendors to provide services on an as-needed, project-by-project basis. Services will primarily include developing a shared-knowledge document draft and may also include consulting, training, project management, and other work identified by the F&O Director.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "331628",
+          "name": "31PCSA-S4046 -  RFP .docx"
+        },
+        {
+          "file_nbr": "331629",
+          "name": "31PCSA-S4046 -  Scope of Work .docx"
+        },
+        {
+          "file_nbr": "331590",
+          "name": "31PCSA-S4046  - Terms and Conditions for Services.pdf"
+        },
+        {
+          "file_nbr": "331607",
+          "name": "31PCSA-S4046 - Standard Form Contract.docx"
+        },
+        {
+          "file_nbr": "331599",
+          "name": "31PCSA-S4046 - Insurance Schedule.pdf"
+        },
+        {
+          "file_nbr": "331603",
+          "name": "31PCSA-S4046 - Fiscal Procedures.doc"
+        },
+        {
+          "file_nbr": "331600",
+          "name": "31PCSA-S4046 - Staff Resume.docx"
+        },
+        {
+          "file_nbr": "331604",
+          "name": "31PCSA-S4046 - Certification Regarding Lobbying.pdf"
+        },
+        {
+          "file_nbr": "331605",
+          "name": "31PCSA-S4046  - Vendor Information Response.pdf"
+        },
+        {
+          "file_nbr": "331602",
+          "name": "31PCSA-S4046 - Confidentiality Addendum.docx"
+        },
+        {
+          "file_nbr": "19715",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4046&external=true&parentUrl=close"
+    },
     {
       "doc_id": "40DHHS-S4045",
       "organization": "Department of Human Services",
@@ -78,6 +139,27 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4044&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "80DOT-S4043",
+      "organization": "Department of Transportation",
+      "buyer": "Miriam Garcia",
+      "title": "Impact Attenuators",
+      "bid_opening_date": "11/16/2026 2:00 PM",
+      "status": "NDEQ027396",
+      "detail_fetched": true,
+      "csrf_token": "be6be819-f210-4d3d-a0a3-428224adeb87",
+      "scope": "SCI 100 Impact Attenuators",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19793",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4043&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4042",
@@ -831,104 +913,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4016&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S4015",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "Telehandler",
-      "bid_opening_date": "10/13/2026 1:00 PM",
-      "status": "10TCA-R146411",
-      "detail_fetched": true,
-      "csrf_token": "658b2471-31a7-48af-a64c-cd7c431d4dfa",
-      "scope": "TELEHANDLER: TO INCLUDE AN ENCLOSED CAB WITH HEAT AND AC; CARRIAGE - 72&#034; FIXED, 6 X 2.5&#034; X 60&#034; (QTY 2), SWIVEL HOOK, 17.5 X 25 E3 FOAM FILLED (QTY 4), BUCKET 1.65 CU YD (STAR), 20,000 LBS CAPACITY, 45 FT LIFT HEIGHT, 27 FT. 4 IN FORWARD REACH, 134 HP HT (TIER 4F) ENGINE. MODEL XTREME XR2045-C",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19626",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "327055",
-          "name": "10TCA-S4015 - Specifications and Features.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4015&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4013",
-      "organization": "Adjutant General",
-      "buyer": "Mason Bondi",
-      "title": "National Guard - Landscaping Services",
-      "bid_opening_date": "11/03/2026 2:00 PM",
-      "status": "Landscaping Services",
-      "detail_fetched": true,
-      "csrf_token": "bf1499a4-ab1f-4ede-8173-59a9283658b3",
-      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Office of the Military (NOM), Nevada Department of Adjutant General and National Guard (ADG) is seeking proposals from qualified vendors to provide Landscaping Services for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "329955",
-          "name": "43ADG-S4013 - Request for Qualifications~1.pdf"
-        },
-        {
-          "file_nbr": "329742",
-          "name": "Terms-and-conditions-for-services~6.pdf"
-        },
-        {
-          "file_nbr": "329932",
-          "name": "NVARNG Environmental Policy Statement.pdf"
-        },
-        {
-          "file_nbr": "329931",
-          "name": "NVARNG Personal Security Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "329750",
-          "name": "43ADG-S4013 - NOM Standard Form Contract.docx"
-        },
-        {
-          "file_nbr": "329744",
-          "name": "43ADG-S4013-Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "329954",
-          "name": "43ADG-S4013 RFQ_Vendor_Qualifications_Response_Form~1.xlsx"
-        },
-        {
-          "file_nbr": "329934",
-          "name": "43ADG-S4013 RFQ Service Locations~1.xlsx"
-        },
-        {
-          "file_nbr": "329933",
-          "name": "43ADG-S4013 Scope of Work.pdf"
-        },
-        {
-          "file_nbr": "329936",
-          "name": "43ADG-S4013_Cost_Schedule.xlsx"
-        },
-        {
-          "file_nbr": "329743",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "329745",
-          "name": "43ADG-S4013 -Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
     }
   ]
 }
