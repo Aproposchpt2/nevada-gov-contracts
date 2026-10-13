@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-12T14:27:15.736Z",
+  "scraped_at": "2026-10-13T14:23:05.785Z",
   "solicitations": [
     {
       "project_number": "RFB #21-B-08-27-TL",
@@ -64,10 +64,10 @@
     {
       "project_number": "RFP #10-P-07-27-AA",
       "project_type": "Request for Proposal",
-      "title": "Notice of Opportunity for the Repurposing of the Old Stead Elementary School",
+      "title": "Notice of Opportunity for the Repurposing of the Old Stead Elementary School REVISED SUBMISSION DUE DATE",
       "pre_bid_date": "09/03/2026",
       "question_deadline": "09/24/2026",
-      "due_date": "10/14/2026",
+      "due_date": "10/21/2026",
       "status": "Active",
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl08$btnSelect"
     }
