@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-14T14:18:48.421Z",
+  "scraped_at": "2026-10-15T14:19:26.967Z",
   "solicitations": [
     {
       "project_number": "RFB #21-B-08-27-TL",
@@ -32,26 +32,6 @@
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     },
     {
-      "project_number": "RFQ #28-QF-09-27-GS",
-      "project_type": "Request for Formal Quote",
-      "title": "Health Services Supplies for Warehouse Inventory REVISED 28-QF-09-27-GS - EXHIBIT C - PRICE SCHEDULE FORM was posted on September 29, 2026",
-      "pre_bid_date": "N/A",
-      "question_deadline": "09/28/2026",
-      "due_date": "10/14/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
-    },
-    {
-      "project_number": "RFQ #27-QF-09-27-GS",
-      "project_type": "Request for Formal Quote",
-      "title": "PHYSICAL EDUCATION SUPPLIES FOR WAREHOUSE INVENTORY",
-      "pre_bid_date": "N/A",
-      "question_deadline": "09/28/2026",
-      "due_date": "10/14/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl06$btnSelect"
-    },
-    {
       "project_number": "RFP #14-P-08-27-SA",
       "project_type": "Request for Proposal",
       "title": "Centralized K-12 Library Management & Resource Tracking System 9/25/26 REVISED EXHIBIT C - PRICE SCHEDULE",
@@ -59,7 +39,7 @@
       "question_deadline": "09/14/2026",
       "due_date": "10/08/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl07$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
     },
     {
       "project_number": "RFP #10-P-07-27-AA",
@@ -69,7 +49,7 @@
       "question_deadline": "09/24/2026",
       "due_date": "10/21/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl08$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl06$btnSelect"
     }
   ]
 }
