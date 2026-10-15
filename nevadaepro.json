@@ -1,6 +1,63 @@
 {
-  "scraped_at": "2026-10-14T14:05:40.777Z",
+  "scraped_at": "2026-10-15T14:06:21.108Z",
   "bids": [
+    {
+      "doc_id": "40DHHS-S4049",
+      "organization": "Department of Human Services",
+      "buyer": "Mariana Acevedo",
+      "title": "DRC Behavioral Management Training",
+      "bid_opening_date": "11/02/2026 3:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "25260b2d-8bfc-482f-bbaa-e346db9393d3",
+      "scope": "Aging and Disability Services Division is seeking quotes from qualified vendors to provide behavioral management safety training services as described in the scope of work. 1.1.2. The State intends to award one contract in conjunction with this informal solicitation, as determined in the best interests of the State. Aging and Disability Services Division shall administer contract resulting from this solicitation. The resulting contract are expected to be for a contract term of 4 years.",
+      "contact_org": "ADSD Carson City Office",
+      "contact_email": "fiscal@adsd.nv.gov",
+      "contact_phone": "(775) 687-0579",
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "332038",
+          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "332039",
+          "name": "Attachment A - Contract Template.pdf"
+        },
+        {
+          "file_nbr": "332040",
+          "name": "Attachment B - Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "332041",
+          "name": "Behavioral Management Informal Solicitation 2026.docx"
+        },
+        {
+          "file_nbr": "332043",
+          "name": "Certification-regarding-lobbying~29.pdf"
+        },
+        {
+          "file_nbr": "332044",
+          "name": "cost-schedule.xlsx"
+        },
+        {
+          "file_nbr": "332045",
+          "name": "Quote Instructions~5.pdf"
+        },
+        {
+          "file_nbr": "332046",
+          "name": "Terms-and-conditions-for-services~35.pdf"
+        },
+        {
+          "file_nbr": "332053",
+          "name": "BAA 2024 (2) (3).docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4049&external=true&parentUrl=close"
+    },
     {
       "doc_id": "31PCSA-S4046",
       "organization": "State Public Charter School Authority",
@@ -880,39 +937,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4017&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S4016",
-      "organization": "Department of Transportation",
-      "buyer": "Christian Armas",
-      "title": "Temporary Impact Attenuators",
-      "bid_opening_date": "10/27/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "0c57469f-375f-4f55-b206-9aa9de1e21ff",
-      "scope": "625.02.04: Temporary Impact Attenuators. One year Open Term Contract for Temporary Impact Attenuators. The temporary impact attenuators MUST be an approved product reflected on the Department of Transportation&#039;s Qualified Product List (QPL) in order to be considered. Proposals on products not listed on the QPL but accepted by NDOT prior to bid opening date and time must be accompanied by documentation from the Department of Transportation confirming that the product(s) has been approved. Award may be made to multiple vendors. Vendors wishing to propose pricing for multiple product lines must submit a separate quote for each product.",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "329852",
-          "name": "80DOT-S4016- Specifications and Requirements~1.docx"
-        },
-        {
-          "file_nbr": "329833",
-          "name": "80DOT-S4016 Additional Requirements.docx"
-        },
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4016&external=true&parentUrl=close"
     }
   ]
 }
