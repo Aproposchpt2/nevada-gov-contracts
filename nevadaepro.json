@@ -1,6 +1,59 @@
 {
-  "scraped_at": "2026-10-16T14:06:00.610Z",
+  "scraped_at": "2026-10-17T14:04:40.886Z",
   "bids": [
+    {
+      "doc_id": "31PCSA-S4054",
+      "organization": "State Public Charter School Authority",
+      "buyer": "Denise Frohlich",
+      "title": "Charter School Authorizer Evaluation",
+      "bid_opening_date": "11/02/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "beeeb4d4-8759-43a8-966b-995638de7990",
+      "scope": "Charter School Authorizer Evaluation",
+      "contact_org": "State Public Charter School Authority",
+      "contact_email": "spcsafinance@spcsa.nv.gov",
+      "contact_phone": "(775) 531-3384",
+      "attachments": [
+        {
+          "file_nbr": "19715",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "332499",
+          "name": "S4054-request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "332497",
+          "name": "S4054 Scope of Work and Cost Instructions.docx"
+        },
+        {
+          "file_nbr": "332500",
+          "name": "S4054 standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "332493",
+          "name": "S4054 Attachment BB- Insurance Schedule- Professional No Driving.docx"
+        },
+        {
+          "file_nbr": "332494",
+          "name": "S4054 Attachment XX- Confidentiality Addendum.docx"
+        },
+        {
+          "file_nbr": "332495",
+          "name": "S4054 Attachment XX- Fiscal Procedures.doc"
+        },
+        {
+          "file_nbr": "332498",
+          "name": "S4054 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "332496",
+          "name": "S4054 Certification-regarding-lobbying.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4054&external=true&parentUrl=close"
+    },
     {
       "doc_id": "40DHHS-S4049",
       "organization": "Department of Human Services",
@@ -547,47 +600,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4029&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "99SWC-S4027",
-      "organization": "Statewide Contracts",
-      "buyer": "Sierra Biddle",
-      "title": "Direct Client Services",
-      "bid_opening_date": "10/16/2026 5:00 PM",
-      "status": "Provider Services",
-      "detail_fetched": true,
-      "csrf_token": "6b0b57ec-9de1-4cd7-aae5-699108dcd7af",
-      "scope": "MEDICAL AND RELATED SERVICES: Providers are to reference the Scope of Services Attachment for common descriptions of services related to the Medical services. Provider will then ensure &#034;see quote attachment&#034; is checked for this item if their services is included in the medical services description. Provider shall complete the Direct Client Services Submission Packet and use the included Service Descriptions Table to indicate the types of services they provide.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "271808",
-          "name": "Creating a Direct Client Service Quote.pdf"
-        },
-        {
-          "file_nbr": "328933",
-          "name": "Provider Application Response~4.pdf"
-        },
-        {
-          "file_nbr": "328840",
-          "name": "99SWC-S4027 Direct Client Services~1.pdf"
-        },
-        {
-          "file_nbr": "328838",
-          "name": "Nevada Terms and Conditions for Services~1.pdf"
-        },
-        {
-          "file_nbr": "328841",
-          "name": "Scope of Services Examples~2.pdf"
-        },
-        {
-          "file_nbr": "328835",
-          "name": "Affidavit of Rejection of Coverage.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4027&external=true&parentUrl=close"
     },
     {
       "doc_id": "80DOT-S4026",
