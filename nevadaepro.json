@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-19T14:06:28.289Z",
+  "scraped_at": "2026-10-20T14:06:08.539Z",
   "bids": [
     {
       "doc_id": "31PCSA-S4054",
@@ -299,31 +299,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4042&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "30DOE-S4039",
-      "organization": "Department of Education",
-      "buyer": "Kaylene Hoyt",
-      "title": "Anonymous School Safety and Tip Management Platform",
-      "bid_opening_date": "10/16/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "78366865-672d-4d21-8827-c304c24eb81e",
-      "scope": "The Nevada Department of Education (NDE) is seeking information on qualified vendors who can provide a modern, cloud-based, anonymous tip acquisition and management platform to support the state&#039;s SafeVoice Nevada initiative. The platform will serve as the primary technology infrastructure for students, parents, school staff, mental health providers, and law enforcement agencies to securely report, route, and manage anonymous safety concerns and threats.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "330375",
-          "name": "Nevada Department of Education - request-for-information-30DOE-S4039.pdf"
-        },
-        {
-          "file_nbr": "19701",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S4039&external=true&parentUrl=close"
     },
     {
       "doc_id": "41NHA-S4038",
@@ -786,27 +761,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=08DOA-S4023&external=true&parentUrl=close"
     },
     {
-      "doc_id": "CTYNLV-S4022",
-      "organization": "City of North Las Vegas",
-      "buyer": "Joy Yoshida",
-      "title": "NGEM-RFP 2026-024 Customer Portal & AMI Technology",
-      "bid_opening_date": "10/19/2026 1:00 PM",
-      "status": "NGEM-RFP 2026-024 Customer Portal & AMI Technology",
-      "detail_fetched": true,
-      "csrf_token": "c43cc936-075c-48fb-a1a2-e0ea8d0d4fe7",
-      "scope": "The City of North Las Vegas is seeking Proposals from qualified Respondents to provide a customer portal and a mobile workforce management solution for the Utility Department.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "327134",
-          "name": "NGEM Information"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=CTYNLV-S4022&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "65DPS-S4021",
       "organization": "Department of Public Safety",
       "buyer": "Kasen Cornmesser",
@@ -1009,6 +963,116 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4010",
+      "organization": "Adjutant General",
+      "buyer": "Devin Earl",
+      "title": "AASF Fuel Farm Gangway",
+      "bid_opening_date": "10/21/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "3ca20dee-6135-488a-8a48-6b5600e24034",
+      "scope": "Design and installation of fuel farm gangway",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325947",
+          "name": "Request for Proposal"
+        },
+        {
+          "file_nbr": "325945",
+          "name": "Scope of Work"
+        },
+        {
+          "file_nbr": "325949",
+          "name": "Cost Schedule"
+        },
+        {
+          "file_nbr": "325951",
+          "name": "Site Visit Registration Form"
+        },
+        {
+          "file_nbr": "325806",
+          "name": "Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "325804",
+          "name": "Terms and Conditions for Services"
+        },
+        {
+          "file_nbr": "325805",
+          "name": "Term and Conditions for Goods"
+        },
+        {
+          "file_nbr": "325819",
+          "name": "Standard From Contract"
+        },
+        {
+          "file_nbr": "325823",
+          "name": "Insurance Requirements"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4010&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "70CNR-S4002",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "Sand Harbor Sleigh Rides",
+      "bid_opening_date": "11/05/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "8c5392e7-a6a0-48bc-a689-8a021212ad48",
+      "scope": "Sand Harbor Sleigh Rides",
+      "contact_org": "State Parks Bryan Building",
+      "contact_email": "NDSPAccounting@parks.nv.gov",
+      "contact_phone": "(775) 684-2770",
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "331127",
+          "name": "70CNR-S4002 RFP for Sand Harbor Sleighs Rides.docx"
+        },
+        {
+          "file_nbr": "325320",
+          "name": "70CNR-S4002 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "325319",
+          "name": "70CNR-S4002 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "331149",
+          "name": "70CNR-S4002 Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "330441",
+          "name": "70CNR-S4002 Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "330455",
+          "name": "70CNR-S4002 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "325318",
+          "name": "70CNR-S4002 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "325321",
+          "name": "70CNR-S4002 Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4002&external=true&parentUrl=close"
     }
   ]
 }
