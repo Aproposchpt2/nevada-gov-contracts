@@ -1,6 +1,59 @@
 {
-  "scraped_at": "2026-10-20T14:06:08.539Z",
+  "scraped_at": "2026-10-21T14:06:05.357Z",
   "bids": [
+    {
+      "doc_id": "40DHHS-S4057",
+      "organization": "Department of Human Services",
+      "buyer": "Mariana Acevedo",
+      "title": "APS Forensic Medical",
+      "bid_opening_date": "11/02/2026 12:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "f94f35d3-7bdd-4396-9de8-f81f652f9d5a",
+      "scope": "Aging and Disability Services Division is seeking quotes from qualified vendors to provide forensic services as described in the scope of work. 1.1.2. The State intends to award one contract in conjunction with this informal solicitation, as determined in the best interests of the State. Aging and Disability Services Division shall administer contract(s) resulting from this solicitation. The resulting contract(s) are expected to be for a contract term of 4 years.",
+      "contact_org": "ADSD Carson City Office",
+      "contact_email": "fiscal@adsd.nv.gov",
+      "contact_phone": "(775) 687-0579",
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "332038",
+          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "332039",
+          "name": "Attachment A - Contract Template.pdf"
+        },
+        {
+          "file_nbr": "332040",
+          "name": "Attachment B - Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "332043",
+          "name": "Certification-regarding-lobbying~29.pdf"
+        },
+        {
+          "file_nbr": "332044",
+          "name": "cost-schedule.xlsx"
+        },
+        {
+          "file_nbr": "332046",
+          "name": "Terms-and-conditions-for-services~35.pdf"
+        },
+        {
+          "file_nbr": "332053",
+          "name": "BAA 2024 (2) (3).docx"
+        },
+        {
+          "file_nbr": "332977",
+          "name": "APS Forensic Medical Specialist Epro Solicitation 2026~1.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4057&external=true&parentUrl=close"
+    },
     {
       "doc_id": "31PCSA-S4054",
       "organization": "State Public Charter School Authority",
@@ -53,6 +106,67 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4054&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4053",
+      "organization": "Department of Human Services",
+      "buyer": "Sharon Knigge",
+      "title": "Water Well Repair",
+      "bid_opening_date": "11/03/2026 2:00 PM",
+      "status": "Jessica Vanderlinden",
+      "detail_fetched": true,
+      "csrf_token": "b01fb4b3-e0bc-4ca5-90d5-cfd01b63ec22",
+      "scope": "Water well and meter repair.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "332432",
+          "name": "Request for Proposals 40DHHS-S4053 Water Well Repair"
+        },
+        {
+          "file_nbr": "332433",
+          "name": "40DHHS-S4053-Terms and Conditions"
+        },
+        {
+          "file_nbr": "332434",
+          "name": "40DHHS-S4053-Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "332435",
+          "name": "40DHHS-S4053-Standard Form Contract"
+        },
+        {
+          "file_nbr": "332436",
+          "name": "40DHHS-S4053-Insurance Schedule"
+        },
+        {
+          "file_nbr": "332437",
+          "name": "40DHHS-S4053-Vendor Information Response"
+        },
+        {
+          "file_nbr": "332438",
+          "name": "40DHHS-S4053-Prison Rape Elimination Act Acknowledgement"
+        },
+        {
+          "file_nbr": "332439",
+          "name": "40DHHS-S4053-Federal Laws and Authorities"
+        },
+        {
+          "file_nbr": "332440",
+          "name": "40DHHS-S4053-Division of Child and Family Services Fiscal Procedures"
+        },
+        {
+          "file_nbr": "332441",
+          "name": "40DHHS-S4053-Cost Schedule"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4053&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S4049",
@@ -602,59 +716,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4026&external=true&parentUrl=close"
     },
     {
-      "doc_id": "65DPS-S4025",
-      "organization": "Department of Public Safety",
-      "buyer": "Heather Moon",
-      "title": "Mental Health Professionals",
-      "bid_opening_date": "10/20/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "eecd1178-7217-400d-a0e5-38dd69dfff46",
-      "scope": "Please see the Cost Schedule in the &#039;Attachments&#039; tab.",
-      "contact_org": "NHP Headquarters",
-      "contact_email": "NHPPurchasing@dps.state.nv.us",
-      "contact_phone": "(775) 684-4488",
-      "attachments": [
-        {
-          "file_nbr": "328445",
-          "name": "65DPS-S4025 - Request-for-Qualification~1.docx"
-        },
-        {
-          "file_nbr": "328281",
-          "name": "Terms-and-conditions-for-services~7.pdf"
-        },
-        {
-          "file_nbr": "328282",
-          "name": "Standard-form-contract~5.docx"
-        },
-        {
-          "file_nbr": "328287",
-          "name": "65DPS-S4025 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "328284",
-          "name": "65DPS-S4025 - Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "328285",
-          "name": "65DPS-S4025 - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "328283",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "328280",
-          "name": "65DPS-S4025 - Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4025&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "55AGR-S4024",
       "organization": "Department of Agriculture",
       "buyer": "Joel Wixon",
@@ -963,63 +1024,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4010",
-      "organization": "Adjutant General",
-      "buyer": "Devin Earl",
-      "title": "AASF Fuel Farm Gangway",
-      "bid_opening_date": "10/21/2026 12:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "3ca20dee-6135-488a-8a48-6b5600e24034",
-      "scope": "Design and installation of fuel farm gangway",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325947",
-          "name": "Request for Proposal"
-        },
-        {
-          "file_nbr": "325945",
-          "name": "Scope of Work"
-        },
-        {
-          "file_nbr": "325949",
-          "name": "Cost Schedule"
-        },
-        {
-          "file_nbr": "325951",
-          "name": "Site Visit Registration Form"
-        },
-        {
-          "file_nbr": "325806",
-          "name": "Certification Regarding Lobbying"
-        },
-        {
-          "file_nbr": "325804",
-          "name": "Terms and Conditions for Services"
-        },
-        {
-          "file_nbr": "325805",
-          "name": "Term and Conditions for Goods"
-        },
-        {
-          "file_nbr": "325819",
-          "name": "Standard From Contract"
-        },
-        {
-          "file_nbr": "325823",
-          "name": "Insurance Requirements"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4010&external=true&parentUrl=close"
     },
     {
       "doc_id": "70CNR-S4002",
