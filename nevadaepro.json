@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-21T14:06:05.357Z",
+  "scraped_at": "2026-10-22T14:06:01.717Z",
   "bids": [
     {
       "doc_id": "40DHHS-S4057",
@@ -822,47 +822,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=08DOA-S4023&external=true&parentUrl=close"
     },
     {
-      "doc_id": "65DPS-S4021",
-      "organization": "Department of Public Safety",
-      "buyer": "Kasen Cornmesser",
-      "title": "Mechanic Shop Hoist Repair/Cert",
-      "bid_opening_date": "10/21/2026 9:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "e405f8e5-cfa9-4854-bf92-7f7709162b20",
-      "scope": "Please see cost schedule in attachments tab. Vendors are required to complete and upload schedule.",
-      "contact_org": "NHP Headquarters",
-      "contact_email": "NHPPurchasing@dps.state.nv.us",
-      "contact_phone": "(775) 684-4488",
-      "attachments": [
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "327107",
-          "name": "ATTACHMENT AA - SCOPE OF WORK~7.pdf"
-        },
-        {
-          "file_nbr": "327108",
-          "name": "ATTACHMENT BB - INSURANCE SCHEDULE~6.pdf"
-        },
-        {
-          "file_nbr": "327116",
-          "name": "ATTACHMENT CC - COST SCHEDULE 65DPS-S4021.pdf"
-        },
-        {
-          "file_nbr": "327117",
-          "name": "ATTACHMENT DD - STANDARD FORM CONTRACT.pdf"
-        },
-        {
-          "file_nbr": "327125",
-          "name": "65DPS-S4021 Informal-Solicitation.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4021&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "43ADG-S4017",
       "organization": "Adjutant General",
       "buyer": "Devin Earl",
@@ -1077,6 +1036,71 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4002&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "69CRC-S3987",
+      "organization": "Colorado River Commission",
+      "buyer": "Gina Goodman",
+      "title": "High Voltage System Engineering Services",
+      "bid_opening_date": "10/26/2026 5:00 PM",
+      "status": "ES-26-XXX",
+      "detail_fetched": true,
+      "csrf_token": "830d51a1-8f01-40bb-9df6-c9129edba861",
+      "scope": "Engineering Services - See Section 9 of the RFP Document for Proposal Submission instructions. Cost to be submitted via Attachment E- Cost Schedule",
+      "contact_org": "Colorado River Commission",
+      "contact_email": "invoices@crchydro.org",
+      "contact_phone": "(702) 486-2670",
+      "attachments": [
+        {
+          "file_nbr": "19802",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325118",
+          "name": "69CRC-S3987 - ES-27- RFP.pdf"
+        },
+        {
+          "file_nbr": "325119",
+          "name": "ATT A - Scope of Work 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325120",
+          "name": "Att B - Terms and Conditions for Services 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325121",
+          "name": "Att C - Standard Form Contract NATIVE 69CRC-S3987.docx"
+        },
+        {
+          "file_nbr": "325123",
+          "name": "Att C - Standard Form Contract  69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325124",
+          "name": "Att D - Insurance Schedule 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325125",
+          "name": "Att E - Cost Schedule 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325126",
+          "name": "Att F - Proposed Staff Resume 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325127",
+          "name": "Att G - Reference Questionnarie NATIVE 69CRC-S3987.docx"
+        },
+        {
+          "file_nbr": "325128",
+          "name": "Att G - Reference Questionnarie 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325129",
+          "name": "Att H - Vendor Information Response 69CRC-S3987.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
     }
   ]
 }
