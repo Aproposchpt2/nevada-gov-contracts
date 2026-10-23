@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-22T14:18:55.762Z",
+  "scraped_at": "2026-10-23T14:20:30.410Z",
   "solicitations": [
     {
       "project_number": "RFB #21-B-08-27-TL",
@@ -24,10 +24,10 @@
     {
       "project_number": "RFQ #29-QF-09-27-GS",
       "project_type": "Request for Formal Quote",
-      "title": "Instructional Supplies for Warehouse Inventory",
+      "title": "Instructional Supplies for Warehouse Inventory THE DUE DATE FOR QUOTE SUBMISSIONS IS BEING EXTENDED FROM OCTOBER 26, 2026 TO OCTOBER 28, 2026. ADDENDUM 2 WITH REVISED PRICE SCHEDULE POSTED ON 10/22/2026.",
       "pre_bid_date": "N/A",
       "question_deadline": "10/12/2026",
-      "due_date": "10/26/2026",
+      "due_date": "10/28/2026",
       "status": "Active",
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     },
