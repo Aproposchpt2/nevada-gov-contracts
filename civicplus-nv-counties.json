@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-22T16:11:16.079Z",
+  "scraped_at": "2026-10-23T16:11:04.796Z",
   "bids": [
     {
       "bid_id": "24",
@@ -26,6 +26,43 @@
       "jurisdiction_name": "Lyon County",
       "city": "Yerington",
       "source_base": "https://www.lyon-county.org/bids.aspx"
+    },
+    {
+      "bid_id": "246",
+      "title": "2026-08 Fairgrounds EA Update",
+      "description": "NOTICE OF REQUEST FOR RESPONSE NO. 2026-08         NOTICE IS HEREBY GIVEN  that the Nye County Board of Commissioners, on behalf of the County of Nye, State of Nevada, invites...",
+      "status": "Open",
+      "closes": "11/19/2026 2:00 AM",
+      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=246",
+      "documents": [
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/51981"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52057"
+        }
+      ],
+      "county": "Nye",
+      "jurisdiction_name": "Nye County",
+      "city": "Tonopah",
+      "source_base": "https://www.nyecountynv.gov/Bids.aspx"
+    },
+    {
+      "bid_id": "245",
+      "title": "PV Fairgrounds Waterline Engineering Services",
+      "description": "NOTICE OF REQUEST FOR RESPONSE NO. 2026-10         NOTICE IS HEREBY GIVEN  that the Nye County Board of Commissioners, on behalf of the County of Nye, State of Nevada, invites...",
+      "status": "Open",
+      "closes": "11/19/2026 2:00 PM",
+      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=245",
+      "documents": [
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52054"
+        }
+      ],
+      "county": "Nye",
+      "jurisdiction_name": "Nye County",
+      "city": "Tonopah",
+      "source_base": "https://www.nyecountynv.gov/Bids.aspx"
     },
     {
       "bid_id": "86",
