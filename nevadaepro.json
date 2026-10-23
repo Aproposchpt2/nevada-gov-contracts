@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-22T14:06:01.717Z",
+  "scraped_at": "2026-10-23T14:06:18.029Z",
   "bids": [
     {
       "doc_id": "40DHHS-S4057",
@@ -167,6 +167,31 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4053&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "55AGR-S4052",
+      "organization": "Department of Agriculture",
+      "buyer": "Ed kochendarfer",
+      "title": "Truck with Boom",
+      "bid_opening_date": "11/18/2026 12:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "9e0dfcd8-6fe7-4b4a-b2eb-4bf355be02c6",
+      "scope": "2027 Kenworth T880 6x4 conventional cab (G.V.W. Rating 66,000/80,000 lbs) w/ Flat Bed and Knuckle Boom",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19759",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19751",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4052&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S4049",
@@ -716,39 +741,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4026&external=true&parentUrl=close"
     },
     {
-      "doc_id": "55AGR-S4024",
-      "organization": "Department of Agriculture",
-      "buyer": "Joel Wixon",
-      "title": "Nitrogen Analyzer",
-      "bid_opening_date": "10/23/2026 12:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "51b51742-57c4-4f15-9e58-c968b20c896c",
-      "scope": "100010453 rMAXNexPLUS-Ar rapid MAX N exceed PLUS - Elemental analyzer for nitrogen determination. Calibrated with argon as carrier gas. Includes initial outfit kit (all items necessary for installation and operation) and starter kit (all necessary consumables for installation and initial operation).",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "307300",
-          "name": "Terms and Conditions for Goods.pdf"
-        },
-        {
-          "file_nbr": "133789",
-          "name": "Terms and Conditions for Services~2.pdf"
-        },
-        {
-          "file_nbr": "242866",
-          "name": "4.2.2 Insurance Schedule~1.docx"
-        },
-        {
-          "file_nbr": "19759",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4024&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "08DOA-S4023",
       "organization": "Department of Administration",
       "buyer": "Annette Morfin",
@@ -1038,69 +1030,113 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4002&external=true&parentUrl=close"
     },
     {
-      "doc_id": "69CRC-S3987",
-      "organization": "Colorado River Commission",
-      "buyer": "Gina Goodman",
-      "title": "High Voltage System Engineering Services",
-      "bid_opening_date": "10/26/2026 5:00 PM",
-      "status": "ES-26-XXX",
+      "doc_id": "41NHA-S3992",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Nevada State Pharmacy Benefit Manager",
+      "bid_opening_date": "12/29/2026 2:00 PM",
+      "status": "",
       "detail_fetched": true,
-      "csrf_token": "830d51a1-8f01-40bb-9df6-c9129edba861",
-      "scope": "Engineering Services - See Section 9 of the RFP Document for Proposal Submission instructions. Cost to be submitted via Attachment E- Cost Schedule",
-      "contact_org": "Colorado River Commission",
-      "contact_email": "invoices@crchydro.org",
-      "contact_phone": "(702) 486-2670",
+      "csrf_token": "d75cb07f-77bc-44e3-bb79-7b416e7ff1cd",
+      "scope": "Please see Cost Schedule in the &#039;Attachments&#039; tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
       "attachments": [
         {
-          "file_nbr": "19802",
-          "name": "Quote Instructions"
+          "file_nbr": "333548",
+          "name": "41NHA-S3992-Request-for-Proposals - Final~2.docx"
         },
         {
-          "file_nbr": "325118",
-          "name": "69CRC-S3987 - ES-27- RFP.pdf"
+          "file_nbr": "323755",
+          "name": "Terms-and-conditions-for-services~8.pdf"
         },
         {
-          "file_nbr": "325119",
-          "name": "ATT A - Scope of Work 69CRC-S3987.pdf"
+          "file_nbr": "323756",
+          "name": "Standard-form-contract~6.docx"
         },
         {
-          "file_nbr": "325120",
-          "name": "Att B - Terms and Conditions for Services 69CRC-S3987.pdf"
+          "file_nbr": "333141",
+          "name": "41NHA-S3992 - Insurance Schedule - RFP.docx"
         },
         {
-          "file_nbr": "325121",
-          "name": "Att C - Standard Form Contract NATIVE 69CRC-S3987.docx"
+          "file_nbr": "333145",
+          "name": "41NHA-S3992 - Business Associate Addendum 07.01.25.docx"
         },
         {
-          "file_nbr": "325123",
-          "name": "Att C - Standard Form Contract  69CRC-S3987.pdf"
+          "file_nbr": "333146",
+          "name": "41NHA-S3992-Reference-Questionnaire.docx"
         },
         {
-          "file_nbr": "325124",
-          "name": "Att D - Insurance Schedule 69CRC-S3987.pdf"
+          "file_nbr": "323754",
+          "name": "Certification-regarding-lobbying~8.pdf"
         },
         {
-          "file_nbr": "325125",
-          "name": "Att E - Cost Schedule 69CRC-S3987.pdf"
+          "file_nbr": "323757",
+          "name": "41NHA-S3992 -Vendor-Information-Response.pdf"
         },
         {
-          "file_nbr": "325126",
-          "name": "Att F - Proposed Staff Resume 69CRC-S3987.pdf"
+          "file_nbr": "332800",
+          "name": "41NHA-S3992 - sPBM Scope of Work~1.docx"
         },
         {
-          "file_nbr": "325127",
-          "name": "Att G - Reference Questionnarie NATIVE 69CRC-S3987.docx"
+          "file_nbr": "332789",
+          "name": "41NHA-S3992 - sBPM - Attachment 4.5.1. - Cost Schedule.xlsx"
         },
         {
-          "file_nbr": "325128",
-          "name": "Att G - Reference Questionnarie 69CRC-S3987.pdf"
+          "file_nbr": "332786",
+          "name": "41NHA-S3992 -  sPBM - Attachment 4.5.2. - Technical Proposal Questions.docx"
         },
         {
-          "file_nbr": "325129",
-          "name": "Att H - Vendor Information Response 69CRC-S3987.pdf"
+          "file_nbr": "332790",
+          "name": "41NHA-S3992 - sPBM - Attachment 4.5.3. - Requirements Matrix.xlsx"
+        },
+        {
+          "file_nbr": "332787",
+          "name": "41NHA-S3992 -  sPBM - Attachment 4.5.4. - Cloud Hosting Questionnaire.xlsx"
+        },
+        {
+          "file_nbr": "333316",
+          "name": "41NHA-S3992 - sPBM Exhibit A - KPMs~2.docx"
+        },
+        {
+          "file_nbr": "333317",
+          "name": "41NHA-S3992 - sPBM Exhibit B - Definitions~1.docx"
+        },
+        {
+          "file_nbr": "332810",
+          "name": "41NHA-S3992 - PEBP Scope of Work.docx"
+        },
+        {
+          "file_nbr": "332802",
+          "name": "41NHA-S3992 - PEBP - Attachment 4.6.1. - Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "332803",
+          "name": "41NHA-S3992 - PEBP - Attachment 4.6.2. - Technical Proposal Questions.docx"
+        },
+        {
+          "file_nbr": "332804",
+          "name": "41NHA-S3992 - PEBP - Attachment 4.6.3. - Requirements Matrix.xlsx"
+        },
+        {
+          "file_nbr": "332805",
+          "name": "41NHA-S3992 - PEBP - Attachment 4.6.4. - Cloud Hosting Questionnaire.xlsx"
+        },
+        {
+          "file_nbr": "332806",
+          "name": "41NHA-S3992 - PEBP- Attachment 4.6.5. - DOI TPA Registration Attestation.docx"
+        },
+        {
+          "file_nbr": "332807",
+          "name": "41NHA-S3992 - PEBP Exhibit A - KPMs.docx"
+        },
+        {
+          "file_nbr": "332809",
+          "name": "41NHA-S3992 - PEBP Exhibit B - Definitions.docx"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3992&external=true&parentUrl=close"
     }
   ]
 }
