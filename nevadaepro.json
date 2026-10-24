@@ -1,6 +1,75 @@
 {
-  "scraped_at": "2026-10-23T14:06:18.029Z",
+  "scraped_at": "2026-10-24T14:04:55.992Z",
   "bids": [
+    {
+      "doc_id": "43ADG-S4059",
+      "organization": "Adjutant General",
+      "buyer": "Mason Bondi",
+      "title": "National Guard - Landscaping Services",
+      "bid_opening_date": "11/06/2026 2:00 PM",
+      "status": "Landscaping Services",
+      "detail_fetched": true,
+      "csrf_token": "9b8350ab-b44e-4fc7-81ed-3e2eecab433a",
+      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Office of the Military (NOM), Nevada Department of Adjutant General and National Guard (ADG) is seeking proposals from qualified vendors to provide Landscaping Services for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "333832",
+          "name": "43ADG-S4059 - Request for Qualifications (2).docx"
+        },
+        {
+          "file_nbr": "329742",
+          "name": "Terms-and-conditions-for-services~6.pdf"
+        },
+        {
+          "file_nbr": "329932",
+          "name": "NVARNG Environmental Policy Statement.pdf"
+        },
+        {
+          "file_nbr": "329931",
+          "name": "NVARNG Personal Security Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "333803",
+          "name": "43ADG-S4059 - NOM Standard Form Contract.docx"
+        },
+        {
+          "file_nbr": "333812",
+          "name": "43ADG-S4059-Insurance Requirements.docx"
+        },
+        {
+          "file_nbr": "333808",
+          "name": "43ADG-S4059 RFQ_Vendor_Qualifications_Response_Form.xlsx"
+        },
+        {
+          "file_nbr": "333807",
+          "name": "43ADG-S4059 RFQ Service Locations.xlsx"
+        },
+        {
+          "file_nbr": "333809",
+          "name": "43ADG-S4059 Scope of Work.docx"
+        },
+        {
+          "file_nbr": "333811",
+          "name": "43ADG-S4059_Cost_Schedule.xlsx"
+        },
+        {
+          "file_nbr": "329743",
+          "name": "Certification-regarding-lobbying~7.pdf"
+        },
+        {
+          "file_nbr": "333810",
+          "name": "43ADG-S4059 -Vendor-Information-Response (1).pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4059&external=true&parentUrl=close"
+    },
     {
       "doc_id": "40DHHS-S4057",
       "organization": "Department of Human Services",
@@ -53,6 +122,43 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4057&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4055",
+      "organization": "Adjutant General",
+      "buyer": "Paul Toups",
+      "title": "OTAG Water Heater Replacement",
+      "bid_opening_date": "11/24/2026 10:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "427a618d-72fa-4298-8bd4-a56ba804f608",
+      "scope": "This project consists of the replacement of the domestic hot water system at the Office of the Adjutant General building in Carson City, NV. The work includes the removal of the existing hot water storage tank, heat exchanger, and associated circulation pumps. The new work includes the installation of a new high-efficiency, gas-fired, tankless domestic water heater skid, a new soft water storage tank, and the relocation of an existing water softener. The scope includes all associated mechanical, plumbing, electrical, and control work required for a complete and operational system.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "333000",
+          "name": "43ADG-S4055_Boilerplate_Project Bid Manual_REV 10-22-2026.pdf"
+        },
+        {
+          "file_nbr": "332998",
+          "name": "NVARNG Water Heater Replacement Bid Set-Combined.pdf"
+        },
+        {
+          "file_nbr": "332999",
+          "name": "NVARNG Water Heater Replacement Specs Bid Set 10-12-26.pdf"
+        },
+        {
+          "file_nbr": "333015",
+          "name": "Northern Nevada Rural Region 2026-2027-Amendment 01.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4055&external=true&parentUrl=close"
     },
     {
       "doc_id": "31PCSA-S4054",
@@ -312,27 +418,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4046&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S4045",
-      "organization": "Department of Human Services",
-      "buyer": "Jeremy Redman",
-      "title": "Solicitation Waiver, provide data driven, internet-based reporting system",
-      "bid_opening_date": "11/21/2026 5:00 PM",
-      "status": "SW261022",
-      "detail_fetched": true,
-      "csrf_token": "4b344352-a56e-4983-915a-719df7d625ca",
-      "scope": "Chain Hal shall provide access to an internet-based reporting system for use by the Division of Child and Family Services (DCFS), the Nevada Judicial System, and other authorized entities.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "331144",
-          "name": "40DHHS-S4040-261001~1.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4045&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "70CNR-S4044",
       "organization": "Department of Conservation and Natural Resources",
       "buyer": "Nocoasha Henry",
@@ -534,35 +619,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S4036",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "OTAG - New Flagpole Installation",
-      "bid_opening_date": "10/23/2026 5:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "8ecbf0bd-edb6-4451-9faa-561f0d8b0257",
-      "scope": "The contractor shall install a new 35ft flagpole in front of the OTAG building. Contractor is responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Contractor is responsible for contacting 811 to clear all underground utilities prior to any excavation. Contractor is to provide a new 35ft commercial grade flagpole. Contractor is to core concrete and excavate, install flagpole sleeve and flagpole per manufactures specs. Repair any sidewalk that was removed to install new 35ft flagpole. if needed Fabricate a light cove for the existing inner lights to accept 4 new upper lights. 2 will face each outer existing flagpole. 2 will face the new flagpole. Property test the halyard system to verify smooth, binding-free operation of the truck pulley, cleat/winch and swivel snaps. Contractor must thoroughly clean the work area and properly dispose of all materials used and removed from this project.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "329927",
-          "name": "OTAG Flag Pole Installation Invitation to Bid"
-        },
-        {
-          "file_nbr": "329928",
-          "name": "OTAG Flag Pole Installation Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4036&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "41NHA-S4034",
       "organization": "Nevada Health Authority",
       "buyer": "Heather Moon",
@@ -666,35 +722,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S4030",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "Northern Nevada - HVAC Services",
-      "bid_opening_date": "10/23/2026 6:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "a688724c-23f6-4272-8077-fac84f9de338",
-      "scope": "The scope of work for HVAC services encompasses a comprehensive range of tasks aimed at ensuring optimal heating, ventilation, and air conditioning performance within residential, commercial, or industrial settings. This includes an initial assessment of existing HVAC systems to determine efficiency and compliance with current regulations. The services involve the installation of new HVAC units, including ductwork and associated components, ensuring proper sizing and configuration for maximum efficiency. Routine maintenance and repair services are integral to the scope, involving inspections, cleaning, and servicing of air filters, coils, and condensers, as well as checking refrigerant levels extends to all associated components, such as compressors, motors, evaporators, heat exchangers, exhaust fans, piping, ductwork and electrical connections to prevent system failures. The Contractor shall be available to provide emergency and on-call services to address urgent repair requests necessary to maintain mission-critical operations and facility safety. The Contractor must be capable of providing an expedited response for critical failures. For any deficient conditions observed during the performance of work that exceeds the original service request, the Contractor shall document and report them to the Office of the Military/Facility Supervisor with recommended corrective actions prior to proceeding. The provision of parts, materials, and chemicals, as well as purchasing from the Contractor shall also be included. Comprehensive documentation, including service reports and maintenance logs, will be provided to ensure transparency and accountability. All services will adhere to industry standards and local codes to guarantee safety and reliability.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "328442",
-          "name": "Northern Nevada HVAC Services Invitation to Bid"
-        },
-        {
-          "file_nbr": "328443",
-          "name": "Northern Nevada HVAC Services Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4030&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "65DPS-S4029",
       "organization": "Department of Public Safety",
       "buyer": "Miriam Garcia",
@@ -714,31 +741,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4029&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S4026",
-      "organization": "Department of Transportation",
-      "buyer": "Jennifer Thomas",
-      "title": "3M Reflectors",
-      "bid_opening_date": "10/23/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "609e64d3-b6de-47cd-b2d0-a36efeed2bcd",
-      "scope": "3M Reflectors RPM-290-WR Two Way White",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19830",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        },
-        {
-          "file_nbr": "19837",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4026&external=true&parentUrl=close"
     },
     {
       "doc_id": "08DOA-S4023",
@@ -814,63 +816,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=08DOA-S4023&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S4017",
-      "organization": "Adjutant General",
-      "buyer": "Devin Earl",
-      "title": "Camp Washoe Gas Upgrade",
-      "bid_opening_date": "10/23/2026 10:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "26a6391a-f8c1-4b2b-88e5-3c1bff07ff58",
-      "scope": "Restoration of polyethylene gas supply lines",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "326827",
-          "name": "Request for Proposal"
-        },
-        {
-          "file_nbr": "326830",
-          "name": "Standard Form Contract"
-        },
-        {
-          "file_nbr": "326723",
-          "name": "Scope of Work"
-        },
-        {
-          "file_nbr": "326727",
-          "name": "GEA_16~1.PDF"
-        },
-        {
-          "file_nbr": "326729",
-          "name": "Camp Washoe Google Maps"
-        },
-        {
-          "file_nbr": "326833",
-          "name": "Certification Regarding Lobbying"
-        },
-        {
-          "file_nbr": "326834",
-          "name": "Site Visit Registration"
-        },
-        {
-          "file_nbr": "326835",
-          "name": "Cost Schedule"
-        },
-        {
-          "file_nbr": "326831",
-          "name": "Terms and Conditions for Services"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4017&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "80DOT-S4016",
       "organization": "Department of Transportation",
       "buyer": "Christian Armas",
@@ -906,75 +851,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4016&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4013",
-      "organization": "Adjutant General",
-      "buyer": "Mason Bondi",
-      "title": "National Guard - Landscaping Services",
-      "bid_opening_date": "11/03/2026 2:00 PM",
-      "status": "Landscaping Services",
-      "detail_fetched": true,
-      "csrf_token": "b0a5749e-7d2e-43e1-a449-3481b1af5255",
-      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Office of the Military (NOM), Nevada Department of Adjutant General and National Guard (ADG) is seeking proposals from qualified vendors to provide Landscaping Services for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "329955",
-          "name": "43ADG-S4013 - Request for Qualifications~1.pdf"
-        },
-        {
-          "file_nbr": "329742",
-          "name": "Terms-and-conditions-for-services~6.pdf"
-        },
-        {
-          "file_nbr": "329932",
-          "name": "NVARNG Environmental Policy Statement.pdf"
-        },
-        {
-          "file_nbr": "329931",
-          "name": "NVARNG Personal Security Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "329750",
-          "name": "43ADG-S4013 - NOM Standard Form Contract.docx"
-        },
-        {
-          "file_nbr": "329744",
-          "name": "43ADG-S4013-Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "329954",
-          "name": "43ADG-S4013 RFQ_Vendor_Qualifications_Response_Form~1.xlsx"
-        },
-        {
-          "file_nbr": "329934",
-          "name": "43ADG-S4013 RFQ Service Locations~1.xlsx"
-        },
-        {
-          "file_nbr": "329933",
-          "name": "43ADG-S4013 Scope of Work.pdf"
-        },
-        {
-          "file_nbr": "329936",
-          "name": "43ADG-S4013_Cost_Schedule.xlsx"
-        },
-        {
-          "file_nbr": "329743",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "329745",
-          "name": "43ADG-S4013 -Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4013&external=true&parentUrl=close"
     },
     {
       "doc_id": "70CNR-S4002",
@@ -1137,6 +1013,294 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3992&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "69CRC-S3987",
+      "organization": "Colorado River Commission",
+      "buyer": "Gina Goodman",
+      "title": "High Voltage System Engineering Services",
+      "bid_opening_date": "10/26/2026 5:00 PM",
+      "status": "ES-26-XXX",
+      "detail_fetched": true,
+      "csrf_token": "13edaa1c-4a38-4956-b5bd-2958493d58e7",
+      "scope": "Engineering Services - See Section 9 of the RFP Document for Proposal Submission instructions. Cost to be submitted via Attachment E- Cost Schedule",
+      "contact_org": "Colorado River Commission",
+      "contact_email": "invoices@crchydro.org",
+      "contact_phone": "(702) 486-2670",
+      "attachments": [
+        {
+          "file_nbr": "19802",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "325118",
+          "name": "69CRC-S3987 - ES-27- RFP.pdf"
+        },
+        {
+          "file_nbr": "325119",
+          "name": "ATT A - Scope of Work 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325120",
+          "name": "Att B - Terms and Conditions for Services 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325121",
+          "name": "Att C - Standard Form Contract NATIVE 69CRC-S3987.docx"
+        },
+        {
+          "file_nbr": "325123",
+          "name": "Att C - Standard Form Contract  69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325124",
+          "name": "Att D - Insurance Schedule 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325125",
+          "name": "Att E - Cost Schedule 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325126",
+          "name": "Att F - Proposed Staff Resume 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325127",
+          "name": "Att G - Reference Questionnarie NATIVE 69CRC-S3987.docx"
+        },
+        {
+          "file_nbr": "325128",
+          "name": "Att G - Reference Questionnarie 69CRC-S3987.pdf"
+        },
+        {
+          "file_nbr": "325129",
+          "name": "Att H - Vendor Information Response 69CRC-S3987.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S3975",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Commissary and Supplemental Services",
+      "bid_opening_date": "10/26/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "c068206f-9e6d-41f9-a0df-af7fcda4265d",
+      "scope": "Commissary and Supplemental Services",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "332820",
+          "name": "44DOC-S3975 Qand A 2.xlsx"
+        },
+        {
+          "file_nbr": "327713",
+          "name": "44DOC-S3975 QandA 1.xlsx"
+        },
+        {
+          "file_nbr": "327714",
+          "name": "FY25 7.1.24 -6.30.25 Items Quantities sold.pdf"
+        },
+        {
+          "file_nbr": "327715",
+          "name": "FY26 July 2025 - June 2026 Items Quantities sold.pdf"
+        },
+        {
+          "file_nbr": "327716",
+          "name": "Nevada Commissary Price List .pdf"
+        },
+        {
+          "file_nbr": "327717",
+          "name": "Nevada Package Sales FY25.pdf"
+        },
+        {
+          "file_nbr": "327718",
+          "name": "Nevada Package Sales FY26.pdf"
+        },
+        {
+          "file_nbr": "327719",
+          "name": "Special Order Price List .pdf"
+        },
+        {
+          "file_nbr": "330541",
+          "name": "44DOC-S3975 RFP~6.docx"
+        },
+        {
+          "file_nbr": "321540",
+          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "321539",
+          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
+        },
+        {
+          "file_nbr": "321547",
+          "name": "44DOC-S3975 Facility Contacts.docx"
+        },
+        {
+          "file_nbr": "321533",
+          "name": "44DOC-S3975 Facility Map.pdf"
+        },
+        {
+          "file_nbr": "321538",
+          "name": "44DOC-S3975 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "321799",
+          "name": "44DOC-S3975 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "321541",
+          "name": "44DOC-S3975-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "321543",
+          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "321536",
+          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
+        },
+        {
+          "file_nbr": "321530",
+          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "321531",
+          "name": "44DOC-S3975 Contractor Background Check Application.docx"
+        },
+        {
+          "file_nbr": "321532",
+          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
+        },
+        {
+          "file_nbr": "321528",
+          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "321529",
+          "name": "44DOC-S3975 Commissary Pricing.pdf"
+        },
+        {
+          "file_nbr": "323159",
+          "name": "44DOC-S3975 Certification-regarding-lobbying~1.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S3969",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "HVAC BAS Preventative Maintenance",
+      "bid_opening_date": "11/23/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "e51600bd-24df-4181-9a44-138e61c164e0",
+      "scope": "HVAC BUILDING AUTOMATION SYSTEM (BAS) PREVENTATIVE MAINTENANCE:",
+      "contact_org": "Administrators Office",
+      "contact_email": "dmhfiscal@nevadaculture.org",
+      "contact_phone": "(775) 687-7340",
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "333476",
+          "name": "Terms-and-conditions-for-services~12.pdf"
+        },
+        {
+          "file_nbr": "333472",
+          "name": "10TCA-S3969 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "333475",
+          "name": "Standard-form-contract~10.docx"
+        },
+        {
+          "file_nbr": "333468",
+          "name": "08DOA-S3969 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "333471",
+          "name": "10TCA-S3969 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "333469",
+          "name": "10TCA-S3969 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "333474",
+          "name": "Certification-regarding-lobbying~11.pdf"
+        },
+        {
+          "file_nbr": "333473",
+          "name": "10TCA-S3969 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3969&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S3967",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Economic Impact Study",
+      "bid_opening_date": "11/12/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "76ab3e55-c411-496d-87f8-f2c2456c60f8",
+      "scope": "ECONOMIC IMPACT STUDY SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "330858",
+          "name": "Terms-and-conditions-for-services~10.pdf"
+        },
+        {
+          "file_nbr": "330850",
+          "name": "10TCA-S3967 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "330857",
+          "name": "Standard-form-contract~8.docx"
+        },
+        {
+          "file_nbr": "330853",
+          "name": "Attachment BB - Insurance Schedule~2.docx"
+        },
+        {
+          "file_nbr": "330849",
+          "name": "10TCA-S3967 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "330848",
+          "name": "10TCA-S3967 - Cost Schedule - To Be Used.docx"
+        },
+        {
+          "file_nbr": "330855",
+          "name": "Certification-regarding-lobbying~9.pdf"
+        },
+        {
+          "file_nbr": "330854",
+          "name": "10TCA-S3967 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3967&external=true&parentUrl=close"
     }
   ]
 }
