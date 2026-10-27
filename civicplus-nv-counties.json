@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-26T16:13:09.259Z",
+  "scraped_at": "2026-10-27T16:09:11.887Z",
   "bids": [
     {
       "bid_id": "24",
@@ -40,6 +40,9 @@
         },
         {
           "url": "https://www.nyecountynv.gov/DocumentCenter/View/52057"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52059"
         }
       ],
       "county": "Nye",
@@ -57,6 +60,9 @@
       "documents": [
         {
           "url": "https://www.nyecountynv.gov/DocumentCenter/View/52054"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52058"
         }
       ],
       "county": "Nye",
