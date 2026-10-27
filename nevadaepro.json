@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-26T14:54:50.533Z",
+  "scraped_at": "2026-10-27T14:07:07.332Z",
   "bids": [
     {
       "doc_id": "43ADG-S4059",
@@ -69,6 +69,87 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4059&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "44DOC-S4058",
+      "organization": "Department of Corrections",
+      "buyer": "Joel Wixon",
+      "title": "Vending Services",
+      "bid_opening_date": "12/16/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "295c08d0-93ee-4cb2-b4ea-6255d1aeac7a",
+      "scope": "Vending Services - four year term with the option to renew for two additional one (1) year extensions.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "333909",
+          "name": "44DOC-S4058 RFP~1.docx"
+        },
+        {
+          "file_nbr": "333343",
+          "name": "44DOC-S4058 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "333342",
+          "name": "44DOC-S4058 Terms-and-conditions-for-goods.pdf"
+        },
+        {
+          "file_nbr": "333333",
+          "name": "44DOC-S4058 Scope of Work SOW~1.docx"
+        },
+        {
+          "file_nbr": "333346",
+          "name": "44DOC-S4058 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "333361",
+          "name": "44DOC-S3408 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "333358",
+          "name": "44DOC-S4058-site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "333339",
+          "name": "44DOC-S4058 Contractor Background Check Application.docx"
+        },
+        {
+          "file_nbr": "333338",
+          "name": "44DOC-S4058 Contractor Security Regulations Acknowledgement Form (2-22).docx"
+        },
+        {
+          "file_nbr": "333335",
+          "name": "44DOC-S4058 NDOC Contractor and Volunteer PREA Questionnaire.pdf"
+        },
+        {
+          "file_nbr": "333334",
+          "name": "44DOC-S4058 PREA Zero Tolerance Policy and Reporting.docx"
+        },
+        {
+          "file_nbr": "333357",
+          "name": "44DOC-S4058-reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "333336",
+          "name": "44DOC-S4058 COST_COMMISSION SCHEDULE.docx"
+        },
+        {
+          "file_nbr": "333360",
+          "name": "44DOC-S4058 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "333359",
+          "name": "44DOC-S4058-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19742",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4058&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S4057",
@@ -1015,188 +1096,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3992&external=true&parentUrl=close"
     },
     {
-      "doc_id": "69CRC-S3987",
-      "organization": "Colorado River Commission",
-      "buyer": "Gina Goodman",
-      "title": "High Voltage System Engineering Services",
-      "bid_opening_date": "10/26/2026 5:00 PM",
-      "status": "ES-26-XXX",
-      "detail_fetched": true,
-      "csrf_token": "13edaa1c-4a38-4956-b5bd-2958493d58e7",
-      "scope": "Engineering Services - See Section 9 of the RFP Document for Proposal Submission instructions. Cost to be submitted via Attachment E- Cost Schedule",
-      "contact_org": "Colorado River Commission",
-      "contact_email": "invoices@crchydro.org",
-      "contact_phone": "(702) 486-2670",
-      "attachments": [
-        {
-          "file_nbr": "19802",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "325118",
-          "name": "69CRC-S3987 - ES-27- RFP.pdf"
-        },
-        {
-          "file_nbr": "325119",
-          "name": "ATT A - Scope of Work 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325120",
-          "name": "Att B - Terms and Conditions for Services 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325121",
-          "name": "Att C - Standard Form Contract NATIVE 69CRC-S3987.docx"
-        },
-        {
-          "file_nbr": "325123",
-          "name": "Att C - Standard Form Contract  69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325124",
-          "name": "Att D - Insurance Schedule 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325125",
-          "name": "Att E - Cost Schedule 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325126",
-          "name": "Att F - Proposed Staff Resume 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325127",
-          "name": "Att G - Reference Questionnarie NATIVE 69CRC-S3987.docx"
-        },
-        {
-          "file_nbr": "325128",
-          "name": "Att G - Reference Questionnarie 69CRC-S3987.pdf"
-        },
-        {
-          "file_nbr": "325129",
-          "name": "Att H - Vendor Information Response 69CRC-S3987.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=69CRC-S3987&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S3975",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Commissary and Supplemental Services",
-      "bid_opening_date": "10/26/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "c068206f-9e6d-41f9-a0df-af7fcda4265d",
-      "scope": "Commissary and Supplemental Services",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "332820",
-          "name": "44DOC-S3975 Qand A 2.xlsx"
-        },
-        {
-          "file_nbr": "327713",
-          "name": "44DOC-S3975 QandA 1.xlsx"
-        },
-        {
-          "file_nbr": "327714",
-          "name": "FY25 7.1.24 -6.30.25 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327715",
-          "name": "FY26 July 2025 - June 2026 Items Quantities sold.pdf"
-        },
-        {
-          "file_nbr": "327716",
-          "name": "Nevada Commissary Price List .pdf"
-        },
-        {
-          "file_nbr": "327717",
-          "name": "Nevada Package Sales FY25.pdf"
-        },
-        {
-          "file_nbr": "327718",
-          "name": "Nevada Package Sales FY26.pdf"
-        },
-        {
-          "file_nbr": "327719",
-          "name": "Special Order Price List .pdf"
-        },
-        {
-          "file_nbr": "330541",
-          "name": "44DOC-S3975 RFP~6.docx"
-        },
-        {
-          "file_nbr": "321540",
-          "name": "44DOC-S3975 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "321539",
-          "name": "44DOC-S3975 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "321547",
-          "name": "44DOC-S3975 Facility Contacts.docx"
-        },
-        {
-          "file_nbr": "321533",
-          "name": "44DOC-S3975 Facility Map.pdf"
-        },
-        {
-          "file_nbr": "321538",
-          "name": "44DOC-S3975 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "321799",
-          "name": "44DOC-S3975 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "321541",
-          "name": "44DOC-S3975-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "321543",
-          "name": "44DOC-S3975-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "321536",
-          "name": "44DOC-S6975 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "321530",
-          "name": "44DOC-S3975 Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "321531",
-          "name": "44DOC-S3975 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "321532",
-          "name": "44DOC-S3975 Contractor Security Regulations Acknowledgement Form.docx"
-        },
-        {
-          "file_nbr": "321528",
-          "name": "44DOC-S3975 Commissary Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "321529",
-          "name": "44DOC-S3975 Commissary Pricing.pdf"
-        },
-        {
-          "file_nbr": "323159",
-          "name": "44DOC-S3975 Certification-regarding-lobbying~1.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S3975&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "10TCA-S3969",
       "organization": "Department of Tourism And Cultural Affairs",
       "buyer": "Annette Morfin",
@@ -1301,6 +1200,59 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3967&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S3966",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Integrated Marketing Effectiveness Study",
+      "bid_opening_date": "12/08/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "dd75adb1-e876-460b-b64b-805c8d40cf79",
+      "scope": "INTEGRATED MARKETING EFFECTIVENESS STUDY SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "330906",
+          "name": "Terms-and-conditions-for-services~11.pdf"
+        },
+        {
+          "file_nbr": "330930",
+          "name": "10TCA-S3966 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "330909",
+          "name": "Standard-form-contract~9.docx"
+        },
+        {
+          "file_nbr": "330907",
+          "name": "Attachment BB - Insurance Schedule~3.docx"
+        },
+        {
+          "file_nbr": "330932",
+          "name": "10TCA-S3966 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "330903",
+          "name": "10TCA-S3966 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "330911",
+          "name": "Certification-regarding-lobbying~10.pdf"
+        },
+        {
+          "file_nbr": "330914",
+          "name": "10TCA-S3966 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
     }
   ]
 }
