@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-28T14:04:29.750Z",
+  "scraped_at": "2026-10-29T14:05:14.996Z",
   "bids": [
     {
       "doc_id": "43ADG-S4059",
@@ -1218,65 +1218,65 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S3965",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Record Storage",
-      "bid_opening_date": "10/28/2026 1:00 PM",
-      "status": "",
+      "doc_id": "70CNR-S3770",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Nocoasha Henry",
+      "title": "Maintenance of Self Pay Stations in State Parks",
+      "bid_opening_date": "11/06/2026 2:00 PM",
+      "status": "Bid 70CNR-S3770",
       "detail_fetched": true,
-      "csrf_token": "eac2a3ca-4e97-4ca0-a14b-de02eadf5c9c",
-      "scope": "RECORD STORAGE:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
+      "csrf_token": "e7a5c28e-756f-4cc3-a70c-7d6ebf9cb272",
+      "scope": "Maintenance of Self Pay Stations in State Parks",
+      "contact_org": "State Parks Bryan Building",
+      "contact_email": "NDSPAccounting@parks.nv.gov",
+      "contact_phone": "(775) 684-2770",
       "attachments": [
         {
-          "file_nbr": "332885",
-          "name": "40DHHS-S3965 - Questions and Answers.docx"
+          "file_nbr": "333199",
+          "name": "70CNR-S3770 - Bid Q and A Response 102126.xlsx"
         },
         {
-          "file_nbr": "332886",
-          "name": "Business Associate Addendum - BAA.pdf"
+          "file_nbr": "330406",
+          "name": "70CNR-S3770 - Bid Q and A Respones 100526.xlsx"
         },
         {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
+          "file_nbr": "330129",
+          "name": "70CNR-S3770 Request-for-Proposals_V2_100226.docx"
         },
         {
-          "file_nbr": "329895",
-          "name": "Terms-and-conditions-for-services~34.pdf"
+          "file_nbr": "330131",
+          "name": "70CNR-S3770 Terms-and-conditions-for-services_V2_100226.docx"
         },
         {
-          "file_nbr": "329911",
-          "name": "40DHHS-S3965 - request-for-proposal~1.docx"
+          "file_nbr": "330130",
+          "name": "70CNR-S3770 Terms-and-conditions-for-goods_V2_100226.docx"
         },
         {
-          "file_nbr": "329894",
-          "name": "40DHHS-S3965 -Standard-form-contract.docx"
+          "file_nbr": "322094",
+          "name": "70CNR-S3770 Standard-Form-Contract.docx"
         },
         {
-          "file_nbr": "329893",
-          "name": "40DHHS-S3965 - Insurance  Schedule.docx"
+          "file_nbr": "324424",
+          "name": "70CNR-S3770 Insurance Schedule.docx"
         },
         {
-          "file_nbr": "329886",
-          "name": "40DHHS-S3965 - Reference Questionnaire.docx"
+          "file_nbr": "329700",
+          "name": "70CNR-S3770 Reference Questionnaire~2.docx"
         },
         {
-          "file_nbr": "329903",
-          "name": "40DHHS-S3965 - Cost Schedule.docx"
+          "file_nbr": "322097",
+          "name": "70CNR-S3770 Certification-regarding-lobbying~1.pdf"
         },
         {
-          "file_nbr": "329889",
-          "name": "Certification-regarding-lobbying~28.pdf"
+          "file_nbr": "322091",
+          "name": "70CNR-S3770 Vendor-Information-Response~1.pdf"
         },
         {
-          "file_nbr": "329888",
-          "name": "40DHHS-S3965 - Vendor-Information-Response.pdf"
+          "file_nbr": "322101",
+          "name": "70CNR-S3770 Cost Schedule.xlsx"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3965&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S3770&external=true&parentUrl=close"
     }
   ]
 }
