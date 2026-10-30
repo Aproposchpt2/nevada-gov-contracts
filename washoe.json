@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-29T14:14:59.150Z",
+  "scraped_at": "2026-10-30T14:14:44.402Z",
   "solicitations": [
     {
       "project_number": "RFB #21-B-08-27-TL",
@@ -22,16 +22,6 @@
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
     },
     {
-      "project_number": "RFQ #29-QF-09-27-GS",
-      "project_type": "Request for Formal Quote",
-      "title": "Instructional Supplies for Warehouse Inventory THE DUE DATE FOR QUOTE SUBMISSIONS IS BEING EXTENDED FROM OCTOBER 26, 2026 TO OCTOBER 28, 2026. ADDENDUM 2 WITH REVISED PRICE SCHEDULE POSTED ON 10/22/2026.",
-      "pre_bid_date": "N/A",
-      "question_deadline": "10/12/2026",
-      "due_date": "10/28/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
-    },
-    {
       "project_number": "RFP #14-P-08-27-SA",
       "project_type": "Request for Proposal",
       "title": "Centralized K-12 Library Management & Resource Tracking System 9/25/26 REVISED EXHIBIT C - PRICE SCHEDULE",
@@ -39,7 +29,7 @@
       "question_deadline": "09/14/2026",
       "due_date": "10/08/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     },
     {
       "project_number": "RFP #10-P-07-27-AA",
@@ -49,7 +39,7 @@
       "question_deadline": "09/24/2026",
       "due_date": "10/21/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl06$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
     }
   ]
 }
