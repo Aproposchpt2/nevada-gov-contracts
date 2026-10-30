@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-29T14:05:14.996Z",
+  "scraped_at": "2026-10-30T14:04:46.172Z",
   "bids": [
     {
       "doc_id": "43ADG-S4059",
@@ -700,27 +700,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
     },
     {
-      "doc_id": "41NHA-S4034",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Pharmaceutical Data and Retrospective Pricing Analysis SaaS",
-      "bid_opening_date": "10/29/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "4f663d16-322a-4a71-b1c2-3dca416d0904",
-      "scope": "Pharmaceutical Data and Retrospective Pricing Analysis SaaS. Please see the &#039;Attachments&#039; tab for information.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "329401",
-          "name": "41NHA-S4034-RFI - Pharm Data and Retrospective Pricing Analysis.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4034&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "99SWC-S4033",
       "organization": "Statewide Contracts",
       "buyer": "Jennifer Thomas",
@@ -1216,6 +1195,71 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S3965",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Record Storage",
+      "bid_opening_date": "11/03/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "969d8aae-359f-4f9c-b734-bfc494d706dc",
+      "scope": "RECORD STORAGE:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "332885",
+          "name": "40DHHS-S3965 - Questions and Answers.docx"
+        },
+        {
+          "file_nbr": "332886",
+          "name": "Business Associate Addendum - BAA.pdf"
+        },
+        {
+          "file_nbr": "334487",
+          "name": "Amendment 2 - Updated Timeline.docx"
+        },
+        {
+          "file_nbr": "329895",
+          "name": "Terms-and-conditions-for-services~34.pdf"
+        },
+        {
+          "file_nbr": "329911",
+          "name": "40DHHS-S3965 - request-for-proposal~1.docx"
+        },
+        {
+          "file_nbr": "329894",
+          "name": "40DHHS-S3965 -Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "329893",
+          "name": "40DHHS-S3965 - Insurance  Schedule.docx"
+        },
+        {
+          "file_nbr": "329886",
+          "name": "40DHHS-S3965 - Reference Questionnaire.docx"
+        },
+        {
+          "file_nbr": "329903",
+          "name": "40DHHS-S3965 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "329889",
+          "name": "Certification-regarding-lobbying~28.pdf"
+        },
+        {
+          "file_nbr": "329888",
+          "name": "40DHHS-S3965 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3965&external=true&parentUrl=close"
     },
     {
       "doc_id": "70CNR-S3770",
