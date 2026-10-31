@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-10-30T14:04:46.172Z",
+  "scraped_at": "2026-10-31T14:03:22.523Z",
   "bids": [
     {
       "doc_id": "43ADG-S4059",
@@ -575,35 +575,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4043&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4042",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "DEM - UPS Battery Replacement & PM",
-      "bid_opening_date": "10/30/2026 5:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "fbd9f98c-d5a1-4c86-8012-1869269dab3e",
-      "scope": "The State of Nevada, The Office of the Military, is seeking bids/proposals from qualified contractors to provide services for the following to perform installation of new batteries, repair and perform an overall maintenance that is needed on (2) UPS units. The contractor shall provide all labor, tools and equipment to work on accomplish what is required on this project. The contractor shall provide and install new batteries in the current UPS units. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project. Remove existing batteries from 2 UPS units. Provide and install new batteries for the 2 UPS units. Install batteries and interconnect wiring prep for cutover. Replace necessary cables, terminals end, and fuses. Contractor to remove, dispose of, and recycle the old batteries that are pulled out of the UPS units. Contractor to perform a preventative maintenance analysis on both UPS units.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "330654",
-          "name": "DEM UPS Battery Replacement and PM Invitation to Bid"
-        },
-        {
-          "file_nbr": "330656",
-          "name": "DEM UPS Battery Replacement PM Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4042&external=true&parentUrl=close"
     },
     {
       "doc_id": "41NHA-S4038",
