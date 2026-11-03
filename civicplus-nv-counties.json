@@ -1,26 +1,13 @@
 {
-  "scraped_at": "2026-11-02T16:07:29.127Z",
+  "scraped_at": "2026-11-03T16:07:08.432Z",
   "bids": [
     {
-      "bid_id": "24",
-      "title": "2026 Silver Springs WWTP Sludge Pond 2 Cleaning Project",
-      "description": "NOTICE IS HEREBY GIVEN  that the Lyon County, as Owner, invites and will receive proposal (bids), including any and all addenda, in a sealed envelope addressed to:    ...",
+      "bid_id": "23",
+      "title": "Lyon County Courthouse Site Improvements - Yerington, NV",
+      "description": "NOTICE TO CONTRACTORS  INVITATION TO BID  INVITATION TO BID LYON COUNTY Site Improvements. Lyon County invites and will receive sealed bids for the Site  Improvements project...",
       "status": "Open",
-      "closes": "11/2/2026 2:00 PM",
-      "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=24",
-      "documents": [],
-      "county": "Lyon",
-      "jurisdiction_name": "Lyon County",
-      "city": "Yerington",
-      "source_base": "https://www.lyon-county.org/bids.aspx"
-    },
-    {
-      "bid_id": "25",
-      "title": "Type 1 Ambulance for Smith Valley Fire Protection District",
-      "description": "Invitation to Bid  Smith Valley Fire Protection District is requesting bids for an ambulance  Notice is hereby given that the Smith Valley Fire Protection District will be...",
-      "status": "Open",
-      "closes": "11/2/2026 10:00 AM",
-      "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=25",
+      "closes": "9/17/2029 10:00 AM",
+      "detail_url": "https://www.lyon-county.org/bids.aspx?bidID=23",
       "documents": [],
       "county": "Lyon",
       "jurisdiction_name": "Lyon County",
@@ -43,6 +30,9 @@
         },
         {
           "url": "https://www.nyecountynv.gov/DocumentCenter/View/52059"
+        },
+        {
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52092"
         }
       ],
       "county": "Nye",
