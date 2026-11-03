@@ -1,6 +1,51 @@
 {
-  "scraped_at": "2026-11-02T14:04:47.883Z",
+  "scraped_at": "2026-11-03T14:03:56.466Z",
   "bids": [
+    {
+      "doc_id": "65DPS-S4060",
+      "organization": "Department of Public Safety",
+      "buyer": "Kasen Cornmesser",
+      "title": "Commercial Portable Scale Calibration/Repair",
+      "bid_opening_date": "11/30/2026 9:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "47ba2116-8619-4d59-83ce-8379cefc6eab",
+      "scope": "Please see cost schedule in attachments tab. Vendors are required to complete and upload schedule.",
+      "contact_org": "NHP Headquarters",
+      "contact_email": "NHPPurchasing@dps.state.nv.us",
+      "contact_phone": "(775) 684-4488",
+      "attachments": [
+        {
+          "file_nbr": "19793",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "333992",
+          "name": "ATTACHMENT AA - SCOPE OF WORK 100726.pdf"
+        },
+        {
+          "file_nbr": "333993",
+          "name": "ATTACHMENT BB - INSURANCE SCHEDULE (for review).pdf"
+        },
+        {
+          "file_nbr": "333994",
+          "name": "ATTACHMENT CC - STANDARD FORM CONTRACT (for review).pdf"
+        },
+        {
+          "file_nbr": "333997",
+          "name": "65DPS-S4060 - Commercial Portable Scale Calibration-Repair.pdf"
+        },
+        {
+          "file_nbr": "333999",
+          "name": "65DPS-S4060 - Commercial Portable Scales Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "334002",
+          "name": "ATTACHMENT DD - 65DPS-S4060-Reference-Questionnaire.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4060&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4059",
       "organization": "Adjutant General",
@@ -152,59 +197,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4058&external=true&parentUrl=close"
     },
     {
-      "doc_id": "40DHHS-S4057",
-      "organization": "Department of Human Services",
-      "buyer": "Mariana Acevedo",
-      "title": "APS Forensic Medical",
-      "bid_opening_date": "11/02/2026 12:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "f94f35d3-7bdd-4396-9de8-f81f652f9d5a",
-      "scope": "Aging and Disability Services Division is seeking quotes from qualified vendors to provide forensic services as described in the scope of work. 1.1.2. The State intends to award one contract in conjunction with this informal solicitation, as determined in the best interests of the State. Aging and Disability Services Division shall administer contract(s) resulting from this solicitation. The resulting contract(s) are expected to be for a contract term of 4 years.",
-      "contact_org": "ADSD Carson City Office",
-      "contact_email": "fiscal@adsd.nv.gov",
-      "contact_phone": "(775) 687-0579",
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "332038",
-          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "332039",
-          "name": "Attachment A - Contract Template.pdf"
-        },
-        {
-          "file_nbr": "332040",
-          "name": "Attachment B - Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "332043",
-          "name": "Certification-regarding-lobbying~29.pdf"
-        },
-        {
-          "file_nbr": "332044",
-          "name": "cost-schedule.xlsx"
-        },
-        {
-          "file_nbr": "332046",
-          "name": "Terms-and-conditions-for-services~35.pdf"
-        },
-        {
-          "file_nbr": "332053",
-          "name": "BAA 2024 (2) (3).docx"
-        },
-        {
-          "file_nbr": "332977",
-          "name": "APS Forensic Medical Specialist Epro Solicitation 2026~1.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4057&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "43ADG-S4055",
       "organization": "Adjutant General",
       "buyer": "Paul Toups",
@@ -240,59 +232,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4055&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "31PCSA-S4054",
-      "organization": "State Public Charter School Authority",
-      "buyer": "Denise Frohlich",
-      "title": "Charter School Authorizer Evaluation",
-      "bid_opening_date": "11/02/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "beeeb4d4-8759-43a8-966b-995638de7990",
-      "scope": "Charter School Authorizer Evaluation",
-      "contact_org": "State Public Charter School Authority",
-      "contact_email": "spcsafinance@spcsa.nv.gov",
-      "contact_phone": "(775) 531-3384",
-      "attachments": [
-        {
-          "file_nbr": "19715",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "332499",
-          "name": "S4054-request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "332497",
-          "name": "S4054 Scope of Work and Cost Instructions.docx"
-        },
-        {
-          "file_nbr": "332500",
-          "name": "S4054 standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "332493",
-          "name": "S4054 Attachment BB- Insurance Schedule- Professional No Driving.docx"
-        },
-        {
-          "file_nbr": "332494",
-          "name": "S4054 Attachment XX- Confidentiality Addendum.docx"
-        },
-        {
-          "file_nbr": "332495",
-          "name": "S4054 Attachment XX- Fiscal Procedures.doc"
-        },
-        {
-          "file_nbr": "332498",
-          "name": "S4054 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "332496",
-          "name": "S4054 Certification-regarding-lobbying.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4054&external=true&parentUrl=close"
     },
     {
       "doc_id": "40DHHS-S4053",
@@ -379,63 +318,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4052&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S4049",
-      "organization": "Department of Human Services",
-      "buyer": "Mariana Acevedo",
-      "title": "DRC Behavioral Management Training",
-      "bid_opening_date": "11/02/2026 3:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "25260b2d-8bfc-482f-bbaa-e346db9393d3",
-      "scope": "Aging and Disability Services Division is seeking quotes from qualified vendors to provide behavioral management safety training services as described in the scope of work. 1.1.2. The State intends to award one contract in conjunction with this informal solicitation, as determined in the best interests of the State. Aging and Disability Services Division shall administer contract resulting from this solicitation. The resulting contract are expected to be for a contract term of 4 years.",
-      "contact_org": "ADSD Carson City Office",
-      "contact_email": "fiscal@adsd.nv.gov",
-      "contact_phone": "(775) 687-0579",
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "332038",
-          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "332039",
-          "name": "Attachment A - Contract Template.pdf"
-        },
-        {
-          "file_nbr": "332040",
-          "name": "Attachment B - Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "332041",
-          "name": "Behavioral Management Informal Solicitation 2026.docx"
-        },
-        {
-          "file_nbr": "332043",
-          "name": "Certification-regarding-lobbying~29.pdf"
-        },
-        {
-          "file_nbr": "332044",
-          "name": "cost-schedule.xlsx"
-        },
-        {
-          "file_nbr": "332045",
-          "name": "Quote Instructions~5.pdf"
-        },
-        {
-          "file_nbr": "332046",
-          "name": "Terms-and-conditions-for-services~35.pdf"
-        },
-        {
-          "file_nbr": "332053",
-          "name": "BAA 2024 (2) (3).docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4049&external=true&parentUrl=close"
     },
     {
       "doc_id": "31PCSA-S4046",
@@ -751,27 +633,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "65DPS-S4029",
-      "organization": "Department of Public Safety",
-      "buyer": "Miriam Garcia",
-      "title": "2027 Motorcycles",
-      "bid_opening_date": "11/02/2026 2:00 PM",
-      "status": "R146257",
-      "detail_fetched": true,
-      "csrf_token": "bf220f01-5320-43a8-9b6c-be237392809a",
-      "scope": "2027 BMW R 1300 RT-P KA3/ MODEL CODE 0M43 N99 GLACIER SILVER MATALLIC U.S. AUTHORITY PACKAGE; BMW ELECTRONIC SIREN; WEATHER PROOF BMW BATTERY CHARGER AND MOTORCYCLE CHARGING PLUG] FMS STANDARD EMERGENCY LIGHTING PACKAGE",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4029&external=true&parentUrl=close"
     },
     {
       "doc_id": "08DOA-S4023",
