@@ -1,6 +1,85 @@
 {
-  "scraped_at": "2026-11-03T14:03:56.466Z",
+  "scraped_at": "2026-11-04T14:04:33.171Z",
   "bids": [
+    {
+      "doc_id": "70CNR-S4072",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Hilary Reynolds",
+      "title": "TCID Geospatial Tools Ongoing Maintenance and Support",
+      "bid_opening_date": "11/09/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "ba97ce28-5150-4faa-b6b2-de7bbbb4e05f",
+      "scope": "ArcGIS Desktop Advanced Concurrent Use Primary Maintenance.",
+      "contact_org": "NDF State Headquarters",
+      "contact_email": "NDFaccounting@forestry.nv.gov",
+      "contact_phone": "(775) 684-2500",
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "334952",
+          "name": "Scope of Work"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4072&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "55AGR-S4066",
+      "organization": "Department of Agriculture",
+      "buyer": "Christian Armas",
+      "title": "Generator",
+      "bid_opening_date": "11/24/2026 5:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "3f083638-b91c-407b-b179-17165306188c",
+      "scope": "500kW Generator with optional 800A ATS (Automatic Transfer Switch)",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19759",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4066&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4061",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "DEM - Door Hardware Replacement",
+      "bid_opening_date": "11/25/2026 4:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "3cf3c823-99ce-4273-8562-345f094b466b",
+      "scope": "The State of Nevada, The Office of the Military, is seeking bids/proposals from qualified contractors to provide services for the following perform installation, repair or maintenance needs on doors and door hardware replacement. The selected contractor will perform door the exterior doors and three interior doors in this project. The contractor shall fabricate and install new doors and hardware on the doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "334548",
+          "name": "DEM Door Hardware Replacement Invitation to Bid"
+        },
+        {
+          "file_nbr": "334549",
+          "name": "DEM Door Hardware Replacement Scope of Work"
+        },
+        {
+          "file_nbr": "334550",
+          "name": "DEM Floor Plan"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4061&external=true&parentUrl=close"
+    },
     {
       "doc_id": "65DPS-S4060",
       "organization": "Department of Public Safety",
@@ -232,67 +311,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4055&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S4053",
-      "organization": "Department of Human Services",
-      "buyer": "Sharon Knigge",
-      "title": "Water Well Repair",
-      "bid_opening_date": "11/03/2026 2:00 PM",
-      "status": "Jessica Vanderlinden",
-      "detail_fetched": true,
-      "csrf_token": "b01fb4b3-e0bc-4ca5-90d5-cfd01b63ec22",
-      "scope": "Water well and meter repair.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "332432",
-          "name": "Request for Proposals 40DHHS-S4053 Water Well Repair"
-        },
-        {
-          "file_nbr": "332433",
-          "name": "40DHHS-S4053-Terms and Conditions"
-        },
-        {
-          "file_nbr": "332434",
-          "name": "40DHHS-S4053-Certification Regarding Lobbying"
-        },
-        {
-          "file_nbr": "332435",
-          "name": "40DHHS-S4053-Standard Form Contract"
-        },
-        {
-          "file_nbr": "332436",
-          "name": "40DHHS-S4053-Insurance Schedule"
-        },
-        {
-          "file_nbr": "332437",
-          "name": "40DHHS-S4053-Vendor Information Response"
-        },
-        {
-          "file_nbr": "332438",
-          "name": "40DHHS-S4053-Prison Rape Elimination Act Acknowledgement"
-        },
-        {
-          "file_nbr": "332439",
-          "name": "40DHHS-S4053-Federal Laws and Authorities"
-        },
-        {
-          "file_nbr": "332440",
-          "name": "40DHHS-S4053-Division of Child and Family Services Fiscal Procedures"
-        },
-        {
-          "file_nbr": "332441",
-          "name": "40DHHS-S4053-Cost Schedule"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4053&external=true&parentUrl=close"
     },
     {
       "doc_id": "55AGR-S4052",
@@ -551,31 +569,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "99SWC-S4033",
-      "organization": "Statewide Contracts",
-      "buyer": "Jennifer Thomas",
-      "title": "RFI-Employee Airline Travel Program",
-      "bid_opening_date": "11/03/2026 2:00 PM",
-      "status": "Request for Information (RFI)",
-      "detail_fetched": true,
-      "csrf_token": "5d428b25-58fa-4851-b825-c32bbafb4e16",
-      "scope": "The purpose of this Request for Information (RFI) is to to obtain information from qualified commercial air carriers regarding the availability, structure, pricing, administration, technology, traveler services, and other features of air travel programs available to State employees traveling for official State business. Please see RFI - Employee Airline Travel Program for more details in the attachments tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19561",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "329500",
-          "name": "RFI_Employee Airline Travel Program.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4033&external=true&parentUrl=close"
     },
     {
       "doc_id": "41NHA-S4031",
@@ -1027,71 +1020,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "40DHHS-S3965",
-      "organization": "Department of Human Services",
-      "buyer": "Annette Morfin",
-      "title": "Record Storage",
-      "bid_opening_date": "11/03/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "969d8aae-359f-4f9c-b734-bfc494d706dc",
-      "scope": "RECORD STORAGE:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19726",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "332885",
-          "name": "40DHHS-S3965 - Questions and Answers.docx"
-        },
-        {
-          "file_nbr": "332886",
-          "name": "Business Associate Addendum - BAA.pdf"
-        },
-        {
-          "file_nbr": "334487",
-          "name": "Amendment 2 - Updated Timeline.docx"
-        },
-        {
-          "file_nbr": "329895",
-          "name": "Terms-and-conditions-for-services~34.pdf"
-        },
-        {
-          "file_nbr": "329911",
-          "name": "40DHHS-S3965 - request-for-proposal~1.docx"
-        },
-        {
-          "file_nbr": "329894",
-          "name": "40DHHS-S3965 -Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "329893",
-          "name": "40DHHS-S3965 - Insurance  Schedule.docx"
-        },
-        {
-          "file_nbr": "329886",
-          "name": "40DHHS-S3965 - Reference Questionnaire.docx"
-        },
-        {
-          "file_nbr": "329903",
-          "name": "40DHHS-S3965 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "329889",
-          "name": "Certification-regarding-lobbying~28.pdf"
-        },
-        {
-          "file_nbr": "329888",
-          "name": "40DHHS-S3965 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S3965&external=true&parentUrl=close"
     },
     {
       "doc_id": "70CNR-S3770",
