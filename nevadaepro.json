@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-04T14:04:33.171Z",
+  "scraped_at": "2026-11-05T14:04:17.889Z",
   "bids": [
     {
       "doc_id": "70CNR-S4072",
@@ -46,6 +46,63 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4066&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "65DPS-S4063",
+      "organization": "Department of Public Safety",
+      "buyer": "Kasen Cornmesser",
+      "title": "Janitorial Services - USA Parkway/Fernley NHP Substations",
+      "bid_opening_date": "12/02/2026 9:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "de55614d-9fac-4a0d-a69e-56893533b2cb",
+      "scope": "Please see cost schedule in attachments tab",
+      "contact_org": "NHP Headquarters",
+      "contact_email": "NHPPurchasing@dps.state.nv.us",
+      "contact_phone": "(775) 684-4488",
+      "attachments": [
+        {
+          "file_nbr": "19793",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "334715",
+          "name": "ATTACHMENT AA_SCOPE OF WORK-Vendor Ack.pdf"
+        },
+        {
+          "file_nbr": "334716",
+          "name": "ATTACHMENT BB - Insurance Specifications~1.pdf"
+        },
+        {
+          "file_nbr": "334717",
+          "name": "ATTACHMENT CC - STANDARD FORM CONTRACT.pdf"
+        },
+        {
+          "file_nbr": "334718",
+          "name": "ATTACHMENT DD - 65DPS-S4063-Reference-Questionnaire-2026-11-04.pdf"
+        },
+        {
+          "file_nbr": "334719",
+          "name": "65DPS-S4063 Janitorial Services-Fernley Cost Schedule.pdf"
+        },
+        {
+          "file_nbr": "334720",
+          "name": "65DPS-S4063 Janitorial Services-USA Parkway Cost Schedule.pdf"
+        },
+        {
+          "file_nbr": "334721",
+          "name": "65DPS-S4063-request-for-proposals-2026-11-04.pdf"
+        },
+        {
+          "file_nbr": "334722",
+          "name": "Certification-regarding-lobbying~8.pdf"
+        },
+        {
+          "file_nbr": "334723",
+          "name": "65DPS-S4063-site-visit-registration-2026-11-04.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4063&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4061",
@@ -338,6 +395,39 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4052&external=true&parentUrl=close"
     },
     {
+      "doc_id": "72DOW-S4047",
+      "organization": "Department of Wildlife",
+      "buyer": "Joel Wixon",
+      "title": "Hatchery Fish Food",
+      "bid_opening_date": "11/17/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "6dd23f56-1632-4414-8058-5112ca57e18e",
+      "scope": "Boulder City, NV 89005 Bozeman Razorback Diet (1 mil): 0-0-3,000 lbs.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "331555",
+          "name": "72DOW-S4047 SOW.docx"
+        },
+        {
+          "file_nbr": "331559",
+          "name": "72DOW-S4047 Terms-and-conditions-for-goods.pdf"
+        },
+        {
+          "file_nbr": "334998",
+          "name": "72DOW-S4047 Additional Requirements~1.docx"
+        },
+        {
+          "file_nbr": "19818",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4047&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "31PCSA-S4046",
       "organization": "State Public Charter School Authority",
       "buyer": "Miriam Garcia",
@@ -569,6 +659,59 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S4032",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "HVAC Maintenance Service",
+      "bid_opening_date": "12/07/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "0f920c5a-c67e-4ddc-868c-905680f7c3cc",
+      "scope": "HVAC MAINTENANCE SERVICE:",
+      "contact_org": "Administrators Office",
+      "contact_email": "dmhfiscal@nevadaculture.org",
+      "contact_phone": "(775) 687-7340",
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335241",
+          "name": "Terms-and-conditions-for-services~13.pdf"
+        },
+        {
+          "file_nbr": "335257",
+          "name": "10TCA-S4032 - request-for-proposals~1.docx"
+        },
+        {
+          "file_nbr": "335243",
+          "name": "Standard-form-contract~11.docx"
+        },
+        {
+          "file_nbr": "335247",
+          "name": "10TCA-S4032 -  Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "335251",
+          "name": "10TCA-S4032 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "335283",
+          "name": "10TCA-S4032 - Cost Schedule~1.docx"
+        },
+        {
+          "file_nbr": "335248",
+          "name": "Certification-regarding-lobbying~12.pdf"
+        },
+        {
+          "file_nbr": "335252",
+          "name": "10TCA-S4032 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4032&external=true&parentUrl=close"
     },
     {
       "doc_id": "41NHA-S4031",
