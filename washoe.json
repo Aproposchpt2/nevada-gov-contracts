@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-05T14:13:07.623Z",
+  "scraped_at": "2026-11-06T14:12:40.955Z",
   "solicitations": [
     {
       "project_number": "RFB #26-B-09-27-SA",
@@ -12,16 +12,6 @@
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl02$btnSelect"
     },
     {
-      "project_number": "RFB #21-B-08-27-TL",
-      "project_type": "Request for Bid",
-      "title": "Bi-Directional Amplifier (BDA) System Annual Inspections, Testing, Certifications, and Re-Certification Services",
-      "pre_bid_date": "N/A",
-      "question_deadline": "10/21/2026",
-      "due_date": "11/04/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
-    },
-    {
       "project_number": "RFP #14-P-08-27-SA",
       "project_type": "Request for Proposal",
       "title": "Centralized K-12 Library Management & Resource Tracking System 9/25/26 REVISED EXHIBIT C - PRICE SCHEDULE",
@@ -29,7 +19,7 @@
       "question_deadline": "09/14/2026",
       "due_date": "10/08/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
     },
     {
       "project_number": "RFP #10-P-07-27-AA",
@@ -39,7 +29,7 @@
       "question_deadline": "09/24/2026",
       "due_date": "10/21/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl05$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
     }
   ]
 }
