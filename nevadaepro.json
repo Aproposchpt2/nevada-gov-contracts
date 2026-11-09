@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-08T14:03:24.344Z",
+  "scraped_at": "2026-11-09T14:03:59.879Z",
   "bids": [
     {
       "doc_id": "80DOT-S4076",
@@ -54,31 +54,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4075&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S4072",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Hilary Reynolds",
-      "title": "TCID Geospatial Tools Ongoing Maintenance and Support",
-      "bid_opening_date": "11/09/2026 12:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "ba97ce28-5150-4faa-b6b2-de7bbbb4e05f",
-      "scope": "ArcGIS Desktop Advanced Concurrent Use Primary Maintenance.",
-      "contact_org": "NDF State Headquarters",
-      "contact_email": "NDFaccounting@forestry.nv.gov",
-      "contact_phone": "(775) 684-2500",
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "334952",
-          "name": "Scope of Work"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4072&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4069",
@@ -1165,6 +1140,59 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3967&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "10TCA-S3966",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "Integrated Marketing Effectiveness Study",
+      "bid_opening_date": "12/08/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "cda275b2-fc8f-4936-ba97-cff7681f73de",
+      "scope": "INTEGRATED MARKETING EFFECTIVENESS STUDY SERVICES:",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "330906",
+          "name": "Terms-and-conditions-for-services~11.pdf"
+        },
+        {
+          "file_nbr": "330930",
+          "name": "10TCA-S3966 - request-for-proposals.docx"
+        },
+        {
+          "file_nbr": "330909",
+          "name": "Standard-form-contract~9.docx"
+        },
+        {
+          "file_nbr": "330907",
+          "name": "Attachment BB - Insurance Schedule~3.docx"
+        },
+        {
+          "file_nbr": "330932",
+          "name": "10TCA-S3966 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "330903",
+          "name": "10TCA-S3966 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "330911",
+          "name": "Certification-regarding-lobbying~10.pdf"
+        },
+        {
+          "file_nbr": "330914",
+          "name": "10TCA-S3966 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
     }
   ]
 }
