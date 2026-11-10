@@ -1,6 +1,96 @@
 {
-  "scraped_at": "2026-11-09T14:03:59.879Z",
+  "scraped_at": "2026-11-10T14:03:51.493Z",
   "bids": [
+    {
+      "doc_id": "65DPS-S4081",
+      "organization": "Department of Public Safety",
+      "buyer": "Heather Moon",
+      "title": "NEW VEHICLE BUILDS",
+      "bid_opening_date": "12/07/2026 12:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "58c294e4-359d-4057-b15a-451822614a51",
+      "scope": "35-16045 - Defender Side Window Guard",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19793",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "19786",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4081&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4080",
+      "organization": "Department of Human Services",
+      "buyer": "Sharon Knigge",
+      "title": "Water Well Repair",
+      "bid_opening_date": "12/07/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "d2e45e1f-485a-45f7-959f-9d08b9c6e34b",
+      "scope": "Water well and meter repair.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335844",
+          "name": "Request for Proposals 40DHHS-S4080 Water Well Repair"
+        },
+        {
+          "file_nbr": "335845",
+          "name": "40DHHS-S4080 Site Visit Registration"
+        },
+        {
+          "file_nbr": "335846",
+          "name": "40DHHS-S4080 Certification Regarding Lobbying"
+        },
+        {
+          "file_nbr": "335847",
+          "name": "40DHHS-S4080 TERMS AND CONDITIONS"
+        },
+        {
+          "file_nbr": "335848",
+          "name": "40DHHS-S4080 VENDOR INFORMATION RESPONSE"
+        },
+        {
+          "file_nbr": "335849",
+          "name": "40DHHS-S4080 STANDARD FORM CONTRACT"
+        },
+        {
+          "file_nbr": "335850",
+          "name": "40DHHS-S4080 PREA ACKNOWLEDGEMENT"
+        },
+        {
+          "file_nbr": "335851",
+          "name": "40DHHS-s4080 FEDERAL LAWS AND AUTHORITIES"
+        },
+        {
+          "file_nbr": "335852",
+          "name": "40DHHS-S4080 INSURANCE SCHEDULE"
+        },
+        {
+          "file_nbr": "335855",
+          "name": "40DHHS-S4080 DIVISION OF CHILD AND FAMILY SERVICES FISCAL PROCEDURES"
+        },
+        {
+          "file_nbr": "335856",
+          "name": "40DHHS-S4080 COST SCHEDULE"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4080&external=true&parentUrl=close"
+    },
     {
       "doc_id": "80DOT-S4076",
       "organization": "Department of Transportation",
@@ -54,6 +144,31 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4075&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4071",
+      "organization": "Department of Human Services",
+      "buyer": "Annette Morfin",
+      "title": "Nevada Youth Training Center Quarterly Meat Solicitation",
+      "bid_opening_date": "12/14/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "cbc39270-5f5f-4e4e-acb2-5ffb3cde66d9",
+      "scope": "GROUND BEEF: MAXIMUM 20% FAT CONTENT, NO SOSYBEAN HIGH PROTEIN ADDED, CHILLED, FREEZER WRAPPED, 10 LBS. PER PKG., IN ACCORDANCE W/ #136 EXCEPT MUST BE FROM U.S.. GRADE CHOICE BEEF.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19719",
+          "name": "0000 Standard Terms and Conditions for Commodities"
+        },
+        {
+          "file_nbr": "19726",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4071&external=true&parentUrl=close"
     },
     {
       "doc_id": "43ADG-S4069",
@@ -1034,165 +1149,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3992&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S3969",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "HVAC BAS Preventative Maintenance",
-      "bid_opening_date": "11/23/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "e51600bd-24df-4181-9a44-138e61c164e0",
-      "scope": "HVAC BUILDING AUTOMATION SYSTEM (BAS) PREVENTATIVE MAINTENANCE:",
-      "contact_org": "Administrators Office",
-      "contact_email": "dmhfiscal@nevadaculture.org",
-      "contact_phone": "(775) 687-7340",
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "333476",
-          "name": "Terms-and-conditions-for-services~12.pdf"
-        },
-        {
-          "file_nbr": "333472",
-          "name": "10TCA-S3969 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "333475",
-          "name": "Standard-form-contract~10.docx"
-        },
-        {
-          "file_nbr": "333468",
-          "name": "08DOA-S3969 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "333471",
-          "name": "10TCA-S3969 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "333469",
-          "name": "10TCA-S3969 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "333474",
-          "name": "Certification-regarding-lobbying~11.pdf"
-        },
-        {
-          "file_nbr": "333473",
-          "name": "10TCA-S3969 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3969&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S3967",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "Economic Impact Study",
-      "bid_opening_date": "11/12/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "76ab3e55-c411-496d-87f8-f2c2456c60f8",
-      "scope": "ECONOMIC IMPACT STUDY SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "330858",
-          "name": "Terms-and-conditions-for-services~10.pdf"
-        },
-        {
-          "file_nbr": "330850",
-          "name": "10TCA-S3967 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "330857",
-          "name": "Standard-form-contract~8.docx"
-        },
-        {
-          "file_nbr": "330853",
-          "name": "Attachment BB - Insurance Schedule~2.docx"
-        },
-        {
-          "file_nbr": "330849",
-          "name": "10TCA-S3967 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "330848",
-          "name": "10TCA-S3967 - Cost Schedule - To Be Used.docx"
-        },
-        {
-          "file_nbr": "330855",
-          "name": "Certification-regarding-lobbying~9.pdf"
-        },
-        {
-          "file_nbr": "330854",
-          "name": "10TCA-S3967 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3967&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S3966",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "Integrated Marketing Effectiveness Study",
-      "bid_opening_date": "12/08/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "cda275b2-fc8f-4936-ba97-cff7681f73de",
-      "scope": "INTEGRATED MARKETING EFFECTIVENESS STUDY SERVICES:",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "330906",
-          "name": "Terms-and-conditions-for-services~11.pdf"
-        },
-        {
-          "file_nbr": "330930",
-          "name": "10TCA-S3966 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "330909",
-          "name": "Standard-form-contract~9.docx"
-        },
-        {
-          "file_nbr": "330907",
-          "name": "Attachment BB - Insurance Schedule~3.docx"
-        },
-        {
-          "file_nbr": "330932",
-          "name": "10TCA-S3966 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "330903",
-          "name": "10TCA-S3966 - Cost Schedule.docx"
-        },
-        {
-          "file_nbr": "330911",
-          "name": "Certification-regarding-lobbying~10.pdf"
-        },
-        {
-          "file_nbr": "330914",
-          "name": "10TCA-S3966 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S3966&external=true&parentUrl=close"
     }
   ]
 }
