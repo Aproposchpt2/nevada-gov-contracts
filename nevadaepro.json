@@ -1,6 +1,47 @@
 {
-  "scraped_at": "2026-11-10T14:03:51.493Z",
+  "scraped_at": "2026-11-11T14:03:41.503Z",
   "bids": [
+    {
+      "doc_id": "70CNR-S4083",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Heather Moon",
+      "title": "Clean Water Technical Assistance",
+      "bid_opening_date": "12/08/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "2f2b9e86-93b5-44a2-96da-b0731fa095f5",
+      "scope": "There is no cost associated with this RFQ.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "336231",
+          "name": "Scope of Work FY2027.docx"
+        },
+        {
+          "file_nbr": "336232",
+          "name": "Terms-and-conditions-for-services~19.pdf"
+        },
+        {
+          "file_nbr": "336234",
+          "name": "Standard-form-contract~12.docx"
+        },
+        {
+          "file_nbr": "336238",
+          "name": "Insurance Schedule~10.docx"
+        },
+        {
+          "file_nbr": "336233",
+          "name": "Certification-regarding-lobbying~14.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4083&external=true&parentUrl=close"
+    },
     {
       "doc_id": "65DPS-S4081",
       "organization": "Department of Public Safety",
@@ -146,6 +187,132 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4075&external=true&parentUrl=close"
     },
     {
+      "doc_id": "03AG-S4074",
+      "organization": "Attorney General's Office",
+      "buyer": "Annette Morfin",
+      "title": "Janitorial Services - Durango Drive",
+      "bid_opening_date": "12/16/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "b6feceff-543e-4ff2-a379-c16be1d93df8",
+      "scope": "JANITORIAL SERVICES AT 5175 S. DURANGO DRIVE IN LAS VEGAS.",
+      "contact_org": "Attorney General's Office",
+      "contact_email": "agaccounting@ag.nv.gov",
+      "contact_phone": "(775) 684-1123",
+      "attachments": [
+        {
+          "file_nbr": "19587",
+          "name": "Quote Instructions.pdf"
+        },
+        {
+          "file_nbr": "336073",
+          "name": "Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "336084",
+          "name": "03AG-S4074 -request-for-proposals~1.docx"
+        },
+        {
+          "file_nbr": "336075",
+          "name": "Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "336077",
+          "name": "03AG-S4074 - Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "336087",
+          "name": "Scope of Work - Clean Version.docx"
+        },
+        {
+          "file_nbr": "336069",
+          "name": "03AG-S4074 - site-visit-registration.pdf"
+        },
+        {
+          "file_nbr": "336088",
+          "name": "04AG-S4074 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "336079",
+          "name": "Cost Schedule~3.docx"
+        },
+        {
+          "file_nbr": "336074",
+          "name": "Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "336070",
+          "name": "03AG-S4074 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=03AG-S4074&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "30DOE-S4073",
+      "organization": "Department of Education",
+      "buyer": "Ed kochendarfer",
+      "title": "Anonymous School Safety & Tip Management Platform",
+      "bid_opening_date": "12/07/2027 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "de4cd279-3500-43ed-a142-70fe345dce68",
+      "scope": "The Nevada Department of Education seeks a qualified vendor to provide a cloud-based, anonymous tip acquisition and management platform for the SafeVoice Nevada school safety initiative. The solution includes a secure web platform and branded iOS and Android apps for submitting anonymous tips (text, photo, audio, video) by web, app, or phone, with protected tipster identity. Required features include customizable tip workflows, duplicate detection, real-time email/SMS notifications, role-based access, audit trails, and custom reporting. The vendor must meet State security requirements (GovRAMP, SOC 2 Type II, 24-hour incident notification) and provide implementation, training, support, and a resource library over a four-year term. Please see cost schedule located in the attachments tab.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "336254",
+          "name": "30DOE-S4073 RFP~1.docx"
+        },
+        {
+          "file_nbr": "335189",
+          "name": "30DOE-S4073 Scope of Work.docx"
+        },
+        {
+          "file_nbr": "335190",
+          "name": "30DOE-S4073 Terms and Conditions for Services.docx"
+        },
+        {
+          "file_nbr": "335183",
+          "name": "30DOE-S4073 Standard Form Contract.docx"
+        },
+        {
+          "file_nbr": "335188",
+          "name": "30DOE-S4073 Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "335180",
+          "name": "30DOE-S4073 Reference Questionnaire .docx"
+        },
+        {
+          "file_nbr": "335185",
+          "name": "30DOE-S4073 Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "335181",
+          "name": "30DOE-S4073 Certification Regarding Lobbying.pdf"
+        },
+        {
+          "file_nbr": "335184",
+          "name": "30DOE-S4073 Vendor Information Response.pdf"
+        },
+        {
+          "file_nbr": "335187",
+          "name": "30DOE-S4073 Data Sharing Agreement.docx"
+        },
+        {
+          "file_nbr": "335182",
+          "name": "30DOE-S4073 Staff Resume.docx"
+        },
+        {
+          "file_nbr": "19701",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=30DOE-S4073&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "40DHHS-S4071",
       "organization": "Department of Human Services",
       "buyer": "Annette Morfin",
@@ -219,6 +386,71 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4066&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "70CNR-S4064",
+      "organization": "Department of Conservation and Natural Resources",
+      "buyer": "Mason Bondi",
+      "title": "Sustainable Materials Management Digital Workbooks and Learning Material",
+      "bid_opening_date": "12/08/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "436e82d3-cd56-435d-a8c3-df494ea6482a",
+      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Division of Environmental Protection (NDEP) Bureau of Sustainable Materials (BSMM) is seeking proposals from qualified vendors to provide Sustainable Materials Management Workbooks and Learning Materials for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19810",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335632",
+          "name": "70CNR-S4064 - Request-for-Proposals.pdf"
+        },
+        {
+          "file_nbr": "335168",
+          "name": "Terms-and-conditions-for-services~17.pdf"
+        },
+        {
+          "file_nbr": "335169",
+          "name": "Terms-and-conditions-for-goods~2.pdf"
+        },
+        {
+          "file_nbr": "335171",
+          "name": "70CNR-S4064 - NDEP Additional Terms and Conditions.pdf"
+        },
+        {
+          "file_nbr": "335172",
+          "name": "70CNR-S4064 - Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "335489",
+          "name": "70CNR-S4064 - Insurance Schedule.pdf"
+        },
+        {
+          "file_nbr": "335940",
+          "name": "70CNR-S4064 - Scope of Work~1.pdf"
+        },
+        {
+          "file_nbr": "335578",
+          "name": "70CNR-S4064 - Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "335579",
+          "name": "70CNR-S4064 - Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "335580",
+          "name": "Certification-Regarding-Lobbying.pdf"
+        },
+        {
+          "file_nbr": "335581",
+          "name": "70CNR-S4064 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4064&external=true&parentUrl=close"
     },
     {
       "doc_id": "65DPS-S4063",
@@ -857,298 +1089,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S4032",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "HVAC Maintenance Service",
-      "bid_opening_date": "12/07/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "0f920c5a-c67e-4ddc-868c-905680f7c3cc",
-      "scope": "HVAC MAINTENANCE SERVICE:",
-      "contact_org": "Administrators Office",
-      "contact_email": "dmhfiscal@nevadaculture.org",
-      "contact_phone": "(775) 687-7340",
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "335241",
-          "name": "Terms-and-conditions-for-services~13.pdf"
-        },
-        {
-          "file_nbr": "335257",
-          "name": "10TCA-S4032 - request-for-proposals~1.docx"
-        },
-        {
-          "file_nbr": "335243",
-          "name": "Standard-form-contract~11.docx"
-        },
-        {
-          "file_nbr": "335247",
-          "name": "10TCA-S4032 -  Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "335251",
-          "name": "10TCA-S4032 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "335283",
-          "name": "10TCA-S4032 - Cost Schedule~1.docx"
-        },
-        {
-          "file_nbr": "335248",
-          "name": "Certification-regarding-lobbying~12.pdf"
-        },
-        {
-          "file_nbr": "335252",
-          "name": "10TCA-S4032 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4032&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "41NHA-S4031",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Rural Value Acceleration Network (RVAN) Vendor",
-      "bid_opening_date": "11/30/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "4282584e-07d6-488f-9f84-6646fa35ea63",
-      "scope": "Rural Value Acceleration Network (RVAN) Vendor - Please see the Cost Schedule located in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "330908",
-          "name": "41NHA-S4031-Request-for-Proposals.docx"
-        },
-        {
-          "file_nbr": "329015",
-          "name": "Terms-and-conditions-for-services~9.pdf"
-        },
-        {
-          "file_nbr": "329017",
-          "name": "Standard-form-contract~8.docx"
-        },
-        {
-          "file_nbr": "329337",
-          "name": "41NHA-S4031 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "329338",
-          "name": "41NHA-S4031 - Business Associate Addendum.docx"
-        },
-        {
-          "file_nbr": "329339",
-          "name": "41NHA-S4031 - Business Continuity Agreement.docx"
-        },
-        {
-          "file_nbr": "329023",
-          "name": "41NHA-S4031-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "329340",
-          "name": "41NHA-S4031 - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "329014",
-          "name": "Certification-regarding-lobbying~9.pdf"
-        },
-        {
-          "file_nbr": "329021",
-          "name": "41NHA-S4031-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "08DOA-S4023",
-      "organization": "Department of Administration",
-      "buyer": "Annette Morfin",
-      "title": "Janitorial Services for Various Agencies",
-      "bid_opening_date": "11/10/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "aec6dd97-c588-4507-8bf3-bfeef694cd12",
-      "scope": "JANITORIAL SERVICES FOR VARIOUS DMV LOCATIONS IN LAS VEGAS.",
-      "contact_org": "B&G Carson City",
-      "contact_email": "bandginvoices@admin.nv.gov",
-      "contact_phone": "(775) 684-1800",
-      "attachments": [
-        {
-          "file_nbr": "19625",
-          "name": "Quote Instructions.pdf"
-        },
-        {
-          "file_nbr": "330419",
-          "name": "Terms-and-conditions-for-services~6.pdf"
-        },
-        {
-          "file_nbr": "330436",
-          "name": "08DOA-S4023 - request-for-proposals.docx"
-        },
-        {
-          "file_nbr": "330421",
-          "name": "Standard-form-contract~6.docx"
-        },
-        {
-          "file_nbr": "330424",
-          "name": "08DOA-S4023 - Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "330425",
-          "name": "08DOA-S4023 - site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "330428",
-          "name": "Scope of Work - DMV Silverado Main and CDL Building - Scope of Work_.pdf"
-        },
-        {
-          "file_nbr": "330429",
-          "name": "Scope of Work - DMV Decatur-DMV Flamingo and DMV Sahara - Scope of Work_.pdf"
-        },
-        {
-          "file_nbr": "330430",
-          "name": "Scope of Work - Campos - Scope of Work_.pdf"
-        },
-        {
-          "file_nbr": "330431",
-          "name": "Scope of Work - Fire Marshal Building - Scope of Work_.pdf"
-        },
-        {
-          "file_nbr": "330432",
-          "name": "08DOA-S4023 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "330433",
-          "name": "08DOA-S4023 - Cost Schedule - Final.docx"
-        },
-        {
-          "file_nbr": "330434",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "330435",
-          "name": "08DOA-S4023 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=08DOA-S4023&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "41NHA-S3992",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Nevada State Pharmacy Benefit Manager",
-      "bid_opening_date": "12/29/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "d75cb07f-77bc-44e3-bb79-7b416e7ff1cd",
-      "scope": "Please see Cost Schedule in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "333548",
-          "name": "41NHA-S3992-Request-for-Proposals - Final~2.docx"
-        },
-        {
-          "file_nbr": "323755",
-          "name": "Terms-and-conditions-for-services~8.pdf"
-        },
-        {
-          "file_nbr": "323756",
-          "name": "Standard-form-contract~6.docx"
-        },
-        {
-          "file_nbr": "333141",
-          "name": "41NHA-S3992 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "333145",
-          "name": "41NHA-S3992 - Business Associate Addendum 07.01.25.docx"
-        },
-        {
-          "file_nbr": "333146",
-          "name": "41NHA-S3992-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "323754",
-          "name": "Certification-regarding-lobbying~8.pdf"
-        },
-        {
-          "file_nbr": "323757",
-          "name": "41NHA-S3992 -Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "332800",
-          "name": "41NHA-S3992 - sPBM Scope of Work~1.docx"
-        },
-        {
-          "file_nbr": "332789",
-          "name": "41NHA-S3992 - sBPM - Attachment 4.5.1. - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "332786",
-          "name": "41NHA-S3992 -  sPBM - Attachment 4.5.2. - Technical Proposal Questions.docx"
-        },
-        {
-          "file_nbr": "332790",
-          "name": "41NHA-S3992 - sPBM - Attachment 4.5.3. - Requirements Matrix.xlsx"
-        },
-        {
-          "file_nbr": "332787",
-          "name": "41NHA-S3992 -  sPBM - Attachment 4.5.4. - Cloud Hosting Questionnaire.xlsx"
-        },
-        {
-          "file_nbr": "333316",
-          "name": "41NHA-S3992 - sPBM Exhibit A - KPMs~2.docx"
-        },
-        {
-          "file_nbr": "333317",
-          "name": "41NHA-S3992 - sPBM Exhibit B - Definitions~1.docx"
-        },
-        {
-          "file_nbr": "332810",
-          "name": "41NHA-S3992 - PEBP Scope of Work.docx"
-        },
-        {
-          "file_nbr": "332802",
-          "name": "41NHA-S3992 - PEBP - Attachment 4.6.1. - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "332803",
-          "name": "41NHA-S3992 - PEBP - Attachment 4.6.2. - Technical Proposal Questions.docx"
-        },
-        {
-          "file_nbr": "332804",
-          "name": "41NHA-S3992 - PEBP - Attachment 4.6.3. - Requirements Matrix.xlsx"
-        },
-        {
-          "file_nbr": "332805",
-          "name": "41NHA-S3992 - PEBP - Attachment 4.6.4. - Cloud Hosting Questionnaire.xlsx"
-        },
-        {
-          "file_nbr": "332806",
-          "name": "41NHA-S3992 - PEBP- Attachment 4.6.5. - DOI TPA Registration Attestation.docx"
-        },
-        {
-          "file_nbr": "332807",
-          "name": "41NHA-S3992 - PEBP Exhibit A - KPMs.docx"
-        },
-        {
-          "file_nbr": "332809",
-          "name": "41NHA-S3992 - PEBP Exhibit B - Definitions.docx"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S3992&external=true&parentUrl=close"
     }
   ]
 }
