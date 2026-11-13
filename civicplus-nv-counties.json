@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-12T16:07:33.229Z",
+  "scraped_at": "2026-11-13T16:07:19.844Z",
   "bids": [
     {
       "bid_id": "23",
@@ -44,33 +44,18 @@
       "source_base": "https://www.nyecountynv.gov/Bids.aspx"
     },
     {
-      "bid_id": "245",
-      "title": "PV Fairgrounds Waterline Engineering Services",
-      "description": "NOTICE OF REQUEST FOR RESPONSE NO. 2026-10         NOTICE IS HEREBY GIVEN  that the Nye County Board of Commissioners, on behalf of the County of Nye, State of Nevada, invites...",
+      "bid_id": "247",
+      "title": "Carvers Arena Design and Engineering Services",
+      "description": "NOTICE OF REQUEST FOR RESPONSE NO. 2026-11         NOTICE IS HEREBY GIVEN  that the Nye County Board of Commissioners, on behalf of the County of Nye, State of Nevada, invites...",
       "status": "Open",
-      "closes": "11/19/2026 2:00 PM",
-      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=245",
+      "closes": "12/10/2026 2:00 PM",
+      "detail_url": "https://www.nyecountynv.gov/Bids.aspx?bidID=247",
       "documents": [
         {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52054"
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52163"
         },
         {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52058"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52085"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52148"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52152"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52158"
-        },
-        {
-          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52153"
+          "url": "https://www.nyecountynv.gov/DocumentCenter/View/52162"
         }
       ],
       "county": "Nye",
