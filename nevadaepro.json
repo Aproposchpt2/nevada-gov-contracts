@@ -1,6 +1,31 @@
 {
-  "scraped_at": "2026-11-12T14:03:53.331Z",
+  "scraped_at": "2026-11-13T14:03:51.199Z",
   "bids": [
+    {
+      "doc_id": "72DOW-S4085",
+      "organization": "Department of Wildlife",
+      "buyer": "Annette Morfin",
+      "title": "Roof Decking for Habitat Structures",
+      "bid_opening_date": "12/01/2026 1:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "4631948b-c30e-4b93-b538-6d71c81abdb1",
+      "scope": "1.5&#034; B ROOF DECK 22 GA PRIMED GRAY 36&#034; CW INTERLOCKING MUST CALL FOR DELIVERY APPOINTMENT COLE HUSTEAD 775-338-4586",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19818",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "336393",
+          "name": "Terms-and-conditions-for-goods.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4085&external=true&parentUrl=close"
+    },
     {
       "doc_id": "70CNR-S4083",
       "organization": "Department of Conservation and Natural Resources",
@@ -613,75 +638,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4060&external=true&parentUrl=close"
     },
     {
-      "doc_id": "43ADG-S4059",
-      "organization": "Adjutant General",
-      "buyer": "Mason Bondi",
-      "title": "National Guard - Landscaping Services",
-      "bid_opening_date": "11/06/2026 2:00 PM",
-      "status": "Landscaping Services",
-      "detail_fetched": true,
-      "csrf_token": "9b8350ab-b44e-4fc7-81ed-3e2eecab433a",
-      "scope": "The State of Nevada Purchasing Division, on behalf of Nevada Office of the Military (NOM), Nevada Department of Adjutant General and National Guard (ADG) is seeking proposals from qualified vendors to provide Landscaping Services for the State of Nevada. Please see the RFP and the Scope of Work in the &#039;Attachments&#039; tab for specification information.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "333832",
-          "name": "43ADG-S4059 - Request for Qualifications (2).docx"
-        },
-        {
-          "file_nbr": "329742",
-          "name": "Terms-and-conditions-for-services~6.pdf"
-        },
-        {
-          "file_nbr": "329932",
-          "name": "NVARNG Environmental Policy Statement.pdf"
-        },
-        {
-          "file_nbr": "329931",
-          "name": "NVARNG Personal Security Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "333803",
-          "name": "43ADG-S4059 - NOM Standard Form Contract.docx"
-        },
-        {
-          "file_nbr": "333812",
-          "name": "43ADG-S4059-Insurance Requirements.docx"
-        },
-        {
-          "file_nbr": "333808",
-          "name": "43ADG-S4059 RFQ_Vendor_Qualifications_Response_Form.xlsx"
-        },
-        {
-          "file_nbr": "333807",
-          "name": "43ADG-S4059 RFQ Service Locations.xlsx"
-        },
-        {
-          "file_nbr": "333809",
-          "name": "43ADG-S4059 Scope of Work.docx"
-        },
-        {
-          "file_nbr": "333811",
-          "name": "43ADG-S4059_Cost_Schedule.xlsx"
-        },
-        {
-          "file_nbr": "329743",
-          "name": "Certification-regarding-lobbying~7.pdf"
-        },
-        {
-          "file_nbr": "333810",
-          "name": "43ADG-S4059 -Vendor-Information-Response (1).pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4059&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "44DOC-S4058",
       "organization": "Department of Corrections",
       "buyer": "Joel Wixon",
@@ -919,63 +875,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4046&external=true&parentUrl=close"
     },
     {
-      "doc_id": "70CNR-S4044",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Nocoasha Henry",
-      "title": "NDSP Wifi Services",
-      "bid_opening_date": "11/03/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "b497dc9a-a7fd-4be6-a474-f278422dc07b",
-      "scope": "NDSP Wifi Services",
-      "contact_org": "State Parks Bryan Building",
-      "contact_email": "NDSPAccounting@parks.nv.gov",
-      "contact_phone": "(775) 684-2770",
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "331057",
-          "name": "70CNR-S4044 RFP for NDSP Wifi Services.docx"
-        },
-        {
-          "file_nbr": "330904",
-          "name": "70CNR-S4044 Terms-and-conditions-for-services.docx"
-        },
-        {
-          "file_nbr": "330902",
-          "name": "70CNR-S4044 Terms-and-conditions-for-goods.docx"
-        },
-        {
-          "file_nbr": "330901",
-          "name": "70CNR-S4044 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "331045",
-          "name": "70CNR-S4044 Insurance Requirements.docx"
-        },
-        {
-          "file_nbr": "331044",
-          "name": "70CNR-S4044 Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "330912",
-          "name": "70CNR-S4044 Cost Schedule -WIFI.xlsx"
-        },
-        {
-          "file_nbr": "330900",
-          "name": "70CNR-S4044 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "330905",
-          "name": "70CNR-S4044 Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4044&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "80DOT-S4043",
       "organization": "Department of Transportation",
       "buyer": "Miriam Garcia",
@@ -1062,33 +961,122 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4038&external=true&parentUrl=close"
     },
     {
-      "doc_id": "44DOC-S4037",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "RFI - Photo Processing, Screening, and Delivery Services",
-      "bid_opening_date": "10/29/2026 3:00 PM",
-      "status": "NDOC-RFI-2026-001",
+      "doc_id": "10TCA-S4032",
+      "organization": "Department of Tourism And Cultural Affairs",
+      "buyer": "Annette Morfin",
+      "title": "HVAC Maintenance Service",
+      "bid_opening_date": "12/07/2026 1:00 PM",
+      "status": "",
       "detail_fetched": true,
-      "csrf_token": "d47b55fb-f908-48d6-a82d-f8496cfdb90a",
-      "scope": "RFI - Photo Processing, Screening, and Delivery Services",
+      "csrf_token": "05a5a54b-ac2a-48d3-8b6d-d0ce8d79d877",
+      "scope": "HVAC MAINTENANCE SERVICE:",
+      "contact_org": "Administrators Office",
+      "contact_email": "dmhfiscal@nevadaculture.org",
+      "contact_phone": "(775) 687-7340",
+      "attachments": [
+        {
+          "file_nbr": "19634",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335241",
+          "name": "Terms-and-conditions-for-services~13.pdf"
+        },
+        {
+          "file_nbr": "335257",
+          "name": "10TCA-S4032 - request-for-proposals~1.docx"
+        },
+        {
+          "file_nbr": "335243",
+          "name": "Standard-form-contract~11.docx"
+        },
+        {
+          "file_nbr": "335247",
+          "name": "10TCA-S4032 -  Insurance Schedule.docx"
+        },
+        {
+          "file_nbr": "335251",
+          "name": "10TCA-S4032 - reference-questionnaire.docx"
+        },
+        {
+          "file_nbr": "335283",
+          "name": "10TCA-S4032 - Cost Schedule~1.docx"
+        },
+        {
+          "file_nbr": "335248",
+          "name": "Certification-regarding-lobbying~12.pdf"
+        },
+        {
+          "file_nbr": "335252",
+          "name": "10TCA-S4032 - Vendor-Information-Response.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4032&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "41NHA-S4031",
+      "organization": "Nevada Health Authority",
+      "buyer": "Heather Moon",
+      "title": "Rural Value Acceleration Network (RVAN) Vendor",
+      "bid_opening_date": "11/30/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "18a9240f-1f0d-4f3d-9f9f-a3a4e0bc6c6a",
+      "scope": "Rural Value Acceleration Network (RVAN) Vendor - Please see the Cost Schedule located in the &#039;Attachments&#039; tab.",
       "contact_org": null,
       "contact_email": null,
       "contact_phone": null,
       "attachments": [
         {
-          "file_nbr": "330190",
-          "name": "44DOC-S3407  JW RFI_PHOTOSERVICES.docx"
+          "file_nbr": "334451",
+          "name": "Questions - Answers~4.xlsx"
         },
         {
-          "file_nbr": "77390",
-          "name": "4.1.1 Terms and Conditions for Services.pdf"
+          "file_nbr": "334452",
+          "name": "41NHA-S4031 - Cost Schedule Updated 10-28.xlsx"
         },
         {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
+          "file_nbr": "330908",
+          "name": "41NHA-S4031-Request-for-Proposals.docx"
+        },
+        {
+          "file_nbr": "329015",
+          "name": "Terms-and-conditions-for-services~9.pdf"
+        },
+        {
+          "file_nbr": "329017",
+          "name": "Standard-form-contract~8.docx"
+        },
+        {
+          "file_nbr": "329337",
+          "name": "41NHA-S4031 - Insurance Schedule - RFP.docx"
+        },
+        {
+          "file_nbr": "329338",
+          "name": "41NHA-S4031 - Business Associate Addendum.docx"
+        },
+        {
+          "file_nbr": "329339",
+          "name": "41NHA-S4031 - Business Continuity Agreement.docx"
+        },
+        {
+          "file_nbr": "329023",
+          "name": "41NHA-S4031-Reference-Questionnaire.docx"
+        },
+        {
+          "file_nbr": "329340",
+          "name": "41NHA-S4031 - Cost Schedule.xlsx"
+        },
+        {
+          "file_nbr": "329014",
+          "name": "Certification-regarding-lobbying~9.pdf"
+        },
+        {
+          "file_nbr": "329021",
+          "name": "41NHA-S4031-Vendor-Information-Response.pdf"
         }
       ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4037&external=true&parentUrl=close"
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
     }
   ]
 }
