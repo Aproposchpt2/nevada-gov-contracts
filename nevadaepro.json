@@ -1,6 +1,72 @@
 {
-  "scraped_at": "2026-11-16T14:15:00.615Z",
+  "scraped_at": "2026-11-17T14:03:52.246Z",
   "bids": [
+    {
+      "doc_id": "43ADG-S4087",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "Carson City, Fallon Boiler & Water Heater Maintenance Service",
+      "bid_opening_date": "12/11/2026 4:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "c2f3f7e9-6648-4404-8b9b-5ec376d5b830",
+      "scope": "The scope of work for boiler and water heater services encompasses a comprehensive range of tasks aimed at ensuring safety, energy efficiency, and a prolonged operational lifespan. Initial Assessment & Installation Ongoing maintenance and repair services extend to all units and their associated external components. Testing and Reporting Client Training and Handover The Contractor shall be available to provide emergency and on-call services to address urgent repair requests necessary to maintain mission-critical operations and facility safety. The Contractor must be capable of providing an expedited response for critical failures. For any deficient conditions observed during the performance of work that exceeds the original service request, the Contractor shall document and report them to the Office of the Military/Facility Supervisor with recommended corrective actions prior to proceeding. The provision of parts, materials, and chemicals, as well as purchasing from the Contractor shall also be included. Comprehensive documentation, including service reports and maintenance logs, will be provided to ensure transparency and accountability. All services will adhere to industry standards and local codes to guarantee safety and reliability.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "336492",
+          "name": "Carson City, Fallon Boiler Water Heater Maintenance Services ITB"
+        },
+        {
+          "file_nbr": "336493",
+          "name": "Carson City Fallon Boiler Water Heater Maintenance Services SOW"
+        },
+        {
+          "file_nbr": "336494",
+          "name": "Boilers Water Heater Photos"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4087&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4086",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "Reno - Boiler & Water Heater Maintenance Service",
+      "bid_opening_date": "12/11/2026 4:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "2f0ff24e-7a9e-4582-b2e5-c2ba2e178620",
+      "scope": "The scope of work for boiler and water heater services encompasses a comprehensive range of tasks aimed at ensuring safety, energy efficiency, and a prolonged operational lifespan. Initial Assessment & Installation Ongoing maintenance and repair services extend to all units and their associated external components. Testing and Reporting Client Training and Handover The Contractor shall be available to provide emergency and on-call services to address urgent repair requests necessary to maintain mission-critical operations and facility safety. The Contractor must be capable of providing an expedited response for critical failures. For any deficient conditions observed during the performance of work that exceeds the original service request, the Contractor shall document and report them to the Office of the Military/Facility Supervisor with recommended corrective actions prior to proceeding. The provision of parts, materials, and chemicals, as well as purchasing from the Contractor shall also be included. Comprehensive documentation, including service reports and maintenance logs, will be provided to ensure transparency and accountability. All services will adhere to industry standards and local codes to guarantee safety and reliability.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "336482",
+          "name": "Reno Boiler Water Heater Maintenance Services ITB"
+        },
+        {
+          "file_nbr": "336483",
+          "name": "Reno Boiler Water Heater Maintenance Services Scope of Work"
+        },
+        {
+          "file_nbr": "336484",
+          "name": "Reno Boilers Water Heater Photos"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4086&external=true&parentUrl=close"
+    },
     {
       "doc_id": "72DOW-S4085",
       "organization": "Department of Wildlife",
@@ -25,6 +91,43 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4085&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4084",
+      "organization": "Adjutant General",
+      "buyer": "Carlos Fuentes",
+      "title": "Annual Boiler and Water Heater Preventative Maintenance, Safety Testing, and Technician Hands-On Tra",
+      "bid_opening_date": "12/10/2026 11:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "67975302-d741-44b4-b61b-868858ab5351",
+      "scope": "Perform annual maintenance, safety testing, combustion tuning, and concurrent &#034;Do and Teach&#034; hands-on training for twelve (12) boilers and commercial water heaters at the Reno and Carson City facilities.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "336643",
+          "name": "Invitation to Bid - Boiler.pdf"
+        },
+        {
+          "file_nbr": "336645",
+          "name": "SOW Boiler Maint-Trng V1.pdf"
+        },
+        {
+          "file_nbr": "336644",
+          "name": "SOW Boiler Maint-Trng Attachement A.pdf"
+        },
+        {
+          "file_nbr": "336641",
+          "name": "Boiler Cost Schedule.xlsx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4084&external=true&parentUrl=close"
     },
     {
       "doc_id": "70CNR-S4083",
@@ -814,88 +917,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4047&external=true&parentUrl=close"
     },
     {
-      "doc_id": "31PCSA-S4046",
-      "organization": "State Public Charter School Authority",
-      "buyer": "Miriam Garcia",
-      "title": "Document Draft, Consulting, and Project Management",
-      "bid_opening_date": "11/16/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "4c1fdeaf-c3bb-4033-b6ef-610481afc05f",
-      "scope": "The SPCSA seeks to enter into four-year contract with one or more vendors to provide services on an as-needed, project-by-project basis. Services will primarily include developing a shared-knowledge document draft and may also include consulting, training, project management, and other work identified by the F&O Director.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "331628",
-          "name": "31PCSA-S4046 -  RFP .docx"
-        },
-        {
-          "file_nbr": "331629",
-          "name": "31PCSA-S4046 -  Scope of Work .docx"
-        },
-        {
-          "file_nbr": "331590",
-          "name": "31PCSA-S4046  - Terms and Conditions for Services.pdf"
-        },
-        {
-          "file_nbr": "331607",
-          "name": "31PCSA-S4046 - Standard Form Contract.docx"
-        },
-        {
-          "file_nbr": "331599",
-          "name": "31PCSA-S4046 - Insurance Schedule.pdf"
-        },
-        {
-          "file_nbr": "331603",
-          "name": "31PCSA-S4046 - Fiscal Procedures.doc"
-        },
-        {
-          "file_nbr": "331600",
-          "name": "31PCSA-S4046 - Staff Resume.docx"
-        },
-        {
-          "file_nbr": "331604",
-          "name": "31PCSA-S4046 - Certification Regarding Lobbying.pdf"
-        },
-        {
-          "file_nbr": "331605",
-          "name": "31PCSA-S4046  - Vendor Information Response.pdf"
-        },
-        {
-          "file_nbr": "331602",
-          "name": "31PCSA-S4046 - Confidentiality Addendum.docx"
-        },
-        {
-          "file_nbr": "19715",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=31PCSA-S4046&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "80DOT-S4043",
-      "organization": "Department of Transportation",
-      "buyer": "Miriam Garcia",
-      "title": "Impact Attenuators",
-      "bid_opening_date": "11/16/2026 2:00 PM",
-      "status": "NDEQ027396",
-      "detail_fetched": true,
-      "csrf_token": "be6be819-f210-4d3d-a0a3-428224adeb87",
-      "scope": "SCI 100 Impact Attenuators",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=80DOT-S4043&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "41NHA-S4038",
       "organization": "Nevada Health Authority",
       "buyer": "Heather Moon",
@@ -1012,71 +1033,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4032&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "41NHA-S4031",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Rural Value Acceleration Network (RVAN) Vendor",
-      "bid_opening_date": "11/30/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "18a9240f-1f0d-4f3d-9f9f-a3a4e0bc6c6a",
-      "scope": "Rural Value Acceleration Network (RVAN) Vendor - Please see the Cost Schedule located in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "334451",
-          "name": "Questions - Answers~4.xlsx"
-        },
-        {
-          "file_nbr": "334452",
-          "name": "41NHA-S4031 - Cost Schedule Updated 10-28.xlsx"
-        },
-        {
-          "file_nbr": "330908",
-          "name": "41NHA-S4031-Request-for-Proposals.docx"
-        },
-        {
-          "file_nbr": "329015",
-          "name": "Terms-and-conditions-for-services~9.pdf"
-        },
-        {
-          "file_nbr": "329017",
-          "name": "Standard-form-contract~8.docx"
-        },
-        {
-          "file_nbr": "329337",
-          "name": "41NHA-S4031 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "329338",
-          "name": "41NHA-S4031 - Business Associate Addendum.docx"
-        },
-        {
-          "file_nbr": "329339",
-          "name": "41NHA-S4031 - Business Continuity Agreement.docx"
-        },
-        {
-          "file_nbr": "329023",
-          "name": "41NHA-S4031-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "329340",
-          "name": "41NHA-S4031 - Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "329014",
-          "name": "Certification-regarding-lobbying~9.pdf"
-        },
-        {
-          "file_nbr": "329021",
-          "name": "41NHA-S4031-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4031&external=true&parentUrl=close"
     }
   ]
 }
