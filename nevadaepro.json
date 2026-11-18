@@ -1,6 +1,76 @@
 {
-  "scraped_at": "2026-11-17T14:03:52.246Z",
+  "scraped_at": "2026-11-18T14:03:29.379Z",
   "bids": [
+    {
+      "doc_id": "72DOW-S4090",
+      "organization": "Department of Wildlife",
+      "buyer": "Annette Morfin",
+      "title": "HABITAT GUZZLER MATERIALS",
+      "bid_opening_date": "12/14/2026 1:00 PM",
+      "status": "70DOW-R151424",
+      "detail_fetched": true,
+      "csrf_token": "e72f128e-df3d-476c-ad49-801dfdaf7d8c",
+      "scope": "2000 GALLON POLYETHYLENE LOW PROFILE STORAGE TANK. MUST BE 2000 GALLON CAPACITY AND 158&#034;L X 97-9&#034; W X 48.21&#034; H WITH LID. TANK ACCESS LID AND GASKET INCLUDED, NO RISER/EXTENTION NEEDED. DEN HARRTOG INDUSTRIES PART # ACT2000-LPB. DO NOT INSTALL ANY BULKHEAD FITTINGS. FREIGHT CALL COLE HUSTEAD 775-338-4586 FOR DELIVERY APPOINTMENT",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19818",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "337369",
+          "name": "Terms-and-conditions-for-goods~1.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4090&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "04SOS-S4088",
+      "organization": "Secretary of State's Office",
+      "buyer": "Christian Armas",
+      "title": "Mail Ballot Tracking Software",
+      "bid_opening_date": "12/18/2026 5:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "243f45a2-0376-4da6-9243-5e3e9ee37228",
+      "scope": "The State of Nevada Purchasing Division, on behalf of the Secretary of State is seeking proposals for a vendor to supply software and services surrounding the tracking of the outgoing and return delivery of mail ballots, and the status of mail ballots issued during the next two election cycles ranging from 2028-2030. This time frame includes the following elections: the 2028 June Primary Election, 2028 November General Election, 2028 February Presidential Preference Primary, 2028 June Primary Election, and 2028 November General Election. During this period, Special Elections may be called, and a qualified vendor would need to provide services for these elections as well.",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "337322",
+          "name": "04SOS-S4088 Mail Ballot Tracking RFP~4.docx"
+        },
+        {
+          "file_nbr": "337221",
+          "name": "04SOS-S4088 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "337286",
+          "name": "04SOS-S4088 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "337218",
+          "name": "04SOS-S4088 Insurance Requirements.pdf"
+        },
+        {
+          "file_nbr": "337217",
+          "name": "04SOS-S4088 Certificate Regarding Lobbying~1.pdf"
+        },
+        {
+          "file_nbr": "337219",
+          "name": "04SOS-S4088-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19595",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=04SOS-S4088&external=true&parentUrl=close"
+    },
     {
       "doc_id": "43ADG-S4087",
       "organization": "Adjutant General",
@@ -259,6 +329,59 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4080&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "04SOS-S4079",
+      "organization": "Secretary of State's Office",
+      "buyer": "Christian Armas",
+      "title": "Statewide Mail Ballot Vendor",
+      "bid_opening_date": "12/18/2026 5:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "211dbd5c-c5fd-4bde-8952-f76120278a66",
+      "scope": "The selected vendor(s) must be able to support mail ballot printing, addressing, and mailing services for all of Nevada&#039;s 17 counties, with approximately 2.1 million voters.",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "19595",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "337382",
+          "name": "0SOS-S4079-Mail Ballot Vendor RFP~1.docx"
+        },
+        {
+          "file_nbr": "337344",
+          "name": "04SOS-S4079 Terms-and-conditions-for-services.pdf"
+        },
+        {
+          "file_nbr": "337348",
+          "name": "04SOS-S4079 Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "337374",
+          "name": "04SOS-S4079 INSURANCE REQUIREMENTS.pdf"
+        },
+        {
+          "file_nbr": "337371",
+          "name": "04SOS-S4079 Scope of Work.docx"
+        },
+        {
+          "file_nbr": "337355",
+          "name": "04SOS-S4079 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "337345",
+          "name": "04SOS-S4079 Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "337350",
+          "name": "04SOS-S4079-Vendor-Information-Response~1.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=04SOS-S4079&external=true&parentUrl=close"
     },
     {
       "doc_id": "80DOT-S4076",
@@ -882,157 +1005,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4052&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "72DOW-S4047",
-      "organization": "Department of Wildlife",
-      "buyer": "Joel Wixon",
-      "title": "Hatchery Fish Food",
-      "bid_opening_date": "11/17/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "6dd23f56-1632-4414-8058-5112ca57e18e",
-      "scope": "Boulder City, NV 89005 Bozeman Razorback Diet (1 mil): 0-0-3,000 lbs.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "331555",
-          "name": "72DOW-S4047 SOW.docx"
-        },
-        {
-          "file_nbr": "331559",
-          "name": "72DOW-S4047 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "334998",
-          "name": "72DOW-S4047 Additional Requirements~1.docx"
-        },
-        {
-          "file_nbr": "19818",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=72DOW-S4047&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "41NHA-S4038",
-      "organization": "Nevada Health Authority",
-      "buyer": "Heather Moon",
-      "title": "Program of All Inclusive Care for the Elderly (PACE)",
-      "bid_opening_date": "12/10/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "27da3978-3e55-42c6-b6f1-709e65bb9745",
-      "scope": "Please see Scope of Work located in the &#039;Attachments&#039; tab.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "331170",
-          "name": "41NHA-S4038-Request-for-Proposals.docx"
-        },
-        {
-          "file_nbr": "331169",
-          "name": "41NHA-S4038 - SOW - 10-08.docx"
-        },
-        {
-          "file_nbr": "331097",
-          "name": "Terms-and-conditions-for-services~11.pdf"
-        },
-        {
-          "file_nbr": "330553",
-          "name": "Standard-form-contract~9.docx"
-        },
-        {
-          "file_nbr": "331009",
-          "name": "41NHA-S4038 - Insurance Schedule - RFP.docx"
-        },
-        {
-          "file_nbr": "330550",
-          "name": "41NHA-S4038 - Business Associate Addendum 07.01.25.docx"
-        },
-        {
-          "file_nbr": "330551",
-          "name": "41NHA-S4038 - Business Continuity Agreement 12.01.25.docx"
-        },
-        {
-          "file_nbr": "331100",
-          "name": "41NHA-S4038 - Attachment A- PACE Technical Proposal Questions.docx"
-        },
-        {
-          "file_nbr": "331101",
-          "name": "41NHA-S4038 - Attachment B - PACE Service Delivery Arrangements.docx"
-        },
-        {
-          "file_nbr": "331096",
-          "name": "41NHA-S4038-Reference-Questionnaire.docx"
-        },
-        {
-          "file_nbr": "330555",
-          "name": "Certification-regarding-lobbying~10.pdf"
-        },
-        {
-          "file_nbr": "330552",
-          "name": "41NHA-S4038-Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=41NHA-S4038&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "10TCA-S4032",
-      "organization": "Department of Tourism And Cultural Affairs",
-      "buyer": "Annette Morfin",
-      "title": "HVAC Maintenance Service",
-      "bid_opening_date": "12/07/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "05a5a54b-ac2a-48d3-8b6d-d0ce8d79d877",
-      "scope": "HVAC MAINTENANCE SERVICE:",
-      "contact_org": "Administrators Office",
-      "contact_email": "dmhfiscal@nevadaculture.org",
-      "contact_phone": "(775) 687-7340",
-      "attachments": [
-        {
-          "file_nbr": "19634",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "335241",
-          "name": "Terms-and-conditions-for-services~13.pdf"
-        },
-        {
-          "file_nbr": "335257",
-          "name": "10TCA-S4032 - request-for-proposals~1.docx"
-        },
-        {
-          "file_nbr": "335243",
-          "name": "Standard-form-contract~11.docx"
-        },
-        {
-          "file_nbr": "335247",
-          "name": "10TCA-S4032 -  Insurance Schedule.docx"
-        },
-        {
-          "file_nbr": "335251",
-          "name": "10TCA-S4032 - reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "335283",
-          "name": "10TCA-S4032 - Cost Schedule~1.docx"
-        },
-        {
-          "file_nbr": "335248",
-          "name": "Certification-regarding-lobbying~12.pdf"
-        },
-        {
-          "file_nbr": "335252",
-          "name": "10TCA-S4032 - Vendor-Information-Response.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=10TCA-S4032&external=true&parentUrl=close"
     }
   ]
 }
