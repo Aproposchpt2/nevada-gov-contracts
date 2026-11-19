@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-18T14:03:29.379Z",
+  "scraped_at": "2026-11-19T14:03:54.679Z",
   "bids": [
     {
       "doc_id": "72DOW-S4090",
@@ -618,6 +618,59 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4069&external=true&parentUrl=close"
     },
     {
+      "doc_id": "61GCB-S4067",
+      "organization": "Gaming Control Board",
+      "buyer": "Christian Armas",
+      "title": "Investigative Services",
+      "bid_opening_date": "12/18/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "0f5d554b-21fe-4253-9d9f-76310f89c4c5",
+      "scope": "PLEASE SELECT SEE QUOTE ATTACHMENTS ON THIS ITEM AND INCLUDE PRICING ON ATTACHMENTS TAB IN ACCORDANCE WITH RFP INSTRUCTIONS. The State of Nevada Purchasing Division is seeking Statements of Qualifications (SOQs) on behalf of Nevada Gaming Control Board. (Board) from qualified vendors to provide due diligence investigative services in foreign jurisdictions. The Board is responsible for conducting licensing investigations on entities and individuals seeking a privileged casino gaming license in the State of Nevada. As part of the application process applicants are subject to an extensive investigation of their personal background and financial activity. These investigations are conducted throughout the United States and in many countries around the world.",
+      "contact_org": "Purchasing Division",
+      "contact_email": "nvpurch@admin.nv.gov",
+      "contact_phone": "(775) 684-0170",
+      "attachments": [
+        {
+          "file_nbr": "337644",
+          "name": "61GCB-S4067 RFQ~1.docx"
+        },
+        {
+          "file_nbr": "337612",
+          "name": "Terms-and-conditions-for-services~1.pdf"
+        },
+        {
+          "file_nbr": "337613",
+          "name": "Standard-form-contract.docx"
+        },
+        {
+          "file_nbr": "337623",
+          "name": "61GCB-S4067 INSURANCE SCHEDULE.docx"
+        },
+        {
+          "file_nbr": "337643",
+          "name": "61GCB-S4067 Vendor Response Form.xlsx"
+        },
+        {
+          "file_nbr": "337610",
+          "name": "61GCB-S4067 Cost Schedule.docx"
+        },
+        {
+          "file_nbr": "337611",
+          "name": "Certification-regarding-lobbying.pdf"
+        },
+        {
+          "file_nbr": "337626",
+          "name": "61GCB-S4067-Vendor-Information-Response.pdf"
+        },
+        {
+          "file_nbr": "19785",
+          "name": "Quote Instructions"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=61GCB-S4067&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "55AGR-S4066",
       "organization": "Department of Agriculture",
       "buyer": "Christian Armas",
@@ -980,31 +1033,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4055&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "55AGR-S4052",
-      "organization": "Department of Agriculture",
-      "buyer": "Ed kochendarfer",
-      "title": "Truck with Boom",
-      "bid_opening_date": "11/18/2026 12:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "9e0dfcd8-6fe7-4b4a-b2eb-4bf355be02c6",
-      "scope": "2027 Kenworth T880 6x4 conventional cab (G.V.W. Rating 66,000/80,000 lbs) w/ Flat Bed and Knuckle Boom",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19759",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "19751",
-          "name": "0000 Standard Terms and Conditions for Commodities"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4052&external=true&parentUrl=close"
     }
   ]
 }
