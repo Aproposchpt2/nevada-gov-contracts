@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-18T14:12:05.449Z",
+  "scraped_at": "2026-11-19T14:12:34.063Z",
   "solicitations": [
     {
       "project_number": "RFB #26-B-09-27-SA",
@@ -12,16 +12,6 @@
       "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl02$btnSelect"
     },
     {
-      "project_number": "RFP #14-P-08-27-SA",
-      "project_type": "Request for Proposal",
-      "title": "Centralized K-12 Library Management & Resource Tracking System 9/25/26 REVISED EXHIBIT C - PRICE SCHEDULE",
-      "pre_bid_date": "N/A",
-      "question_deadline": "09/14/2026",
-      "due_date": "10/08/2026",
-      "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
-    },
-    {
       "project_number": "RFP #10-P-07-27-AA",
       "project_type": "Request for Proposal",
       "title": "Notice of Opportunity for the Repurposing of the Old Stead Elementary School REVISED SUBMISSION DUE DATE",
@@ -29,7 +19,7 @@
       "question_deadline": "09/24/2026",
       "due_date": "10/21/2026",
       "status": "Active",
-      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl04$btnSelect"
+      "postback_target": "ctl00$MainContent$grdUpcomingBids$ctl03$btnSelect"
     }
   ]
 }
