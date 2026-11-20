@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-19T16:06:56.553Z",
+  "scraped_at": "2026-11-20T16:06:29.030Z",
   "bids": [
     {
       "bid_id": "23",
@@ -33,6 +33,26 @@
       "jurisdiction_name": "Nye County",
       "city": "Tonopah",
       "source_base": "https://www.nyecountynv.gov/Bids.aspx"
+    },
+    {
+      "bid_id": "87",
+      "title": "New All Wheel Drive Articulated Motor Grader",
+      "description": null,
+      "status": "Open",
+      "closes": "12/17/2026 10:00 AM",
+      "detail_url": "https://www.humboldtcountynv.gov/Bids.aspx?bidID=87",
+      "documents": [
+        {
+          "url": "https://www.humboldtcountynv.gov/DocumentCenter/View/9049"
+        },
+        {
+          "url": "https://www.humboldtcountynv.gov/DocumentCenter/View/9050"
+        }
+      ],
+      "county": "Humboldt",
+      "jurisdiction_name": "Humboldt County",
+      "city": "Winnemucca",
+      "source_base": "https://www.humboldtcountynv.gov/Bids.aspx"
     }
   ]
 }
