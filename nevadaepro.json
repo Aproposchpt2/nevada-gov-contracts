@@ -1,6 +1,31 @@
 {
-  "scraped_at": "2026-11-20T14:03:37.755Z",
+  "scraped_at": "2026-11-21T14:03:31.714Z",
   "bids": [
+    {
+      "doc_id": "99SWC-S4091",
+      "organization": "Statewide Contracts",
+      "buyer": "Christian Armas",
+      "title": "Data Colocation Center RFI",
+      "bid_opening_date": "12/24/2026 2:00 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "28287d68-61ba-4b51-b9b8-c8be39df135d",
+      "scope": "Data Colocation Center",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "19561",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "337824",
+          "name": "99SWC-S4091 RFI.docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=99SWC-S4091&external=true&parentUrl=close"
+    },
     {
       "doc_id": "72DOW-S4090",
       "organization": "Department of Wildlife",
@@ -996,43 +1021,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4058&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4055",
-      "organization": "Adjutant General",
-      "buyer": "Paul Toups",
-      "title": "OTAG Water Heater Replacement",
-      "bid_opening_date": "11/24/2026 10:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "427a618d-72fa-4298-8bd4-a56ba804f608",
-      "scope": "This project consists of the replacement of the domestic hot water system at the Office of the Adjutant General building in Carson City, NV. The work includes the removal of the existing hot water storage tank, heat exchanger, and associated circulation pumps. The new work includes the installation of a new high-efficiency, gas-fired, tankless domestic water heater skid, a new soft water storage tank, and the relocation of an existing water softener. The scope includes all associated mechanical, plumbing, electrical, and control work required for a complete and operational system.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "333000",
-          "name": "43ADG-S4055_Boilerplate_Project Bid Manual_REV 10-22-2026.pdf"
-        },
-        {
-          "file_nbr": "332998",
-          "name": "NVARNG Water Heater Replacement Bid Set-Combined.pdf"
-        },
-        {
-          "file_nbr": "332999",
-          "name": "NVARNG Water Heater Replacement Specs Bid Set 10-12-26.pdf"
-        },
-        {
-          "file_nbr": "333015",
-          "name": "Northern Nevada Rural Region 2026-2027-Amendment 01.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4055&external=true&parentUrl=close"
     }
   ]
 }
