@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-22T14:03:29.140Z",
+  "scraped_at": "2026-11-23T14:03:58.558Z",
   "bids": [
     {
       "doc_id": "99SWC-S4091",
@@ -266,6 +266,35 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4083&external=true&parentUrl=close"
     },
     {
+      "doc_id": "43ADG-S4082",
+      "organization": "Adjutant General",
+      "buyer": "Anthony Laskowski",
+      "title": "Cooling Tower Rebuild",
+      "bid_opening_date": "12/09/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "5e6b774f-5249-47d5-affa-9fff4f31a26f",
+      "scope": "The scope of work for is as follows the contractor will provide all labor, parts, materials, equipment, and disposal of all job-related rubbish to completely rebuild two (2) BAC Cooling Towers based on the specifications below. All work must be quoted for straight time. Equipment to be Serviced: Model: BAC VTO-082/H, Serial Numbers: U108563801 / U108563802 Detailed Tasks: * Shut off cooling towers and perform standard Lockout/Tagout (LOTO) procedures. * Remove and discard all existing drift eliminators from both towers. * Remove and discard all existing fill media from both towers. * Sandblast all interior seams of the towers up to the drift eliminators. * Apply caulk and an elastomeric coating to all sandblasted seams. * Furnish and install new fill media into both towers. * Furnish and install new heavy-duty drift eliminators into both towers. * Remove and discard failing bearings on both towers (4 bearings total). * Furnish and install new bearings on both towers (replace pulley bushings as needed). * Replace access door gasket material to ensure a proper, secure seal. * Provide a detailed, documented inspection of the overall tower condition. * Confirm proper operation of the towers upon completion and thoroughly clean the jobsite.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335928",
+          "name": "Cooling tower rebuild Scope of Work (002).docx"
+        },
+        {
+          "file_nbr": "335931",
+          "name": "Cooling Tower Rebuild-Invitation to Bid.doc"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4082&external=true&parentUrl=close"
+    },
+    {
       "doc_id": "65DPS-S4081",
       "organization": "Department of Public Safety",
       "buyer": "Heather Moon",
@@ -407,6 +436,64 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=04SOS-S4079&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4078",
+      "organization": "Adjutant General",
+      "buyer": "Anthony Laskowski",
+      "title": "OTAG ADA door Installation",
+      "bid_opening_date": "12/09/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "d2133437-2753-4090-be2e-c72834973fb4",
+      "scope": "he State of Nevada, Office of the Military, is seeking bids/proposals from qualified contractors to provide and furnish and install Americans with Disabilities Act (ADA) compliant automatic doors at the main front entrance of the OTAG Oficce located in Carson City, Nevada Scope: The project scope includes, but is not limited to, the following components: * Removal & Disposal: Safely remove and dispose of existing manual storefront door hardware/doors as specified in the technical drawings. * ADA Installation: Install new commercial-grade aluminum storefront doors equipped with fully automatic, low-energy operators compliant with ADA and ANSI A156.19 standards. * Electrical & Controls: Run necessary electrical wiring from the nearest electrical panel to power the operators. Install interior and exterior wireless or hardwired ADA push-plate actuators and existing card readers. * Integration: Ensure the new door operators integrate seamlessly with the facility&#039;s existing access control and security systems. * Finishes & Seals: Provide appropriate weather-stripping, thresholds, and trim work to ensure a secure, weather-tight finish. * Testing & Certification: Perform complete system testing, calibration, and provide operational training to facility staff upon completion.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335575",
+          "name": "ADA Door OTAG-Invitation to Bid.doc"
+        },
+        {
+          "file_nbr": "335576",
+          "name": "OTAG ADA Doors scope of Work (002).docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4078&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4077",
+      "organization": "Adjutant General",
+      "buyer": "Anthony Laskowski",
+      "title": "ADA door Installation at CSMS",
+      "bid_opening_date": "12/09/2026 12:00 AM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "087a72aa-b873-4c02-a379-05e8562905ca",
+      "scope": "The State of Nevada, Office of the Military, is seeking bids/proposals from qualified contractors to provide and furnish and install Americans with Disabilities Act (ADA) compliant automatic doors at the main front entrance of the Combined Support Maintenance Shop (CSMS) located in Carson City, Nevada Scope: The project scope includes, but is not limited to, the following components: * Removal & Disposal: Safely remove and dispose of existing manual storefront door hardware/doors as specified in the technical drawings. * ADA Installation: Install new commercial-grade aluminum storefront doors equipped with fully automatic, low-energy operators compliant with ADA and ANSI A156.19 standards. * Electrical & Controls: Run necessary electrical wiring from the nearest electrical panel to power the operators. Install interior and exterior wireless or hardwired ADA push-plate actuators and existing card readers. * Integration: Ensure the new door operators integrate seamlessly with the facility&#039;s existing access control and security systems. * Finishes & Seals: Provide appropriate weather-stripping, thresholds, and trim work to ensure a secure, weather-tight finish. * Testing & Certification: Perform complete system testing, calibration, and provide operational training to facility staff upon completion.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "335568",
+          "name": "ADA Door Csms-Invitation to Bid.doc"
+        },
+        {
+          "file_nbr": "335569",
+          "name": "CSMS ADA Doors scope of Work (002).docx"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4077&external=true&parentUrl=close"
     },
     {
       "doc_id": "80DOT-S4076",
@@ -862,165 +949,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4062&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4061",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "DEM - Door Hardware Replacement",
-      "bid_opening_date": "11/25/2026 4:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "3cf3c823-99ce-4273-8562-345f094b466b",
-      "scope": "The State of Nevada, The Office of the Military, is seeking bids/proposals from qualified contractors to provide services for the following perform installation, repair or maintenance needs on doors and door hardware replacement. The selected contractor will perform door the exterior doors and three interior doors in this project. The contractor shall fabricate and install new doors and hardware on the doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "334548",
-          "name": "DEM Door Hardware Replacement Invitation to Bid"
-        },
-        {
-          "file_nbr": "334549",
-          "name": "DEM Door Hardware Replacement Scope of Work"
-        },
-        {
-          "file_nbr": "334550",
-          "name": "DEM Floor Plan"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4061&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "65DPS-S4060",
-      "organization": "Department of Public Safety",
-      "buyer": "Kasen Cornmesser",
-      "title": "Commercial Portable Scale Calibration/Repair",
-      "bid_opening_date": "11/30/2026 9:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "47ba2116-8619-4d59-83ce-8379cefc6eab",
-      "scope": "Please see cost schedule in attachments tab. Vendors are required to complete and upload schedule.",
-      "contact_org": "NHP Headquarters",
-      "contact_email": "NHPPurchasing@dps.state.nv.us",
-      "contact_phone": "(775) 684-4488",
-      "attachments": [
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "333992",
-          "name": "ATTACHMENT AA - SCOPE OF WORK 100726.pdf"
-        },
-        {
-          "file_nbr": "333993",
-          "name": "ATTACHMENT BB - INSURANCE SCHEDULE (for review).pdf"
-        },
-        {
-          "file_nbr": "333994",
-          "name": "ATTACHMENT CC - STANDARD FORM CONTRACT (for review).pdf"
-        },
-        {
-          "file_nbr": "333997",
-          "name": "65DPS-S4060 - Commercial Portable Scale Calibration-Repair.pdf"
-        },
-        {
-          "file_nbr": "333999",
-          "name": "65DPS-S4060 - Commercial Portable Scales Cost Schedule.xlsx"
-        },
-        {
-          "file_nbr": "334002",
-          "name": "ATTACHMENT DD - 65DPS-S4060-Reference-Questionnaire.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4060&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "44DOC-S4058",
-      "organization": "Department of Corrections",
-      "buyer": "Joel Wixon",
-      "title": "Vending Services",
-      "bid_opening_date": "12/16/2026 2:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "295c08d0-93ee-4cb2-b4ea-6255d1aeac7a",
-      "scope": "Vending Services - four year term with the option to renew for two additional one (1) year extensions.",
-      "contact_org": null,
-      "contact_email": null,
-      "contact_phone": null,
-      "attachments": [
-        {
-          "file_nbr": "333909",
-          "name": "44DOC-S4058 RFP~1.docx"
-        },
-        {
-          "file_nbr": "333343",
-          "name": "44DOC-S4058 Terms-and-conditions-for-services.pdf"
-        },
-        {
-          "file_nbr": "333342",
-          "name": "44DOC-S4058 Terms-and-conditions-for-goods.pdf"
-        },
-        {
-          "file_nbr": "333333",
-          "name": "44DOC-S4058 Scope of Work SOW~1.docx"
-        },
-        {
-          "file_nbr": "333346",
-          "name": "44DOC-S4058 Standard-form-contract.docx"
-        },
-        {
-          "file_nbr": "333361",
-          "name": "44DOC-S3408 Insurance Requirements.pdf"
-        },
-        {
-          "file_nbr": "333358",
-          "name": "44DOC-S4058-site-visit-registration.pdf"
-        },
-        {
-          "file_nbr": "333339",
-          "name": "44DOC-S4058 Contractor Background Check Application.docx"
-        },
-        {
-          "file_nbr": "333338",
-          "name": "44DOC-S4058 Contractor Security Regulations Acknowledgement Form (2-22).docx"
-        },
-        {
-          "file_nbr": "333335",
-          "name": "44DOC-S4058 NDOC Contractor and Volunteer PREA Questionnaire.pdf"
-        },
-        {
-          "file_nbr": "333334",
-          "name": "44DOC-S4058 PREA Zero Tolerance Policy and Reporting.docx"
-        },
-        {
-          "file_nbr": "333357",
-          "name": "44DOC-S4058-reference-questionnaire.docx"
-        },
-        {
-          "file_nbr": "333336",
-          "name": "44DOC-S4058 COST_COMMISSION SCHEDULE.docx"
-        },
-        {
-          "file_nbr": "333360",
-          "name": "44DOC-S4058 Certification-regarding-lobbying.pdf"
-        },
-        {
-          "file_nbr": "333359",
-          "name": "44DOC-S4058-Vendor-Information-Response.pdf"
-        },
-        {
-          "file_nbr": "19742",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=44DOC-S4058&external=true&parentUrl=close"
     }
   ]
 }
