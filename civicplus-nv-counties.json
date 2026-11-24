@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-23T16:06:25.603Z",
+  "scraped_at": "2026-11-24T16:07:33.063Z",
   "bids": [
     {
       "bid_id": "23",
@@ -33,6 +33,19 @@
       "jurisdiction_name": "Nye County",
       "city": "Tonopah",
       "source_base": "https://www.nyecountynv.gov/Bids.aspx"
+    },
+    {
+      "bid_id": "88",
+      "title": "Humboldt County Library E-Rate Category Two Equipment",
+      "description": "Please post this bid posting with the associated documents: Humboldt County Library is seeking bids for Equipment. FCC Form 470 # 270004156 and all associated RFPs are...",
+      "status": "Open",
+      "closes": "1/6/2027 12:00 PM",
+      "detail_url": "https://www.humboldtcountynv.gov/Bids.aspx?bidID=88",
+      "documents": [],
+      "county": "Humboldt",
+      "jurisdiction_name": "Humboldt County",
+      "city": "Winnemucca",
+      "source_base": "https://www.humboldtcountynv.gov/Bids.aspx"
     },
     {
       "bid_id": "87",
