@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-24T14:03:56.060Z",
+  "scraped_at": "2026-11-25T14:04:05.529Z",
   "bids": [
     {
       "doc_id": "99SWC-S4091",
@@ -783,27 +783,6 @@
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=61GCB-S4067&external=true&parentUrl=close"
     },
     {
-      "doc_id": "55AGR-S4066",
-      "organization": "Department of Agriculture",
-      "buyer": "Christian Armas",
-      "title": "Generator",
-      "bid_opening_date": "11/24/2026 5:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "3f083638-b91c-407b-b179-17165306188c",
-      "scope": "500kW Generator with optional 800A ATS (Automatic Transfer Switch)",
-      "contact_org": "Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19759",
-          "name": "Quote Instructions"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=55AGR-S4066&external=true&parentUrl=close"
-    },
-    {
       "doc_id": "70CNR-S4064",
       "organization": "Department of Conservation and Natural Resources",
       "buyer": "Mason Bondi",
@@ -949,6 +928,39 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4062&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "43ADG-S4061",
+      "organization": "Adjutant General",
+      "buyer": "Theresa Sianez",
+      "title": "DEM - Door Hardware Replacement",
+      "bid_opening_date": "11/25/2026 4:59 PM",
+      "status": "",
+      "detail_fetched": true,
+      "csrf_token": "43534249-07c6-4316-9388-1f7d0c060b81",
+      "scope": "The State of Nevada, The Office of the Military, is seeking bids/proposals from qualified contractors to provide services for the following perform installation, repair or maintenance needs on doors and door hardware replacement. The selected contractor will perform door the exterior doors and three interior doors in this project. The contractor shall fabricate and install new doors and hardware on the doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project.",
+      "contact_org": "OTAG State Admin",
+      "contact_email": "admin-mil@govmail.state.nv.us",
+      "contact_phone": "(775) 884-8457",
+      "attachments": [
+        {
+          "file_nbr": "19734",
+          "name": "Quote Instructions"
+        },
+        {
+          "file_nbr": "334548",
+          "name": "DEM Door Hardware Replacement Invitation to Bid"
+        },
+        {
+          "file_nbr": "334549",
+          "name": "DEM Door Hardware Replacement Scope of Work"
+        },
+        {
+          "file_nbr": "334550",
+          "name": "DEM Floor Plan"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4061&external=true&parentUrl=close"
     }
   ]
 }
