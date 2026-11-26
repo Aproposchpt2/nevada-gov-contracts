@@ -1,6 +1,69 @@
 {
-  "scraped_at": "2026-11-25T14:04:05.529Z",
+  "scraped_at": "2026-11-26T14:03:44.021Z",
   "bids": [
+    {
+      "doc_id": "65DPS-S4095",
+      "organization": "Department of Public Safety",
+      "buyer": "Jeremy Redman",
+      "title": "Solicitation Waiver, Ongoing maintenance, support, hosting of grant mgmt system",
+      "bid_opening_date": "12/10/2026 5:00 PM",
+      "status": "SW261104",
+      "detail_fetched": true,
+      "csrf_token": "ef847ad7-e00e-44bb-a20f-35f48c0dcd55",
+      "scope": "Ongoing maintenance, support, hosting of grant mgmt system",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "338436",
+          "name": "20261124122345401.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4095&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4094",
+      "organization": "Department of Human Services",
+      "buyer": "Jeremy Redman",
+      "title": "Solicitation Waiver, Train the trainer curriculum for \"Building Bridges\" model to state and co staff",
+      "bid_opening_date": "12/10/2026 5:00 PM",
+      "status": "SW261102",
+      "detail_fetched": true,
+      "csrf_token": "befd4eb5-b1d5-4c94-959c-99214bdfa476",
+      "scope": "Train the trainer curriculum for &#034;Building Bridges&#034; model to state and co staff",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "338420",
+          "name": "20261117122554398.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4094&external=true&parentUrl=close"
+    },
+    {
+      "doc_id": "40DHHS-S4093",
+      "organization": "Department of Human Services",
+      "buyer": "Jeremy Redman",
+      "title": "Solicitation Waiver, provide technical assistance to the extended Foster Care Program",
+      "bid_opening_date": "12/14/2026 5:00 PM",
+      "status": "SW261101",
+      "detail_fetched": true,
+      "csrf_token": "313f4431-0373-463e-bceb-22efacbba6cd",
+      "scope": "provide technical assistance to the extended Foster Care Program",
+      "contact_org": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "attachments": [
+        {
+          "file_nbr": "338398",
+          "name": "20261117120648945.pdf"
+        }
+      ],
+      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=40DHHS-S4093&external=true&parentUrl=close"
+    },
     {
       "doc_id": "99SWC-S4091",
       "organization": "Statewide Contracts",
@@ -846,121 +909,6 @@
         }
       ],
       "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4064&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "65DPS-S4063",
-      "organization": "Department of Public Safety",
-      "buyer": "Kasen Cornmesser",
-      "title": "Janitorial Services - USA Parkway/Fernley NHP Substations",
-      "bid_opening_date": "12/02/2026 9:00 AM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "de55614d-9fac-4a0d-a69e-56893533b2cb",
-      "scope": "Please see cost schedule in attachments tab",
-      "contact_org": "NHP Headquarters",
-      "contact_email": "NHPPurchasing@dps.state.nv.us",
-      "contact_phone": "(775) 684-4488",
-      "attachments": [
-        {
-          "file_nbr": "19793",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "334715",
-          "name": "ATTACHMENT AA_SCOPE OF WORK-Vendor Ack.pdf"
-        },
-        {
-          "file_nbr": "334716",
-          "name": "ATTACHMENT BB - Insurance Specifications~1.pdf"
-        },
-        {
-          "file_nbr": "334717",
-          "name": "ATTACHMENT CC - STANDARD FORM CONTRACT.pdf"
-        },
-        {
-          "file_nbr": "334718",
-          "name": "ATTACHMENT DD - 65DPS-S4063-Reference-Questionnaire-2026-11-04.pdf"
-        },
-        {
-          "file_nbr": "334719",
-          "name": "65DPS-S4063 Janitorial Services-Fernley Cost Schedule.pdf"
-        },
-        {
-          "file_nbr": "334720",
-          "name": "65DPS-S4063 Janitorial Services-USA Parkway Cost Schedule.pdf"
-        },
-        {
-          "file_nbr": "334721",
-          "name": "65DPS-S4063-request-for-proposals-2026-11-04.pdf"
-        },
-        {
-          "file_nbr": "334722",
-          "name": "Certification-regarding-lobbying~8.pdf"
-        },
-        {
-          "file_nbr": "334723",
-          "name": "65DPS-S4063-site-visit-registration-2026-11-04.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=65DPS-S4063&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "70CNR-S4062",
-      "organization": "Department of Conservation and Natural Resources",
-      "buyer": "Annette Morfin",
-      "title": "FY27 FRO Fire Jackets",
-      "bid_opening_date": "11/25/2026 1:00 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "42055ee6-6bf0-4079-a4b8-294c57e445e7",
-      "scope": "Small: DragonWear Exxtreme FR Jacket; True North TN-105010-749",
-      "contact_org": "NDF-Purchasing Division",
-      "contact_email": "nvpurch@admin.nv.gov",
-      "contact_phone": "(775) 684-0170",
-      "attachments": [
-        {
-          "file_nbr": "19810",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "335420",
-          "name": "Terms-and-conditions-for-goods~3.pdf"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=70CNR-S4062&external=true&parentUrl=close"
-    },
-    {
-      "doc_id": "43ADG-S4061",
-      "organization": "Adjutant General",
-      "buyer": "Theresa Sianez",
-      "title": "DEM - Door Hardware Replacement",
-      "bid_opening_date": "11/25/2026 4:59 PM",
-      "status": "",
-      "detail_fetched": true,
-      "csrf_token": "43534249-07c6-4316-9388-1f7d0c060b81",
-      "scope": "The State of Nevada, The Office of the Military, is seeking bids/proposals from qualified contractors to provide services for the following perform installation, repair or maintenance needs on doors and door hardware replacement. The selected contractor will perform door the exterior doors and three interior doors in this project. The contractor shall fabricate and install new doors and hardware on the doors listed below. The contractor is also responsible for all materials, tools, hardware, and labor to complete this project. Contractor is also responsible for properly disposing of all materials that have been removed from this project.",
-      "contact_org": "OTAG State Admin",
-      "contact_email": "admin-mil@govmail.state.nv.us",
-      "contact_phone": "(775) 884-8457",
-      "attachments": [
-        {
-          "file_nbr": "19734",
-          "name": "Quote Instructions"
-        },
-        {
-          "file_nbr": "334548",
-          "name": "DEM Door Hardware Replacement Invitation to Bid"
-        },
-        {
-          "file_nbr": "334549",
-          "name": "DEM Door Hardware Replacement Scope of Work"
-        },
-        {
-          "file_nbr": "334550",
-          "name": "DEM Floor Plan"
-        }
-      ],
-      "detail_url": "https://nevadaepro.com/bso/external/bidDetail.sda?docId=43ADG-S4061&external=true&parentUrl=close"
     }
   ]
 }
